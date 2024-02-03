@@ -46,6 +46,13 @@ permalink:                /:categories/:year-:month-:day-:title:output_ext
 # Disqus comments
 # disqushandler:            sighingnow
 
+# by yoo
+include:  
+  \- .nojekyll
+
+
+
+
 exclude:
   - _drafts
 
