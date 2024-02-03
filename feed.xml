@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-04T03:10:02+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-04T03:20:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
 </subtitle><author><name>HE Tao</name></author><entry><title type="html">Using Footnotes</title><link href="http://localhost:4000/jekyll/2023-12-12-footnotes.html" rel="alternate" type="text/html" title="Using Footnotes" /><published>2023-12-12T00:00:00+09:00</published><updated>2023-12-12T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/footnotes</id><content type="html" xml:base="http://localhost:4000/jekyll/2023-12-12-footnotes.html"><![CDATA[<p>This jekyll-theme supports <a href="https://www.mathjax.org/">MathJax</a> to render footnotes
 in markdown.</p>
 
@@ -578,7 +578,11 @@ site itself),</li>
   <h5 id="tip">TIP</h5>
 
   <p>No need to push generated HTML bundle.</p>
-</blockquote>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[저는 다니엘222 입니다.]]></summary></entry><entry><title type="html">Why Jekyll with GitBook</title><link href="http://localhost:4000/jekyll/2019-04-27-why.html" rel="alternate" type="text/html" title="Why Jekyll with GitBook" /><published>2019-04-27T00:00:00+09:00</published><updated>2019-04-27T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/why</id><content type="html" xml:base="http://localhost:4000/jekyll/2019-04-27-why.html"><![CDATA[<p>저는 다니엘555 입니다.</p>
+</blockquote>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[저는 다니엘222 입니다.]]></summary></entry><entry><title type="html">Why Jekyll with GitBook</title><link href="http://localhost:4000/jekyll/2019-04-27-why.html" rel="alternate" type="text/html" title="Why Jekyll with GitBook" /><published>2019-04-27T00:00:00+09:00</published><updated>2019-04-27T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/why</id><content type="html" xml:base="http://localhost:4000/jekyll/2019-04-27-why.html"><![CDATA[<p>#저는 다니엘555 입니다.</p>
+
+<p>##저는 다니엘555 입니다.</p>
+
+<p>###저는 다니엘555 입니다.</p>
 
 <p>GitBook is an amazing frontend style to present and organize contents (such as book chapters
 and blogs) on Web. The typical to deploy GitBook at <a href="https://pages.github.com">Github Pages</a>
@@ -589,4 +593,4 @@ version control via git for when there are generated HTML files to be staged in 
 <p>This theme takes style definition out of generated GitBook site and provided the template
 for Jekyll to rendering markdown documents to HTML, thus the whole site can be deployed
 to <a href="https://pages.github.com">Github Pages</a> without generating and uploading HTML bundle every time when there are
-changes to the original repository.</p>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[저는 다니엘555 입니다.]]></summary></entry></feed>
+changes to the original repository.</p>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[#저는 다니엘555 입니다.]]></summary></entry></feed>
