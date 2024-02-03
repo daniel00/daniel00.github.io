@@ -47,8 +47,8 @@ permalink:                /:categories/:year-:month-:day-:title:output_ext
 # disqushandler:            sighingnow
 
 # by yoo
-include:  
-  - .nojekyll
+# include:  
+#   - .nojekyll
 
 
 
