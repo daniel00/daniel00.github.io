@@ -4,7 +4,8 @@ title: Jekyll Gitbook Theme
 permalink: /
 ---
 
-저는 다니엘 입니다.  
+저는 다니엘 입니다.    
+I am daniel  
 
 Make Jelly site have a GitBook look!
 
