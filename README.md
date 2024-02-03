@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: post
 title: Jekyll Gitbook Theme
 permalink: /
 ---
