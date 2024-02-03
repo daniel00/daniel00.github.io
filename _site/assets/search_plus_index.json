@@ -42,7 +42,7 @@
     "title": "Page with cover image",
     "keywords": "Jekyll",
     "url": "/jekyll/2022-05-24-page_cover.html",
-    "body": "The jekyll-gitbook theme supports adding a cover image to a specific page by adding a cover field to the page metadata: --- title: Page with cover image author: Tao He date: 2022-05-24 category: Jekyll layout: post + cover: /assets/jekyll-gitbook/dinosaur.gif ---"
+    "body": "저는 다니엘666 입니다. The jekyll-gitbook theme supports adding a cover image to a specific page by adding a cover field to the page metadata: --- title: Page with cover image author: Tao He date: 2022-05-24 category: Jekyll layout: post + cover: /assets/jekyll-gitbook/dinosaur.gif ---"
   },"/jekyll/2021-08-10-toc.html": {
     "title": "How to Generate TOC",
     "keywords": "Jekyll",
