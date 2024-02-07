@@ -1,24 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-07T02:11:50+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>HE Tao</name></author><entry><title type="html">연동형, 병립형, 준연동형 비례대표제란?</title><link href="http://localhost:4000/2023-12-19-election.html" rel="alternate" type="text/html" title="연동형, 병립형, 준연동형 비례대표제란?" /><published>2023-12-19T23:22:26+09:00</published><updated>2023-12-19T23:22:26+09:00</updated><id>http://localhost:4000/election</id><content type="html" xml:base="http://localhost:4000/2023-12-19-election.html"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#연동형병립형준연동형-비례대표제에-대해-정리해-봅니다" id="markdown-toc-연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</a>    <ul>
-      <li><a href="#사표" id="markdown-toc-사표">사표</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-07T02:46:14+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>HE Tao</name></author><entry><title type="html">비례대표제</title><link href="http://localhost:4000/jekyll/2024-02-06-election.html" rel="alternate" type="text/html" title="비례대표제" /><published>2024-02-06T00:00:00+09:00</published><updated>2024-02-06T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/election</id><content type="html" xml:base="http://localhost:4000/jekyll/2024-02-06-election.html"><![CDATA[<h2 id="연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
 
 <h3 id="사표">사표</h3>
 <p>예를 하나 들어보자,</p>
 
 <blockquote>
   <p>초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 
-많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 20명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.</p>
+많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.</p>
 </blockquote>
 
-<p>비록 B가 선거에서 지기는 했지만 20표를 얻었다, 하지만 이 모든 표는 사표() 가 된 것이다.
-80표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다.<br />
-즉 이러한 “다수제” 선거제도는 민의()를 정확히 반영하기 어려운 구조이다.</p>]]></content><author><name>HE Tao</name></author></entry><entry><title type="html">Using Footnotes</title><link href="http://localhost:4000/jekyll/2023-12-12-footnotes.html" rel="alternate" type="text/html" title="Using Footnotes" /><published>2023-12-12T00:00:00+09:00</published><updated>2023-12-12T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/footnotes</id><content type="html" xml:base="http://localhost:4000/jekyll/2023-12-12-footnotes.html"><![CDATA[<p>This jekyll-theme supports <a href="https://www.mathjax.org/">MathJax</a> to render footnotes
+<p>비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표() 가 된 것이다.
+60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다.<br />
+즉 이러한 “다수제” 선거제도는 민의()를 정확히 반영하기 어려운 구조이다.</p>]]></content><author><name>Daniel</name></author><category term="Jekyll" /><summary type="html"><![CDATA[연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.]]></summary></entry><entry><title type="html">Using Footnotes</title><link href="http://localhost:4000/jekyll/2023-12-12-footnotes.html" rel="alternate" type="text/html" title="Using Footnotes" /><published>2023-12-12T00:00:00+09:00</published><updated>2023-12-12T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/footnotes</id><content type="html" xml:base="http://localhost:4000/jekyll/2023-12-12-footnotes.html"><![CDATA[<p>This jekyll-theme supports <a href="https://www.mathjax.org/">MathJax</a> to render footnotes
 in markdown.</p>
 
 <p>e.g.,</p>
