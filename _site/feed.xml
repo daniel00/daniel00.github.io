@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-09T01:59:25+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-09T02:12:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
 </subtitle><author><name>HE Tao</name></author><entry><title type="html">이미지 넣는 방법</title><link href="http://localhost:4000/gitblog/2024-02-09-AddImage.html" rel="alternate" type="text/html" title="이미지 넣는 방법" /><published>2024-02-09T00:00:00+09:00</published><updated>2024-02-09T00:00:00+09:00</updated><id>http://localhost:4000/gitblog/AddImage</id><content type="html" xml:base="http://localhost:4000/gitblog/2024-02-09-AddImage.html"><![CDATA[<h2 id="마크다운-파일에-이미지-넣는법에-대해-설명합니다">마크다운 파일에 이미지 넣는법에 대해 설명합니다.</h2>
 <p><a href="http://johngrib.github.io">johngrib</a> 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다.<br />
 나는 <a href="https://github.com/img-paste-devs/img-paste.vim">img-paste.vim</a> 플러그인을 활용하는 방법을 택했다.<br />
@@ -35,8 +35,10 @@
 <p>깃헙에 푸쉬해서 온라인에서도 이미지가 정상적으로 표시되는걸 확인했다.</p>
 
 <p>이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다.<br />
-<!-- ![addlist](../assets/img/addlist.png) -->
-<img src="../assets/addlist.png" alt="addlist" /></p>
+<!-- ![addlist](../assets/img/addlist.png) --></p>
+
+<p><img src="../assets/987.png" alt="addlist" /><br />
+<!-- ![addlist](../assets/addlist.png) --></p>
 
 <!-- ## 여긴 연습하는 영역입니다 -->
 <!-- ```txt -->
