@@ -18,6 +18,11 @@
     "keywords": "GitBlog",
     "url": "/gitblog/2024-02-09-AddImage.html",
     "body": "마크다운 파일에 이미지 넣는법에 대해 설명합니다. johngrib 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다. 나는 img-paste.vim 플러그인을 활용하는 방법을 택했다. 이유는, 이미지를 클립보드에 캡처한 후 붙여넣으면 되므로 이미지 붙여넣기가 좀더 수훨 한 듯 하고, 깃헙에 접속하지 않아도 되기 때문이다. 다음의 순서로 이미지를 넣을 수 있다. img-paste.vim 을 설치하고 .vimrc에 다음과 같이 설정한다. \" for img-paste.vim autocmd FileType markdown nmap &lt;buffer&gt;&lt;silent&gt; &lt;leader&gt;p :call mdip#MarkdownClipboardImage()&lt;CR&gt; autocmd FileType markdown let g:PasteImageFunction = 'g:MarkdownPasteImage' let g:mdip_imgdir = \"/assets/img\" let g:mdip_imgname = 'image' 나는 이미지를 .md 파일이 위치하고 있는 디렉토리에 assets/img 디렉토리를 만든다음 저장하도록 설정했다. 이미지를 클립보드에 캡처하고 vim 명령모드에서 :MarkdownPasteImage를 누르면, 저장할 이름을 물어본다. 적당한 이름을 입력하고 엔터를 치면 이미지가 저장되고, 다음처럼 경로가 자동 입력된다. 그러면 이미지가 설정된 경로에 저장된다. 근데, img-paste.vim 에 설정한 경로 /assets/img 를 jekyll에서 찾을 수 있도록 경로 앞에 점을 두개 찍어주어야 한다. ../assets/img 실제 적용된 이미지 삽입 코드는 다음과 같다. ![imagepath](../assets/img/imagepath.png) 깃헙에 푸쉬해서 온라인에서도 이미지가 정상적으로 표시되는걸 확인했다. 이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다."
+  },"/chrome/2024-02-09-RemoveHistory.html": {
+    "title": "크롬에서 검색기록 저장하지 않는 방법",
+    "keywords": "Chrome",
+    "url": "/chrome/2024-02-09-RemoveHistory.html",
+    "body": "크롬에서 검색기록을 남기지 않는 방법에 대해 설명합니다. 크롬에서 구글 페이지를 열면 내가 검색한 기록이 드롭다운 형태로 보여진다. 이건 인터넷 기록, 쿠키 등을 삭제해도 여전히 남아있다. 해결 방법은, 크롬이 관리하는 History 파일의 내용을 삭제하고 읽기전용, 잠금 등으로 처리하여, 크롬이 검색기록을 저장하지 못하게 하면된다. History 파일 경로 ~/Library/Application Support/Google/Chrome/Default/History"
   },"/test2/2024-02-06-test2.html": {
     "title": "test2",
     "keywords": "test2",
