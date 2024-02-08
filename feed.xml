@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-09T02:59:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-09T03:20:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
 </subtitle><author><name>HE Tao</name></author><entry><title type="html">크롬에서 검색기록 저장하지 않는 방법</title><link href="http://localhost:4000/chrome/2024-02-09-RemoveHistory.html" rel="alternate" type="text/html" title="크롬에서 검색기록 저장하지 않는 방법" /><published>2024-02-09T00:00:00+09:00</published><updated>2024-02-09T00:00:00+09:00</updated><id>http://localhost:4000/chrome/RemoveHistory</id><content type="html" xml:base="http://localhost:4000/chrome/2024-02-09-RemoveHistory.html"><![CDATA[<h2 id="크롬에서-검색기록을-남기지-않는-방법에-대해-설명합니다">크롬에서 검색기록을 남기지 않는 방법에 대해 설명합니다.</h2>
 
 <p>크롬에서 구글 페이지를 열면 내가 검색한 기록이 드롭다운 형태로 보여진다.
@@ -26,7 +26,9 @@
 
 <p>비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다.
 60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다.<br />
-즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>]]></content><author><name>Daniel</name></author><category term="test2" /><summary type="html"><![CDATA[1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.]]></summary></entry><entry><title type="html">test1</title><link href="http://localhost:4000/test1/2024-02-06-test1.html" rel="alternate" type="text/html" title="test1" /><published>2024-02-06T00:00:00+09:00</published><updated>2024-02-06T00:00:00+09:00</updated><id>http://localhost:4000/test1/test1</id><content type="html" xml:base="http://localhost:4000/test1/2024-02-06-test1.html"><![CDATA[<h2 id="1연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
+즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>]]></content><author><name>Daniel</name></author><category term="test2" /><summary type="html"><![CDATA[1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.]]></summary></entry><entry><title type="html">test222222</title><link href="http://localhost:4000/test1/2024-02-06-test1.html" rel="alternate" type="text/html" title="test222222" /><published>2024-02-06T00:00:00+09:00</published><updated>2024-02-06T00:00:00+09:00</updated><id>http://localhost:4000/test1/test1</id><content type="html" xml:base="http://localhost:4000/test1/2024-02-06-test1.html"><![CDATA[<p>테스트</p>
+
+<h2 id="1연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
 
 <h3 id="사표-死票-wasted-vote">사표 (死票, wasted vote)</h3>
 <p>예를 하나 들어보자,</p>
@@ -42,7 +44,9 @@
 
 <p>비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다.
 60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다.<br />
-즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>]]></content><author><name>Daniel</name></author><category term="test1" /><summary type="html"><![CDATA[1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.]]></summary></entry><entry><title type="html">비례대표제2</title><link href="http://localhost:4000/political/2024-02-06-election2.html" rel="alternate" type="text/html" title="비례대표제2" /><published>2024-02-06T00:00:00+09:00</published><updated>2024-02-06T00:00:00+09:00</updated><id>http://localhost:4000/political/election2</id><content type="html" xml:base="http://localhost:4000/political/2024-02-06-election2.html"><![CDATA[<h2 id="연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
+즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>
+
+<p>테스트</p>]]></content><author><name>Daniel</name></author><category term="test1" /><summary type="html"><![CDATA[테스트]]></summary></entry><entry><title type="html">비례대표제2</title><link href="http://localhost:4000/political/2024-02-06-election2.html" rel="alternate" type="text/html" title="비례대표제2" /><published>2024-02-06T00:00:00+09:00</published><updated>2024-02-06T00:00:00+09:00</updated><id>http://localhost:4000/political/election2</id><content type="html" xml:base="http://localhost:4000/political/2024-02-06-election2.html"><![CDATA[<h2 id="연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
 
 <h3 id="사표-死票-wasted-vote">사표 (死票, wasted vote)</h3>
 <p>예를 하나 들어보자,</p>
