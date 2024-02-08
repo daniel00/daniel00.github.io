@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-09T01:47:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-09T01:59:25+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
 </subtitle><author><name>HE Tao</name></author><entry><title type="html">이미지 넣는 방법</title><link href="http://localhost:4000/gitblog/2024-02-09-AddImage.html" rel="alternate" type="text/html" title="이미지 넣는 방법" /><published>2024-02-09T00:00:00+09:00</published><updated>2024-02-09T00:00:00+09:00</updated><id>http://localhost:4000/gitblog/AddImage</id><content type="html" xml:base="http://localhost:4000/gitblog/2024-02-09-AddImage.html"><![CDATA[<h2 id="마크다운-파일에-이미지-넣는법에-대해-설명합니다">마크다운 파일에 이미지 넣는법에 대해 설명합니다.</h2>
 <p><a href="http://johngrib.github.io">johngrib</a> 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다.<br />
 나는 <a href="https://github.com/img-paste-devs/img-paste.vim">img-paste.vim</a> 플러그인을 활용하는 방법을 택했다.<br />
@@ -34,8 +34,9 @@
 </code></pre></div></div>
 <p>깃헙에 푸쉬해서 온라인에서도 이미지가 정상적으로 표시되는걸 확인했다.</p>
 
-<h2 id="이미지는-파일로-추가되므로-항상-git-add-git-commit를-수행해-주어야-한다">이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다.</h2>
-<p><img src="./assets/img/addlist.png" alt="addlist" /></p>
+<p>이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다.<br />
+<!-- ![addlist](../assets/img/addlist.png) -->
+<img src="../assets/addlist.png" alt="addlist" /></p>
 
 <!-- ## 여긴 연습하는 영역입니다 -->
 <!-- ```txt -->
@@ -76,7 +77,7 @@
 <!-- 맥북 키보드가 제법 느낌도 좋고 괜찮은 편이다. -->
 
 <!-- koolertron 키보드가 흑축키를 사용하는데, 소음이 어느정도 인지 확인해보고 -->
-<!-- 회사에서 사용할지 말지 결정하자. -->]]></content><author><name>Daniel</name></author><category term="Gitblog" /><summary type="html"><![CDATA[마크다운 파일에 이미지 넣는법에 대해 설명합니다. johngrib 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다. 나는 img-paste.vim 플러그인을 활용하는 방법을 택했다. 이유는, 이미지를 클립보드에 캡처한 후 붙여넣으면 되므로 이미지 붙여넣기가 좀더 수훨 한 듯 하고, 깃헙에 접속하지 않아도 되기 때문이다.]]></summary></entry><entry><title type="html">test2</title><link href="http://localhost:4000/test2/2024-02-06-test2.html" rel="alternate" type="text/html" title="test2" /><published>2024-02-06T00:00:00+09:00</published><updated>2024-02-06T00:00:00+09:00</updated><id>http://localhost:4000/test2/test2</id><content type="html" xml:base="http://localhost:4000/test2/2024-02-06-test2.html"><![CDATA[<h2 id="1연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
+<!-- 회사에서 사용할지 말지 결정하자. -->]]></content><author><name>Daniel</name></author><category term="GitBlog" /><summary type="html"><![CDATA[마크다운 파일에 이미지 넣는법에 대해 설명합니다. johngrib 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다. 나는 img-paste.vim 플러그인을 활용하는 방법을 택했다. 이유는, 이미지를 클립보드에 캡처한 후 붙여넣으면 되므로 이미지 붙여넣기가 좀더 수훨 한 듯 하고, 깃헙에 접속하지 않아도 되기 때문이다.]]></summary></entry><entry><title type="html">test2</title><link href="http://localhost:4000/test2/2024-02-06-test2.html" rel="alternate" type="text/html" title="test2" /><published>2024-02-06T00:00:00+09:00</published><updated>2024-02-06T00:00:00+09:00</updated><id>http://localhost:4000/test2/test2</id><content type="html" xml:base="http://localhost:4000/test2/2024-02-06-test2.html"><![CDATA[<h2 id="1연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
 
 <h3 id="사표-死票-wasted-vote">사표 (死票, wasted vote)</h3>
 <p>예를 하나 들어보자,</p>
