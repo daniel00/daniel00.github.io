@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-08T00:30:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>HE Tao</name></author><entry><title type="html">비례대표제</title><link href="http://localhost:4000/jekyll/2024-02-06-election.html" rel="alternate" type="text/html" title="비례대표제" /><published>2024-02-06T00:00:00+09:00</published><updated>2024-02-06T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/election</id><content type="html" xml:base="http://localhost:4000/jekyll/2024-02-06-election.html"><![CDATA[<h2 id="연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-09T00:47:43+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jekyll Gitbook</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>HE Tao</name></author><entry><title type="html">비례대표제1</title><link href="http://localhost:4000/political/2024-02-06-election.html" rel="alternate" type="text/html" title="비례대표제1" /><published>2024-02-06T00:00:00+09:00</published><updated>2024-02-06T00:00:00+09:00</updated><id>http://localhost:4000/political/election</id><content type="html" xml:base="http://localhost:4000/political/2024-02-06-election.html"><![CDATA[<h2 id="1연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
 
 <h3 id="사표-死票-wasted-vote">사표 (死票, wasted vote)</h3>
 <p>예를 하나 들어보자,</p>
@@ -9,9 +9,29 @@
 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.</p>
 </blockquote>
 
+<pre><code class="language-txt">초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 
+많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.
+</code></pre>
+
 <p>비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다.
 60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다.<br />
-즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>]]></content><author><name>Daniel</name></author><category term="Jekyll" /><summary type="html"><![CDATA[연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.]]></summary></entry><entry><title type="html">Using Footnotes</title><link href="http://localhost:4000/jekyll/2023-12-12-footnotes.html" rel="alternate" type="text/html" title="Using Footnotes" /><published>2023-12-12T00:00:00+09:00</published><updated>2023-12-12T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/footnotes</id><content type="html" xml:base="http://localhost:4000/jekyll/2023-12-12-footnotes.html"><![CDATA[<p>This jekyll-theme supports <a href="https://www.mathjax.org/">MathJax</a> to render footnotes
+즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>]]></content><author><name>Daniel</name></author><category term="Political" /><summary type="html"><![CDATA[1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.]]></summary></entry><entry><title type="html">비례대표제2</title><link href="http://localhost:4000/political/2024-02-06-election2.html" rel="alternate" type="text/html" title="비례대표제2" /><published>2024-02-06T00:00:00+09:00</published><updated>2024-02-06T00:00:00+09:00</updated><id>http://localhost:4000/political/election2</id><content type="html" xml:base="http://localhost:4000/political/2024-02-06-election2.html"><![CDATA[<h2 id="연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
+
+<h3 id="사표-死票-wasted-vote">사표 (死票, wasted vote)</h3>
+<p>예를 하나 들어보자,</p>
+
+<blockquote>
+  <p>초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 
+많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.</p>
+</blockquote>
+
+<pre><code class="language-txt">초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 
+많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.
+</code></pre>
+
+<p>비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다.
+60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다.<br />
+즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>]]></content><author><name>Daniel</name></author><category term="Political" /><summary type="html"><![CDATA[연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.]]></summary></entry><entry><title type="html">Using Footnotes</title><link href="http://localhost:4000/jekyll/2023-12-12-footnotes.html" rel="alternate" type="text/html" title="Using Footnotes" /><published>2023-12-12T00:00:00+09:00</published><updated>2023-12-12T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/footnotes</id><content type="html" xml:base="http://localhost:4000/jekyll/2023-12-12-footnotes.html"><![CDATA[<p>This jekyll-theme supports <a href="https://www.mathjax.org/">MathJax</a> to render footnotes
 in markdown.</p>
 
 <p>e.g.,</p>
@@ -564,30 +584,4 @@ configuration in <code class="language-plaintext highlighter-rouge">_config.yml<
 <p>This work is open sourced under the Apache License, Version 2.0, using the
 same license as the original <a href="https://github.com/GitbookIO/gitbook">GitBook</a> repository.</p>
 
-<p>Copyright 2019 Tao He.</p>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[저는 다니엘444 입니다.]]></summary></entry><entry><title type="html">How to Get Started</title><link href="http://localhost:4000/jekyll/2019-04-28-howto.html" rel="alternate" type="text/html" title="How to Get Started" /><published>2019-04-28T00:00:00+09:00</published><updated>2019-04-28T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/howto</id><content type="html" xml:base="http://localhost:4000/jekyll/2019-04-28-howto.html"><![CDATA[<p>저는 다니엘222 입니다.</p>
-
-<p>The jekyll-gitbook theme can be used just as other <a href="https://pages.github.com/themes">Jekyll themes</a> and
-support <a href="https://github.com/sighingnow/jekyll-gitbook/fork">remote theme</a> on <a href="https://pages.github.com">Github Pages</a>, see <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll">the official guide</a>
-as well.</p>
-
-<p>You can introduce this jekyll theme into your own site by either</p>
-
-<ul>
-  <li><a href="https://github.com/sighingnow/jekyll-gitbook/fork">Fork</a> this repository and add your markdown posts to the <code class="language-plaintext highlighter-rouge">_posts</code> folder, then
-push to your own Github repository.</li>
-  <li>Use as a remote theme in your <a href="https://github.com/sighingnow/jekyll-gitbook/blob/master/_config.yml"><code class="language-plaintext highlighter-rouge">_config.yml</code></a>(just like what we do for this
-site itself),</li>
-</ul>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Configurations</span>
-<span class="na">title</span><span class="pi">:</span>            <span class="s">Jekyll Gitbook</span>
-<span class="na">longtitle</span><span class="pi">:</span>        <span class="s">Jekyll Gitbook</span>
-
-<span class="na">remote_theme</span><span class="pi">:</span>     <span class="s">sighingnow/jekyll-gitbook</span>
-</code></pre></div></div>
-
-<blockquote class="block-tip">
-  <h5 id="tip">TIP</h5>
-
-  <p>No need to push generated HTML bundle.</p>
-</blockquote>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[저는 다니엘222 입니다.]]></summary></entry></feed>
+<p>Copyright 2019 Tao He.</p>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[저는 다니엘444 입니다.]]></summary></entry></feed>
