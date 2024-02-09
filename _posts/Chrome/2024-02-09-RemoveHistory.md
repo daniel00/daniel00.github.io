@@ -15,7 +15,7 @@ layout: post
 해결 방법은, 크롬이 관리하는 History 파일의 내용을 삭제하고 읽기전용, 잠금 등으로 처리하여,
 크롬이 검색기록을 저장하지 못하게 하면된다.
 
-## History 파일 경로
+### History 파일 경로
   ~/Library/Application Support/Google/Chrome/Default/History
 
 ![history_file](../assets/history_file.png)
