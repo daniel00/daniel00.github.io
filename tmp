@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Using Footnotes · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>test2 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="HE Tao"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,11 @@
 
 
 
-            <link rel="prev" href="/jekyll/2023-10-14-math-latex.html" />
+            <link rel="prev" href="/test1/2024-02-06-test1.html" />
         
 
         
-            <link rel="next" href="/political/2024-02-06-election2.html" />
+            <link rel="next" href="/chrome/2024-02-09-RemoveHistory.html" />
         
     </head>
     <body>
@@ -85,15 +85,15 @@
                     
                 
                     
-                
-                    
-                
-                    
-                
-                    
-                
-                    
                         <li><a href="/categories/cpp" class="">C ++ (1)</a></li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
             </ul>
@@ -270,10 +270,19 @@
                         </li>
                     
                         
-                        <li class="chapter active" data-level="1.2" data-path="/jekyll/2023-12-12-footnotes.html">
+                        <li class="chapter" data-level="1.1" data-path="/jekyll/2023-12-12-footnotes.html">
                         
                             <a href="/jekyll/2023-12-12-footnotes.html" onclick="pageScrollToTop(this)">
                                 Using Footnotes
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/cpp/political/2024-02-06-election.html">
+                        
+                            <a href="/cpp/political/2024-02-06-election.html" onclick="pageScrollToTop(this)">
+                                비례대표제1
                             </a>
                             
                         </li>
@@ -297,7 +306,7 @@
                         </li>
                     
                         
-                        <li class="chapter" data-level="1.1" data-path="/test2/2024-02-06-test2.html">
+                        <li class="chapter active" data-level="1.2" data-path="/test2/2024-02-06-test2.html">
                         
                             <a href="/test2/2024-02-06-test2.html" onclick="pageScrollToTop(this)">
                                 test2
@@ -310,15 +319,6 @@
                         
                             <a href="/chrome/2024-02-09-RemoveHistory.html" onclick="pageScrollToTop(this)">
                                 크롬에서 검색기록 저장하지 않는 방법
-                            </a>
-                            
-                        </li>
-                    
-                        
-                        <li class="chapter" data-level="1.1" data-path="/cpp/political/2024-02-12-election.html">
-                        
-                            <a href="/cpp/political/2024-02-12-election.html" onclick="pageScrollToTop(this)">
-                                비례대표제1
                             </a>
                             
                         </li>
@@ -345,7 +345,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >Using Footnotes</a>
+                            <a href="." >test2</a>
                         
                     </h1>
                 </div>
@@ -358,136 +358,27 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/jekyll/footnotes">Using Footnotes</h1>
+                        <h1 id="/test2/test2">test2</h1>
                     
 
-                    <p>This jekyll-theme supports <a href="https://www.mathjax.org/">MathJax</a> to render footnotes
-in markdown.</p>
+                    <h2 id="1연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
 
-<p>e.g.,</p>
+<h3 id="사표-死票-wasted-vote">사표 (死票, wasted vote)</h3>
+<p>예를 하나 들어보자,</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The well known Pythagorean theorem $x^2 + y^2 = z^2$ was
-proved to be invalid for other exponents[^1].
-Meaning the next equation has no integer solutions:
+<blockquote>
+  <p>초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 
+많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.</p>
+</blockquote>
 
-$$ x^n + y^n = z^n $$
-</code></pre></div></div>
+<pre><code class="language-txt">초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 
+많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.
+</code></pre>
 
-<p>The well known Pythagorean theorem $x^2 + y^2 = z^2$ was
-proved to be invalid for other exponents<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.
-Meaning the next equation has no integer solutions:</p>
+<p>비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다.
+60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다.<br />
+즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>
 
-\[x^n + y^n = z^n\]
-
-<h2 id="long-contents">Long contents</h2>
-
-<p>long contents …..</p>
-
-<ol>
-  <li>a</li>
-  <li>b</li>
-  <li>c</li>
-  <li>d</li>
-</ol>
-
-<h3 id="sub-title-1">Sub title 1</h3>
-
-<h3 id="sub-title-2">Sub title 2</h3>
-
-<h3 id="sub-title-3">Sub title 3</h3>
-
-<h2 id="long-contents-1">Long contents</h2>
-
-<p>long contents …..</p>
-
-<ol>
-  <li>a</li>
-  <li>b</li>
-  <li>c</li>
-  <li>d</li>
-</ol>
-
-<h3 id="sub-title-1-1">Sub title 1</h3>
-
-<h3 id="sub-title-2-1">Sub title 2</h3>
-
-<h3 id="sub-title-3-1">Sub title 3</h3>
-
-<h2 id="long-contents-2">Long contents</h2>
-
-<p>long contents …..</p>
-
-<ol>
-  <li>a</li>
-  <li>b</li>
-  <li>c</li>
-  <li>d</li>
-</ol>
-
-<h3 id="sub-title-1-2">Sub title 1</h3>
-
-<h3 id="sub-title-2-2">Sub title 2</h3>
-
-<h3 id="sub-title-3-2">Sub title 3</h3>
-
-<h2 id="long-contents-3">Long contents</h2>
-
-<p>long contents …..</p>
-
-<ol>
-  <li>a</li>
-  <li>b</li>
-  <li>c</li>
-  <li>d</li>
-</ol>
-
-<h3 id="sub-title-1-3">Sub title 1</h3>
-
-<h3 id="sub-title-2-3">Sub title 2</h3>
-
-<h3 id="sub-title-3-3">Sub title 3</h3>
-
-<h2 id="long-contents-4">Long contents</h2>
-
-<p>long contents …..</p>
-
-<ol>
-  <li>a</li>
-  <li>b</li>
-  <li>c</li>
-  <li>d</li>
-</ol>
-
-<h3 id="sub-title-1-4">Sub title 1</h3>
-
-<h3 id="sub-title-2-4">Sub title 2</h3>
-
-<h3 id="sub-title-3-4">Sub title 3</h3>
-
-<h2 id="long-contents-5">Long contents</h2>
-
-<p>long contents …..</p>
-
-<ol>
-  <li>a</li>
-  <li>b</li>
-  <li>c</li>
-  <li>d</li>
-</ol>
-
-<h3 id="sub-title-1-5">Sub title 1</h3>
-
-<h3 id="sub-title-2-5">Sub title 2</h3>
-
-<h3 id="sub-title-3-5">Sub title 3</h3>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p><a href="https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem">https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -521,38 +412,6 @@ window.MathJax = {
 
 <!-- introduce per-page mermaid support -->
 
-    <script>
-    function render_mermaid() {
-        mermaid.initialize({
-            startOnLoad: false,
-            theme: "default",
-        });
-        window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
-    }
-
-    function initialize_mermaid() {
-        if (document.readyState === "loading") {
-            // Loading hasn't finished yet
-            document.addEventListener("DOMContentLoaded", render_mermaid);
-        } else {
-            // `DOMContentLoaded` has already fired
-            render_mermaid();
-        }
-    }
-
-    if (window.mermaid_script && window.mermaid) {
-        initialize_mermaid();
-    } else {
-        window.mermaid_script = document.createElement("script");
-        mermaid_script.onload = initialize_mermaid;
-        document.head.appendChild(mermaid_script);
-        mermaid_script.defer = true;
-        mermaid_script.id = 'mermaid-script';
-        mermaid_script.src = 'https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js';
-    }
-</script>
-
-
 
 <!-- introduce mathjax support -->
 <script>
@@ -577,13 +436,13 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/jekyll/2023-10-14-math-latex.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: MathJax and LaTeX">
+                        <a href="/test1/2024-02-06-test1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: test222222">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
-                        <a href="/political/2024-02-06-election2.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 비례대표제2">
+                        <a href="/chrome/2024-02-09-RemoveHistory.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 크롬에서 검색기록 저장하지 않는 방법">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -600,11 +459,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "비례대표제2",
+            "title": "크롬에서 검색기록 저장하지 않는 방법",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2024-02-06-election2.md",
-            "ref": "_posts/2024-02-06-election2.md",
+            "path": "_posts/Chrome/2024-02-09-RemoveHistory.md",
+            "ref": "_posts/Chrome/2024-02-09-RemoveHistory.md",
             "articles": []
         },
         
@@ -696,13 +555,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2023-12-12-footnotes.md",
-        "mtime": "2023-12-12 00:00:00 +0900",
+        "path": "_posts/testdir1/2024-02-06-test2.md",
+        "mtime": "2024-02-06 00:00:00 +0900",
         "type": "markdown"
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2024-02-12 22:02:01 +0900"
+        "time": "2024-02-12 22:03:34 +0900"
     },
     "basePath": "",
     "book": {
