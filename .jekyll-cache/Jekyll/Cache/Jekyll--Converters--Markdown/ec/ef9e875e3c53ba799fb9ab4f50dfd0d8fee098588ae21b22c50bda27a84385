@@ -1,0 +1,23 @@
+I"B<!-- # cpp만 모아두는 파일입니다. 링크가 보이나요? -->
+
+<div class="list__item">
+    <article class="archive-item">
+        <div style="font-size:18px">
+
+
+            <!-- <small> --> 
+              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2024.02.12 &nbsp;&nbsp;&nbsp; -->
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/12 22:05 &nbsp;&nbsp;
+              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> -->
+
+              
+            <!-- </small> -->
+            <span>
+              <!-- <a href="/cpp/political/2024-02-12-election.html" style="font-size:20px">비례대표제1</a> -->
+              <a href="/cpp/political/2024-02-12-election.html">비례대표제1</a>
+            </span>
+        </div>
+      </article>
+</div>
+
+:ET
