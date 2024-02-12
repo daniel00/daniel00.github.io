@@ -17,16 +17,16 @@
 
 
             <!-- <small> --> 
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d &nbsp;&nbsp;&nbsp;" }} -->
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d &nbsp;&nbsp;&nbsp;" }}
               <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.last_modified_at | date:'%Y/%m/%d %R &nbsp;&nbsp;' }} -->
               <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date:'%Y/%m/%d %R &nbsp;&nbsp;&nbsp;&nbsp;' }} -->
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.path | file_date| date:'%Y/%m/%d %R &nbsp;&nbsp;&nbsp;&nbsp;'  }}
+              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.path | file_date| date:'%Y/%m/%d %R &nbsp;&nbsp;&nbsp;&nbsp;'  }} -->
 
-{% if page.last_modified_at %}
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%Y/%m/%d %R &nbsp;&nbsp;&nbsp;&nbsp;" }}</time></p>
-{% elsif page.date %}
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
-{% endif %}
+<!-- {% if page.last_modified_at %} -->
+<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%Y/%m/%d %R &nbsp;&nbsp;&nbsp;&nbsp;" }}</time></p> -->
+<!-- {% elsif page.date %} -->
+<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p> -->
+<!-- {% endif %} -->
 
               {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
                 {%- include post__taxonomy.html -%}
