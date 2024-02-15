@@ -62,6 +62,12 @@
           "title": "layout",
           "name": "layout",
           "type": "string"
+        },
+        {
+          "title": "keywords",
+          "name": "keywords",
+          "type": "fields",
+          "fields": []
         }
       ]
     }
