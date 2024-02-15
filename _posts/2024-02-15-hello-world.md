@@ -1,15 +1,20 @@
 ---
 title: hello world
 description: ""
-date: 2024-02-15T13:51:45.349Z
+date: 2024-02-15 23:33:39
+lastmod: 2024-02-15 23:34:05
 preview: ""
 tags: []
 categories: cpp
 layout: post
-lastmod: 2024-02-15 23:22:05
+keywords: []
+slug: world
 ---
 
 front matter에서 생성한 파일 입니다.
 수정
 
+수정
 
+
+수정
