@@ -2,12 +2,11 @@
 title: hello world
 description: ""
 date: 2024-02-15 23:33:39
-lastmod: 2024-02-15 23:34:05
 preview: ""
 tags: []
-categories: cpp
+category: cpp
+lastmod: 2024-02-15 23:39:32
 layout: post
-keywords: []
 slug: world
 ---
 
