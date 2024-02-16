@@ -29,6 +29,11 @@
           "type": "image"
         },
         {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
           "title": "Tags",
           "name": "tags",
           "type": "tags"
@@ -37,37 +42,6 @@
           "title": "Categories",
           "name": "categories",
           "type": "categories"
-        },
-        {
-          "title": "lastmod",
-          "name": "lastmod",
-          "type": "datetime"
-        },
-        {
-          "title": "author",
-          "name": "author",
-          "type": "string"
-        },
-        {
-          "title": "Update",
-          "name": "Update",
-          "type": "datetime"
-        },
-        {
-          "title": "category",
-          "name": "category",
-          "type": "categories"
-        },
-        {
-          "title": "layout",
-          "name": "layout",
-          "type": "string"
-        },
-        {
-          "title": "keywords",
-          "name": "keywords",
-          "type": "fields",
-          "fields": []
         }
       ]
     }

@@ -1,11 +1,16 @@
 ---
-title:
-slug:
-description:
-author:
-date: 2019-08-22T15:20:28.000Z
-lastmod: 2019-08-22T15:20:28.000Z
-draft: true
+title: cpptest
+description: ""
+preview: ""
+publishedAt: 2024-02-17 01:34:21
 tags: []
-categories: []
+categories:
+    - cpp
+lastmod: 2024-02-17 01:47:58
+layout: post
 ---
+
+
+
+# cpp test 입니다
+

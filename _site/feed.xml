@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-15T23:52:02+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>HE Tao</name></author><entry><title type="html">test222222</title><link href="http://localhost:4000/cpp/2024-02-15-test1.html" rel="alternate" type="text/html" title="test222222" /><published>2024-02-15T23:04:10+09:00</published><updated>2024-02-15T23:04:10+09:00</updated><id>http://localhost:4000/cpp/test1</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-15-test1.html"><![CDATA[<p>테스트
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-17T01:51:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>HE Tao</name></author><entry><title type="html">yoo test</title><link href="http://localhost:4000/cpp/2024-02-17-yootest.html" rel="alternate" type="text/html" title="yoo test" /><published>2024-02-17T00:00:00+09:00</published><updated>2024-02-17T00:00:00+09:00</updated><id>http://localhost:4000/cpp/yootest</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-17-yootest.html"><![CDATA[<h1 id="this-is-by-yoo">this is by yoo</h1>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[this is by yoo]]></summary></entry><entry><title type="html">test222222</title><link href="http://localhost:4000/cpp/2024-02-15-test1.html" rel="alternate" type="text/html" title="test222222" /><published>2024-02-15T23:04:10+09:00</published><updated>2024-02-15T23:04:10+09:00</updated><id>http://localhost:4000/cpp/test1</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-15-test1.html"><![CDATA[<p>테스트
 test
 update
 up</p>
@@ -52,7 +52,7 @@ test3</p>
 
 <p>비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다.
 60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다.<br />
-즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>]]></content><author><name>Daniel</name></author><category term="Political" /><summary type="html"><![CDATA[test hello hello2 hello3 hello4 hello5]]></summary></entry><entry><title type="html">cpptest</title><link href="http://localhost:4000/cpp/2024-02-15-cpptest.html" rel="alternate" type="text/html" title="cpptest" /><published>2024-02-15T00:00:00+09:00</published><updated>2024-02-15T00:00:00+09:00</updated><id>http://localhost:4000/cpp/cpptest</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-15-cpptest.html"><![CDATA[<h1 id="cpp-test-입니다">cpp test 입니다</h1>]]></content><author><name>HE Tao</name></author><category term="[&quot;cpp&quot;]" /><summary type="html"><![CDATA[cpp test 입니다]]></summary></entry><entry><title type="html">hello world</title><link href="http://localhost:4000/cpp/2024-02-15-hello-world.html" rel="alternate" type="text/html" title="hello world" /><published>2024-02-15T00:00:00+09:00</published><updated>2024-02-15T00:00:00+09:00</updated><id>http://localhost:4000/cpp/hello-world</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-15-hello-world.html"><![CDATA[<p>front matter에서 생성한 파일 입니다.
+즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>]]></content><author><name>Daniel</name></author><category term="Political" /><summary type="html"><![CDATA[test hello hello2 hello3 hello4 hello5]]></summary></entry><entry><title type="html">cpptest222</title><link href="http://localhost:4000/cpp/2024-02-15-cpptest222.html" rel="alternate" type="text/html" title="cpptest222" /><published>2024-02-15T00:00:00+09:00</published><updated>2024-02-15T00:00:00+09:00</updated><id>http://localhost:4000/cpp/cpptest222</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-15-cpptest222.html"><![CDATA[<p>cpp test 2222 입니다.</p>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[cpp test 2222 입니다.]]></summary></entry><entry><title type="html">cpptest</title><link href="http://localhost:4000/cpp/2024-02-15-cpptest.html" rel="alternate" type="text/html" title="cpptest" /><published>2024-02-15T00:00:00+09:00</published><updated>2024-02-15T00:00:00+09:00</updated><id>http://localhost:4000/cpp/cpptest</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-15-cpptest.html"><![CDATA[<h1 id="cpp-test-입니다">cpp test 입니다</h1>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[cpp test 입니다]]></summary></entry><entry><title type="html">hello world</title><link href="http://localhost:4000/cpp/2024-02-15-hello-world.html" rel="alternate" type="text/html" title="hello world" /><published>2024-02-15T00:00:00+09:00</published><updated>2024-02-15T00:00:00+09:00</updated><id>http://localhost:4000/cpp/hello-world</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-15-hello-world.html"><![CDATA[<p>front matter에서 생성한 파일 입니다.
 수정
 수정
 수정</p>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[front matter에서 생성한 파일 입니다. 수정 수정 수정]]></summary></entry><entry><title type="html">test2</title><link href="http://localhost:4000/test2/2024-02-12-test2.html" rel="alternate" type="text/html" title="test2" /><published>2024-02-12T23:07:44+09:00</published><updated>2024-02-12T23:07:44+09:00</updated><id>http://localhost:4000/test2/test2</id><content type="html" xml:base="http://localhost:4000/test2/2024-02-12-test2.html"><![CDATA[<p>test</p>
@@ -226,100 +226,4 @@ Meaning the next equation has no integer solutions:</p>
       <p><a href="https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem">https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[This jekyll-theme supports MathJax to render footnotes in markdown.]]></summary></entry><entry><title type="html">MathJax and LaTeX</title><link href="http://localhost:4000/jekyll/2023-10-14-math-latex.html" rel="alternate" type="text/html" title="MathJax and LaTeX" /><published>2023-10-14T00:00:00+09:00</published><updated>2023-10-14T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/math-latex</id><content type="html" xml:base="http://localhost:4000/jekyll/2023-10-14-math-latex.html"><![CDATA[<p>This jekyll-theme supports <a href="https://www.mathjax.org/">MathJax</a> to render $\LaTeX$
-and mathematics expressions.</p>
-
-<blockquote class="block-tip">
-  <h5 id="tip">TIP</h5>
-
-  <p>Currently, Kramdown uses double dollar sign delimiters for inline and display math:
-<a href="https://kramdown.gettalong.org/syntax.html#math-blocks">https://kramdown.gettalong.org/syntax.html#math-blocks</a>.</p>
-</blockquote>
-
-<p>e.g.,</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The well known Pythagorean theorem $x^2 + y^2 = z^2$ was
-proved to be invalid for other exponents.
-Meaning the next equation has no integer solutions:
-
-$$ x^n + y^n = z^n $$
-</code></pre></div></div>
-
-<p>The well known Pythagorean theorem $x^2 + y^2 = z^2$ was
-proved to be invalid for other exponents.
-Meaning the next equation has no integer solutions:</p>
-
-\[x^n + y^n = z^n\]
-
-<p>Another example with more complex markups:</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>When $a <span class="se">\n</span>e 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
-
-$$x = {-b <span class="se">\p</span>m <span class="se">\s</span>qrt{b^2-4ac} <span class="se">\o</span>ver 2a}.$$
-</code></pre></div></div>
-
-<p>When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are</p>
-
-\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
-
-<p>Refer to the <a href="https://docs.mathjax.org/en/latest/index.html">MathJax website</a> for more examples.</p>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[This jekyll-theme supports MathJax to render $\LaTeX$ and mathematics expressions.]]></summary></entry><entry><title type="html">Diagrams with mermaid.js</title><link href="http://localhost:4000/jekyll/2023-08-31-mermaid.html" rel="alternate" type="text/html" title="Diagrams with mermaid.js" /><published>2023-08-31T00:00:00+09:00</published><updated>2023-08-31T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/mermaid</id><content type="html" xml:base="http://localhost:4000/jekyll/2023-08-31-mermaid.html"><![CDATA[<p>저는 다니엘333 입니다.</p>
-
-<p>This jekyll-theme supports <a href="https://mermaid.js.org/">mermaid.js</a> to render diagrams
-in markdown.</p>
-
-<p>To enable the mermaid support, you need to set <code class="language-plaintext highlighter-rouge">mermaid: true</code> in the front matter
-of your post.</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
-<span class="na">title</span><span class="pi">:</span> <span class="s">Diagrams with mermaid.js</span>
-<span class="na">date</span><span class="pi">:</span> <span class="s">2023-08-31</span>
-<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
-<span class="na">mermaid</span><span class="pi">:</span> <span class="kc">true</span>
-<span class="nn">---</span>
-</code></pre></div></div>
-
-<p>Then you can use mermaid syntax in your markdown:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>graph TD;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;
-</code></pre></div></div>
-
-<pre><code class="language-mermaid">graph TD;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;
-</code></pre>
-
-<p>Or, even some complex examples:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice-&gt;&gt;John: Hello John, how are you?
-    loop Healthcheck
-        John-&gt;&gt;John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts &lt;br/&gt;prevail!
-    John--&gt;&gt;Alice: Great!
-    John-&gt;&gt;Bob: How about you?
-    Bob--&gt;&gt;John: Jolly good!
-</code></pre></div></div>
-
-<pre><code class="language-mermaid">sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice-&gt;&gt;John: Hello John, how are you?
-    loop Healthcheck
-        John-&gt;&gt;John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts &lt;br/&gt;prevail!
-    John--&gt;&gt;Alice: Great!
-    John-&gt;&gt;Bob: How about you?
-    Bob--&gt;&gt;John: Jolly good!
-</code></pre>
-
-<p>Refer to the <a href="https://mermaid.js.org/intro/">mermaid.js website</a> for more examples.</p>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[저는 다니엘333 입니다.]]></summary></entry></feed>
+</div>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[This jekyll-theme supports MathJax to render footnotes in markdown.]]></summary></entry></feed>
