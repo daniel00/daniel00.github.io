@@ -4,7 +4,8 @@ layout: post
 permalink: categories/cpp
 ---
 
-<!-- # cpp만 모아두는 파일입니다. 링크가 보이나요? -->
-{% assign posts = site.categories.cpp %}
-{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
 
+    {% assign posts = site.categories.cpp | sort: 'title' %}
+    {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
+
+<button onclick="myFunction()">Click me</button>

@@ -78,6 +78,7 @@
 
         <span class="nav__sub-title">Politics</span>
             <ul>
+
                 <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for c in site.categories %}
@@ -90,44 +91,6 @@
         <!-- ================================================================================================= -->
 
 
-            {% for collection in site.collections %}
-                <!-- <p>{{ collection.label }}</p> -->
-                {% if collection.output %}
-                    {% if collection.label == "posts" %}
-                        {% assign reversed_posts = site[collection.label] | reverse %}
-                    {% else %}
-                        {% assign reversed_posts = site[collection.label] %}
-                    {% endif %}
-
-
-
-
-
-
-
-
-                    {% for post in reversed_posts %}
-                        {% if page.url == post.url %}
-                        <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
-                        {% else %}
-                        <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
-                        {% endif %}
-                            <a href="{{site.baseurl}}{{post.url}}" onclick="pageScrollToTop(this)">
-                                {{ post.title | escape }}
-                            </a>
-                            {% if site.toc.enabled %}
-                                {% if page.url == post.url %}
-                                    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
-                                {% endif %}
-                            {% endif %}
-                        </li>
-                    {% endfor %}
-
-                    {% if reversed_posts.size > 0 %}
-                        <li class="divider"></li>
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
 
 
         <span class="nav__sub-title">Coding Test2</span>
@@ -136,5 +99,4 @@
         </ul>
     </nav>
 </div>
-
 
