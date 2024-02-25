@@ -1,62 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-24T23:26:14+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>HE Tao</name></author><entry><title type="html">test6</title><link href="http://localhost:4000/testcat/2024-02-21-test6.html" rel="alternate" type="text/html" title="test6" /><published>2024-02-21T08:13:03+09:00</published><updated>2024-02-21T08:13:03+09:00</updated><id>http://localhost:4000/testcat/test6</id><content type="html" xml:base="http://localhost:4000/testcat/2024-02-21-test6.html"><![CDATA[]]></content><author><name>HE Tao</name></author><category term="[&quot;testcat&quot;]" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">test4</title><link href="http://localhost:4000/2024-02-20-test4.html" rel="alternate" type="text/html" title="test4" /><published>2024-02-20T07:25:08+09:00</published><updated>2024-02-20T07:25:08+09:00</updated><id>http://localhost:4000/test4</id><content type="html" xml:base="http://localhost:4000/2024-02-20-test4.html"><![CDATA[]]></content><author><name>HE Tao</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">test3</title><link href="http://localhost:4000/2024-02-20-test3.html" rel="alternate" type="text/html" title="test3" /><published>2024-02-20T07:23:13+09:00</published><updated>2024-02-20T07:23:13+09:00</updated><id>http://localhost:4000/test3</id><content type="html" xml:base="http://localhost:4000/2024-02-20-test3.html"><![CDATA[]]></content><author><name>HE Tao</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">newfile</title><link href="http://localhost:4000/2024-02-17-newfile.html" rel="alternate" type="text/html" title="newfile" /><published>2024-02-17T11:07:58+09:00</published><updated>2024-02-17T11:07:58+09:00</updated><id>http://localhost:4000/newfile</id><content type="html" xml:base="http://localhost:4000/2024-02-17-newfile.html"><![CDATA[]]></content><author><name>HE Tao</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">tttteeeessstttt</title><link href="http://localhost:4000/2024-02-17-tttteeeessstttt.html" rel="alternate" type="text/html" title="tttteeeessstttt" /><published>2024-02-17T11:06:23+09:00</published><updated>2024-02-17T11:06:23+09:00</updated><id>http://localhost:4000/tttteeeessstttt</id><content type="html" xml:base="http://localhost:4000/2024-02-17-tttteeeessstttt.html"><![CDATA[<p>this is tttteeeeeeeeeeessssttt</p>]]></content><author><name>HE Tao</name></author><summary type="html"><![CDATA[this is tttteeeeeeeeeeessssttt]]></summary></entry><entry><title type="html">test</title><link href="http://localhost:4000/cpp/2024-02-17-test.html" rel="alternate" type="text/html" title="test" /><published>2024-02-17T11:04:47+09:00</published><updated>2024-02-17T11:04:47+09:00</updated><id>http://localhost:4000/cpp/test</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-17-test.html"><![CDATA[<p>this is test</p>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[this is test]]></summary></entry><entry><title type="html">yoo daniel</title><link href="http://localhost:4000/cpp/2024-02-17-yootest.html" rel="alternate" type="text/html" title="yoo daniel" /><published>2024-02-17T00:00:00+09:00</published><updated>2024-02-17T00:00:00+09:00</updated><id>http://localhost:4000/cpp/yootest</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-17-yootest.html"><![CDATA[<h1 id="this-is-by-yoo">this is by yoo</h1>
-<h1 id="this-is-by-yoo-1">this is by yoo</h1>
-<h1 id="this-is-by-yoo-2">this is by yoo</h1>
-<h1 id="this-is-by-yoo-3">this is by yoo</h1>
-<h1 id="this-is-by-yoo-4">this is by yoo</h1>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[this is by yoo this is by yoo this is by yoo this is by yoo this is by yoo]]></summary></entry><entry><title type="html">test222222</title><link href="http://localhost:4000/cpp/2024-02-15-test1.html" rel="alternate" type="text/html" title="test222222" /><published>2024-02-15T23:04:10+09:00</published><updated>2024-02-15T23:04:10+09:00</updated><id>http://localhost:4000/cpp/test1</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-15-test1.html"><![CDATA[<p>테스트
-test
-update
-up</p>
-
-<h2 id="1연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
-
-<h3 id="사표-死票-wasted-vote">사표 (死票, wasted vote)</h3>
-<p>예를 하나 들어보자,</p>
-
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-25T02:19:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>HE Tao</name></author><entry><title type="html">tttteeeessstttt</title><link href="http://localhost:4000/cpp/2024-02-25-jekyll-category.html" rel="alternate" type="text/html" title="tttteeeessstttt" /><published>2024-02-25T08:39:49+09:00</published><updated>2024-02-25T08:39:49+09:00</updated><id>http://localhost:4000/cpp/jekyll-category</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-25-jekyll-category.html"><![CDATA[<h1 id="jekyll-에서-카테고리를-모아서-표시하는-방법에-대해-설명-합니다">jekyll 에서 카테고리를 모아서 표시하는 방법에 대해 설명 합니다.</h1>
+<p>아래와 같이 카테고리가 메뉴가 추가되고 포스트 개수를 표시하게 된다.</p>
 <blockquote>
-  <p>초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 
-많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.</p>
+  <p><img src="../assets/2024-02-25-00-34-17.png" alt="" /></p>
 </blockquote>
 
-<pre><code class="language-txt">초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 
-많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.
-</code></pre>
+<p>여기서는 ‘cpp’ 카테고리를 만드는 예로 설명한다.</p>
 
-<p>비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다.
-60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다.<br />
-즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>
+<ol>
+  <li>category-cpp.md 를 만든다.</li>
+  <li>category-cpp.md 에 다음의 front matter를 작성한다.
+    <div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">C++</span><span class="nv"> </span><span class="s">프로그래밍"</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">categories/cpp</span>
+<span class="nn">---</span>
+</code></pre></div>    </div>
+  </li>
+  <li>아래의 내용을 작성한다. (코드블럭으로 넣으면 링크된 파일이 표시되어서 부득이 그림으로 넣었다. 나중에 수정예정)</li>
+</ol>
 
-<p>테스트</p>]]></content><author><name>Daniel</name></author><category term="cpp" /><summary type="html"><![CDATA[테스트 test update up]]></summary></entry><entry><title type="html">병립형-연동형</title><link href="http://localhost:4000/cpp/political/2024-02-15-election.html" rel="alternate" type="text/html" title="병립형-연동형" /><published>2024-02-15T22:59:00+09:00</published><updated>2024-02-15T22:59:00+09:00</updated><id>http://localhost:4000/cpp/political/election</id><content type="html" xml:base="http://localhost:4000/cpp/political/2024-02-15-election.html"><![CDATA[<p>test
-hello
-hello2
-hello3
-hello4
-hello5</p>
-
-<h2 id="1연동형병립형준연동형-비례대표제에-대해-정리해-봅니다">1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다.</h2>
-
-<p>수정 날짜가 제대로 표시 되나요?
-22시20분 수정
-22시35분 수정
-test
-test2
-test3</p>
-
-<h3 id="사표-死票-wasted-vote">사표 (死票, wasted vote)</h3>
-<p>예를 하나 들어보자,</p>
-
-<blockquote>
-  <p>초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 
-많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.</p>
-</blockquote>
-
-<pre><code class="language-txt">초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 
-많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다.
-</code></pre>
-
-<p>비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다.
-60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다.<br />
-즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다.</p>]]></content><author><name>Daniel</name></author><category term="Political" /><summary type="html"><![CDATA[test hello hello2 hello3 hello4 hello5]]></summary></entry><entry><title type="html">hello world</title><link href="http://localhost:4000/cpp/2024-02-15-hello-world.html" rel="alternate" type="text/html" title="hello world" /><published>2024-02-15T00:00:00+09:00</published><updated>2024-02-15T00:00:00+09:00</updated><id>http://localhost:4000/cpp/hello-world</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-15-hello-world.html"><![CDATA[<p>front matter에서 생성한 파일 입니다.
-수정
-수정
-수정</p>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[front matter에서 생성한 파일 입니다. 수정 수정 수정]]></summary></entry></feed>
+<p><img src="../assets/2024-02-25-00-04-37.png" alt="testimage" /></p>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[jekyll 에서 카테고리를 모아서 표시하는 방법에 대해 설명 합니다. 아래와 같이 카테고리가 메뉴가 추가되고 포스트 개수를 표시하게 된다.]]></summary></entry><entry><title type="html">test cpp cpp cpp</title><link href="http://localhost:4000/cpp/2024-02-25-333.html" rel="alternate" type="text/html" title="test cpp cpp cpp" /><published>2024-02-25T07:42:08+09:00</published><updated>2024-02-25T07:42:08+09:00</updated><id>http://localhost:4000/cpp/333</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-25-333.html"><![CDATA[<h1 id="cpp로-분류가-잘-되었나요">cpp로 분류가 잘 되었나요?</h1>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[cpp로 분류가 잘 되었나요?]]></summary></entry><entry><title type="html">tttteeeessstttt</title><link href="http://localhost:4000/2024-02-25-222.html" rel="alternate" type="text/html" title="tttteeeessstttt" /><published>2024-02-25T07:36:57+09:00</published><updated>2024-02-25T07:36:57+09:00</updated><id>http://localhost:4000/222</id><content type="html" xml:base="http://localhost:4000/2024-02-25-222.html"><![CDATA[]]></content><author><name>HE Tao</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">tttteeeessstttt</title><link href="http://localhost:4000/2024-02-25-temptest.html" rel="alternate" type="text/html" title="tttteeeessstttt" /><published>2024-02-25T07:36:14+09:00</published><updated>2024-02-25T07:36:14+09:00</updated><id>http://localhost:4000/temptest</id><content type="html" xml:base="http://localhost:4000/2024-02-25-temptest.html"><![CDATA[]]></content><author><name>HE Tao</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">test6</title><link href="http://localhost:4000/testcat/2024-02-21-test6.html" rel="alternate" type="text/html" title="test6" /><published>2024-02-21T08:13:03+09:00</published><updated>2024-02-21T08:13:03+09:00</updated><id>http://localhost:4000/testcat/test6</id><content type="html" xml:base="http://localhost:4000/testcat/2024-02-21-test6.html"><![CDATA[]]></content><author><name>HE Tao</name></author><category term="[&quot;testcat&quot;]" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">test4</title><link href="http://localhost:4000/2024-02-20-test4.html" rel="alternate" type="text/html" title="test4" /><published>2024-02-20T07:25:08+09:00</published><updated>2024-02-20T07:25:08+09:00</updated><id>http://localhost:4000/test4</id><content type="html" xml:base="http://localhost:4000/2024-02-20-test4.html"><![CDATA[]]></content><author><name>HE Tao</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">test3</title><link href="http://localhost:4000/2024-02-20-test3.html" rel="alternate" type="text/html" title="test3" /><published>2024-02-20T07:23:13+09:00</published><updated>2024-02-20T07:23:13+09:00</updated><id>http://localhost:4000/test3</id><content type="html" xml:base="http://localhost:4000/2024-02-20-test3.html"><![CDATA[]]></content><author><name>HE Tao</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">newfile</title><link href="http://localhost:4000/2024-02-17-newfile.html" rel="alternate" type="text/html" title="newfile" /><published>2024-02-17T11:07:58+09:00</published><updated>2024-02-17T11:07:58+09:00</updated><id>http://localhost:4000/newfile</id><content type="html" xml:base="http://localhost:4000/2024-02-17-newfile.html"><![CDATA[]]></content><author><name>HE Tao</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">tttteeeessstttt</title><link href="http://localhost:4000/2024-02-17-tttteeeessstttt.html" rel="alternate" type="text/html" title="tttteeeessstttt" /><published>2024-02-17T11:06:23+09:00</published><updated>2024-02-17T11:06:23+09:00</updated><id>http://localhost:4000/tttteeeessstttt</id><content type="html" xml:base="http://localhost:4000/2024-02-17-tttteeeessstttt.html"><![CDATA[<p>this is tttteeeeeeeeeeessssttt</p>]]></content><author><name>HE Tao</name></author><summary type="html"><![CDATA[this is tttteeeeeeeeeeessssttt]]></summary></entry><entry><title type="html">test</title><link href="http://localhost:4000/cpp/2024-02-17-test.html" rel="alternate" type="text/html" title="test" /><published>2024-02-17T11:04:47+09:00</published><updated>2024-02-17T11:04:47+09:00</updated><id>http://localhost:4000/cpp/test</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-17-test.html"><![CDATA[<p>this is test</p>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[this is test]]></summary></entry></feed>
