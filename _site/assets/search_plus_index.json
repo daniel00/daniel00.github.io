@@ -1,4 +1,9 @@
-{"/cpp/2024-02-29-eee.html": {
+{"/cpp/2024-03-26-set_macbook_aac_aptx.html": {
+    "title": "맥북에서 AAC, aptX 설정하는 법",
+    "keywords": "cpp",
+    "url": "/cpp/2024-03-26-set_macbook_aac_aptx.html",
+    "body": "created : 2024-03-26 06:55 updated : 2024-03-25 21:58 QCY 이어폰을 맥북에 연결하니 끊김 현상이 있었다. 해결방법 : 아래처럼 AAC, aptX를 활성화 시킨뒤 다시 페어링 했더니 끊김이 발생하지 않는다. 터미널 열고, AptX 코덱 활성화 sudo defaults write bluetoothaudiod “Enable AptX codec” -bool true ACC 코덱 활성화 sudo defaults write bluetoothaudiod “Enable AAC codec” -bool true AptX, ACC 설정 확인 sudo defaults read bluetoothaudiod"
+  },"/cpp/2024-02-29-eee.html": {
     "title": "eee",
     "keywords": "cpp",
     "url": "/cpp/2024-02-29-eee.html",
