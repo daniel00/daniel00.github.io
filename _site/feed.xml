@@ -1,20 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-25T21:58:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>HE Tao</name></author><entry><title type="html">맥북에서 AAC, aptX 설정하는 법</title><link href="http://localhost:4000/cpp/2024-03-26-set_macbook_aac_aptx.html" rel="alternate" type="text/html" title="맥북에서 AAC, aptX 설정하는 법" /><published>2024-03-26T06:55:43+09:00</published><updated>2024-03-26T06:55:43+09:00</updated><id>http://localhost:4000/cpp/set_macbook_aac_aptx</id><content type="html" xml:base="http://localhost:4000/cpp/2024-03-26-set_macbook_aac_aptx.html"><![CDATA[<p>created : 2024-03-26 06:55<br />
-updated : 2024-03-25 21:58</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-07T01:19:58+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>HE Tao</name></author><entry><title type="html">SRT 예약 어플 만들기</title><link href="http://localhost:4000/csharp/2024-04-07-srt_reserve_app.html" rel="alternate" type="text/html" title="SRT 예약 어플 만들기" /><published>2024-04-07T10:12:20+09:00</published><updated>2024-04-07T10:12:20+09:00</updated><id>http://localhost:4000/csharp/srt_reserve_app</id><content type="html" xml:base="http://localhost:4000/csharp/2024-04-07-srt_reserve_app.html"><![CDATA[<p>created : 2024-04-07 10:12<br />
+updated : 2024-04-07 01:19</p>
+
+<h1 id="srt-예약-앱을-만드는-과정에-대해서-정리합니다">SRT 예약 앱을 만드는 과정에 대해서 정리합니다.</h1>
+<ul>
+  <li>크로스플랫폼 제작이 쉽도록 자마린으로 제작예정</li>
+  <li>C#으로 문법등을 테스트해 보자</li>
+  <li>로그인은 HttpClient 클래스를 이용한다</li>
+  <li>파이썬으로 작성된 코드를 참조한다.</li>
+</ul>
+
+<p>동작을 요약하면,
+HttpClient를 사용해서 srt페이지에 로그인하는데, 이때 
+client.post(로그인아이디, 비밀번호) 의 형태로 메시지를 송신하면 되는것 같다.
+메시지 형식은 JSON형식인 듯 하므로, 
+Dictionary dict = “메시지아이디”:값
+위 같은 딕셔너리 형태로 만들어서 client.post(dict) 하면 될 것 같다.</p>
+
+<p>로그인만 되면, 필요한 내용으로 쿼리 내용을 post하면 되는 구조이므로
+천천히 개발해 보자.</p>]]></content><author><name>HE Tao</name></author><category term="csharp" /><summary type="html"><![CDATA[created : 2024-04-07 10:12 updated : 2024-04-07 01:19]]></summary></entry><entry><title type="html">포스트 제목을 입력하세요</title><link href="http://localhost:4000/csharp/2024-04-07-csharp_on_mac.html" rel="alternate" type="text/html" title="포스트 제목을 입력하세요" /><published>2024-04-07T09:24:53+09:00</published><updated>2024-04-07T09:24:53+09:00</updated><id>http://localhost:4000/csharp/csharp_on_mac</id><content type="html" xml:base="http://localhost:4000/csharp/2024-04-07-csharp_on_mac.html"><![CDATA[<p>created : 2024-04-07 09:24<br />
+updated : 2024-04-07 00:26</p>
+
+<h1 id="맥북에서-c-을-컴파일하고-실행하는-방법">맥북에서 C# 을 컴파일하고 실행하는 방법</h1>
+
+<p>컴파일 방법<br />
+csc test.cs
+이렇게 하면 test.exe 만들어지고</p>
+
+<p>mono test.exe
+로 실행할 수 있다.</p>]]></content><author><name>HE Tao</name></author><category term="csharp" /><summary type="html"><![CDATA[created : 2024-04-07 09:24 updated : 2024-04-07 00:26]]></summary></entry><entry><title type="html">맥북에서 AAC, aptX 설정하는 법</title><link href="http://localhost:4000/cpp/2024-03-26-set_macbook_aac_aptx.html" rel="alternate" type="text/html" title="맥북에서 AAC, aptX 설정하는 법" /><published>2024-03-26T06:55:43+09:00</published><updated>2024-03-26T06:55:43+09:00</updated><id>http://localhost:4000/cpp/set_macbook_aac_aptx</id><content type="html" xml:base="http://localhost:4000/cpp/2024-03-26-set_macbook_aac_aptx.html"><![CDATA[<p>created : 2024-03-26 06:55<br />
+updated : 2024-04-04 23:02</p>
 
 <h1 id="qcy-이어폰을-맥북에-연결하니-끊김-현상이-있었다">QCY 이어폰을 맥북에 연결하니 끊김 현상이 있었다.</h1>
 <p>해결방법 : 아래처럼 AAC, aptX를 활성화 시킨뒤 다시 페어링 했더니 끊김이 발생하지 않는다.</p>
 
 <p>터미널 열고,</p>
 
-<p>AptX 코덱 활성화
+<p>AptX 코덱 활성화 <br />
 sudo defaults write bluetoothaudiod “Enable AptX codec” -bool true</p>
 
-<p>ACC 코덱 활성화
+<p>ACC 코덱 활성화 <br />
 sudo defaults write bluetoothaudiod “Enable AAC codec” -bool true</p>
 
-<p>AptX, ACC 설정 확인
-sudo defaults read bluetoothaudiod</p>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[created : 2024-03-26 06:55 updated : 2024-03-25 21:58]]></summary></entry><entry><title type="html">eee</title><link href="http://localhost:4000/cpp/2024-02-29-eee.html" rel="alternate" type="text/html" title="eee" /><published>2024-02-29T00:07:54+09:00</published><updated>2024-02-29T00:07:54+09:00</updated><id>http://localhost:4000/cpp/eee</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-29-eee.html"><![CDATA[<p>created : 2024-02-29 00:07<br />
+<p>AptX, ACC 설정 확인 <br />
+sudo defaults read bluetoothaudiod</p>
+
+<p>기존 연결 삭제 후 다시 페어링!!!!!</p>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[created : 2024-03-26 06:55 updated : 2024-04-04 23:02]]></summary></entry><entry><title type="html">eee</title><link href="http://localhost:4000/cpp/2024-02-29-eee.html" rel="alternate" type="text/html" title="eee" /><published>2024-02-29T00:07:54+09:00</published><updated>2024-02-29T00:07:54+09:00</updated><id>http://localhost:4000/cpp/eee</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-29-eee.html"><![CDATA[<p>created : 2024-02-29 00:07<br />
 updated : 2024-02-29 00:09</p>
 
 <h1 id="여기서-부터-글을-작성하세요">여기서 부터 글을 작성하세요</h1>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[created : 2024-02-29 00:07 updated : 2024-02-29 00:09]]></summary></entry><entry><title type="html">포스트 제목을 입력하세요</title><link href="http://localhost:4000/cpp/2024-02-29-ddd.html" rel="alternate" type="text/html" title="포스트 제목을 입력하세요" /><published>2024-02-29T00:05:49+09:00</published><updated>2024-02-29T00:05:49+09:00</updated><id>http://localhost:4000/cpp/ddd</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-29-ddd.html"><![CDATA[<p>created : 2024-02-29 00:05<br />
@@ -50,4 +81,4 @@ updated : 2024-02-26 00:33</p>
   <li>아래의 내용을 작성한다. (코드블럭으로 넣으면 링크된 파일이 표시되어서 부득이 그림으로 넣었다. 나중에 수정예정)</li>
 </ol>
 
-<p><img src="../assets/2024-02-25-00-04-37.png" alt="testimage" /></p>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[jekyll 에서 카테고리를 모아서 표시하는 방법에 대해 설명 합니다. 아래와 같이 카테고리가 메뉴가 추가되고 포스트 개수를 표시하게 된다.]]></summary></entry><entry><title type="html">test cpp cpp cpp</title><link href="http://localhost:4000/cpp/2024-02-25-333.html" rel="alternate" type="text/html" title="test cpp cpp cpp" /><published>2024-02-25T07:42:08+09:00</published><updated>2024-02-25T07:42:08+09:00</updated><id>http://localhost:4000/cpp/333</id><content type="html" xml:base="http://localhost:4000/cpp/2024-02-25-333.html"><![CDATA[<h1 id="cpp로-분류가-잘-되었나요">cpp로 분류가 잘 되었나요?</h1>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[cpp로 분류가 잘 되었나요?]]></summary></entry><entry><title type="html">tttteeeessstttt</title><link href="http://localhost:4000/2024-02-25-222.html" rel="alternate" type="text/html" title="tttteeeessstttt" /><published>2024-02-25T07:36:57+09:00</published><updated>2024-02-25T07:36:57+09:00</updated><id>http://localhost:4000/222</id><content type="html" xml:base="http://localhost:4000/2024-02-25-222.html"><![CDATA[]]></content><author><name>HE Tao</name></author><summary type="html"><![CDATA[]]></summary></entry></feed>
+<p><img src="../assets/2024-02-25-00-04-37.png" alt="testimage" /></p>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[jekyll 에서 카테고리를 모아서 표시하는 방법에 대해 설명 합니다. 아래와 같이 카테고리가 메뉴가 추가되고 포스트 개수를 표시하게 된다.]]></summary></entry></feed>

@@ -7,7 +7,7 @@ tags: []
 categories:
     - cpp
 date: 2024-03-25 21:55:43
-lastmod: 2024-03-25 21:58:44
+lastmod: 2024-04-04 23:02:30
 layout: post
 ---
 
@@ -20,11 +20,13 @@ updated : {{page.lastmod | date:'%Y-%m-%d %R'}}
 
 터미널 열고,
 
-AptX 코덱 활성화
+AptX 코덱 활성화   
 sudo defaults write bluetoothaudiod "Enable AptX codec" -bool true
 
-ACC 코덱 활성화
+ACC 코덱 활성화   
 sudo defaults write bluetoothaudiod "Enable AAC codec" -bool true
 
-AptX, ACC 설정 확인
+AptX, ACC 설정 확인   
 sudo defaults read bluetoothaudiod
+
+기존 연결 삭제 후 다시 페어링!!!!!
