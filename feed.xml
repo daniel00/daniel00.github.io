@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-07T01:19:58+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>HE Tao</name></author><entry><title type="html">SRT 예약 어플 만들기</title><link href="http://localhost:4000/csharp/2024-04-07-srt_reserve_app.html" rel="alternate" type="text/html" title="SRT 예약 어플 만들기" /><published>2024-04-07T10:12:20+09:00</published><updated>2024-04-07T10:12:20+09:00</updated><id>http://localhost:4000/csharp/srt_reserve_app</id><content type="html" xml:base="http://localhost:4000/csharp/2024-04-07-srt_reserve_app.html"><![CDATA[<p>created : 2024-04-07 10:12<br />
-updated : 2024-04-07 01:19</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-07T01:21:31+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>HE Tao</name></author><entry><title type="html">SRT 예약 어플 만들기</title><link href="http://localhost:4000/cpp/2024-04-07-srt_reserve_app.html" rel="alternate" type="text/html" title="SRT 예약 어플 만들기" /><published>2024-04-07T10:12:20+09:00</published><updated>2024-04-07T10:12:20+09:00</updated><id>http://localhost:4000/cpp/srt_reserve_app</id><content type="html" xml:base="http://localhost:4000/cpp/2024-04-07-srt_reserve_app.html"><![CDATA[<p>created : 2024-04-07 10:12<br />
+updated : 2024-04-07 01:21</p>
 
 <h1 id="srt-예약-앱을-만드는-과정에-대해서-정리합니다">SRT 예약 앱을 만드는 과정에 대해서 정리합니다.</h1>
 <ul>
@@ -18,7 +18,7 @@ Dictionary dict = “메시지아이디”:값
 위 같은 딕셔너리 형태로 만들어서 client.post(dict) 하면 될 것 같다.</p>
 
 <p>로그인만 되면, 필요한 내용으로 쿼리 내용을 post하면 되는 구조이므로
-천천히 개발해 보자.</p>]]></content><author><name>HE Tao</name></author><category term="csharp" /><summary type="html"><![CDATA[created : 2024-04-07 10:12 updated : 2024-04-07 01:19]]></summary></entry><entry><title type="html">포스트 제목을 입력하세요</title><link href="http://localhost:4000/csharp/2024-04-07-csharp_on_mac.html" rel="alternate" type="text/html" title="포스트 제목을 입력하세요" /><published>2024-04-07T09:24:53+09:00</published><updated>2024-04-07T09:24:53+09:00</updated><id>http://localhost:4000/csharp/csharp_on_mac</id><content type="html" xml:base="http://localhost:4000/csharp/2024-04-07-csharp_on_mac.html"><![CDATA[<p>created : 2024-04-07 09:24<br />
+천천히 개발해 보자.</p>]]></content><author><name>HE Tao</name></author><category term="cpp" /><summary type="html"><![CDATA[created : 2024-04-07 10:12 updated : 2024-04-07 01:21]]></summary></entry><entry><title type="html">포스트 제목을 입력하세요</title><link href="http://localhost:4000/csharp/2024-04-07-csharp_on_mac.html" rel="alternate" type="text/html" title="포스트 제목을 입력하세요" /><published>2024-04-07T09:24:53+09:00</published><updated>2024-04-07T09:24:53+09:00</updated><id>http://localhost:4000/csharp/csharp_on_mac</id><content type="html" xml:base="http://localhost:4000/csharp/2024-04-07-csharp_on_mac.html"><![CDATA[<p>created : 2024-04-07 09:24<br />
 updated : 2024-04-07 00:26</p>
 
 <h1 id="맥북에서-c-을-컴파일하고-실행하는-방법">맥북에서 C# 을 컴파일하고 실행하는 방법</h1>
