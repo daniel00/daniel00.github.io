@@ -1,18 +1,16 @@
 ---
-layout  : wiki
-title   : 다형성
-summary : 
-date    : 2023-08-16 20:59:04 +0900
-updated : 2023-08-17 22:40:18 +0900
-tag     : 
-toc     : true
-public  : true
-parent  : 
-latex   : false
-resource: 219A61DC-0FDF-43BC-BA0A-01C5D2C6F571
+title: 다형성
+description: ""
+preview: ""
+publishedAt: 2024-02-17 01:34:21
+tags: []
+categories:
+  - all
+  - cpp
+date: 2024-02-26 00:35:58+0900
+lastmod: 2024-04-08 22:43:51
+layout: post
 ---
-* TOC
-{:toc}
 
 ## 다형성(Polymorphism)
 부모 클래스 타입의 포인터가, 여러 형태의(다형) 자식 클래스를 가리킬 수 있음을 의미한다.
