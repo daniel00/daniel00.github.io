@@ -7,7 +7,7 @@ tags: []
 categories:
     - jekyll
 layout: post
-lastmod: 2024-04-08 13:58:56
+lastmod: 2024-04-08 15:07:31
 ---
 
 # jekyll 에서 카테고리를 모아서 표시하는 방법에 대해 설명 합니다.
@@ -31,25 +31,6 @@ permalink: categories/cpp
 
 ![testimage](../assets/2024-02-25-00-04-37.png)       
 
-4. toc-date.html에 다음과 같이 카테고리를 만들고, 카테고리를 읽어 오도록 작성한다.  
-![](2024-04-08-13-58-49.png)
+4. toc-date.html에 다음과 같이 카테고리를 만들고, 카테고리에 속한 포스트들을 읽어 오도록 작성한다.  
 
-
-```html   
-<span class="nav__sub-title">C/C++/C#</span>  
-    <ul>
-    {% for c in site.categories %}
-        {% if c[0] == "cpp" %}
-            <li><a href="/categories/cpp" class="">C++ ({{c[1].size}})</a></li>
-        {% endif %}
-    {% endfor %}
-</ul>
-<ul>
-    {% for c in site.categories %}
-        {% if c[0] == "csharp" %}
-            <li><a href="/categories/csharp" class="">C# ({{c[1].size}})</a></li>
-        {% endif %}
-    {% endfor %}
-</ul>
-<li class="divider"></li>
-```
+> ![](../assets/2024-04-08-14-29-41.png)

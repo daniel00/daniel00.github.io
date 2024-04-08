@@ -14,6 +14,6 @@ layout: post
 created : {{page.date | date:'%Y-%m-%d %R'}}  
 updated : {{page.lastmod | date:'%Y-%m-%d %R'}}
 
-# 여기서 부터 글을 작성하세요
+### 여기서 부터 글을 작성하세요
 
 
