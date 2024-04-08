@@ -1,15 +1,16 @@
 ---
-layout  : wiki
-title   : Jekyll 사용법
-summary : 
-date    : 2023-08-01 23:05:26 +0900
-updated : 2024-01-02 02:39:28 +0900
-tag     : 
-toc     : true
-public  : true
-parent  : 
-latex   : false
+layout: wiki
+title: Jekyll 사용법
+summary: null
+date: 2023-08-01 23:05:26 +0900
+updated: 2024-01-02 02:39:28 +0900
+tag: null
+toc: true
+public: true
+parent: null
+latex: false
 resource: 5CBB54BC-587E-4001-BECA-1EEEEA79EB21
+lastmod: 2024-04-08 01:12:42
 ---
 * TOC
 {:toc}
@@ -23,7 +24,7 @@ resource: 5CBB54BC-587E-4001-BECA-1EEEEA79EB21
 ## Jekyll 실행 방법
 wiki의 루트 디렉토리에서 다음의 명령을 실행하면,  소스코드가 바뀔때 마다 브라우저에 자동 업데이트 된다.  
 ```
-bundle exec jekyll serve --livereload  
+sudo bundle exec jekyll serve --livereload  
 ```    
 
 yoo@MacForYoo git/daniel00.github.io (master) » bundle exec jekyll serve --livereload  

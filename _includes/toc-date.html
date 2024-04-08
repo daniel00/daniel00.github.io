@@ -50,14 +50,14 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for c in site.categories %}
                     {% if c[0] == "cpp" %}
-                        <li><a href="/categories/cpp" class="">C ++ ({{c[1].size}})</a></li>
+                        <li><a href="/categories/cpp" class="">C++ ({{c[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for c in site.categories %}
-                    {% if c[0] == "Jekyll" %}
-                        <li><a href="/categories/stl" class="">C++ STL & 표준 ({{c[1].size}})</a></li>
+                    {% if c[0] == "C#" %}
+                        <li><a href="/categories/csharp" class="">C# ({{c[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -69,7 +69,7 @@
             <ul>
                 {% for c in site.categories %}
                     {% if c[0] == "GitBlog" %}
-                        <li><a href="/categories/cpp" class="">Git Blog ({{c[1].size}})</a></li>
+                        <li><a href="/categories/gitblog" class="">Git Blog ({{c[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
