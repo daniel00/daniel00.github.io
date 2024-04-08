@@ -8,16 +8,6 @@
     "keywords": "",
     "url": "/categories/politics",
     "body": "2024-04-08 12:02 &nbsp;&nbsp; 병립형-연동형"
-  },"/categories/jekyll": {
-    "title": "Jekyll",
-    "keywords": "",
-    "url": "/categories/jekyll",
-    "body": "2024-04-08 11:55 &nbsp;&nbsp; Jekyll 사용법 2024-04-08 15:07 &nbsp;&nbsp; category 만드는 법"
-  },"/categories/csharp": {
-    "title": "c#",
-    "keywords": "",
-    "url": "/categories/csharp",
-    "body": "2024-04-08 16:17 &nbsp;&nbsp; 1차세계대전 2024-04-08 15:14 &nbsp;&nbsp; SRT 예약 어플 만들기 2024-04-08 11:40 &nbsp;&nbsp; c# Main함수 보이게 코딩하는법 2024-04-08 15:20 &nbsp;&nbsp; 맥에서 c# 컴파일 하는 방법"
   },"/csharp/2024-04-07-srt_reserve_app.html": {
     "title": "SRT 예약 어플 만들기",
     "keywords": "csharp",
@@ -58,16 +48,31 @@
     "keywords": "cpp",
     "url": "/cpp/2024-02-26-bbb.html",
     "body": "created : 2024-02-26 00:40 updated : 2024-02-29 00:20 여기서 부터 글을 작성하세요"
-  },"/all/csharp/2024-02-26-1%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84.html": {
+  },"/all/2024-02-26-AddImage.html": {
+    "title": "마크다운 파일에 이미지 넣는법",
+    "keywords": "all",
+    "url": "/all/2024-02-26-AddImage.html",
+    "body": "현재는 vscode 확장인 Paste Image를 사용중입니다. 마크다운 파일에 이미지 넣는법에 대해 설명합니다. johngrib 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다. 나는 img-paste.vim 플러그인을 활용하는 방법을 택했다. 이유는, 이미지를 클립보드에 캡처한 후 붙여넣으면 되므로 이미지 붙여넣기가 좀더 수훨 한 듯 하고, 깃헙에 접속하지 않아도 되기 때문이다. 다음의 순서로 이미지를 넣을 수 있다. img-paste.vim 을 설치하고 .vimrc에 다음과 같이 설정한다. \" for img-paste.vim autocmd FileType markdown nmap &lt;buffer&gt;&lt;silent&gt; &lt;leader&gt;p :call mdip#MarkdownClipboardImage()&lt;CR&gt; autocmd FileType markdown let g:PasteImageFunction = 'g:MarkdownPasteImage' let g:mdip_imgdir = \"/assets/img\" let g:mdip_imgname = 'image' 나는 이미지를 .md 파일이 위치하고 있는 디렉토리에 assets/img 디렉토리를 만든다음 저장하도록 설정했다. 이미지를 클립보드에 캡처하고 vim 명령모드에서 :MarkdownPasteImage를 누르면, 저장할 이름을 물어본다. 적당한 이름을 입력하고 엔터를 치면 이미지가 저장되고, 다음처럼 경로가 자동 입력된다. 그러면 이미지가 설정된 경로에 저장된다. 근데, img-paste.vim 에 설정한 경로 /assets/img 를 jekyll에서 찾을 수 있도록 경로 앞에 점을 두개 찍어주어야 한다. ../assets/img 실제 적용된 이미지 삽입 코드는 다음과 같다. ![imagepath](../assets/imagepath.png) 깃헙에 푸쉬해서 온라인에서도 이미지가 정상적으로 표시되는걸 확인했다. 이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다."
+  },"/all/2024-02-26-1%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84.html": {
     "title": "1차세계대전",
-    "keywords": "all csharp",
-    "url": "/all/csharp/2024-02-26-1%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84.html",
+    "keywords": "all",
+    "url": "/all/2024-02-26-1%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84.html",
     "body": "1차 세계대전의 발발원인과 과정에 대해 설명 합니다. 시대적 배경 당시 산업혁명으로 제품의 대량생산이 가능해졌으나 공급과잉의 문제도 발생하게 된다. 산업혁명을 이룬 여러 열강들은 제품의 소비처, 원자재 수급처, 값싼 노동력 등을 확보하기 위해 식민지 개척 활동에 나선다. 유럽 각국의 상황 1차 세계대전이 발발된 1914년7월 즈음의 유럽의 정세는, 프랑스는 프로이센(독일 이전에 독일연방의 한 국가)과의 전쟁에 패한후 반독일 정서가 지배하고 있었고 영국은 독일의 계속되는 해군력 증강에 본인들의 식민지 확장에 영향을 미칠까 견제하고 있었으며 러시아는 지중해 진출을 위해 슬라브족을(세르비아) 이용하고 싶었으나 ,이미 오스트리아-헝가리제국이 슬라브민족 국가인 보스니아를 식민지로 차지하고 있었고 인접한 또다른 슬라브족 국가인 세르비아마저 호시탐탐 노리고 있었기에 , 오스트리아-헝가리제국 또한 같은 게르만민족 동맹국인 독일과 긴장상태를 유지하고 있었다. 독일 입장에서는 왼쪽의 프랑스의 반독일 정서로 관계가 좋을수 없었으며 , 오른쪽의 러시아와도 협정을 파기 하는등 좋지않은 관계가 유지되고 있었다. 또한 독일과 오스트리아-헝가리제국은 같은 게르만민족으로 동맹관계를 유지하고 있었고, 프랑스와 러시아도 동맹관계였다. 1914년 당시 군사동맹 지도 갈색 : 삼국동맹 , 독일-오스트리아.헝가리제국-이탈리아 녹색 : 삼국연합 , 영국-프랑스-러시아"
+  },"/all/2024-02-26-AddImage.html": {
+    "title": "이미지 넣는 방법",
+    "keywords": "all",
+    "url": "/all/2024-02-26-AddImage.html",
+    "body": "마크다운 파일에 이미지 넣는법에 대해 설명합니다. johngrib 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다. 나는 img-paste.vim 플러그인을 활용하는 방법을 택했다. 이유는, 이미지를 클립보드에 캡처한 후 붙여넣으면 되므로 이미지 붙여넣기가 좀더 수훨 한 듯 하고, 깃헙에 접속하지 않아도 되기 때문이다. 다음의 순서로 이미지를 넣을 수 있다. img-paste.vim 을 설치하고 .vimrc에 다음과 같이 설정한다. \" for img-paste.vim autocmd FileType markdown nmap &lt;buffer&gt;&lt;silent&gt; &lt;leader&gt;p :call mdip#MarkdownClipboardImage()&lt;CR&gt; autocmd FileType markdown let g:PasteImageFunction = 'g:MarkdownPasteImage' let g:mdip_imgdir = \"/assets/img\" let g:mdip_imgname = 'image' 나는 이미지를 .md 파일이 위치하고 있는 디렉토리에 assets/img 디렉토리를 만든다음 저장하도록 설정했다. 이미지를 클립보드에 캡처하고 vim 명령모드에서 :MarkdownPasteImage를 누르면, 저장할 이름을 물어본다. 적당한 이름을 입력하고 엔터를 치면 이미지가 저장되고, 다음처럼 경로가 자동 입력된다. 그러면 이미지가 설정된 경로에 저장된다. 근데, img-paste.vim 에 설정한 경로 /assets/img 를 jekyll에서 찾을 수 있도록 경로 앞에 점을 두개 찍어주어야 한다. ../assets/img 실제 적용된 이미지 삽입 코드는 다음과 같다. ![imagepath](../assets/imagepath.png) 깃헙에 푸쉬해서 온라인에서도 이미지가 정상적으로 표시되는걸 확인했다. 이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다."
   },"/jekyll/2024-02-26-jekyll.html": {
     "title": "Jekyll 사용법",
     "keywords": "jekyll",
     "url": "/jekyll/2024-02-26-jekyll.html",
     "body": "created : 2024-02-26 00:35 updated : 2024-04-08 11:55 Jekyll 사용법에 대해 설명합니다. Jekyll 설치 방법 Jekyll 실행 방법 wiki의 루트 디렉토리에서 다음의 명령을 실행하면, 소스코드가 바뀔때 마다 브라우저에 자동 업데이트 된다. sudo bundle exec jekyll serve --livereload yoo@MacForYoo git/daniel00.github.io (master) » bundle exec jekyll serve –livereload 로컬에서 확인하는 방법 브라우저에서 http://localhost:4000 주소를 연다. 파일 또는 이미지가 추가되면 반드시 개행! git add, git commit를 해주어야 한다. 링크가 추가되면 반드시 개행해야 업데이트가 된다.(줄끝에 “&lt;br&gt;” 또는 스페이스 두개) 파일이 추가되었으나 commit 되지 않아서 404 Not Found라는 문구가 표시된다. git add, git commit 후에 정상적으로 표시된다. no accepter 에러 발생시 해결방법 jekyll을 kill 한 후 재시작 한다. ps 로 프로세스 아이디를 찾아서 kill 한다. ps -aux | grep jekyll kill -9 프로세스ID 그리고 jekyll을 재시작 한다. bundle exec jekyll serve --livereload 커맨드를 실행하는 경로에 유의해야 한다. github.io루트 디렉토리에서 실행해야 한다!!!"
+  },"/all/2024-02-26-StudyUi.html": {
+    "title": "유니티 UI 화면",
+    "keywords": "all",
+    "url": "/all/2024-02-26-StudyUi.html",
+    "body": "연습을 통해 유니티 화면에 익숙해져 봅니다. Secne View. 씬뷰 게임을 구성하는 메인화면. 리소스를 배치해 화면을 구성한다. Game View. 게임뷰 게임을 실행했을때 보이는 화면. 내가 테스트 할 때는 Game View가 검정화면 으로만 보였다. 해결방법은 Scene - 우클릭 - Add Tab - Game을 하면 보였다. 이래도 해결이 안된다면, 카메라, 조명 등이 오브젝트를 잘 비추고 있는지 확인해 보시길. Hierarchy View. 하이어라키 뷰. 계층 뷰 씬에서 사용되는 오브젝트 이름을 목록으로 표시한다. 프로젝트를 만들면 기본적으로 Main Camera와 Directional Light 오브젝트가 추가된다. 오브젝트 추가하기 Hierarchy View에서 추가한다. 여기서는 3D 오브젝트중 Cube(정육면체)를 추가해 보겠다. Hierarchy, Scene View 에 Cube가 추가되었다. 오브젝트 선택 Secne View의 아이콘모음에서 “Move Tool”을 선택 한 후 오브젝트를 클릭하면 오브젝트가 선택된다. 또는 Hierarchy View에서 선택해도 된다. Inspector View 인스펙터 뷰 오브젝트가 선택되면 인스펙터 뷰에 오브젝트의 정보가 나타나고 수정 할 수 있다. 오브젝트를 뷰의 정가운데로 이동하기 Hierarchy View에서 오브젝트 선택 후 더블클릭 오브젝트를 선택 한 후 Shift + f 를 누른다(대문자 F) 메인카메라를 선택 후 shift f 를 눌러서 씬뷰의 정 가운데로 이동시켰다. shift f를 한번더 누르면 줌이 된다. Scene View에서 관찰자 시점 변경하는 방법 Scene 시점을 변경하면, 개발자가 보는 화면만 변경되는 것 뿐이지 실제 게임 화면이 변하는건 아니다. 줌 - 마우스 휠 시점 이동 - 손모양 아이콘 선택 후 드래그 시점 회전 - Alt + 드래그 (커서가 눈동자 모양으로 바뀐다) 오브젝트 변경하기(크기, 위치, 회전) 오브젝트를 변경하면 실제 게임시 보여지는 화면이 변경된다. 오브젝트 이동 십자가 화살표 아이콘 선택 후 오브젝트 선택한 후 드래그하면 오브젝트가 이동된다. 3축 화살표를 누르고 이동하면 X,Y,Z 각 축으로만 이동된다. 오브젝트 회전 로테이션 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 회전이 수행된다. 오브젝트 크기변경 Scale 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 크기가 변경된다."
   },"/cpp/2024-02-26-cattest.html": {
     "title": "포스트 제목을 입력하세요",
     "keywords": "cpp",
@@ -228,6 +233,16 @@
     "keywords": "",
     "url": "/2023-11-13-Animation.html",
     "body": "#"
+  },"/2023-11-13-Animation.html": {
+    "title": "Animation 만들기",
+    "keywords": "",
+    "url": "/2023-11-13-Animation.html",
+    "body": "#"
+  },"/2023-11-13-Prefab.html": {
+    "title": "Prefab이란",
+    "keywords": "",
+    "url": "/2023-11-13-Prefab.html",
+    "body": "#"
   },"/2023-11-13-Prefab.html": {
     "title": "Prefab이란",
     "keywords": "",
@@ -243,11 +258,26 @@
     "keywords": "",
     "url": "/2023-11-13-NewProject.html",
     "body": "유니티 허브에서 새 프로젝트 만들기 유니티 허브에서 새 프로젝트 만들기 유니티 허브에서 “New project” 를 눌러서 만든다. 연습용으로 3D형식의 프로젝트를 이름 “Test3D”로 만들어보았다."
+  },"/2023-11-13-NewProject.html": {
+    "title": "새로운 프로젝트 만들기",
+    "keywords": "",
+    "url": "/2023-11-13-NewProject.html",
+    "body": "유니티 허브에서 새 프로젝트 만들기 유니티 허브에서 새 프로젝트 만들기 유니티 허브에서 “New project” 를 눌러서 만든다. 연습용으로 3D형식의 프로젝트를 이름 “Test3D”로 만들어보았다."
   },"/2023-11-13-OpenProject.html": {
     "title": "유니티에서 기존 프로젝트를 여는 방법에 대해 설명합니다.",
     "keywords": "",
     "url": "/2023-11-13-OpenProject.html",
     "body": "유니티 허브에서 기존 프로젝트 열기 유니티 허브에서 기존 프로젝트 열기 오랜만에 유니티를 사용하려 했더니 기존에 작성한 프로젝트를 유니티허브에서 찾을 수 없었다. 다음처럼 디스크상의 프로젝트를 Add 하면 유니티 허브에 보이게 되고, 이 프로젝트를 열면된다. Add 한 프로젝트가 리스트에 보이게 된다. 이중 원하는 프로젝트를 열면 된다."
+  },"/2023-11-13-OpenProject.html": {
+    "title": "유니티에서 기존 프로젝트를 여는 방법에 대해 설명합니다.",
+    "keywords": "",
+    "url": "/2023-11-13-OpenProject.html",
+    "body": "유니티 허브에서 기존 프로젝트 열기 유니티 허브에서 기존 프로젝트 열기 오랜만에 유니티를 사용하려 했더니 기존에 작성한 프로젝트를 유니티허브에서 찾을 수 없었다. 다음처럼 디스크상의 프로젝트를 Add 하면 유니티 허브에 보이게 되고, 이 프로젝트를 열면된다. Add 한 프로젝트가 리스트에 보이게 된다. 이중 원하는 프로젝트를 열면 된다."
+  },"/2023-11-12-unity.html": {
+    "title": "Unity 사용",
+    "keywords": "",
+    "url": "/2023-11-12-unity.html",
+    "body": "유니티 사용법에 대해서 설명 합니다. 유니티 사용법에 대해서 설명 합니다. [[/Programming/Unity/OpenProject]] [[/Programming/Unity/NewProject]] [[/Programming/Unity/StudyUi]] [[/Programming/Unity/Prefab]] [[/Programming/Unity/Animation]]"
   },"/2023-11-12-unity.html": {
     "title": "Unity 사용",
     "keywords": "",
@@ -303,11 +333,26 @@
     "keywords": "",
     "url": "/2023-08-16-constructor.html",
     "body": "#"
+  },"/2023-08-16-constructor.html": {
+    "title": "생성자",
+    "keywords": "",
+    "url": "/2023-08-16-constructor.html",
+    "body": "#"
   },"/2023-08-16-cpp-index.html": {
     "title": "c++",
     "keywords": "",
     "url": "/2023-08-16-cpp-index.html",
     "body": "이론 이론 [[/Languages/cpp/class]] [[/Languages/cpp/constructor]] [[/Languages/cpp/polymorphism]]"
+  },"/2023-08-16-cpp-index.html": {
+    "title": "c++",
+    "keywords": "",
+    "url": "/2023-08-16-cpp-index.html",
+    "body": "이론 이론 [[/Languages/cpp/class]] [[/Languages/cpp/constructor]] [[/Languages/cpp/polymorphism]]"
+  },"/2023-08-16-polymorphism.html": {
+    "title": "다형성",
+    "keywords": "",
+    "url": "/2023-08-16-polymorphism.html",
+    "body": "다형성(Polymorphism) 다형성에 대한 상세한 설명 다형성(Polymorphism) 부모 클래스 타입의 포인터가, 여러 형태의(다형) 자식 클래스를 가리킬 수 있음을 의미한다. 이렇게 부모 클래스가 자식 클래스를 가리킬 수 있으면 여러가지면에서 유리하다. aaaa bbb ccc 다형성에 대한 상세한 설명 정적결합 다음의 코드를 살펴보자. #include &lt;stdio.h&gt; #include &lt;string.h&gt; class Base { public: void hello(){printf(\"I am Base\\n\");} }; class Derived : public Base { public: void hello(){printf(\"I am Derived\\n\");}; }; int main() { Base B, *pB; Derived D;; pB = &amp;B; pB-&gt;hello(); pB = &amp;D; pB-&gt;hello(); return 0; } pB = &amp;B 는 당연히 가능한 표현이고, pB = &amp;D 도 부모는 자식을 가리킬 수 있으므로 문제가 되지 않는다. 근데 우리가 원했던 출력 결과와는 달리, 두개의 pB-&gt;hello() 결과가 모두 I am Base 로 출력된다. pB = &amp;Base; pB-&gt;hello(); //결과 : I am Base pB = &amp;Derived; pB-&gt;hello(); //결과 : I am Base 출력 결과 I am Base I am Base 이런 결과가 나오는 이유는, 컴파일러는 포인터가 선언될 당시의 타입을 보고 이 타입에 맞는 멤버 함수를 호출하기 때문이다. 즉, pB = &amp;D; 로 pB가 D를 가리키도록 하였을지라도, 선언될 당시 Base * pB 로 선언되어 있으므로 Base의 hello()를 호출하는 것이다. 이를 정적 결합(Static Binding) 이라고 한다. 이와 달리, 클래스 포인터에 실제로 할당 된 객체의 멤버함수를 호출하는 방식을 동적 결합(Dynamic Binding)이라고 한다. 동적 결합을 위해서는 멤버함수에 virtual 예약어를 붙어주면 된다. 위 코드를 다음과 같이 수정하면 원하는 결과를 얻게 된다. #include &lt;stdio.h&gt; #include &lt;string.h&gt; class Base { public: virtual void hello(){printf(\"I am Base\\n\");} }; class Derived : public Base { public: virtual void hello(){printf(\"I am Derived\\n\");}; }; int main() { Base B, *pB; Derived D;; pB = &amp;B; pB-&gt;hello(); pB = &amp;D; pB-&gt;hello(); return 0; } 출력 결과 I am Base I am Derived 함수포인터 부모는 자식을 가리킬 수 있다 가상함수"
   },"/2023-08-16-polymorphism.html": {
     "title": "다형성",
     "keywords": "",
@@ -328,11 +373,6 @@
     "keywords": "",
     "url": "/2023-08-01-Jekyll.html",
     "body": "Jekyll 사용법에 대해 설명합니다. Jekyll 설치 방법 Jekyll 실행 방법 로컬에서 확인하는 방법 파일 또는 이미지가 추가되면 반드시 개행! git add, git commit를 해주어야 한다. no accepter 에러 발생시 해결방법 Jekyll 사용법에 대해 설명합니다. Jekyll 설치 방법 Jekyll 실행 방법 wiki의 루트 디렉토리에서 다음의 명령을 실행하면, 소스코드가 바뀔때 마다 브라우저에 자동 업데이트 된다. bundle exec jekyll serve --livereload yoo@MacForYoo git/daniel00.github.io (master) » bundle exec jekyll serve –livereload 로컬에서 확인하는 방법 브라우저에서 http://localhost:4000 주소를 연다. 파일 또는 이미지가 추가되면 반드시 개행! git add, git commit를 해주어야 한다. 링크가 추가되면 반드시 개행해야 업데이트가 된다.(줄끝에 “&lt;br&gt;” 또는 스페이스 두개) 파일이 추가되었으나 commit 되지 않아서 404 Not Found라는 문구가 표시된다. git add, git commit 후에 정상적으로 표시된다. no accepter 에러 발생시 해결방법 jekyll을 kill 한 후 재시작 한다. ps 로 프로세스 아이디를 찾아서 kill 한다. ps -aux | grep jekyll kill -9 프로세스ID 그리고 jekyll을 재시작 한다. bundle exec jekyll serve --livereload 커맨드를 실행하는 경로에 유의해야 한다. github.io루트 디렉토리에서 실행해야 한다!!!"
-  },"/2023-07-24-AddImage.html": {
-    "title": "이미지 넣는 방법",
-    "keywords": "",
-    "url": "/2023-07-24-AddImage.html",
-    "body": "마크다운 파일에 이미지 넣는법에 대해 설명합니다. 이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다. 마크다운 파일에 이미지 넣는법에 대해 설명합니다. johngrib 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다. 나는 img-paste.vim 플러그인을 활용하는 방법을 택했다. 이유는, 이미지를 클립보드에 캡처한 후 붙여넣으면 되므로 이미지 붙여넣기가 좀더 수훨 한 듯 하고, 깃헙에 접속하지 않아도 되기 때문이다. 다음의 순서로 이미지를 넣을 수 있다. img-paste.vim 을 설치하고 .vimrc에 다음과 같이 설정한다. \" for img-paste.vim autocmd FileType markdown nmap &lt;buffer&gt;&lt;silent&gt; &lt;leader&gt;p :call mdip#MarkdownClipboardImage()&lt;CR&gt; autocmd FileType markdown let g:PasteImageFunction = 'g:MarkdownPasteImage' let g:mdip_imgdir = \"/assets/img\" let g:mdip_imgname = 'image' 나는 이미지를 .md 파일이 위치하고 있는 디렉토리에 assets/img 디렉토리를 만든다음 저장하도록 설정했다. 이미지를 클립보드에 캡처하고 vim 명령모드에서 :MarkdownPasteImage를 누르면, 저장할 이름을 물어본다. 적당한 이름을 입력하고 엔터를 치면 이미지가 저장되고, 다음처럼 경로가 자동 입력된다. 그러면 이미지가 설정된 경로에 저장된다. 근데, img-paste.vim 에 설정한 경로 /assets/img 를 jekyll에서 찾을 수 있도록 경로 앞에 점을 두개 찍어주어야 한다. ../assets/img 실제 적용된 이미지 삽입 코드는 다음과 같다. ![imagepath](../assets/img/imagepath.png) 깃헙에 푸쉬해서 온라인에서도 이미지가 정상적으로 표시되는걸 확인했다. 이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다."
   },"/2023-07-23-FaviconChange.html": {
     "title": "Favicon Change",
     "keywords": "",
