@@ -49,17 +49,7 @@
     "url": "/cpp/2024-02-26-bbb.html",
     "body": "created : 2024-02-26 00:40 updated : 2024-02-29 00:20 여기서 부터 글을 작성하세요"
   },"/all/2024-02-26-AddImage.html": {
-    "title": "마크다운 파일에 이미지 넣는법",
-    "keywords": "all",
-    "url": "/all/2024-02-26-AddImage.html",
-    "body": "현재는 vscode 확장인 Paste Image를 사용중입니다. 마크다운 파일에 이미지 넣는법에 대해 설명합니다. johngrib 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다. 나는 img-paste.vim 플러그인을 활용하는 방법을 택했다. 이유는, 이미지를 클립보드에 캡처한 후 붙여넣으면 되므로 이미지 붙여넣기가 좀더 수훨 한 듯 하고, 깃헙에 접속하지 않아도 되기 때문이다. 다음의 순서로 이미지를 넣을 수 있다. img-paste.vim 을 설치하고 .vimrc에 다음과 같이 설정한다. \" for img-paste.vim autocmd FileType markdown nmap &lt;buffer&gt;&lt;silent&gt; &lt;leader&gt;p :call mdip#MarkdownClipboardImage()&lt;CR&gt; autocmd FileType markdown let g:PasteImageFunction = 'g:MarkdownPasteImage' let g:mdip_imgdir = \"/assets/img\" let g:mdip_imgname = 'image' 나는 이미지를 .md 파일이 위치하고 있는 디렉토리에 assets/img 디렉토리를 만든다음 저장하도록 설정했다. 이미지를 클립보드에 캡처하고 vim 명령모드에서 :MarkdownPasteImage를 누르면, 저장할 이름을 물어본다. 적당한 이름을 입력하고 엔터를 치면 이미지가 저장되고, 다음처럼 경로가 자동 입력된다. 그러면 이미지가 설정된 경로에 저장된다. 근데, img-paste.vim 에 설정한 경로 /assets/img 를 jekyll에서 찾을 수 있도록 경로 앞에 점을 두개 찍어주어야 한다. ../assets/img 실제 적용된 이미지 삽입 코드는 다음과 같다. ![imagepath](../assets/imagepath.png) 깃헙에 푸쉬해서 온라인에서도 이미지가 정상적으로 표시되는걸 확인했다. 이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다."
-  },"/all/2024-02-26-1%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84.html": {
-    "title": "1차세계대전",
-    "keywords": "all",
-    "url": "/all/2024-02-26-1%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84.html",
-    "body": "1차 세계대전의 발발원인과 과정에 대해 설명 합니다. 시대적 배경 당시 산업혁명으로 제품의 대량생산이 가능해졌으나 공급과잉의 문제도 발생하게 된다. 산업혁명을 이룬 여러 열강들은 제품의 소비처, 원자재 수급처, 값싼 노동력 등을 확보하기 위해 식민지 개척 활동에 나선다. 유럽 각국의 상황 1차 세계대전이 발발된 1914년7월 즈음의 유럽의 정세는, 프랑스는 프로이센(독일 이전에 독일연방의 한 국가)과의 전쟁에 패한후 반독일 정서가 지배하고 있었고 영국은 독일의 계속되는 해군력 증강에 본인들의 식민지 확장에 영향을 미칠까 견제하고 있었으며 러시아는 지중해 진출을 위해 슬라브족을(세르비아) 이용하고 싶었으나 ,이미 오스트리아-헝가리제국이 슬라브민족 국가인 보스니아를 식민지로 차지하고 있었고 인접한 또다른 슬라브족 국가인 세르비아마저 호시탐탐 노리고 있었기에 , 오스트리아-헝가리제국 또한 같은 게르만민족 동맹국인 독일과 긴장상태를 유지하고 있었다. 독일 입장에서는 왼쪽의 프랑스의 반독일 정서로 관계가 좋을수 없었으며 , 오른쪽의 러시아와도 협정을 파기 하는등 좋지않은 관계가 유지되고 있었다. 또한 독일과 오스트리아-헝가리제국은 같은 게르만민족으로 동맹관계를 유지하고 있었고, 프랑스와 러시아도 동맹관계였다. 1914년 당시 군사동맹 지도 갈색 : 삼국동맹 , 독일-오스트리아.헝가리제국-이탈리아 녹색 : 삼국연합 , 영국-프랑스-러시아"
-  },"/all/2024-02-26-AddImage.html": {
-    "title": "이미지 넣는 방법",
+    "title": "이미지 넣는 방법2",
     "keywords": "all",
     "url": "/all/2024-02-26-AddImage.html",
     "body": "마크다운 파일에 이미지 넣는법에 대해 설명합니다. johngrib 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다. 나는 img-paste.vim 플러그인을 활용하는 방법을 택했다. 이유는, 이미지를 클립보드에 캡처한 후 붙여넣으면 되므로 이미지 붙여넣기가 좀더 수훨 한 듯 하고, 깃헙에 접속하지 않아도 되기 때문이다. 다음의 순서로 이미지를 넣을 수 있다. img-paste.vim 을 설치하고 .vimrc에 다음과 같이 설정한다. \" for img-paste.vim autocmd FileType markdown nmap &lt;buffer&gt;&lt;silent&gt; &lt;leader&gt;p :call mdip#MarkdownClipboardImage()&lt;CR&gt; autocmd FileType markdown let g:PasteImageFunction = 'g:MarkdownPasteImage' let g:mdip_imgdir = \"/assets/img\" let g:mdip_imgname = 'image' 나는 이미지를 .md 파일이 위치하고 있는 디렉토리에 assets/img 디렉토리를 만든다음 저장하도록 설정했다. 이미지를 클립보드에 캡처하고 vim 명령모드에서 :MarkdownPasteImage를 누르면, 저장할 이름을 물어본다. 적당한 이름을 입력하고 엔터를 치면 이미지가 저장되고, 다음처럼 경로가 자동 입력된다. 그러면 이미지가 설정된 경로에 저장된다. 근데, img-paste.vim 에 설정한 경로 /assets/img 를 jekyll에서 찾을 수 있도록 경로 앞에 점을 두개 찍어주어야 한다. ../assets/img 실제 적용된 이미지 삽입 코드는 다음과 같다. ![imagepath](../assets/imagepath.png) 깃헙에 푸쉬해서 온라인에서도 이미지가 정상적으로 표시되는걸 확인했다. 이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다."
@@ -72,7 +62,7 @@
     "title": "유니티 UI 화면",
     "keywords": "all",
     "url": "/all/2024-02-26-StudyUi.html",
-    "body": "연습을 통해 유니티 화면에 익숙해져 봅니다. Secne View. 씬뷰 게임을 구성하는 메인화면. 리소스를 배치해 화면을 구성한다. Game View. 게임뷰 게임을 실행했을때 보이는 화면. 내가 테스트 할 때는 Game View가 검정화면 으로만 보였다. 해결방법은 Scene - 우클릭 - Add Tab - Game을 하면 보였다. 이래도 해결이 안된다면, 카메라, 조명 등이 오브젝트를 잘 비추고 있는지 확인해 보시길. Hierarchy View. 하이어라키 뷰. 계층 뷰 씬에서 사용되는 오브젝트 이름을 목록으로 표시한다. 프로젝트를 만들면 기본적으로 Main Camera와 Directional Light 오브젝트가 추가된다. 오브젝트 추가하기 Hierarchy View에서 추가한다. 여기서는 3D 오브젝트중 Cube(정육면체)를 추가해 보겠다. Hierarchy, Scene View 에 Cube가 추가되었다. 오브젝트 선택 Secne View의 아이콘모음에서 “Move Tool”을 선택 한 후 오브젝트를 클릭하면 오브젝트가 선택된다. 또는 Hierarchy View에서 선택해도 된다. Inspector View 인스펙터 뷰 오브젝트가 선택되면 인스펙터 뷰에 오브젝트의 정보가 나타나고 수정 할 수 있다. 오브젝트를 뷰의 정가운데로 이동하기 Hierarchy View에서 오브젝트 선택 후 더블클릭 오브젝트를 선택 한 후 Shift + f 를 누른다(대문자 F) 메인카메라를 선택 후 shift f 를 눌러서 씬뷰의 정 가운데로 이동시켰다. shift f를 한번더 누르면 줌이 된다. Scene View에서 관찰자 시점 변경하는 방법 Scene 시점을 변경하면, 개발자가 보는 화면만 변경되는 것 뿐이지 실제 게임 화면이 변하는건 아니다. 줌 - 마우스 휠 시점 이동 - 손모양 아이콘 선택 후 드래그 시점 회전 - Alt + 드래그 (커서가 눈동자 모양으로 바뀐다) 오브젝트 변경하기(크기, 위치, 회전) 오브젝트를 변경하면 실제 게임시 보여지는 화면이 변경된다. 오브젝트 이동 십자가 화살표 아이콘 선택 후 오브젝트 선택한 후 드래그하면 오브젝트가 이동된다. 3축 화살표를 누르고 이동하면 X,Y,Z 각 축으로만 이동된다. 오브젝트 회전 로테이션 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 회전이 수행된다. 오브젝트 크기변경 Scale 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 크기가 변경된다."
+    "body": "연습을 통해 유니티 화면에 익숙해져 봅니다. Secne View. 씬뷰 게임을 구성하는 메인화면. 리소스를 배치해 화면을 구성한다. Game View. 게임뷰 게임을 실행했을때 보이는 화면. 내가 테스트 할 때는 Game View가 검정화면 으로만 보였다. 해결방법은 Scene - 우클릭 - Add Tab - Game을 하면 보였다. 이래도 해결이 안된다면, 카메라, 조명 등이 오브젝트를 잘 비추고 있는지 확인해 보시길. Hierarchy View. 하이어라키 뷰. 계층 뷰 씬에서 사용되는 오브젝트 이름을 목록으로 표시한다. 프로젝트를 만들면 기본적으로 Main Camera와 Directional Light 오브젝트가 추가된다. 오브젝트 추가하기 Hierarchy View에서 추가한다. 여기서는 3D 오브젝트중 Cube(정육면체)를 추가해 보겠다. Hierarchy, Scene View 에 Cube가 추가되었다. 오브젝트 선택 Secne View의 아이콘모음에서 “Move Tool”을 선택 한 후 오브젝트를 클릭하면 오브젝트가 선택된다. 또는 Hierarchy View에서 선택해도 된다. Inspector View 인스펙터 뷰 오브젝트가 선택되면 인스펙터 뷰에 오브젝트의 정보가 나타나고 수정 할 수 있다. 오브젝트를 뷰의 정가운데로 이동하기 Hierarchy View에서 오브젝트 선택 후 더블클릭 오브젝트를 선택 한 후 Shift + f 를 누른다(대문자 F) 메인카메라를 선택 후 shift f 를 눌러서 씬뷰의 정 가운데로 이동시켰다. shift f를 한번더 누르면 줌이 된다. Scene View에서 관찰자 시점 변경하는 방법 Scene 시점을 변경하면, 개발자가 보는 화면만 변경되는 것 뿐이지 실제 게임 화면이 변하는건 아니다. 줌 - 마우스 휠 시점 이동 - 손모양 아이콘 선택 후 드래그 시점 회전 - Alt + 드래그 (커서가 눈동자 모양으로 바뀐다) 오브젝트 변경하기(크기, 위치, 회전) 오브젝트를 변경하면 실제 게임시 보여지는 화면이 변경된다. 오브젝트 이동 십자가 화살표 아이콘 선택 후 오브젝트 선택한 후 드래그하면 오브젝트가 이동된다. 3축 화살표를 누르고 이동하면 X,Y,Z 각 축으로만 이동된다. 오브젝트 회전 로테이션 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 회전이 수행된다. 오브젝트 크기변경 Scale 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 크기가 변경된다. test"
   },"/cpp/2024-02-26-cattest.html": {
     "title": "포스트 제목을 입력하세요",
     "keywords": "cpp",
@@ -173,66 +163,11 @@
     "keywords": "Political",
     "url": "/political/2024-02-06-election2.html",
     "body": "2.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다. 사표 (死票, wasted vote) 예를 하나 들어보자, 초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다. 초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다. 비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다. 60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다. 즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다."
-  },"/2024-01-02-shortcut.html": {
-    "title": "vim 단축키 정리",
-    "keywords": "",
-    "url": "/2024-01-02-shortcut.html",
-    "body": "가끔 사용해서 기억이 잘 나지않는 단축키들을 정리해 보았습니다. 화면 크기 최대화 현재 파일을 탭으로 이동 가끔 사용해서 기억이 잘 나지않는 단축키들을 정리해 보았습니다. 화면 크기 최대화 ctrl w | “수직으로 가장 크게” ctrl w _ “수평으로 가장 크게” 현재 파일을 탭으로 이동 ctrl w T"
-  },"/2023-12-19-selection.html": {
-    "title": "연동형, 병립형, 준연동형 비례대표제란?",
-    "keywords": "",
-    "url": "/2023-12-19-selection.html",
-    "body": "연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다. 사표 연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다. 사표 예를 하나 들어보자, 초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 20명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다. 비록 B가 선거에서 지기는 했지만 20표를 얻었다, 하지만 이 모든 표는 사표() 가 된 것이다. 80표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다. 즉 이러한 “다수제” 선거제도는 민의()를 정확히 반영하기 어려운 구조이다."
   },"/jekyll/2023-12-12-footnotes.html": {
     "title": "Using Footnotes",
     "keywords": "Jekyll",
     "url": "/jekyll/2023-12-12-footnotes.html",
     "body": "This jekyll-theme supports MathJax to render footnotes in markdown. e.g., The well known Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other exponents[^1]. Meaning the next equation has no integer solutions: $$ x^n + y^n = z^n $$ The well known Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other exponents1. Meaning the next equation has no integer solutions: \\[x^n + y^n = z^n\\] Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem &#8617;"
-  },"/2023-12-02-GooglePhoto.html": {
-    "title": "구글포토&amp;구글픽셀 활용법",
-    "keywords": "",
-    "url": "/2023-12-02-GooglePhoto.html",
-    "body": "구글 픽셀1 폰을 활용하여 구글포토에 무제한으로 사진,동영상을 백업하는 방법에 대해 설명합니다. 구글 픽셀1 폰을 활용하여 구글포토에 무제한으로 사진,동영상을 백업하는 방법에 대해 설명합니다. 다음의 구조로 업로드하게 된다. 그림 픽셀폰에서의 구글포토 업로드는 무제한 지원되므로 우리는 메인폰의 사진 동영상을 픽셀 폰으로 옮겨야 한다. 메인폰의 사진을 마이크로소프트 원드라이브로 잠시 백업하고, 원드라이브의 사진을 픽셀폰으로 다운로드 한다. one sync를 이용해서 동기화. 중복 다운로드가 되지 않다록, 다운로드가 완료되면 원드라이브서버에 있는 사진을 지우는 옵션을 반드시 설정해야 한다. 여기까지 진행하면 메인폰에서 찍은 사진이 원드라이브서버를 거쳐 픽셀폰으로 이동되고, 이어 구글포토서버까지 잘 이동된다. 근데 문제가 하나 있다. 픽셀폰에 사진이 계속 쌓이는 문제가 생긴다. 이 문제는 “설정-저장용량-스마트저장용량” 을 설정하면 정해진 기간에 자동삭제 되도록 할 수 있다. 픽셀폰에 있는 사진들은 이미 구글포토에 백업 되었기에 삭제되어도 상관이 없다. 여기에 한글을 쓰면 한글이 검색 될까?"
-  },"/2023-11-30-%EC%A2%8B%EC%9D%80%EB%A7%90.html": {
-    "title": "좋은 우리말을 사용해요",
-    "keywords": "",
-    "url": "/2023-11-30-%EC%A2%8B%EC%9D%80%EB%A7%90.html",
-    "body": "은어 비속어를 좋은 우리말로 바꾸어 사용해보아요 은어 비속어를 좋은 우리말로 바꾸어 사용해보아요 참고서적 “B끕 언어 세상에 태클걸다”. 권희린 저. 좋은 책인데, 좋은 한글을 쓰자는 책 제목에 “태클” 이란 말을 쓴건 좀 이해가 되지 않는다. 초판의 “딴지걸다”가 더 좋은것 같다. 안 좋은 말 좋은 말 사용예(O) 사용예(X) 멘붕 정신적 충격 그 일 때문에 정신적으로 충격받았어 그 일 때문에 멘붕왔어 빡쳤다 화났다 나 화났다 나 빡쳤다 열라 끝내주게,정말 끝내주게 멋지더라! 열라 멋지더라 태클걸다 시비걸다 시비걸려는 건 아니고요 태클걸려는 건 아니고요 츤데레(일본말) 새침데기 그 사람 새침데기네 그 사람 츤데레하네 빡쎄다 힘들다 오늘 정말 힘드네 오늘 정말 빡쎄네"
-  },"/2023-11-30-%EB%A7%9E%EC%B6%A4%EB%B2%95.html": {
-    "title": "헷갈리는 맞춤법을 정확하게 알아보아요",
-    "keywords": "",
-    "url": "/2023-11-30-%EB%A7%9E%EC%B6%A4%EB%B2%95.html",
-    "body": "되 돼 체 채 대로 데로 왠지 웬지 되 돼 체 채 대로 데로 왠지 웬지"
-  },"/2023-11-30-Voltage.html": {
-    "title": "전압이란",
-    "keywords": "",
-    "url": "/2023-11-30-Voltage.html",
-    "body": "전압에 대해 설명합니다. 전압에 대해 설명합니다. 거대한 파이프안에 볼링공을 꽉 채운 후 그걸 밀어내는 상황을 간주해보자. 이걸 내가 미는거 하고 마동석이 미는 경우 밀어내는 힘이 틀리겠지. 이 예를 잘 풀어서 전압을 설명하면 좋을것 같다."
-  },"/2023-11-30-Current.html": {
-    "title": "전류란 무엇인가",
-    "keywords": "",
-    "url": "/2023-11-30-Current.html",
-    "body": "전류에 대해 설명합니다. 전류에 대해 설명합니다."
-  },"/2023-11-28-StandardDeviation.html": {
-    "title": "표준편차",
-    "keywords": "",
-    "url": "/2023-11-28-StandardDeviation.html",
-    "body": "표준편차에 대해서 설명 합니다. 표준편차에 대해서 설명 합니다. 표본 데이터 3 9 7 2 5"
-  },"/2023-11-23-%EC%98%A8%EB%8F%84%EA%B5%AC%EB%8F%99%EA%B8%B0%EA%B5%90%EC%B2%B4.html": {
-    "title": "지역난방 온도 구동기 교체 방법",
-    "keywords": "",
-    "url": "/2023-11-23-%EC%98%A8%EB%8F%84%EA%B5%AC%EB%8F%99%EA%B8%B0%EA%B5%90%EC%B2%B4.html",
-    "body": "왁스형 구동기로 교체하는 방법 온도 컨트롤러 현재 온도 보정하는 방법 결국 온도컨트롤러 교체함 왁스형 구동기로 교체하는 방법 온도 컨트롤러 현재 온도 보정하는 방법 KHM 100W 모델 기준으로, 전원 버튼 3초간 누른다. “—” 표시가 나타난다. 외출, 예약 버튼을 동시에 3초간 누른다. OP1 이 표시되면 , ‘외출’ 버튼을 누른다. 온도조절 다이얼을 돌려서 -2~2 사이의 온도를 보정값으로 적용한다. 다시 ‘외출’ 버튼을 누르면 보정값 적용이 완료 된다. 결국 온도컨트롤러 교체함 얼마뒤 또다시 온도가 제어되지 않는 문제가 있었다. 실내온도가 26도이고, 설정온도가 23도 인데 계속해서 보일러가 돌았다. 결국, 온토컨트롤러 오동작으로 확인되어 컨트롤러를 교체했다"
-  },"/2023-11-13-LogitechMouse.html": {
-    "title": "Logitech 마우스 관련 정보",
-    "keywords": "",
-    "url": "/2023-11-13-LogitechMouse.html",
-    "body": "M590 2.4G 로 연결 하는법 M590 2.4G 로 연결 하는법 M590은 블루투스 2개 + 2.4G 1개 총3개의 연결을 지원하는 마우스이다. AA배터리 한개로 약2년간 사용 할 수 있다고 해서 구매했다. 근데, 블루투스 연결시 너무 자주 끊김이 발생했다. 그래서 2.4로 연결하려고 하니 유니파잉 수신기를 사용하는 타입이라 유니파잉 소프트웨어를 설치해 주어야 했다. 아래 링크에서 다운로드 하여 설치하고, 기존에 연결된 블루투스 연결을 해제하면 2.4G로 연결이 된다. 혹시 연결이 안되면 마우스를 껐다 켜보시길 바란다. 유니파잉 소프트웨어 다운로드 유니파잉 소프트웨어를 설치 후 실행하여 “Advanced…” 버튼을 누른다. 그러면 유니파잉 수신기를 통해 로지텍 마우스가 연결되었는지 확인 할 수 있다. 블루투스 연결을 해제해야 2.4G를 사용 할 수 있다. 사용해본 결과 확실히 2.4G 마우스는 끊김이 없다."
-  },"/2023-11-13-Animation.html": {
-    "title": "Animation 만들기",
-    "keywords": "",
-    "url": "/2023-11-13-Animation.html",
-    "body": "#"
   },"/2023-11-13-Animation.html": {
     "title": "Animation 만들기",
     "keywords": "",
@@ -243,21 +178,6 @@
     "keywords": "",
     "url": "/2023-11-13-Prefab.html",
     "body": "#"
-  },"/2023-11-13-Prefab.html": {
-    "title": "Prefab이란",
-    "keywords": "",
-    "url": "/2023-11-13-Prefab.html",
-    "body": "#"
-  },"/2023-11-13-StudyUi.html": {
-    "title": "유니티 화면에 대해 설명, 연습해 봅니다.",
-    "keywords": "",
-    "url": "/2023-11-13-StudyUi.html",
-    "body": "연습을 통해 유니티 화면에 익숙해져 봅니다. Secne View. 씬뷰 Game View. 게임뷰 Hierarchy View. 하이어라키 뷰. 계층 뷰 오브젝트 추가하기 오브젝트 선택 Inspector View 인스펙터 뷰 오브젝트를 뷰의 정가운데로 이동하기 Scene View에서 관찰자 시점 변경하는 방법 오브젝트 변경하기(크기, 위치, 회전) 연습을 통해 유니티 화면에 익숙해져 봅니다. Secne View. 씬뷰 게임을 구성하는 메인화면. 리소스를 배치해 화면을 구성한다. Game View. 게임뷰 게임을 실행했을때 보이는 화면. 내가 테스트 할 때는 Game View가 검정화면 으로만 보였다. 해결방법은 Scene - 우클릭 - Add Tab - Game을 하면 보였다. 이래도 해결이 안된다면, 카메라, 조명 등이 오브젝트를 잘 비추고 있는지 확인해 보시길. Hierarchy View. 하이어라키 뷰. 계층 뷰 씬에서 사용되는 오브젝트 이름을 목록으로 표시한다. 프로젝트를 만들면 기본적으로 Main Camera와 Directional Light 오브젝트가 추가된다. 오브젝트 추가하기 Hierarchy View에서 추가한다. 여기서는 3D 오브젝트중 Cube(정육면체)를 추가해 보겠다. Hierarchy, Scene View 에 Cube가 추가되었다. 오브젝트 선택 Secne View의 아이콘모음에서 “Move Tool”을 선택 한 후 오브젝트를 클릭하면 오브젝트가 선택된다. 또는 Hierarchy View에서 선택해도 된다. Inspector View 인스펙터 뷰 오브젝트가 선택되면 인스펙터 뷰에 오브젝트의 정보가 나타나고 수정 할 수 있다. 오브젝트를 뷰의 정가운데로 이동하기 Hierarchy View에서 오브젝트 선택 후 더블클릭 오브젝트를 선택 한 후 Shift + f 를 누른다(대문자 F) 메인카메라를 선택 후 shift f 를 눌러서 씬뷰의 정 가운데로 이동시켰다. shift f를 한번더 누르면 줌이 된다. Scene View에서 관찰자 시점 변경하는 방법 Scene 시점을 변경하면, 개발자가 보는 화면만 변경되는 것 뿐이지 실제 게임 화면이 변하는건 아니다. 줌 - 마우스 휠 시점 이동 - 손모양 아이콘 선택 후 드래그 시점 회전 - Alt + 드래그 (커서가 눈동자 모양으로 바뀐다) 오브젝트 변경하기(크기, 위치, 회전) 오브젝트를 변경하면 실제 게임시 보여지는 화면이 변경된다. 오브젝트 이동 십자가 화살표 아이콘 선택 후 오브젝트 선택한 후 드래그하면 오브젝트가 이동된다. 3축 화살표를 누르고 이동하면 X,Y,Z 각 축으로만 이동된다. 오브젝트 회전 로테이션 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 회전이 수행된다. 오브젝트 크기변경 Scale 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 크기가 변경된다."
-  },"/2023-11-13-NewProject.html": {
-    "title": "새로운 프로젝트 만들기",
-    "keywords": "",
-    "url": "/2023-11-13-NewProject.html",
-    "body": "유니티 허브에서 새 프로젝트 만들기 유니티 허브에서 새 프로젝트 만들기 유니티 허브에서 “New project” 를 눌러서 만든다. 연습용으로 3D형식의 프로젝트를 이름 “Test3D”로 만들어보았다."
   },"/2023-11-13-NewProject.html": {
     "title": "새로운 프로젝트 만들기",
     "keywords": "",
@@ -268,71 +188,21 @@
     "keywords": "",
     "url": "/2023-11-13-OpenProject.html",
     "body": "유니티 허브에서 기존 프로젝트 열기 유니티 허브에서 기존 프로젝트 열기 오랜만에 유니티를 사용하려 했더니 기존에 작성한 프로젝트를 유니티허브에서 찾을 수 없었다. 다음처럼 디스크상의 프로젝트를 Add 하면 유니티 허브에 보이게 되고, 이 프로젝트를 열면된다. Add 한 프로젝트가 리스트에 보이게 된다. 이중 원하는 프로젝트를 열면 된다."
-  },"/2023-11-13-OpenProject.html": {
-    "title": "유니티에서 기존 프로젝트를 여는 방법에 대해 설명합니다.",
-    "keywords": "",
-    "url": "/2023-11-13-OpenProject.html",
-    "body": "유니티 허브에서 기존 프로젝트 열기 유니티 허브에서 기존 프로젝트 열기 오랜만에 유니티를 사용하려 했더니 기존에 작성한 프로젝트를 유니티허브에서 찾을 수 없었다. 다음처럼 디스크상의 프로젝트를 Add 하면 유니티 허브에 보이게 되고, 이 프로젝트를 열면된다. Add 한 프로젝트가 리스트에 보이게 된다. 이중 원하는 프로젝트를 열면 된다."
   },"/2023-11-12-unity.html": {
     "title": "Unity 사용",
     "keywords": "",
     "url": "/2023-11-12-unity.html",
     "body": "유니티 사용법에 대해서 설명 합니다. 유니티 사용법에 대해서 설명 합니다. [[/Programming/Unity/OpenProject]] [[/Programming/Unity/NewProject]] [[/Programming/Unity/StudyUi]] [[/Programming/Unity/Prefab]] [[/Programming/Unity/Animation]]"
-  },"/2023-11-12-unity.html": {
-    "title": "Unity 사용",
-    "keywords": "",
-    "url": "/2023-11-12-unity.html",
-    "body": "유니티 사용법에 대해서 설명 합니다. 유니티 사용법에 대해서 설명 합니다. [[/Programming/Unity/OpenProject]] [[/Programming/Unity/NewProject]] [[/Programming/Unity/StudyUi]] [[/Programming/Unity/Prefab]] [[/Programming/Unity/Animation]]"
-  },"/2023-11-09-Qt.html": {
-    "title": "Qt 사용법",
-    "keywords": "",
-    "url": "/2023-11-09-Qt.html",
-    "body": "Qt 빠르게 설치하는 방법 Qt 빠르게 설치하는 방법 아래처럼 dmg파일 실행시 mirror 경로를 함께 명시하여 실행한다. qt-unified-macOS-x64-4.6.0-online.dmg --mirror https://mirrors.ocf.berkeley.edu/qt/"
-  },"/2023-11-07-fzf.html": {
-    "title": "fzf 사용법",
-    "keywords": "",
-    "url": "/2023-11-07-fzf.html",
-    "body": "fzf 사용법에 대해 설명합니다. 새 윈도우(탭)에서 열기 fzf 사용법에 대해 설명합니다. 새 윈도우(탭)에서 열기 ctrl p로 퍼지파인더 창이 열리면 찾고자 하는 파일을 입력한 후 ctrl t 를 눌러 새윈도우(탭)에서 열 수 있다. ctrl t jekyll.md 파일이 새로운 윈도우에서 열렸다."
-  },"/2023-11-05-tmux.html": {
-    "title": "tmux 사용법",
-    "keywords": "",
-    "url": "/2023-11-05-tmux.html",
-    "body": "tmux의 기본 명령에 대해 정리합니다. tmux 시작 tmux 시작. 세션 이름 지정해서 시작 기존 세션 attatch 하여 시작 tmux 종료 pane 수직으로 나누기 pane 수평으로 나누기 session name 변경 window name 변경 session 지우기 new window delete window window 변경 window 변경. 윈도우 번호 window 변경. 윈도우 이름으로 현재 window 닫기 다른 window 닫기 window 번호 변경 .tmux.conf tmux를 깨끗하게 재시작 하는 방법 nothing in register,레지스터에 아무것도 없습니다. 에러 해결 방법 tmux에서 마우스 사용 tmux의 기본 명령에 대해 정리합니다. tmux 시작 tmux tmux 시작. 세션 이름 지정해서 시작 tmux new -s mysession 기존 세션 attatch 하여 시작 tmux attach-session -t 0 tmux attach-session -t session_name tmux 종료 exit pane 수직으로 나누기 ctrl b + % pane 수평으로 나누기 ctrl b + “ session name 변경 ctrl b + $ window name 변경 ctrl b + , session 지우기 tmux kill-session -t 세션이름 new window ctrl b + c &lt;–create delete window ctrl b + x window 변경 ctrl b + n &lt;– next window ctrl b + p &lt;– prev window window 변경. 윈도우 번호 ctrl b + 윈도우 번호 window 변경. 윈도우 이름으로 ctrl b f :윈도우 이름 현재 window 닫기 ctrl b :kill-window ctrl b &amp; 다른 window 닫기 ctrl b :kill-window -a window 번호 변경 현재 윈도우 번호를 변경한다. ctrl b :swap-window -t 0 .tmux.conf # set-option -g prefix C-w bind h select-pane -L bind j select-pane -D bind k select-pane -U bind l select-pane -R bind = select-layout even-horizontal # tmux에서 vim사용시 esc딜레이 문제해결을 위해서 set -sg escape-time 0 # set -g status-interval 0 set -g status-left-length 40 # could be any number # 현재 윈도우 표시를 라이트블루로 set-window-option -g window-status-current-style bg=lightblue # ctrl b + ' 를 누르면 바로이전 윈도우를 보여준다 bind-key \\' last-window tmux를 깨끗하게 재시작 하는 방법 .tmux.conf등을 변경하여 tmux를 처음부터 다시 시작해야 하는 경우가 있다. session마저 모두 지워짐에 유의!!!! tmux kill-server nothing in register,레지스터에 아무것도 없습니다. 에러 해결 방법 tmux상에서 vim 사용시 yank 후 paste 할 때 위와 같은 에러 메세지가 나오면 다음처럼 해결하면 된다. 다음을 설치 brew install reattach-to-user-namespace .tmux.conf 에 다음의 설정 추가 set -g default-command \"reattach-to-user-namespace -l zsh\" tmux에서 마우스 사용 set -g mouse on"
   },"/jekyll/2023-10-14-math-latex.html": {
     "title": "MathJax and LaTeX",
     "keywords": "Jekyll",
     "url": "/jekyll/2023-10-14-math-latex.html",
     "body": "This jekyll-theme supports MathJax to render $\\LaTeX$ and mathematics expressions. TIP Currently, Kramdown uses double dollar sign delimiters for inline and display math: https://kramdown.gettalong.org/syntax.html#math-blocks. e.g., The well known Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other exponents. Meaning the next equation has no integer solutions: $$ x^n + y^n = z^n $$ The well known Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other exponents. Meaning the next equation has no integer solutions: \\[x^n + y^n = z^n\\] Another example with more complex markups: When $a \\ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$ When $a \\ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are \\[x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.\\] Refer to the MathJax website for more examples."
-  },"/2023-09-21-largest-rectangle-in-histogram.html": {
-    "title": "히스토그램에서 가장 큰 직사각형",
-    "keywords": "",
-    "url": "/2023-09-21-largest-rectangle-in-histogram.html",
-    "body": "히스토그램에서 가장 큰 직사각형의 여러 풀이법에 대해서 설명합니다. 히스토그램에서 가장 큰 직사각형의 여러 풀이법에 대해서 설명합니다. O(n) 직사각형의 넓이를 구하려면 left, right, height 를 알면된다."
-  },"/2023-09-12-RemoveHistory.html": {
-    "title": "크롬에서 검색기록 저장하지 않는 방법",
-    "keywords": "",
-    "url": "/2023-09-12-RemoveHistory.html",
-    "body": "크롬에서 검색기록을 남기지 않는 방법에 대해 설명합니다. History 파일 경로 크롬에서 검색기록을 남기지 않는 방법에 대해 설명합니다. 크롬에서 구글 페이지를 열면 내가 검색한 기록이 드롭다운 형태로 보여진다. 이건 인터넷 기록, 쿠키 등을 삭제해도 여전히 남아있다. 해결 방법은, 크롬이 관리하는 History 파일의 내용을 삭제하고 읽기전용, 잠금 등으로 처리하여, 크롬이 검색기록을 저장하지 못하게 하면된다. History 파일 경로 ~/Library/Application Support/Google/Chrome/Default/History"
   },"/jekyll/2023-08-31-mermaid.html": {
     "title": "Diagrams with mermaid.js",
     "keywords": "Jekyll",
     "url": "/jekyll/2023-08-31-mermaid.html",
     "body": "저는 다니엘333 입니다. This jekyll-theme supports mermaid.js to render diagrams in markdown. To enable the mermaid support, you need to set mermaid: true in the front matter of your post. --- title: Diagrams with mermaid.js date: 2023-08-31 layout: post mermaid: true --- Then you can use mermaid syntax in your markdown: graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; Or, even some complex examples: sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;John: Hello John, how are you? loop Healthcheck John-&gt;&gt;John: Fight against hypochondria end Note right of John: Rational thoughts &lt;br/&gt;prevail! John--&gt;&gt;Alice: Great! John-&gt;&gt;Bob: How about you? Bob--&gt;&gt;John: Jolly good! sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;John: Hello John, how are you? loop Healthcheck John-&gt;&gt;John: Fight against hypochondria end Note right of John: Rational thoughts &lt;br/&gt;prevail! John--&gt;&gt;Alice: Great! John-&gt;&gt;Bob: How about you? Bob--&gt;&gt;John: Jolly good! Refer to the mermaid.js website for more examples."
-  },"/2023-08-21-FontChange.html": {
-    "title": "폰트변경",
-    "keywords": "",
-    "url": "/2023-08-21-FontChange.html",
-    "body": "페이지 폰트를 변경하는 방법에 대해서 정리합니다. 폰트 등록 코드 복사 font-face 등록 사용 할 폰트 명시. 사용 할 폰트만 주석해제 폰트 크기 변경 폰트 밑줄 간격 조절 한영 폰트 비교 페이지 폰트를 변경하는 방법에 대해서 정리합니다. 아래와 같이 진행하면 된다. 폰트사이트에서 등록 코드를 복사 css/main.scss 에 font-face를 등록 _sass/_base.css 에 사용하고자 하는 폰트를 명시 폰트 등록 코드 복사 눈누 font-face 등록 css/main.scss @font-face { font-family: 'Chosunilbo_myungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff'); font-weight: normal; font-style: normal; } @font-face { font-family: 'iceJaram-Rg'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2'); font-weight: normal; font-style: normal; } @font-face { font-family: 'SeoulHangangM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff'); font-weight: normal; font-style: normal; } 사용 할 폰트 명시. 사용 할 폰트만 주석해제 _sass/_base.css body { // font: 400 16px 'Roboto Slab',AppleSDGothicNeo,sans-serif; // font: 400 16px 'Chosunilbo_myungjo',AppleSDGothicNeo,sans-serif; font: 400 16px 'RIDIBatang',AppleSDGothicNeo,sans-serif; // font: 400 16px 'iceJaram-Rg',AppleSDGothicNeo,sans-serif; // font: 400 16px 'SeoulHangangM',AppleSDGothicNeo,sans-serif; // font: 400 16px 'font-iropke-batang',AppleSDGothicNeo,sans-serif; color: rgba(0, 0, 0, 0.84); -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: \"kern\" 1; -moz-font-feature-settings: \"kern\" 1; -o-font-feature-settings: \"kern\" 1; font-feature-settings: \"kern\" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; } 폰트 크기 변경 아래 픽셀(px) 값을 변경해주면 된다. _sass/_base.css font: 400 20px 'RIDIBatang',AppleSDGothicNeo,sans-serif; 폰트 밑줄 간격 조절 링크표시 밑줄이 글자와 겹쳐서 가독성이 떨어지는 것 같았다. _base.scss 파일의 body 영역에 text-underline-offset 값을 조절하여 해결하였다. _base.scss body { ... flex-direction: column; ... text-underline-offset : 5px; //yoo. 한글도, 영문도 밑줄이 겹치지 않고 가장 보기 좋다 } before after 한영 폰트 비교 나는 소년이다. I am a boy"
-  },"/2023-08-18-GoogleSearch.html": {
-    "title": "구글 맞춤 검색 사용법",
-    "keywords": "",
-    "url": "/2023-08-18-GoogleSearch.html",
-    "body": "구글 맞춤 검색 엔진을 내 블로그에 적용하는 방법을 설명합니다. 구글 맞춤 검색 엔진을 내 블로그에 적용하는 방법을 설명합니다. 글을 몇 개 올린 후 검색을 하니, 종립님의 블로그 내용이 검색되는 문제가 있었다. 구글 맞춤 검색 엔진이 검색하는 사이트를 내 블로그로 변경해 주어야 한다. 아래 링크에서 구글 맞춤 검색 아이디를 생성한다. 구글 맞춤 검색 _site/search/index.html 에 다음의 코드를 넣는다. var cx = 본인의 구글 맞춤 검색 아이디 &lt;body&gt; &lt;div id=\"home-search\"&gt; &lt;script&gt; (function() { var cx = '25808cdc84d0e4dbe'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })(); &lt;/script&gt; &lt;gcse:search linkTarget=\"_parent\" queryParameterName=\"searchString\"&gt;&lt;/gcse:search&gt; &lt;/div&gt; 다음의 사이트가 가장 정리가 잘 돼있다. 감사의 말씀을 드린다. https://junia3.github.io/blog/search 구글 검색에 등록은 된 거 같은데, 전체 사이트 검색이 되지않고 첫 페이지인 index.md만 검색이 된다. 어느 사이트에서 sitemap.xml의 위치를 지정해서 크롤링을 요청하는 방법이 있다고 해서 그렇게 진행해보았다. 아직 결과는 모른다. 며칠 뒤 다시 확인해 보아야겠다. 아래의 링크를 브라우저 주소창에 입력하고 엔터를 치면 [[크롤링]] 요청이 완료된다. https://www.google.com/ping?sitemap=https://daniel00.github.io/sitemap.xml"
-  },"/2023-08-16-constructor.html": {
-    "title": "생성자",
-    "keywords": "",
-    "url": "/2023-08-16-constructor.html",
-    "body": "#"
   },"/2023-08-16-constructor.html": {
     "title": "생성자",
     "keywords": "",
@@ -343,56 +213,11 @@
     "keywords": "",
     "url": "/2023-08-16-cpp-index.html",
     "body": "이론 이론 [[/Languages/cpp/class]] [[/Languages/cpp/constructor]] [[/Languages/cpp/polymorphism]]"
-  },"/2023-08-16-cpp-index.html": {
-    "title": "c++",
-    "keywords": "",
-    "url": "/2023-08-16-cpp-index.html",
-    "body": "이론 이론 [[/Languages/cpp/class]] [[/Languages/cpp/constructor]] [[/Languages/cpp/polymorphism]]"
   },"/2023-08-16-polymorphism.html": {
     "title": "다형성",
     "keywords": "",
     "url": "/2023-08-16-polymorphism.html",
     "body": "다형성(Polymorphism) 다형성에 대한 상세한 설명 다형성(Polymorphism) 부모 클래스 타입의 포인터가, 여러 형태의(다형) 자식 클래스를 가리킬 수 있음을 의미한다. 이렇게 부모 클래스가 자식 클래스를 가리킬 수 있으면 여러가지면에서 유리하다. aaaa bbb ccc 다형성에 대한 상세한 설명 정적결합 다음의 코드를 살펴보자. #include &lt;stdio.h&gt; #include &lt;string.h&gt; class Base { public: void hello(){printf(\"I am Base\\n\");} }; class Derived : public Base { public: void hello(){printf(\"I am Derived\\n\");}; }; int main() { Base B, *pB; Derived D;; pB = &amp;B; pB-&gt;hello(); pB = &amp;D; pB-&gt;hello(); return 0; } pB = &amp;B 는 당연히 가능한 표현이고, pB = &amp;D 도 부모는 자식을 가리킬 수 있으므로 문제가 되지 않는다. 근데 우리가 원했던 출력 결과와는 달리, 두개의 pB-&gt;hello() 결과가 모두 I am Base 로 출력된다. pB = &amp;Base; pB-&gt;hello(); //결과 : I am Base pB = &amp;Derived; pB-&gt;hello(); //결과 : I am Base 출력 결과 I am Base I am Base 이런 결과가 나오는 이유는, 컴파일러는 포인터가 선언될 당시의 타입을 보고 이 타입에 맞는 멤버 함수를 호출하기 때문이다. 즉, pB = &amp;D; 로 pB가 D를 가리키도록 하였을지라도, 선언될 당시 Base * pB 로 선언되어 있으므로 Base의 hello()를 호출하는 것이다. 이를 정적 결합(Static Binding) 이라고 한다. 이와 달리, 클래스 포인터에 실제로 할당 된 객체의 멤버함수를 호출하는 방식을 동적 결합(Dynamic Binding)이라고 한다. 동적 결합을 위해서는 멤버함수에 virtual 예약어를 붙어주면 된다. 위 코드를 다음과 같이 수정하면 원하는 결과를 얻게 된다. #include &lt;stdio.h&gt; #include &lt;string.h&gt; class Base { public: virtual void hello(){printf(\"I am Base\\n\");} }; class Derived : public Base { public: virtual void hello(){printf(\"I am Derived\\n\");}; }; int main() { Base B, *pB; Derived D;; pB = &amp;B; pB-&gt;hello(); pB = &amp;D; pB-&gt;hello(); return 0; } 출력 결과 I am Base I am Derived 함수포인터 부모는 자식을 가리킬 수 있다 가상함수"
-  },"/2023-08-16-polymorphism.html": {
-    "title": "다형성",
-    "keywords": "",
-    "url": "/2023-08-16-polymorphism.html",
-    "body": "다형성(Polymorphism) 다형성에 대한 상세한 설명 다형성(Polymorphism) 부모 클래스 타입의 포인터가, 여러 형태의(다형) 자식 클래스를 가리킬 수 있음을 의미한다. 이렇게 부모 클래스가 자식 클래스를 가리킬 수 있으면 여러가지면에서 유리하다. aaaa bbb ccc 다형성에 대한 상세한 설명 정적결합 다음의 코드를 살펴보자. #include &lt;stdio.h&gt; #include &lt;string.h&gt; class Base { public: void hello(){printf(\"I am Base\\n\");} }; class Derived : public Base { public: void hello(){printf(\"I am Derived\\n\");}; }; int main() { Base B, *pB; Derived D;; pB = &amp;B; pB-&gt;hello(); pB = &amp;D; pB-&gt;hello(); return 0; } pB = &amp;B 는 당연히 가능한 표현이고, pB = &amp;D 도 부모는 자식을 가리킬 수 있으므로 문제가 되지 않는다. 근데 우리가 원했던 출력 결과와는 달리, 두개의 pB-&gt;hello() 결과가 모두 I am Base 로 출력된다. pB = &amp;Base; pB-&gt;hello(); //결과 : I am Base pB = &amp;Derived; pB-&gt;hello(); //결과 : I am Base 출력 결과 I am Base I am Base 이런 결과가 나오는 이유는, 컴파일러는 포인터가 선언될 당시의 타입을 보고 이 타입에 맞는 멤버 함수를 호출하기 때문이다. 즉, pB = &amp;D; 로 pB가 D를 가리키도록 하였을지라도, 선언될 당시 Base * pB 로 선언되어 있으므로 Base의 hello()를 호출하는 것이다. 이를 정적 결합(Static Binding) 이라고 한다. 이와 달리, 클래스 포인터에 실제로 할당 된 객체의 멤버함수를 호출하는 방식을 동적 결합(Dynamic Binding)이라고 한다. 동적 결합을 위해서는 멤버함수에 virtual 예약어를 붙어주면 된다. 위 코드를 다음과 같이 수정하면 원하는 결과를 얻게 된다. #include &lt;stdio.h&gt; #include &lt;string.h&gt; class Base { public: virtual void hello(){printf(\"I am Base\\n\");} }; class Derived : public Base { public: virtual void hello(){printf(\"I am Derived\\n\");}; }; int main() { Base B, *pB; Derived D;; pB = &amp;B; pB-&gt;hello(); pB = &amp;D; pB-&gt;hello(); return 0; } 출력 결과 I am Base I am Derived 함수포인터 부모는 자식을 가리킬 수 있다 가상함수"
-  },"/2023-08-16-cpp.html": {
-    "title": "C++",
-    "keywords": "",
-    "url": "/2023-08-16-cpp.html",
-    "body": "이론 이론 [[/Languages/cpp/class]] [[/Languages/cpp/polymorphism]]"
-  },"/2023-08-01-Markdown.html": {
-    "title": "Markdown",
-    "keywords": "",
-    "url": "/2023-08-01-Markdown.html",
-    "body": "Markdown 문법을 연습해 봅니다. Markdown 문법을 연습해 봅니다. 주석으로 이동합니다. [^comment1] [^comment1] : 주석1에 대한 설명입니다."
-  },"/2023-08-01-Jekyll.html": {
-    "title": "Jekyll 사용법",
-    "keywords": "",
-    "url": "/2023-08-01-Jekyll.html",
-    "body": "Jekyll 사용법에 대해 설명합니다. Jekyll 설치 방법 Jekyll 실행 방법 로컬에서 확인하는 방법 파일 또는 이미지가 추가되면 반드시 개행! git add, git commit를 해주어야 한다. no accepter 에러 발생시 해결방법 Jekyll 사용법에 대해 설명합니다. Jekyll 설치 방법 Jekyll 실행 방법 wiki의 루트 디렉토리에서 다음의 명령을 실행하면, 소스코드가 바뀔때 마다 브라우저에 자동 업데이트 된다. bundle exec jekyll serve --livereload yoo@MacForYoo git/daniel00.github.io (master) » bundle exec jekyll serve –livereload 로컬에서 확인하는 방법 브라우저에서 http://localhost:4000 주소를 연다. 파일 또는 이미지가 추가되면 반드시 개행! git add, git commit를 해주어야 한다. 링크가 추가되면 반드시 개행해야 업데이트가 된다.(줄끝에 “&lt;br&gt;” 또는 스페이스 두개) 파일이 추가되었으나 commit 되지 않아서 404 Not Found라는 문구가 표시된다. git add, git commit 후에 정상적으로 표시된다. no accepter 에러 발생시 해결방법 jekyll을 kill 한 후 재시작 한다. ps 로 프로세스 아이디를 찾아서 kill 한다. ps -aux | grep jekyll kill -9 프로세스ID 그리고 jekyll을 재시작 한다. bundle exec jekyll serve --livereload 커맨드를 실행하는 경로에 유의해야 한다. github.io루트 디렉토리에서 실행해야 한다!!!"
-  },"/2023-07-23-FaviconChange.html": {
-    "title": "Favicon Change",
-    "keywords": "",
-    "url": "/2023-07-23-FaviconChange.html",
-    "body": "#"
-  },"/2023-07-23-MenubarChange.html": {
-    "title": "Menubar 변경 방법",
-    "keywords": "",
-    "url": "/2023-07-23-MenubarChange.html",
-    "body": "배경 색상 변경 글자 색상/스타일 변경 제목줄 내용 변경 Favicon 변경 image test johngrib 님의 wiki를 folk하여 나만의 위키를 구현중이다. 원래 페이지 그대로도 너무 멋지지만 조금씩 내가 좋아하는 스타일로 바꿔보고 있다. html, css등을 잘 몰라서 이것저것 건드려보며 바꾸어 가는 중이다. 같은 고민을 하시는 분들을 위해, 또 나의 기억력을 못 믿기에 기록으로 남긴다. 배경 색상 변경 menubar 배경색을 변경하려면 css/main.scss 의 theme-color의 값을 변경해 주면 된다. $theme-color: #00ffff; 로컬호스트에서 확인하면 바로 반영되지만, 온라인상의 github page에는 약5~10분뒤에 반영 되는듯 하다. 글자 색상/스타일 변경 _sass/_site-menu-bar.scss 의 color/font-style 값을 변경해 주면 된다. .site-title { color: #ffffff; font-style: normal; } 다른 속성들도 참고하시길 바란다. // 사이트 이름 (왼쪽) .site-title { float: left; text-decoration: none; color: #ffffff; line-height: 1.3; padding-left: 10px; font-style: normal; } // 사이트 이름 (오른쪽: index, random, me) .site-title-right { float: right; text-decoration: none; color: #FFFFFF; line-height: 1.3; padding-right: 10px; font-style: normal; } 제목줄 내용 변경 _config.yml 파일의 title 항목을 원하는 내용으로 변경하면 된다. # Site settings title: Daniel Wiki 다니엘의 위키 url: \"https://daniel00.github.io\" baseurl: \"\" description: &gt; 다니엘의 블로그 입니다 Favicon 변경 브라우저 탭 왼쪽에 표시되는 아이콘을 변경하는 방법을 설명한다. 먼저 다음의 사이트에서 Favicon을 만들어서 png, icon 파일을 준비한다. https://www.favicon-generator.org/ 사이트에서 제공하는 링크 코드도 복사해 놓는다. 파일을 아래의 경로에 복사한 후 header.html 에 아래처럼 링크 코드를 붙여넣는다. 본인의 파일 경로에 맞게 설정하여야 합니다. &lt;link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"/resource/icon/apple-icon-57x57.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"/resource/icon/apple-icon-60x60.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"/resource/icon/apple-icon-72x72.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"/resource/icon/apple-icon-76x76.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"/resource/icon/apple-icon-114x114.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"/resource/icon/apple-icon-120x120.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"/resource/icon/apple-icon-144x144.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"/resource/icon/apple-icon-152x152.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/resource/icon/apple-icon-180x180.png\"&gt; &lt;link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/resource/icon/android-icon-192x192.png\"&gt; &lt;link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/resource/icon/favicon-32x32.png\"&gt; &lt;link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"/resource/icon/favicon-96x96.png\"&gt; &lt;link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/resource/icon/favicon-16x16.png\"&gt; &lt;link rel=\"manifest\" href=\"/resource/icon/manifest.json\"&gt; &lt;meta name=\"msapplication-TileColor\" content=\"#ffffff\"&gt; &lt;meta name=\"msapplication-TileImage\" content=\"/resource/icon/ms-icon-144x144.png\"&gt; &lt;meta name=\"theme-color\" content=\"#ffffff\"&gt; image test"
-  },"/2023-07-23-Algorithm-theory.html": {
-    "title": "Algorithm theory",
-    "keywords": "",
-    "url": "/2023-07-23-Algorithm-theory.html",
-    "body": "알고리즘 이론 알고리즘 이론"
-  },"/2023-07-23-Problem-solving.html": {
-    "title": "Problem Solving",
-    "keywords": "",
-    "url": "/2023-07-23-Problem-solving.html",
-    "body": "알고리즘 문제풀이 알고리즘 문제풀이 [[largest-rectangle-in-histogram]]"
   },"/jekyll/2022-06-30-tips_warnings_dangers.html": {
     "title": "Tips, Warnings, and Dangers",
     "keywords": "Jekyll",
