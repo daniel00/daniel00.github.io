@@ -1,13 +1,23 @@
-{"/cpp/2024-04-08-csharp_old_style.html": {
+{"/csharp/2024-04-08-csharp_old_style.html": {
     "title": "c# Main함수 보이게 코딩하는법",
-    "keywords": "cpp",
-    "url": "/cpp/2024-04-08-csharp_old_style.html",
-    "body": "created : 2024-04-08 10:05 updated : 2024-04-08 01:15 .NET 6 에서 Old Style로 코드 작성하는 방법 .NET 6부터 Top Level Statement라는 방식으로 코드 스타일이 바뀌어서, 엔트리 포인트를 감춰놓고 바로 Console.WriteLine(“hello world”) 를 표시하고 있어서 당황스러웠다. 예전 방식으로 코딩하고 싶으면 다음의 방식으로 설정하면 된다. 콘솔에서 프로젝트 생성할때는 다음처럼 옵션처리 하여 생성 dotnet new console –use-program-main 비주얼 스튜디오에서는 프로젝트 생성시 Do not use top level statement 체크"
+    "keywords": "csharp",
+    "url": "/csharp/2024-04-08-csharp_old_style.html",
+    "body": "created : 2024-04-08 10:05 updated : 2024-04-08 11:40 .NET 6 에서 Old Style로 코드 작성하는 방법 .NET 6부터 Top Level Statement라는 방식으로 코드 스타일이 바뀌어서, 엔트리 포인트를 감춰놓고 바로 Console.WriteLine(“hello world”) 를 표시하고 있어서 당황스러웠다. 예전 방식으로 코딩하고 싶으면 다음의 방식으로 설정하면 된다. 콘솔에서 프로젝트 생성할때는 다음처럼 옵션처리 하여 생성 dotnet new console –use-program-main 비주얼 스튜디오에서는 프로젝트 생성시 Do not use top level statement 체크"
+  },"/categories/politics": {
+    "title": "정치 경제",
+    "keywords": "",
+    "url": "/categories/politics",
+    "body": "2024-04-08 12:02 &nbsp;&nbsp; 병립형-연동형"
+  },"/categories/jekyll": {
+    "title": "Jekyll",
+    "keywords": "",
+    "url": "/categories/jekyll",
+    "body": "2024-04-08 11:55 &nbsp;&nbsp; Jekyll 사용법 2024-04-08 13:58 &nbsp;&nbsp; category 만드는 법"
   },"/categories/csharp": {
     "title": "c#",
     "keywords": "",
     "url": "/categories/csharp",
-    "body": "2024-04-07 00:26 &nbsp;&nbsp; 포스트 제목을 입력하세요"
+    "body": "2024-04-08 11:40 &nbsp;&nbsp; c# Main함수 보이게 코딩하는법 2024-04-07 00:26 &nbsp;&nbsp; 포스트 제목을 입력하세요"
   },"/cpp/2024-04-07-srt_reserve_app.html": {
     "title": "SRT 예약 어플 만들기",
     "keywords": "cpp",
@@ -48,16 +58,21 @@
     "keywords": "cpp",
     "url": "/cpp/2024-02-26-bbb.html",
     "body": "created : 2024-02-26 00:40 updated : 2024-02-29 00:20 여기서 부터 글을 작성하세요"
+  },"/jekyll/2024-02-26-jekyll.html": {
+    "title": "Jekyll 사용법",
+    "keywords": "jekyll",
+    "url": "/jekyll/2024-02-26-jekyll.html",
+    "body": "created : 2024-02-26 00:35 updated : 2024-04-08 11:55 Jekyll 사용법에 대해 설명합니다. Jekyll 설치 방법 Jekyll 실행 방법 wiki의 루트 디렉토리에서 다음의 명령을 실행하면, 소스코드가 바뀔때 마다 브라우저에 자동 업데이트 된다. sudo bundle exec jekyll serve --livereload yoo@MacForYoo git/daniel00.github.io (master) » bundle exec jekyll serve –livereload 로컬에서 확인하는 방법 브라우저에서 http://localhost:4000 주소를 연다. 파일 또는 이미지가 추가되면 반드시 개행! git add, git commit를 해주어야 한다. 링크가 추가되면 반드시 개행해야 업데이트가 된다.(줄끝에 “&lt;br&gt;” 또는 스페이스 두개) 파일이 추가되었으나 commit 되지 않아서 404 Not Found라는 문구가 표시된다. git add, git commit 후에 정상적으로 표시된다. no accepter 에러 발생시 해결방법 jekyll을 kill 한 후 재시작 한다. ps 로 프로세스 아이디를 찾아서 kill 한다. ps -aux | grep jekyll kill -9 프로세스ID 그리고 jekyll을 재시작 한다. bundle exec jekyll serve --livereload 커맨드를 실행하는 경로에 유의해야 한다. github.io루트 디렉토리에서 실행해야 한다!!!"
   },"/cpp/2024-02-26-cattest.html": {
     "title": "포스트 제목을 입력하세요",
     "keywords": "cpp",
     "url": "/cpp/2024-02-26-cattest.html",
     "body": "created : 2024-02-26 00:00 updated : 2024-02-26 00:33 여기서 부터 글을 작성하세요"
-  },"/cpp/2024-02-25-jekyll-category.html": {
-    "title": "tttteeeessstttt",
-    "keywords": "cpp",
-    "url": "/cpp/2024-02-25-jekyll-category.html",
-    "body": "jekyll 에서 카테고리를 모아서 표시하는 방법에 대해 설명 합니다. 아래와 같이 카테고리가 메뉴가 추가되고 포스트 개수를 표시하게 된다. 여기서는 ‘cpp’ 카테고리를 만드는 예로 설명한다. category-cpp.md 를 만든다. category-cpp.md 에 다음의 front matter를 작성한다. --- title: \"C++ 프로그래밍\" layout: post permalink: categories/cpp --- 아래의 내용을 작성한다. (코드블럭으로 넣으면 링크된 파일이 표시되어서 부득이 그림으로 넣었다. 나중에 수정예정)"
+  },"/jekyll/2024-02-25-jekyll-category.html": {
+    "title": "category 만드는 법",
+    "keywords": "jekyll",
+    "url": "/jekyll/2024-02-25-jekyll-category.html",
+    "body": "jekyll 에서 카테고리를 모아서 표시하는 방법에 대해 설명 합니다. 아래와 같이 카테고리가 메뉴가 추가되고 포스트 개수를 표시하게 된다. 여기서는 ‘cpp’ 카테고리를 만드는 예로 설명한다. category-cpp.md 를 만든다. category-cpp.md 에 다음의 front matter를 작성한다. --- title: \"C++ 프로그래밍\" layout: post permalink: categories/cpp --- 아래의 내용을 작성한다. (코드블럭으로 넣으면 링크된 파일이 표시되어서 부득이 그림으로 넣었다. 나중에 수정예정) toc-date.html에 다음과 같이 카테고리를 만들고, 카테고리를 읽어 오도록 작성한다. &lt;span class=\"nav__sub-title\"&gt;C/C++/C#&lt;/span&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"/categories/cpp\" class=\"\"&gt;C++ (15)&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"/categories/csharp\" class=\"\"&gt;C# (2)&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;li class=\"divider\"&gt;&lt;/li&gt;"
   },"/cpp/2024-02-25-333.html": {
     "title": "test cpp cpp cpp",
     "keywords": "cpp",
@@ -113,10 +128,10 @@
     "keywords": "cpp",
     "url": "/cpp/2024-02-15-test1.html",
     "body": "테스트 test update up 1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다. 사표 (死票, wasted vote) 예를 하나 들어보자, 초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다. 초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다. 비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다. 60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다. 즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다. 테스트"
-  },"/cpp/political/2024-02-15-election.html": {
+  },"/politics/political/2024-02-15-election.html": {
     "title": "병립형-연동형",
-    "keywords": "cpp Political",
-    "url": "/cpp/political/2024-02-15-election.html",
+    "keywords": "politics Political",
+    "url": "/politics/political/2024-02-15-election.html",
     "body": "test hello hello2 hello3 hello4 hello5 1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다. 수정 날짜가 제대로 표시 되나요? 22시20분 수정 22시35분 수정 test test2 test3 사표 (死票, wasted vote) 예를 하나 들어보자, 초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다. 초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다. 비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다. 60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다. 즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다."
   },"/cpp/2024-02-15-hello-world.html": {
     "title": "hello world",

@@ -56,7 +56,7 @@
             </ul>
             <ul>
                 {% for c in site.categories %}
-                    {% if c[0] == "C#" %}
+                    {% if c[0] == "csharp" %}
                         <li><a href="/categories/csharp" class="">C# ({{c[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
@@ -65,11 +65,11 @@
         <!-- ================================================================================================= -->
 
 
-        <span class="nav__sub-title">Git Blog Test</span>
+        <span class="nav__sub-title">Git Blog</span>
             <ul>
                 {% for c in site.categories %}
-                    {% if c[0] == "GitBlog" %}
-                        <li><a href="/categories/gitblog" class="">Git Blog ({{c[1].size}})</a></li>
+                    {% if c[0] == "jekyll" %}
+                        <li><a href="/categories/jekyll" class="">Jekyll 사용법 ({{c[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -82,8 +82,8 @@
                 <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for c in site.categories %}
-                    {% if c[0] == "Politics" %}
-                        <li><a href="/categories/cpp" class="">정치 ({{c[1].size}})</a></li>
+                    {% if c[0] == "politics" %}
+                        <li><a href="/categories/politics" class="">정치 ({{c[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
