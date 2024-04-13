@@ -13,6 +13,16 @@
     "keywords": "",
     "url": "/categories/politics",
     "body": "2024-04-08 12:02 &nbsp;&nbsp; 병립형-연동형"
+  },"/2024-04-08-cpp-index.html": {
+    "title": "Cpp Index",
+    "keywords": "",
+    "url": "/2024-04-08-cpp-index.html",
+    "body": ""
+  },"/2024-04-08-constructor.html": {
+    "title": "Constructor",
+    "keywords": "",
+    "url": "/2024-04-08-constructor.html",
+    "body": ""
   },"/2024-04-08-Animation.html": {
     "title": "Animation",
     "keywords": "",
@@ -228,16 +238,6 @@
     "keywords": "Jekyll",
     "url": "/jekyll/2023-08-31-mermaid.html",
     "body": "저는 다니엘333 입니다. This jekyll-theme supports mermaid.js to render diagrams in markdown. To enable the mermaid support, you need to set mermaid: true in the front matter of your post. --- title: Diagrams with mermaid.js date: 2023-08-31 layout: post mermaid: true --- Then you can use mermaid syntax in your markdown: graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; Or, even some complex examples: sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;John: Hello John, how are you? loop Healthcheck John-&gt;&gt;John: Fight against hypochondria end Note right of John: Rational thoughts &lt;br/&gt;prevail! John--&gt;&gt;Alice: Great! John-&gt;&gt;Bob: How about you? Bob--&gt;&gt;John: Jolly good! sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;John: Hello John, how are you? loop Healthcheck John-&gt;&gt;John: Fight against hypochondria end Note right of John: Rational thoughts &lt;br/&gt;prevail! John--&gt;&gt;Alice: Great! John-&gt;&gt;Bob: How about you? Bob--&gt;&gt;John: Jolly good! Refer to the mermaid.js website for more examples."
-  },"/2023-08-16-constructor.html": {
-    "title": "생성자",
-    "keywords": "",
-    "url": "/2023-08-16-constructor.html",
-    "body": "#"
-  },"/2023-08-16-cpp-index.html": {
-    "title": "c++",
-    "keywords": "",
-    "url": "/2023-08-16-cpp-index.html",
-    "body": "이론 이론 [[/Languages/cpp/class]] [[/Languages/cpp/constructor]] [[/Languages/cpp/polymorphism]]"
   },"/jekyll/2022-06-30-tips_warnings_dangers.html": {
     "title": "Tips, Warnings, and Dangers",
     "keywords": "Jekyll",
