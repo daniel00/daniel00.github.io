@@ -1,5 +1,5 @@
 ---
-layout: wiki
+layout: post
 title: Jekyll 사용법
 summary: null
 date: 2023-08-01 23:05:26 +0900
@@ -11,7 +11,7 @@ parent: null
 latex: false
 categories: jekyll
 resource: 5CBB54BC-587E-4001-BECA-1EEEEA79EB21
-lastmod: 2024-04-08 11:54:11
+lastmod: 2024-04-13 21:49:23
 ---
 * TOC
 {:toc}

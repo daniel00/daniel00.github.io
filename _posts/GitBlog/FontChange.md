@@ -1,15 +1,16 @@
 ---
-layout  : wiki
-title   : 폰트변경
-summary : 
-date    : 2023-08-21 12:10:43 +0900
-updated : 2023-08-24 17:39:57 +0900
-tag     : 
-toc     : true
-public  : true
-parent  : 
-latex   : false
+layout: post
+title: 폰트변경
+summary: null
+date: 2023-08-21 12:10:43 +0900
+updated: 2023-08-24 17:39:57 +0900
+tag: null
+toc: true
+public: true
+parent: null
+latex: false
 resource: 5EFDC7BD-847E-460B-84CA-6E47395B3F4E
+lastmod: 2024-04-13 21:49:00
 ---
 * TOC
 {:toc}

@@ -1,15 +1,16 @@
 ---
-layout  : wiki
-title   : Menubar 변경 방법
-summary : 
-date    : 2023-07-23 03:25:24 +0900
-updated : 2023-08-21 16:09:59 +0900
-tag     : 
-toc     : true
-public  : true
-parent  : 
-latex   : false
+layout: post
+title: Menubar 변경 방법
+summary: null
+date: 2023-07-23 03:25:24 +0900
+updated: 2023-08-21 16:09:59 +0900
+tag: null
+toc: true
+public: true
+parent: null
+latex: false
 resource: 2BD8234A-2F31-4772-8695-4EDB4F8B18E5
+lastmod: 2024-04-13 21:49:51
 ---
 * TOC
 {:toc}

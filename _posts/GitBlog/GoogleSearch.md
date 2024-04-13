@@ -1,15 +1,16 @@
 ---
-layout  : wiki
-title   : 구글 맞춤 검색 사용법
-summary : 
-date    : 2023-08-18 23:26:35 +0900
-updated : 2024-01-02 15:21:57 +0900
-tag     : 
-toc     : true
-public  : true
-parent  : 
-latex   : false
+layout: post
+title: 구글 맞춤 검색 사용법
+summary: null
+date: 2023-08-18 23:26:35 +0900
+updated: 2024-01-02 15:21:57 +0900
+tag: null
+toc: true
+public: true
+parent: null
+latex: false
 resource: F9473EFE-F24A-43CE-B7CC-BAD2F64FE320
+lastmod: 2024-04-13 21:49:08
 ---
 * TOC
 {:toc}
