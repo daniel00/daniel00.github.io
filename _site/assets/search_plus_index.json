@@ -53,6 +53,16 @@
     "keywords": "all",
     "url": "/all/2024-02-26-AddImage.html",
     "body": "마크다운 파일에 이미지 넣는법에 대해 설명합니다. johngrib 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다. 나는 img-paste.vim 플러그인을 활용하는 방법을 택했다. 이유는, 이미지를 클립보드에 캡처한 후 붙여넣으면 되므로 이미지 붙여넣기가 좀더 수훨 한 듯 하고, 깃헙에 접속하지 않아도 되기 때문이다. 다음의 순서로 이미지를 넣을 수 있다. img-paste.vim 을 설치하고 .vimrc에 다음과 같이 설정한다. \" for img-paste.vim autocmd FileType markdown nmap &lt;buffer&gt;&lt;silent&gt; &lt;leader&gt;p :call mdip#MarkdownClipboardImage()&lt;CR&gt; autocmd FileType markdown let g:PasteImageFunction = 'g:MarkdownPasteImage' let g:mdip_imgdir = \"/assets/img\" let g:mdip_imgname = 'image' 나는 이미지를 .md 파일이 위치하고 있는 디렉토리에 assets/img 디렉토리를 만든다음 저장하도록 설정했다. 이미지를 클립보드에 캡처하고 vim 명령모드에서 :MarkdownPasteImage를 누르면, 저장할 이름을 물어본다. 적당한 이름을 입력하고 엔터를 치면 이미지가 저장되고, 다음처럼 경로가 자동 입력된다. 그러면 이미지가 설정된 경로에 저장된다. 근데, img-paste.vim 에 설정한 경로 /assets/img 를 jekyll에서 찾을 수 있도록 경로 앞에 점을 두개 찍어주어야 한다. ../assets/img 실제 적용된 이미지 삽입 코드는 다음과 같다. ![imagepath](../assets/imagepath.png) 깃헙에 푸쉬해서 온라인에서도 이미지가 정상적으로 표시되는걸 확인했다. 이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다."
+  },"/all/csharp/maui/2024-02-26-maui-xaml-cs-%EA%B5%AC%EC%A1%B0.html": {
+    "title": "MAUI의 XAML과 CS 파일 구조",
+    "keywords": "all csharp maui",
+    "url": "/all/csharp/maui/2024-02-26-maui-xaml-cs-%EA%B5%AC%EC%A1%B0.html",
+    "body": "created : 2024-02-26 00:35 updated : 2024-04-13 20:39 XAML과 CS는 한쌍으로 동작한다 xaml 파일은 페이지의 모양을 그리고, cs 파일은 페이지의 동작을 구현한다 XAML의 x:Name 속성으로 cs에서 xaml상의 UI요소에 접근 할 수 있다. &lt;Button x:Name=\"CounterBtn\" Text=\"로그인\" SemanticProperties.Hint=\"Counts the number of times you click\" Clicked=\"OnCounterClicked\" /&gt;"
+  },"/all/maui/csharp/2024-02-26-maui-hotreload.html": {
+    "title": "MAUI에서 Hot Reload적용 하는 방법",
+    "keywords": "all maui csharp",
+    "url": "/all/maui/csharp/2024-02-26-maui-hotreload.html",
+    "body": "created : 2024-02-26 00:35 updated : 2024-04-12 00:29 MAUI에서 Hot Reload 기능을 활성화 하는 방법에 대해 설명합니다. Microsoft 공식 문서에서는 Hot Reload가 동작한다고 설명하고 있으나 내 맥북에서는 제대로 동작하지 않았다. https://dotnet.microsoft.com/en-us/learn/maui/first-app-tutorial/modify 결국 DotNet.Meter 라는 vscode extension을 설치하여 Hot Reload기능을 사용 할 수 있었다. DotNet.Meter설치 후 다음의 순서대로 설정해주어야 한다. Run And Debug - Add Configuration - .Net Meter Debugger 선택 launch.json 파일 생성되면, 다음처럼 입력 { \"version\": \"0.2.0\", \"configurations\": [ { \"name\": \".NET Meteor Debugger\", \"type\": \"dotnet-meteor.debugger\", \"request\": \"launch\", \"preLaunchTask\": \"dotnet-meteor: Build\" } ] } *.csproj 파일에 아래처럼 패키지 추가 &lt;ItemGroup&gt; &lt;PackageReference Include=\"DotNetMeteor.HotReload.Plugin\" Version=\"3.*\"/&gt; &lt;/ItemGroup&gt; MauiProgram.cs 에 Hot Reload Plugin을 Enable 시켜준다. using Microsoft.Extensions.Logging; using DotNet.Meteor.HotReload.Plugin; //&lt;------- 여기 namespace MauiApp1; public static class MauiProgram { public static MauiApp CreateMauiApp() { var builder = MauiApp.CreateBuilder(); builder .UseMauiApp&lt;App&gt;() .ConfigureFonts(fonts =&gt; { fonts.AddFont(\"OpenSans-Regular.ttf\", \"OpenSansRegular\"); fonts.AddFont(\"OpenSans-Semibold.ttf\", \"OpenSansSemibold\"); }); #if DEBUG builder.Logging.AddDebug(); builder.EnableHotReload(); //&lt;------- 여기 #endif return builder.Build(); } } 이제 xaml 파일이 수정되면 에뮬레이터에 바로 적용된다. 다시 빌드할 필요가 없다."
   },"/all/cpp/2024-02-26-polymorphism.html": {
     "title": "다형성",
     "keywords": "all cpp",
@@ -83,6 +93,11 @@
     "keywords": "all unity",
     "url": "/all/unity/2024-02-26-NewProject.html",
     "body": "유니티 허브에서 새 프로젝트 만들기 유니티 허브에서 “New project” 를 눌러서 만든다. 연습용으로 3D형식의 프로젝트를 이름 “Test3D”로 만들어보았다."
+  },"/all/history/2024-02-26-1%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84.html": {
+    "title": "1차 세계대전",
+    "keywords": "all history",
+    "url": "/all/history/2024-02-26-1%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84.html",
+    "body": "1차 세계대전의 발발 원인과 과정에 대해 설명 합니다. 시대적 배경 당시 산업혁명으로 제품의 대량생산이 가능해졌으나 공급과잉의 문제도 발생하게 된다. 산업혁명을 이룬 여러 열강들은 제품의 소비처, 원자재 수급처, 값싼 노동력 등을 확보하기 위해 식민지 개척 활동에 나선다. 유럽 각국의 상황 1차 세계대전이 발발된 1914년7월 즈음의 유럽의 정세는, 프랑스는 프로이센(독일 이전에 독일연방의 한 국가)과의 전쟁에 패한후 반독일 정서가 지배하고 있었고 영국은 독일의 계속되는 해군력 증강에 본인들의 식민지 확장에 영향을 미칠까 견제하고 있었으며 러시아는 지중해 진출을 위해 슬라브족을(세르비아) 이용하고 싶었으나 ,이미 오스트리아-헝가리제국이 슬라브민족 국가인 보스니아를 식민지로 차지하고 있었고 인접한 또다른 슬라브족 국가인 세르비아마저 호시탐탐 노리고 있었기에 , 오스트리아-헝가리제국 또한 같은 게르만민족 동맹국인 독일과 긴장상태를 유지하고 있었다. 독일 입장에서는 왼쪽의 프랑스의 반독일 정서로 관계가 좋을수 없었으며 , 오른쪽의 러시아와도 협정을 파기 하는등 좋지않은 관계가 유지되고 있었다. 또한 독일과 오스트리아-헝가리제국은 같은 게르만민족으로 동맹관계를 유지하고 있었고, 프랑스와 러시아도 동맹관계였다. 1914년 당시 군사동맹 지도 갈색 : 삼국동맹 , 독일-오스트리아.헝가리제국-이탈리아 녹색 : 삼국연합 , 영국-프랑스-러시아"
   },"/cpp/2024-02-26-cattest.html": {
     "title": "포스트 제목을 입력하세요",
     "keywords": "cpp",
