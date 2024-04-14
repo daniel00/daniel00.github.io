@@ -73,11 +73,21 @@
     "keywords": "all",
     "url": "/all/2024-02-26-AddImage.html",
     "body": "마크다운 파일에 이미지 넣는법에 대해 설명합니다. johngrib 님은 Github Repository에 Issue를 생성해서 이미지를 넣는 방법을 사용한다고 한다. 나는 img-paste.vim 플러그인을 활용하는 방법을 택했다. 이유는, 이미지를 클립보드에 캡처한 후 붙여넣으면 되므로 이미지 붙여넣기가 좀더 수훨 한 듯 하고, 깃헙에 접속하지 않아도 되기 때문이다. 다음의 순서로 이미지를 넣을 수 있다. img-paste.vim 을 설치하고 .vimrc에 다음과 같이 설정한다. \" for img-paste.vim autocmd FileType markdown nmap &lt;buffer&gt;&lt;silent&gt; &lt;leader&gt;p :call mdip#MarkdownClipboardImage()&lt;CR&gt; autocmd FileType markdown let g:PasteImageFunction = 'g:MarkdownPasteImage' let g:mdip_imgdir = \"/assets/img\" let g:mdip_imgname = 'image' 나는 이미지를 .md 파일이 위치하고 있는 디렉토리에 assets/img 디렉토리를 만든다음 저장하도록 설정했다. 이미지를 클립보드에 캡처하고 vim 명령모드에서 :MarkdownPasteImage를 누르면, 저장할 이름을 물어본다. 적당한 이름을 입력하고 엔터를 치면 이미지가 저장되고, 다음처럼 경로가 자동 입력된다. 그러면 이미지가 설정된 경로에 저장된다. 근데, img-paste.vim 에 설정한 경로 /assets/img 를 jekyll에서 찾을 수 있도록 경로 앞에 점을 두개 찍어주어야 한다. ../assets/img 실제 적용된 이미지 삽입 코드는 다음과 같다. ![imagepath](../assets/imagepath.png) 깃헙에 푸쉬해서 온라인에서도 이미지가 정상적으로 표시되는걸 확인했다. 이미지는 파일로 추가되므로, 항상 git add, git commit를 수행해 주어야 한다."
+  },"/all/jekyll/2024-02-26-paste-image.html": {
+    "title": "jekyll post 에 이미지 넣는 방법",
+    "keywords": "all jekyll",
+    "url": "/all/jekyll/2024-02-26-paste-image.html",
+    "body": "created : 2024-02-26 00:35 updated : 2024-04-14 16:43 jekyll post에 이미지 넣는 방법에 대해 설명합니다. 이미지가 저장되는 경로는 , 현재 프로젝트 디렉토리의 assets 디렉토리에 넣으면 됩니다. jekyll은 이 경로의 이미지가 있는지 확인해서 포스트에 표시해 줍니다. vscode extention중 paste-image 를 이용하여 이미지를 붙여 넣습니다. paste-image 설정중 다음의 두가지를 설정해 주어야 합니다. 이미지가 저장되는 경로 ${projectRoot}/assets 저장된 이미지를 마크다운에 링크하는 Insert Pattern ${imageSyntaxPrefix}/assets/${imageFileName}${imageSyntaxSuffix} 이제 다음의 순서로 마크다운 문서에 이미지를 넣으면 됩니다. 이미지를 캡처합니다. 맥북 : 저는 cmd shift s 를 단축키로 지정하여 놓았습니다. 윈도우 : win shift s image-paste 단축키를 눌러 이미지를 붙여 넣습니다. 맥북: option cmd v 윈도우 : alt ctrl v 그러면 이미지가 저장되고, 저장된 경로를 링크하는 신텍스를 자동으로 넣어줍니다."
   },"/all/csharp/maui/2024-02-26-maui-xaml-cs-%EA%B5%AC%EC%A1%B0.html": {
     "title": "MAUI의 XAML과 CS 파일 구조",
     "keywords": "all csharp maui",
     "url": "/all/csharp/maui/2024-02-26-maui-xaml-cs-%EA%B5%AC%EC%A1%B0.html",
     "body": "created : 2024-02-26 00:35 updated : 2024-04-13 20:39 XAML과 CS는 한쌍으로 동작한다 xaml 파일은 페이지의 모양을 그리고, cs 파일은 페이지의 동작을 구현한다 XAML의 x:Name 속성으로 cs에서 xaml상의 UI요소에 접근 할 수 있다. &lt;Button x:Name=\"CounterBtn\" Text=\"로그인\" SemanticProperties.Hint=\"Counts the number of times you click\" Clicked=\"OnCounterClicked\" /&gt;"
+  },"/all/maui/csharp/2024-02-26-maui-build-error.html": {
+    "title": "MAUI build error 해결방법",
+    "keywords": "all maui csharp",
+    "url": "/all/maui/csharp/2024-02-26-maui-build-error.html",
+    "body": "created : 2024-02-26 00:35 updated : 2024-04-14 16:24 여기서 부터 글을 작성하세요 MAUI 빌드시 아래와 같은 에러가 발생했다. 에러메시지를 제대로 읽지 않고 리빌드만 계속했는데 , 동일한 에러가 계속해서 발생했다. 자세히 보니 “저장공간이 부족해서 빌드할수 없다” 는 내용이었다. 크롬창을 몇개 닫고, 다른 vscode 인스턴스도 종료하고 다시 빌드 하였더니 정상적으로 빌드가 되었다."
   },"/all/maui/csharp/2024-02-26-maui-add-new-file.html": {
     "title": "vscode에서 maui 프로젝트 활용",
     "keywords": "all maui csharp",
