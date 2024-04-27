@@ -7,7 +7,7 @@ tags: []
 categories:
     - csharp
 date: 2024-04-07 01:12:20
-lastmod: 2024-04-08 15:14:14
+lastmod: 2024-04-15 00:10:10
 layout: post
 ---
 
@@ -30,5 +30,7 @@ Dictionary dict = "메시지아이디":값
 로그인만 되면, 필요한 내용으로 쿼리 내용을 post하면 되는 구조이므로
 천천히 개발해 보자.
 
+지금까지 고려중인 앱 모양  
 
 
+<center><img src="/assets/2024-04-15-00-00-40.png" width="400" height="800"></center>

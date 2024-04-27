@@ -8,7 +8,7 @@ categories:
     - all
     - jekyll
 date: 2024-02-26 00:35:58+0900
-lastmod: 2024-04-14 16:43:46
+lastmod: 2024-04-14 23:58:31
 layout: post
 ---
 
@@ -41,9 +41,9 @@ ${imageSyntaxPrefix}/assets/${imageFileName}${imageSyntaxSuffix}
  맥북 : 저는 cmd shift s 를 단축키로 지정하여 놓았습니다.
  윈도우 : win shift s
 
-- image-paste 단축키를 눌러 이미지를 붙여 넣습니다.
-맥북: option cmd v   
-윈도우 : alt ctrl v  
+- image-paste 단축키를 눌러 이미지를 붙여 넣습니다.  
+맥북: option cmd v     
+윈도우 : alt ctrl v    
 
 - 그러면 이미지가 저장되고, 저장된 경로를 링크하는 신텍스를 자동으로 넣어줍니다.
 ![](/assets/2024-04-14-16-43-24.png)

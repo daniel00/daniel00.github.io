@@ -1,20 +1,14 @@
 ---
-title: 포스트 제목을 입력하세요
+title: null
 description: ""
 preview: ""
-publishedAt: 
 tags: []
 categories:
-    - 카테고리를 입력하세요
-date: now
-lastmod: 
+    - all
+date: 2024-04-27 23:19:47
+lastmod: 2024-04-27 23:20:29
 layout: post
 ---
 
 created : {{page.date | date:'%Y-%m-%d %R'}}  
 updated : {{page.lastmod | date:'%Y-%m-%d %R'}}
-
-### 여기서 부터 글을 작성하세요
-
-
-

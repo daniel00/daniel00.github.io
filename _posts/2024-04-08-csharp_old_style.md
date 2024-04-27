@@ -7,7 +7,7 @@ tags: []
 categories:
     - csharp
 date: 2024-04-08 01:05:15
-lastmod: 2024-04-08 11:40:04
+lastmod: 2024-04-14 23:49:44
 layout: post
 ---
 
@@ -21,7 +21,9 @@ updated : {{page.lastmod | date:'%Y-%m-%d %R'}}
 예전 방식으로 코딩하고 싶으면 다음의 방식으로 설정하면 된다.
 
 - 콘솔에서 프로젝트 생성할때는 다음처럼 옵션처리 하여 생성   
+```bash
 dotnet new console --use-program-main
+```
 
 - 비주얼 스튜디오에서는 프로젝트 생성시  
 Do not use top level statement 체크
