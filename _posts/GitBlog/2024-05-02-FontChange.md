@@ -1,16 +1,15 @@
 ---
+title: Wiki 폰트 변경하는 방법
+description: ""
+preview: ""
+tags: []
+categories:
+  - all
+  - algorithm
+  - wiki
+date: 2024-05-02 01:39:25
+lastmod: 2024-05-02 02:02:05
 layout: post
-title: 폰트변경
-summary: null
-date: 2023-08-21 12:10:43 +0900
-updated: 2023-08-24 17:39:57 +0900
-tag: null
-toc: true
-public: true
-parent: null
-latex: false
-resource: 5EFDC7BD-847E-460B-84CA-6E47395B3F4E
-lastmod: 2024-04-13 21:49:00
 ---
 * TOC
 {:toc}
@@ -25,7 +24,7 @@ lastmod: 2024-04-13 21:49:00
 ### 폰트 등록 코드 복사  
 [눈누](https://noonnu.cc/)  
 
-![font_code](../assets/img/font_code.png)  
+![font_code](/assets/font_code.png)  
 
 ### font-face 등록  
 css/main.scss
@@ -100,10 +99,10 @@ body {
 }
 ```
 before  
-![before_underline](../assets/img/before_underline.png)
+![before_underline](/assets/before_underline.png)
 
 after  
-![after1_underline](../assets/img/after1_underline.png)  
+![after1_underline](/assets/after1_underline.png)  
 
 ### 한영 폰트 비교
 나는 소년이다.  

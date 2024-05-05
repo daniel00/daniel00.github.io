@@ -1,16 +1,15 @@
 ---
+title: 구글 맟춤 검색 사용방법(Wiki블로그에서...)
+description: ""
+preview: ""
+tags: []
+categories:
+  - all
+  - algorithm
+  - wiki
+date: 2024-05-02 01:39:25
+lastmod: 2024-05-02 02:03:37
 layout: post
-title: 구글 맞춤 검색 사용법
-summary: null
-date: 2023-08-18 23:26:35 +0900
-updated: 2024-01-02 15:21:57 +0900
-tag: null
-toc: true
-public: true
-parent: null
-latex: false
-resource: F9473EFE-F24A-43CE-B7CC-BAD2F64FE320
-lastmod: 2024-04-13 21:49:08
 ---
 * TOC
 {:toc}
@@ -47,14 +46,14 @@ var cx =  `본인의 구글 맞춤 검색 아이디`
 다음의 사이트가 가장 정리가 잘 돼있다. 감사의 말씀을 드린다.   
 https://junia3.github.io/blog/search  
 
-![checkhtml](../assets/img/checkhtml.png)  
+![checkhtml](/assets/checkhtml.png)  
 
 
 
-![sitemap.xml](../assets/img/sitemap.xml.png)    
+![sitemap.xml](/assets/sitemap.xml.png)    
 
 
-![sitemap_success](../assets/img/sitemap_success.png)
+![sitemap_success](/assets/sitemap_success.png)
 
 
 
@@ -67,4 +66,4 @@ https://junia3.github.io/blog/search
 [https://www.google.com/ping?sitemap=https://daniel00.github.io/sitemap.xml]( https://www.google.com/ping?sitemap=https://daniel00.github.io/sitemap.xml )    
 
 
-![result_of_request](../assets/img/result_of_request.png)
+![result_of_request](/assets/result_of_request.png)

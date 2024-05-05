@@ -1,9 +1,10 @@
 ---
-title   : 크롬에서 검색기록 저장하지 않는 방법
+title: 크롬에서 검색기록 저장하지 않는 방법
 author: Daniel
-date: 2024-02-09
-category: Chrome
+date: 2024-05-02 01:32:06
+category: all
 layout: post
+lastmod: 2024-05-02 01:32:09
 ---
 
 

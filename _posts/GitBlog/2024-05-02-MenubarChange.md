@@ -1,17 +1,17 @@
 ---
+title: 메뉴바 변경 방법
+description: ""
+preview: ""
+tags: []
+categories:
+    - all
+    - algorithm
+    - wiki
+date: 2024-05-02 01:39:25
+lastmod: 2024-05-02 02:06:15
 layout: post
-title: Menubar 변경 방법
-summary: null
-date: 2023-07-23 03:25:24 +0900
-updated: 2023-08-21 16:09:59 +0900
-tag: null
-toc: true
-public: true
-parent: null
-latex: false
-resource: 2BD8234A-2F31-4772-8695-4EDB4F8B18E5
-lastmod: 2024-04-13 21:49:51
 ---
+
 * TOC
 {:toc}
 
@@ -101,10 +101,3 @@ description: >
     <meta name="msapplication-TileImage" content="/resource/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 ```
-
-
-## image test
-![image1](../assets/img/image1.png)
-
-![14](../assets/img/14.png)
-
