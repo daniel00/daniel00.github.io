@@ -1,8 +1,108 @@
-{"/all/2024-04-28-csharp_login.html": {
+{"/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html": {
+    "title": "yadm",
+    "keywords": "all linux unix mac vim testcat",
+    "url": "/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html",
+    "body": "created : 2024-05-06 08:42 updated : 2024-05-06 01:00 yadm은 여러 config 파일을 관리하는 툴이다. 예를들어 vim의 .vimrc, hammerspoon 셋업파일인 init.lua, vscode setting.json 등의 파일을 일일이 관리하기가 매우 번거롭다. 이 파일들을 github에 올려놓고, 관리하도록 도와주는 툴이 yadm이다. 원리는, 여러 경로에 흩어진 파일들도 하나의 리포지토리에 등록하고, 다시 clone할때 원래의 경로에 저장 되도록 하는 것이다. 주요 커맨드는 다음과 같다. yadm init yadm add ex) yadm add .vimrc, yadm add init.lua, yadm add setting.json yadm commit yadm remote add origin yadm push -u origin : yadm clone yadm status yadm official"
+  },"/all/linux/2024-05-06-linux-i3-wm.html": {
+    "title": "linux-i3-wm",
+    "keywords": "all linux",
+    "url": "/all/linux/2024-05-06-linux-i3-wm.html",
+    "body": "created : 2024-05-06 07:57 updated : 2024-05-05 23:06 i3 wm은 리눅스용 윈도우 메니저이다. config 파일은 ~/.config/i3/config 파일이고, 나는 mod 키로 window key를 지정하였으며, 앱 실행은, mod + d를 사용해서 런처가 뜨면 타이핑해서 원하는 앱을 열면 된다. 터미널 열기 mod + enter 윈도우 포커스 이동 mod + arrow key 윈도우 닫기 mod + shift + q config파일은 따로 정리해야겠다."
+  },"/all/2024-05-06-mac-capture-image.html": {
+    "title": "mac-capture-image",
+    "keywords": "all",
+    "url": "/all/2024-05-06-mac-capture-image.html",
+    "body": "created : 2024-05-06 07:39 updated : 2024-05-05 22:44 맥북에서 이미지 캡처하고 편집 하는 방법 shottr을 사용하면 편하다. 전체화면 캡쳐 단축키는 cmd + shift + 1 영역 캡쳐 단축키는 cmd + shift + 2 캡쳐가 완료되면 편집창이 뜬다. (미니창을 디폴트로 지정할 수 도 있다) 편집창에서 가볍게 편집하고, esc 또는 cmd + c를 누르면 클립보드로 복사된다."
+  },"/all/algorithm/unity/2024-05-02-StudyUi.html": {
+    "title": "유니티 화면에 대해 설명합니다",
+    "keywords": "all algorithm unity",
+    "url": "/all/algorithm/unity/2024-05-02-StudyUi.html",
+    "body": "연습을 통해 유니티 화면에 익숙해져 봅니다. Secne View. 씬뷰 Game View. 게임뷰 Hierarchy View. 하이어라키 뷰. 계층 뷰 오브젝트 추가하기 오브젝트 선택 Inspector View 인스펙터 뷰 오브젝트를 뷰의 정가운데로 이동하기 Scene View에서 관찰자 시점 변경하는 방법 오브젝트 변경하기(크기, 위치, 회전) 연습을 통해 유니티 화면에 익숙해져 봅니다. Secne View. 씬뷰 게임을 구성하는 메인화면. 리소스를 배치해 화면을 구성한다. Game View. 게임뷰 게임을 실행했을때 보이는 화면. 내가 테스트 할 때는 Game View가 검정화면 으로만 보였다. 해결방법은 Scene - 우클릭 - Add Tab - Game을 하면 보였다. 이래도 해결이 안된다면, 카메라, 조명 등이 오브젝트를 잘 비추고 있는지 확인해 보시길. Hierarchy View. 하이어라키 뷰. 계층 뷰 씬에서 사용되는 오브젝트 이름을 목록으로 표시한다. 프로젝트를 만들면 기본적으로 Main Camera와 Directional Light 오브젝트가 추가된다. 오브젝트 추가하기 Hierarchy View에서 추가한다. 여기서는 3D 오브젝트중 Cube(정육면체)를 추가해 보겠다. Hierarchy, Scene View 에 Cube가 추가되었다. 오브젝트 선택 Secne View의 아이콘모음에서 “Move Tool”을 선택 한 후 오브젝트를 클릭하면 오브젝트가 선택된다. 또는 Hierarchy View에서 선택해도 된다. Inspector View 인스펙터 뷰 오브젝트가 선택되면 인스펙터 뷰에 오브젝트의 정보가 나타나고 수정 할 수 있다. 오브젝트를 뷰의 정가운데로 이동하기 Hierarchy View에서 오브젝트 선택 후 더블클릭 오브젝트를 선택 한 후 Shift + f 를 누른다(대문자 F) 메인카메라를 선택 후 shift f 를 눌러서 씬뷰의 정 가운데로 이동시켰다. shift f를 한번더 누르면 줌이 된다. Scene View에서 관찰자 시점 변경하는 방법 Scene 시점을 변경하면, 개발자가 보는 화면만 변경되는 것 뿐이지 실제 게임 화면이 변하는건 아니다. 줌 - 마우스 휠 시점 이동 - 손모양 아이콘 선택 후 드래그 시점 회전 - Alt + 드래그 (커서가 눈동자 모양으로 바뀐다) 오브젝트 변경하기(크기, 위치, 회전) 오브젝트를 변경하면 실제 게임시 보여지는 화면이 변경된다. 오브젝트 이동 십자가 화살표 아이콘 선택 후 오브젝트 선택한 후 드래그하면 오브젝트가 이동된다. 3축 화살표를 누르고 이동하면 X,Y,Z 각 축으로만 이동된다. 오브젝트 회전 로테이션 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 회전이 수행된다. 오브젝트 크기변경 Scale 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 크기가 변경된다."
+  },"/all/algorithm/2024-05-02-Prefab.html": {
+    "title": "Prefab이란",
+    "keywords": "all algorithm",
+    "url": "/all/algorithm/2024-05-02-Prefab.html",
+    "body": "#"
+  },"/all/algorithm/cpp/2024-05-02-polymorphism.html": {
+    "title": "다형성. Polymorphism",
+    "keywords": "all algorithm cpp",
+    "url": "/all/algorithm/cpp/2024-05-02-polymorphism.html",
+    "body": "다형성(Polymorphism) 다형성에 대한 상세한 설명 다형성(Polymorphism) 부모 클래스 타입의 포인터가, 여러 형태의(다형) 자식 클래스를 가리킬 수 있음을 의미한다. 이렇게 부모 클래스가 자식 클래스를 가리킬 수 있으면 여러가지면에서 유리하다. aaaa bbb ccc 다형성에 대한 상세한 설명 정적결합 다음의 코드를 살펴보자. #include &lt;stdio.h&gt; #include &lt;string.h&gt; class Base { public: void hello(){printf(\"I am Base\\n\");} }; class Derived : public Base { public: void hello(){printf(\"I am Derived\\n\");}; }; int main() { Base B, *pB; Derived D;; pB = &amp;B; pB-&gt;hello(); pB = &amp;D; pB-&gt;hello(); return 0; } pB = &amp;B 는 당연히 가능한 표현이고, pB = &amp;D 도 부모는 자식을 가리킬 수 있으므로 문제가 되지 않는다. 근데 우리가 원했던 출력 결과와는 달리, 두개의 pB-&gt;hello() 결과가 모두 I am Base 로 출력된다. pB = &amp;Base; pB-&gt;hello(); //결과 : I am Base pB = &amp;Derived; pB-&gt;hello(); //결과 : I am Base 출력 결과 I am Base I am Base 이런 결과가 나오는 이유는, 컴파일러는 포인터가 선언될 당시의 타입을 보고 이 타입에 맞는 멤버 함수를 호출하기 때문이다. 즉, pB = &amp;D; 로 pB가 D를 가리키도록 하였을지라도, 선언될 당시 Base * pB 로 선언되어 있으므로 Base의 hello()를 호출하는 것이다. 이를 정적 결합(Static Binding) 이라고 한다. 이와 달리, 클래스 포인터에 실제로 할당 된 객체의 멤버함수를 호출하는 방식을 동적 결합(Dynamic Binding)이라고 한다. 동적 결합을 위해서는 멤버함수에 virtual 예약어를 붙어주면 된다. 위 코드를 다음과 같이 수정하면 원하는 결과를 얻게 된다. #include &lt;stdio.h&gt; #include &lt;string.h&gt; class Base { public: virtual void hello(){printf(\"I am Base\\n\");} }; class Derived : public Base { public: virtual void hello(){printf(\"I am Derived\\n\");}; }; int main() { Base B, *pB; Derived D;; pB = &amp;B; pB-&gt;hello(); pB = &amp;D; pB-&gt;hello(); return 0; } 출력 결과 I am Base I am Derived 함수포인터 부모는 자식을 가리킬 수 있다 가상함수"
+  },"/all/algorithm/2024-05-02-cpp.html": {
+    "title": "CPP Study 모아두는 파일",
+    "keywords": "all algorithm",
+    "url": "/all/algorithm/2024-05-02-cpp.html",
+    "body": "카테고리 만들면 이 파일은 필요 없을 듯 하다. 정리되면 지우자 이론 카테고리 만들면 이 파일은 필요 없을 듯 하다. 정리되면 지우자 이론 [[/Languages/cpp/class]] [[/Languages/cpp/polymorphism]]"
+  },"/all/algorithm/2024-05-02-Qt.html": {
+    "title": "Qt 빠르게 설치 하는 법",
+    "keywords": "all algorithm",
+    "url": "/all/algorithm/2024-05-02-Qt.html",
+    "body": "Qt 빠르게 설치하는 방법 Qt 빠르게 설치하는 방법 아래처럼 dmg파일 실행시 mirror 경로를 함께 명시하여 실행한다. qt-unified-macOS-x64-4.6.0-online.dmg --mirror https://mirrors.ocf.berkeley.edu/qt/"
+  },"/all/algorithm/markdown/2024-05-02-Markdown.html": {
+    "title": "Markdown 문법",
+    "keywords": "all algorithm markdown",
+    "url": "/all/algorithm/markdown/2024-05-02-Markdown.html",
+    "body": "Markdown 문법을 연습해 봅니다. Markdown 문법을 연습해 봅니다. 주석으로 이동합니다. [^comment1] [^comment1] : 주석1에 대한 설명입니다."
+  },"/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html": {
+    "title": "로지텍 마우스 끊김 해결 방법",
+    "keywords": "all algorithm hardware computer",
+    "url": "/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html",
+    "body": "M590 2.4G 로 연결 하는법 M590 2.4G 로 연결 하는법 M590은 블루투스 2개 + 2.4G 1개 총3개의 연결을 지원하는 마우스이다. AA배터리 한개로 약2년간 사용 할 수 있다고 해서 구매했다. 근데, 블루투스 연결시 너무 자주 끊김이 발생했다. 그래서 2.4로 연결하려고 하니 유니파잉 수신기를 사용하는 타입이라 유니파잉 소프트웨어를 설치해 주어야 했다. 아래 링크에서 다운로드 하여 설치하고, 기존에 연결된 블루투스 연결을 해제하면 2.4G로 연결이 된다. 혹시 연결이 안되면 마우스를 껐다 켜보시길 바란다. 유니파잉 소프트웨어 다운로드 유니파잉 소프트웨어를 설치 후 실행하여 “Advanced…” 버튼을 누른다. 그러면 유니파잉 수신기를 통해 로지텍 마우스가 연결되었는지 확인 할 수 있다. 블루투스 연결을 해제해야 2.4G를 사용 할 수 있다. 사용해본 결과 확실히 2.4G 마우스는 끊김이 없다."
+  },"/all/algorithm/wiki/2024-05-02-MenubarChange.html": {
+    "title": "메뉴바 변경 방법",
+    "keywords": "all algorithm wiki",
+    "url": "/all/algorithm/wiki/2024-05-02-MenubarChange.html",
+    "body": "배경 색상 변경 글자 색상/스타일 변경 제목줄 내용 변경 Favicon 변경 johngrib 님의 wiki를 folk하여 나만의 위키를 구현중이다. 원래 페이지 그대로도 너무 멋지지만 조금씩 내가 좋아하는 스타일로 바꿔보고 있다. html, css등을 잘 몰라서 이것저것 건드려보며 바꾸어 가는 중이다. 같은 고민을 하시는 분들을 위해, 또 나의 기억력을 못 믿기에 기록으로 남긴다. 배경 색상 변경 menubar 배경색을 변경하려면 css/main.scss 의 theme-color의 값을 변경해 주면 된다. $theme-color: #00ffff; 로컬호스트에서 확인하면 바로 반영되지만, 온라인상의 github page에는 약5~10분뒤에 반영 되는듯 하다. 글자 색상/스타일 변경 _sass/_site-menu-bar.scss 의 color/font-style 값을 변경해 주면 된다. .site-title { color: #ffffff; font-style: normal; } 다른 속성들도 참고하시길 바란다. // 사이트 이름 (왼쪽) .site-title { float: left; text-decoration: none; color: #ffffff; line-height: 1.3; padding-left: 10px; font-style: normal; } // 사이트 이름 (오른쪽: index, random, me) .site-title-right { float: right; text-decoration: none; color: #FFFFFF; line-height: 1.3; padding-right: 10px; font-style: normal; } 제목줄 내용 변경 _config.yml 파일의 title 항목을 원하는 내용으로 변경하면 된다. # Site settings title: Daniel Wiki 다니엘의 위키 url: \"https://daniel00.github.io\" baseurl: \"\" description: &gt; 다니엘의 블로그 입니다 Favicon 변경 브라우저 탭 왼쪽에 표시되는 아이콘을 변경하는 방법을 설명한다. 먼저 다음의 사이트에서 Favicon을 만들어서 png, icon 파일을 준비한다. https://www.favicon-generator.org/ 사이트에서 제공하는 링크 코드도 복사해 놓는다. 파일을 아래의 경로에 복사한 후 header.html 에 아래처럼 링크 코드를 붙여넣는다. 본인의 파일 경로에 맞게 설정하여야 합니다. &lt;link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"/resource/icon/apple-icon-57x57.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"/resource/icon/apple-icon-60x60.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"/resource/icon/apple-icon-72x72.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"/resource/icon/apple-icon-76x76.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"/resource/icon/apple-icon-114x114.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"/resource/icon/apple-icon-120x120.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"/resource/icon/apple-icon-144x144.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"/resource/icon/apple-icon-152x152.png\"&gt; &lt;link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/resource/icon/apple-icon-180x180.png\"&gt; &lt;link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/resource/icon/android-icon-192x192.png\"&gt; &lt;link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/resource/icon/favicon-32x32.png\"&gt; &lt;link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"/resource/icon/favicon-96x96.png\"&gt; &lt;link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/resource/icon/favicon-16x16.png\"&gt; &lt;link rel=\"manifest\" href=\"/resource/icon/manifest.json\"&gt; &lt;meta name=\"msapplication-TileColor\" content=\"#ffffff\"&gt; &lt;meta name=\"msapplication-TileImage\" content=\"/resource/icon/ms-icon-144x144.png\"&gt; &lt;meta name=\"theme-color\" content=\"#ffffff\"&gt;"
+  },"/all/algorithm/wiki/2024-05-02-GoogleSearch.html": {
+    "title": "구글 맟춤 검색 사용방법(Wiki블로그에서…)",
+    "keywords": "all algorithm wiki",
+    "url": "/all/algorithm/wiki/2024-05-02-GoogleSearch.html",
+    "body": "구글 맞춤 검색 엔진을 내 블로그에 적용하는 방법을 설명합니다. 구글 맞춤 검색 엔진을 내 블로그에 적용하는 방법을 설명합니다. 글을 몇 개 올린 후 검색을 하니, 종립님의 블로그 내용이 검색되는 문제가 있었다. 구글 맞춤 검색 엔진이 검색하는 사이트를 내 블로그로 변경해 주어야 한다. 아래 링크에서 구글 맞춤 검색 아이디를 생성한다. 구글 맞춤 검색 _site/search/index.html 에 다음의 코드를 넣는다. var cx = 본인의 구글 맞춤 검색 아이디 &lt;body&gt; &lt;div id=\"home-search\"&gt; &lt;script&gt; (function() { var cx = '25808cdc84d0e4dbe'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })(); &lt;/script&gt; &lt;gcse:search linkTarget=\"_parent\" queryParameterName=\"searchString\"&gt;&lt;/gcse:search&gt; &lt;/div&gt; 다음의 사이트가 가장 정리가 잘 돼있다. 감사의 말씀을 드린다. https://junia3.github.io/blog/search 구글 검색에 등록은 된 거 같은데, 전체 사이트 검색이 되지않고 첫 페이지인 index.md만 검색이 된다. 어느 사이트에서 sitemap.xml의 위치를 지정해서 크롤링을 요청하는 방법이 있다고 해서 그렇게 진행해보았다. 아직 결과는 모른다. 며칠 뒤 다시 확인해 보아야겠다. 아래의 링크를 브라우저 주소창에 입력하고 엔터를 치면 [[크롤링]] 요청이 완료된다. https://www.google.com/ping?sitemap=https://daniel00.github.io/sitemap.xml"
+  },"/all/algorithm/wiki/2024-05-02-FontChange.html": {
+    "title": "Wiki 폰트 변경하는 방법",
+    "keywords": "all algorithm wiki",
+    "url": "/all/algorithm/wiki/2024-05-02-FontChange.html",
+    "body": "페이지 폰트를 변경하는 방법에 대해서 정리합니다. 폰트 등록 코드 복사 font-face 등록 사용 할 폰트 명시. 사용 할 폰트만 주석해제 폰트 크기 변경 폰트 밑줄 간격 조절 한영 폰트 비교 페이지 폰트를 변경하는 방법에 대해서 정리합니다. 아래와 같이 진행하면 된다. 폰트사이트에서 등록 코드를 복사 css/main.scss 에 font-face를 등록 _sass/_base.css 에 사용하고자 하는 폰트를 명시 폰트 등록 코드 복사 눈누 font-face 등록 css/main.scss @font-face { font-family: 'Chosunilbo_myungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff'); font-weight: normal; font-style: normal; } @font-face { font-family: 'iceJaram-Rg'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2'); font-weight: normal; font-style: normal; } @font-face { font-family: 'SeoulHangangM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff'); font-weight: normal; font-style: normal; } 사용 할 폰트 명시. 사용 할 폰트만 주석해제 _sass/_base.css body { // font: 400 16px 'Roboto Slab',AppleSDGothicNeo,sans-serif; // font: 400 16px 'Chosunilbo_myungjo',AppleSDGothicNeo,sans-serif; font: 400 16px 'RIDIBatang',AppleSDGothicNeo,sans-serif; // font: 400 16px 'iceJaram-Rg',AppleSDGothicNeo,sans-serif; // font: 400 16px 'SeoulHangangM',AppleSDGothicNeo,sans-serif; // font: 400 16px 'font-iropke-batang',AppleSDGothicNeo,sans-serif; color: rgba(0, 0, 0, 0.84); -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: \"kern\" 1; -moz-font-feature-settings: \"kern\" 1; -o-font-feature-settings: \"kern\" 1; font-feature-settings: \"kern\" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; } 폰트 크기 변경 아래 픽셀(px) 값을 변경해주면 된다. _sass/_base.css font: 400 20px 'RIDIBatang',AppleSDGothicNeo,sans-serif; 폰트 밑줄 간격 조절 링크표시 밑줄이 글자와 겹쳐서 가독성이 떨어지는 것 같았다. _base.scss 파일의 body 영역에 text-underline-offset 값을 조절하여 해결하였다. _base.scss body { ... flex-direction: column; ... text-underline-offset : 5px; //yoo. 한글도, 영문도 밑줄이 겹치지 않고 가장 보기 좋다 } before after 한영 폰트 비교 나는 소년이다. I am a boy"
+  },"/all/algorithm/2024-05-02-largest-rectangle-in-histogram.html": {
+    "title": "히스토그램에서 가장 큰 직사각형의 넓이",
+    "keywords": "all algorithm",
+    "url": "/all/algorithm/2024-05-02-largest-rectangle-in-histogram.html",
+    "body": "히스토그램에서 가장 큰 직사각형의 여러 풀이법에 대해서 설명합니다. 히스토그램에서 가장 큰 직사각형의 여러 풀이법에 대해서 설명합니다. O(n) 직사각형의 넓이를 구하려면 left, right, height 를 알면된다."
+  },"/all/algorithm/2024-05-02-Problem-solving.html": {
+    "title": "Problem Solving",
+    "keywords": "all algorithm",
+    "url": "/all/algorithm/2024-05-02-Problem-solving.html",
+    "body": "알고리즘 문제풀이 알고리즘 문제풀이 [[largest-rectangle-in-histogram]]"
+  },"/all/2024-05-02-Algorithm-theory.html": {
+    "title": "Algorithm Theory",
+    "keywords": "all",
+    "url": "/all/2024-05-02-Algorithm-theory.html",
+    "body": "알고리즘 이론 알고리즘 이론"
+  },"/all/2024-05-02-Jekyll.html": {
+    "title": "Jekyll 사용법",
+    "keywords": "all",
+    "url": "/all/2024-05-02-Jekyll.html",
+    "body": "Jekyll 사용법에 대해 설명합니다. Jekyll 설치 방법 Jekyll 실행 방법 wiki의 루트 디렉토리에서 다음의 명령을 실행하면, 소스코드가 바뀔때 마다 브라우저에 자동 업데이트 된다. sudo bundle exec jekyll serve --livereload yoo@MacForYoo git/daniel00.github.io (master) » bundle exec jekyll serve –livereload 로컬에서 확인하는 방법 브라우저에서 http://localhost:4000 주소를 연다. 파일 또는 이미지가 추가되면 반드시 개행! git add, git commit를 해주어야 한다. 링크가 추가되면 반드시 개행해야 업데이트가 된다.(줄끝에 “&lt;br&gt;” 또는 스페이스 두개) 파일이 추가되었으나 commit 되지 않아서 404 Not Found라는 문구가 표시된다. git add, git commit 후에 정상적으로 표시된다. no accepter 에러 발생시 해결방법 jekyll을 kill 한 후 재시작 한다. ps 로 프로세스 아이디를 찾아서 kill 한다. ps -aux | grep jekyll kill -9 프로세스ID 그리고 jekyll을 재시작 한다. bundle exec jekyll serve --livereload 커맨드를 실행하는 경로에 유의해야 한다. github.io루트 디렉토리에서 실행해야 한다!!!"
+  },"/all/2024-05-02-RemoveHistory.html": {
+    "title": "크롬에서 검색기록 저장하지 않는 방법",
+    "keywords": "all",
+    "url": "/all/2024-05-02-RemoveHistory.html",
+    "body": "크롬에서 검색기록을 남기지 않는 방법에 대해 설명합니다. 크롬에서 구글 페이지를 열면 내가 검색한 기록이 드롭다운 형태로 보여진다. 이건 인터넷 기록, 쿠키 등을 삭제해도 여전히 남아있다. 해결 방법은, 크롬이 관리하는 History 파일의 내용을 삭제하고 읽기전용, 잠금 등으로 처리하여, 크롬이 검색기록을 저장하지 못하게 하면된다. History 파일 경로 ~/Library/Application Support/Google/Chrome/Default/History"
+  },"/2024-05-02-FaviconChange.html": {
+    "title": "Faviconchange",
+    "keywords": "",
+    "url": "/2024-05-02-FaviconChange.html",
+    "body": ""
+  },"/all/2024-04-28-markdown.html": {
+    "title": "markdown",
+    "keywords": "all",
+    "url": "/all/2024-04-28-markdown.html",
+    "body": "created : 2024-04-28 08:49 updated : 2024-04-28 00:13 내부 문서 링크 거는법 아래처럼 사용한다. [파이썬 에서의 예]({{site.baseurl}} {% link _posts/2024-04-27-python_login.md %})와 마찬가지로 \"디폴트헤더\" 를 포함하여 httpClient.post() 하는게 중요하다. 마크다운 코드블럭에 liquid 문법 적용안되게 하는 방법 위의 예처럼, raw, endraw 로 감싸면 된다."
+  },"/all/2024-04-28-csharp_login.html": {
     "title": "csharp_login",
     "keywords": "all",
     "url": "/all/2024-04-28-csharp_login.html",
-    "body": "created : 2024-04-28 08:22 updated : 2024-04-27 23:38 c# 의 HttpClient 클래스를 이용해서 srt 홈페이지에 로그인 하는 방법을 정리 합니다. 파이썬 에서의 예와 마찬가지로 “디폴트헤더” 를 포함하여 httpClient.post() 하는게 중요하다."
+    "body": "created : 2024-04-28 08:22 updated : 2024-04-27 23:47 c# 의 HttpClient 클래스를 이용해서 srt 홈페이지에 로그인 하는 방법을 정리 합니다. 파이썬 에서의 예와 마찬가지로 “디폴트헤더” 를 포함하여 httpClient.post() 하는게 중요하다."
   },"/all/python/srt/2024-04-28-python_login.html": {
     "title": "파이썬 requests 모듈을 이용하여, srt 홈페이지에 로그인 하는 방법",
     "keywords": "all python srt",
@@ -238,11 +338,6 @@
     "keywords": "test2",
     "url": "/test2/2024-02-12-test2.html",
     "body": "test 1.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다. 사표 (死票, wasted vote) 예를 하나 들어보자, 초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다. 초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다. 비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다. 60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다. 즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다."
-  },"/chrome/2024-02-09-RemoveHistory.html": {
-    "title": "크롬에서 검색기록 저장하지 않는 방법",
-    "keywords": "Chrome",
-    "url": "/chrome/2024-02-09-RemoveHistory.html",
-    "body": "크롬에서 검색기록을 남기지 않는 방법에 대해 설명합니다. 크롬에서 구글 페이지를 열면 내가 검색한 기록이 드롭다운 형태로 보여진다. 이건 인터넷 기록, 쿠키 등을 삭제해도 여전히 남아있다. 해결 방법은, 크롬이 관리하는 History 파일의 내용을 삭제하고 읽기전용, 잠금 등으로 처리하여, 크롬이 검색기록을 저장하지 못하게 하면된다. History 파일 경로 ~/Library/Application Support/Google/Chrome/Default/History"
   },"/political/2024-02-06-election2.html": {
     "title": "비례대표제2",
     "keywords": "Political",
@@ -253,6 +348,21 @@
     "keywords": "Jekyll",
     "url": "/jekyll/2023-12-12-footnotes.html",
     "body": "This jekyll-theme supports MathJax to render footnotes in markdown. e.g., The well known Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other exponents[^1]. Meaning the next equation has no integer solutions: $$ x^n + y^n = z^n $$ The well known Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other exponents1. Meaning the next equation has no integer solutions: \\[x^n + y^n = z^n\\] Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem &#8617;"
+  },"/2023-11-13-Animation.html": {
+    "title": "Animation 만들기",
+    "keywords": "",
+    "url": "/2023-11-13-Animation.html",
+    "body": "#"
+  },"/2023-11-13-NewProject.html": {
+    "title": "새로운 프로젝트 만들기",
+    "keywords": "",
+    "url": "/2023-11-13-NewProject.html",
+    "body": "유니티 허브에서 새 프로젝트 만들기 유니티 허브에서 새 프로젝트 만들기 유니티 허브에서 “New project” 를 눌러서 만든다. 연습용으로 3D형식의 프로젝트를 이름 “Test3D”로 만들어보았다."
+  },"/2023-11-13-OpenProject.html": {
+    "title": "유니티에서 기존 프로젝트를 여는 방법에 대해 설명합니다.",
+    "keywords": "",
+    "url": "/2023-11-13-OpenProject.html",
+    "body": "유니티 허브에서 기존 프로젝트 열기 유니티 허브에서 기존 프로젝트 열기 오랜만에 유니티를 사용하려 했더니 기존에 작성한 프로젝트를 유니티허브에서 찾을 수 없었다. 다음처럼 디스크상의 프로젝트를 Add 하면 유니티 허브에 보이게 되고, 이 프로젝트를 열면된다. Add 한 프로젝트가 리스트에 보이게 된다. 이중 원하는 프로젝트를 열면 된다."
   },"/jekyll/2023-10-14-math-latex.html": {
     "title": "MathJax and LaTeX",
     "keywords": "Jekyll",
@@ -263,6 +373,16 @@
     "keywords": "Jekyll",
     "url": "/jekyll/2023-08-31-mermaid.html",
     "body": "저는 다니엘333 입니다. This jekyll-theme supports mermaid.js to render diagrams in markdown. To enable the mermaid support, you need to set mermaid: true in the front matter of your post. --- title: Diagrams with mermaid.js date: 2023-08-31 layout: post mermaid: true --- Then you can use mermaid syntax in your markdown: graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; Or, even some complex examples: sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;John: Hello John, how are you? loop Healthcheck John-&gt;&gt;John: Fight against hypochondria end Note right of John: Rational thoughts &lt;br/&gt;prevail! John--&gt;&gt;Alice: Great! John-&gt;&gt;Bob: How about you? Bob--&gt;&gt;John: Jolly good! sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;John: Hello John, how are you? loop Healthcheck John-&gt;&gt;John: Fight against hypochondria end Note right of John: Rational thoughts &lt;br/&gt;prevail! John--&gt;&gt;Alice: Great! John-&gt;&gt;Bob: How about you? Bob--&gt;&gt;John: Jolly good! Refer to the mermaid.js website for more examples."
+  },"/2023-08-16-constructor.html": {
+    "title": "생성자",
+    "keywords": "",
+    "url": "/2023-08-16-constructor.html",
+    "body": "#"
+  },"/2023-08-16-cpp-index.html": {
+    "title": "c++",
+    "keywords": "",
+    "url": "/2023-08-16-cpp-index.html",
+    "body": "이론 이론 [[/Languages/cpp/class]] [[/Languages/cpp/constructor]] [[/Languages/cpp/polymorphism]]"
   },"/jekyll/2022-06-30-tips_warnings_dangers.html": {
     "title": "Tips, Warnings, and Dangers",
     "keywords": "Jekyll",
