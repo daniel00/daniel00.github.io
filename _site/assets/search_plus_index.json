@@ -1,8 +1,13 @@
-{"/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html": {
+{"/all/jekyll/2024-05-07-jekyll-categories.html": {
+    "title": "jekyll category 링크 자동생성 하는 방법",
+    "keywords": "all jekyll",
+    "url": "/all/jekyll/2024-05-07-jekyll-categories.html",
+    "body": "created : 2024-05-07 00:48 updated : 2024-05-06 16:21 jekyll blog에 카테고리를 생성을 자동화 하는 방법을 정리한다. 이전에 설명한 글에서는 (링크) 카테고리 페이지를 추가하기 위해서는 매우 번거로운 작업들을 수동으로 수행했어야 했다. 카테고리만 모아두는 파일인 my-category.md 파일을 카테고리 별로 만들어 주어야하고 이 파일의 내용도 category에 맞게 수정해 주어야 했다. 또한 , 왼쪽 메뉴바에 카테고리별 링크를 추가하려면 toc-date.html파일 내용을 일일이 추가해 주어야 했다. 이 처럼 포스트들을 카테고리별로 관리 하려면 너무 번거롭다보니, 그냥 카테고리를 all 로 지정하여 모두 한페이지에 표시되도록 단순 무식하게 사용하게 되었다. 하지만 조금씩 글이 많아지고 포스트를 정리할 필요성이 느껴져 카테고리 관리를 자동화 할 수 있는 방법을 찾아 보았다. 다음의 링크를 참조하였다. 카테고리 자동관리 _plugins 디렉토리에 categories.rb 파일을 만든다. categories.rb를 다음처럼 작성한다. module Jekyll class CategoryPageGenerator &lt; Generator safe true def generate(site) if site.layouts.key? 'category_index' dir = site.config['category_dir'] || 'categories' site.categories.each_key do |category| site.pages &lt;&lt; CategoryPage.new(site, site.source, File.join(dir, category), category) end end end end # A Page subclass used in the `CategoryPageGenerator` class CategoryPage &lt; Page def initialize(site, base, dir, category) @site = site @base = base @dir = dir @name = 'index.html' self.process(@name) self.read_yaml(File.join(base, '_layouts'), 'category_index.html') self.data['category'] = category category_title_prefix = site.config['category_title_prefix'] || 'Category: ' self.data['title'] = \"#{category_title_prefix}#{category}\" end end end 동일한 카테고리만 모아두는 페이지는 다음과 같이 생성할수 있다. 기존에 my-category.md 파일의 용도와 유사하다. _layout 폴더에 category_index.html 파일을 만들고 다음처럼 작성한다. layout을 default가 아닌 post로 변경하여야 한다. 수정날짜 포스트이름 형식으로 표시하도록 수정하였다. 카테고리를 태그처럼 나열하는게 복잡해 보여서 주석처리 하였다. *마크다운 코드블럭에 리퀴드(liquid) 문법 표시가 제대로 안되어서 이미지로 표시하였다. --- layout: post --- &lt;!-- &lt;section class=\"small-intro\"&gt; --&gt; &lt;!-- &lt;div class=\"container\"&gt; --&gt; &lt;!-- &lt;h2&gt; &lt;/h2&gt; --&gt; &lt;!-- &lt;/div&gt; --&gt; &lt;!-- &lt;/section&gt; --&gt; &lt;section class=\"blog\"&gt; &lt;div class=\"container\"&gt; &lt;/div&gt; &lt;/section&gt;"
+  },"/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html": {
     "title": "yadm",
     "keywords": "all linux unix mac vim testcat",
     "url": "/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html",
-    "body": "created : 2024-05-06 08:42 updated : 2024-05-06 01:00 yadm은 여러 config 파일을 관리하는 툴이다. 예를들어 vim의 .vimrc, hammerspoon 셋업파일인 init.lua, vscode setting.json 등의 파일을 일일이 관리하기가 매우 번거롭다. 이 파일들을 github에 올려놓고, 관리하도록 도와주는 툴이 yadm이다. 원리는, 여러 경로에 흩어진 파일들도 하나의 리포지토리에 등록하고, 다시 clone할때 원래의 경로에 저장 되도록 하는 것이다. 주요 커맨드는 다음과 같다. yadm init yadm add ex) yadm add .vimrc, yadm add init.lua, yadm add setting.json yadm commit yadm remote add origin yadm push -u origin : yadm clone yadm status yadm official"
+    "body": "created : 2024-05-06 08:42 updated : 2024-05-06 22:43 yadm은 여러 config 파일을 관리하는 툴이다. 예를들어 vim의 .vimrc, hammerspoon 셋업파일인 init.lua, vscode setting.json 등의 파일을 일일이 관리하기가 매우 번거롭다. 이 파일들을 github에 올려놓고, 관리하도록 도와주는 툴이 yadm이다. 원리는, 여러 경로에 흩어진 파일들도 하나의 리포지토리에 등록하고, 다시 clone할때 원래의 경로에 저장 되도록 하는 것이다. 주요 커맨드는 다음과 같다. yadm init yadm add ex) yadm add .vimrc, yadm add init.lua, yadm add setting.json yadm commit yadm remote add origin yadm push -u origin : yadm clone yadm status yadm official this is test"
   },"/all/linux/2024-05-06-linux-i3-wm.html": {
     "title": "linux-i3-wm",
     "keywords": "all linux",
@@ -345,7 +350,7 @@
     "body": "2.연동형/병립형/준연동형 비례대표제에 대해 정리해 봅니다. 사표 (死票, wasted vote) 예를 하나 들어보자, 초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다. 초등학교에서 반장선거를 했다. 후보는 A, B 두명이었다. 한반에 총 100명이 있었고 A는 60표, B는 40표를 얻었다. 많은 표를 얻은 A가 반장이되어 기뻐했다. 반면 B에게 투표했던 40명의 아이들은 내 표는 아무런 의미가 없는거였네 하며 슬퍼했다. 비록 B가 선거에서 지기는 했지만 40표를 얻었다, 하지만 이 모든 표는 사표(死票, wasted vote) 가 된 것이다. 60표를 얻은 A가 승자독식으로 반장이 되었고, 즉 B에게 투표한 40명의 생각은 전혀 반영되지 않았다. 즉 이러한 “다수제” 선거제도는 민의(民意)를 정확히 반영하기 어려운 구조이다."
   },"/jekyll/2023-12-12-footnotes.html": {
     "title": "Using Footnotes",
-    "keywords": "Jekyll",
+    "keywords": "jekyll",
     "url": "/jekyll/2023-12-12-footnotes.html",
     "body": "This jekyll-theme supports MathJax to render footnotes in markdown. e.g., The well known Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other exponents[^1]. Meaning the next equation has no integer solutions: $$ x^n + y^n = z^n $$ The well known Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other exponents1. Meaning the next equation has no integer solutions: \\[x^n + y^n = z^n\\] Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Long contents long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem &#8617;"
   },"/2023-11-13-Animation.html": {
@@ -365,12 +370,12 @@
     "body": "유니티 허브에서 기존 프로젝트 열기 유니티 허브에서 기존 프로젝트 열기 오랜만에 유니티를 사용하려 했더니 기존에 작성한 프로젝트를 유니티허브에서 찾을 수 없었다. 다음처럼 디스크상의 프로젝트를 Add 하면 유니티 허브에 보이게 되고, 이 프로젝트를 열면된다. Add 한 프로젝트가 리스트에 보이게 된다. 이중 원하는 프로젝트를 열면 된다."
   },"/jekyll/2023-10-14-math-latex.html": {
     "title": "MathJax and LaTeX",
-    "keywords": "Jekyll",
+    "keywords": "jekyll",
     "url": "/jekyll/2023-10-14-math-latex.html",
     "body": "This jekyll-theme supports MathJax to render $\\LaTeX$ and mathematics expressions. TIP Currently, Kramdown uses double dollar sign delimiters for inline and display math: https://kramdown.gettalong.org/syntax.html#math-blocks. e.g., The well known Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other exponents. Meaning the next equation has no integer solutions: $$ x^n + y^n = z^n $$ The well known Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other exponents. Meaning the next equation has no integer solutions: \\[x^n + y^n = z^n\\] Another example with more complex markups: When $a \\ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$ When $a \\ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are \\[x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.\\] Refer to the MathJax website for more examples."
   },"/jekyll/2023-08-31-mermaid.html": {
     "title": "Diagrams with mermaid.js",
-    "keywords": "Jekyll",
+    "keywords": "jekyll",
     "url": "/jekyll/2023-08-31-mermaid.html",
     "body": "저는 다니엘333 입니다. This jekyll-theme supports mermaid.js to render diagrams in markdown. To enable the mermaid support, you need to set mermaid: true in the front matter of your post. --- title: Diagrams with mermaid.js date: 2023-08-31 layout: post mermaid: true --- Then you can use mermaid syntax in your markdown: graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; Or, even some complex examples: sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;John: Hello John, how are you? loop Healthcheck John-&gt;&gt;John: Fight against hypochondria end Note right of John: Rational thoughts &lt;br/&gt;prevail! John--&gt;&gt;Alice: Great! John-&gt;&gt;Bob: How about you? Bob--&gt;&gt;John: Jolly good! sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;John: Hello John, how are you? loop Healthcheck John-&gt;&gt;John: Fight against hypochondria end Note right of John: Rational thoughts &lt;br/&gt;prevail! John--&gt;&gt;Alice: Great! John-&gt;&gt;Bob: How about you? Bob--&gt;&gt;John: Jolly good! Refer to the mermaid.js website for more examples."
   },"/2023-08-16-constructor.html": {
@@ -385,22 +390,22 @@
     "body": "이론 이론 [[/Languages/cpp/class]] [[/Languages/cpp/constructor]] [[/Languages/cpp/polymorphism]]"
   },"/jekyll/2022-06-30-tips_warnings_dangers.html": {
     "title": "Tips, Warnings, and Dangers",
-    "keywords": "Jekyll",
+    "keywords": "jekyll",
     "url": "/jekyll/2022-06-30-tips_warnings_dangers.html",
     "body": "This jekyll-theme supports tips, warnings, and dangers blocks and the style is referred from the discord.js website. You could have the following markdown attributes (supported by kramdown): Tips Using a {: .block-tip} attribute: &gt; ##### TIP &gt; &gt; This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have &gt; this or a similar version after installation. {: .block-tip } TIP This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have this or a similar version after installation. Warnings Using a {: .block-warning} attribute: &gt; ##### WARNING &gt; &gt; Be sure that you're familiar with things like async/await and object destructuring &gt; before continuing, as we'll be making use of features like these. {: .block-warning } WARNING Be sure that you’re familiar with things like async/await and object destructuring before continuing, as we’ll be making use of features like these. Dangers Using a {: .block-danger} attribute: &gt; ##### DANGER &gt; &gt; You cannot delete an ephemeral message. {: .block-danger } DANGER You cannot delete an ephemeral message."
   },"/jekyll/2022-06-26-wide_tables.html": {
     "title": "Wide tables",
-    "keywords": "Jekyll",
+    "keywords": "jekyll",
     "url": "/jekyll/2022-06-26-wide_tables.html",
     "body": "저는 다니엘777 입니다. A wide tables needs to be wrapped into a div with class table-wrapper to make sure it displayed as expected on mobile devices. For example, &lt;div class=\"table-wrapper\" markdown=\"block\"&gt; |title1|title2|title3|title4|title5|title6|title7|title8| |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:| |1|2|3|4|5|6|7|8| |1|2|3|4|5|6|7|8| |1|2|3|4|5|6|7|8| |1|2|3|4|5|6|7|8| &lt;/div&gt; Will be rendered as title1 title2 title3 title4 title5 title6 title7 title8 1 2 3 4 5 6 7 8 1 2 3 4 5 6 7 8 1 2 3 4 5 6 7 8 1 2 3 4 5 6 7 8"
   },"/jekyll/2022-05-24-page_cover.html": {
     "title": "Page with cover image",
-    "keywords": "Jekyll",
+    "keywords": "jekyll",
     "url": "/jekyll/2022-05-24-page_cover.html",
-    "body": "저는 다니엘666 입니다. The jekyll-gitbook theme supports adding a cover image to a specific page by adding a cover field to the page metadata: --- title: Page with cover image author: Tao He date: 2022-05-24 category: Jekyll layout: post + cover: /assets/jekyll-gitbook/dinosaur.gif ---"
+    "body": "저는 다니엘666 입니다. The jekyll-gitbook theme supports adding a cover image to a specific page by adding a cover field to the page metadata: --- title: Page with cover image author: Tao He date: 2022-05-24 category: jekyll layout: post + cover: /assets/jekyll-gitbook/dinosaur.gif ---"
   },"/jekyll/2021-08-10-toc.html": {
     "title": "How to Generate TOC",
-    "keywords": "Jekyll",
+    "keywords": "jekyll",
     "url": "/jekyll/2021-08-10-toc.html",
     "body": "The jekyll-gitbook theme leverages jekyll-toc to generate the Contents for the page. The TOC feature is not enabled by default. To use the TOC feature, modify the TOC configuration in _config.yml: toc: enabled: true Why this repo long contents ….. a b c d Sub title 1 Sub title 2 Sub title 3 Why this repo long contents ….. 1 2 3 4 Why this repo long contents ….. e f g h Why this repo 5 6 7 8 Why this repo long contents ….. a b c d Why this repo long contents ….. 1 2 3 4 Why this repo long contents ….. e f g h Why this repo 5 6 7 8 Why this repo long contents ….. a b c d Why this repo long contents ….. 1 2 3 4 Why this repo long contents ….. e f g h Why this repo 5 6 7 8 Why this repo long contents ….. a b c d Why this repo long contents ….. 1 2 3 4 Why this repo long contents ….. e f g h Why this repo 5 6 7 8"
   },"/cpp/2019-08-22-hello333.html": {
@@ -410,17 +415,17 @@
     "body": "hello 333"
   },"/jekyll/2019-04-29-license.html": {
     "title": "License",
-    "keywords": "Jekyll",
+    "keywords": "jekyll",
     "url": "/jekyll/2019-04-29-license.html",
     "body": "저는 다니엘444 입니다. This work is open sourced under the Apache License, Version 2.0, using the same license as the original GitBook repository. Copyright 2019 Tao He."
   },"/jekyll/2019-04-28-howto.html": {
     "title": "How to Get Started",
-    "keywords": "Jekyll",
+    "keywords": "jekyll",
     "url": "/jekyll/2019-04-28-howto.html",
     "body": "저는 다니엘222 입니다. The jekyll-gitbook theme can be used just as other Jekyll themes and support remote theme on Github Pages, see the official guide as well. You can introduce this jekyll theme into your own site by either Fork this repository and add your markdown posts to the _posts folder, then push to your own Github repository. Use as a remote theme in your _config.yml(just like what we do for this site itself), # Configurations title: Jekyll Gitbook longtitle: Jekyll Gitbook remote_theme: sighingnow/jekyll-gitbook TIP No need to push generated HTML bundle."
   },"/jekyll/2019-04-27-why.html": {
     "title": "Why Jekyll with GitBook",
-    "keywords": "Jekyll",
+    "keywords": "jekyll",
     "url": "/jekyll/2019-04-27-why.html",
     "body": "저는 다니엘555 입니다. 저는 다니엘555 입니다. 저는 다니엘555 입니다. GitBook is an amazing frontend style to present and organize contents (such as book chapters and blogs) on Web. The typical to deploy GitBook at Github Pages is building HTML files locally and then push to Github repository, usually to the gh-pages branch. However, it’s quite annoying to repeat such workload and make it hard for people do version control via git for when there are generated HTML files to be staged in and out. This theme takes style definition out of generated GitBook site and provided the template for Jekyll to rendering markdown documents to HTML, thus the whole site can be deployed to Github Pages without generating and uploading HTML bundle every time when there are changes to the original repository."
   }}

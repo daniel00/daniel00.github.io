@@ -2,9 +2,10 @@
 title: MathJax and LaTeX
 author: Tao He
 date: 2023-10-14
-category: Jekyll
+category: jekyll
 layout: post
 mermaid: true
+lastmod: 2024-05-06 15:16:21
 ---
 
 This jekyll-theme supports [MathJax](https://www.mathjax.org/) to render $\LaTeX$

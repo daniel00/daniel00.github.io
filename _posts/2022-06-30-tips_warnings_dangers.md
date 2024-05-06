@@ -2,8 +2,9 @@
 title: Tips, Warnings, and Dangers
 author: Tao He
 date: 2022-06-30
-category: Jekyll
+category: jekyll
 layout: post
+lastmod: 2024-05-06 15:15:56
 ---
 
 This jekyll-theme supports tips, warnings, and dangers blocks and the style is referred

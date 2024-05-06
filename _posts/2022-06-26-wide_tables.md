@@ -2,8 +2,9 @@
 title: Wide tables
 author: Tao He
 date: 2022-06-26
-category: Jekyll
+category: jekyll
 layout: post
+lastmod: 2024-05-06 15:15:35
 ---
 
 저는 다니엘777 입니다.    

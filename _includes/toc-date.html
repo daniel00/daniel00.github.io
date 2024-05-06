@@ -27,6 +27,7 @@
         <div id="book-search-input-link" role="search">
             <a href="{{site.baseurl}}/assets/search.html">Click to Search</a>
         </div>
+
         <ul class="summary">
             {% if page.url == "/index.html" or page.url == "/" %}
             <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
@@ -38,76 +39,13 @@
                 </a>
             </li>
 
-            <li class="divider"></li>
+            {% for category in site.categories %}
+                {% capture category_name %}{{ category | first }}{% endcapture %}
+                <!-- <li><a href="{{ site.url }}/categories/#{{ category_name | slugize }}">{{ category_name | slugsize }}</a></li> -->
+                <li><a href="{{ site.url }}/categories/{{category_name}}">{{ category_name | slugsize }} ({{site.categories[category_name].size}})</a></li>
+            {% endfor %}
 
-        <!-- ================================================================================================= -->
-            <span class="nav__sub-title">All posts</span>
-            <ul>
-                {% for c in site.categories %}
-                    {% if c[0] == "all" %}
-                        <li><a href="/categories/all" class="">All categories ({{c[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <li class="divider"></li>
-        <!-- ================================================================================================= -->
-
-        <!-- ================================================================================================= -->
-            <span class="nav__sub-title">C/C++/C#</span>
-            <!-- <li class="divider"></li> -->
-            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
-            <ul>
-                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
-                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
-                {% for c in site.categories %}
-                    {% if c[0] == "cpp" %}
-                        <li><a href="/categories/cpp" class="">C++ ({{c[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for c in site.categories %}
-                    {% if c[0] == "csharp" %}
-                        <li><a href="/categories/csharp" class="">C# ({{c[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <li class="divider"></li>
-        <!-- ================================================================================================= -->
-
-
-        <span class="nav__sub-title">Git Blog</span>
-            <ul>
-                {% for c in site.categories %}
-                    {% if c[0] == "jekyll" %}
-                        <li><a href="/categories/jekyll" class="">Jekyll 사용법 ({{c[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <li class="divider"></li>
-        <!-- ================================================================================================= -->
-
-        <span class="nav__sub-title">Politics</span>
-            <ul>
-
-                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
-                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
-                {% for c in site.categories %}
-                    {% if c[0] == "politics" %}
-                        <li><a href="/categories/politics" class="">정치 ({{c[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <li class="divider"></li>
-        <!-- ================================================================================================= -->
-
-
-
-
-        <span class="nav__sub-title">Coding Test2</span>
-                        <li class="divider"></li>
 
         </ul>
-    </nav>
 </div>
 
