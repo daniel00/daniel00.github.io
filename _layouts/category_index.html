@@ -24,7 +24,8 @@ layout: post
         <div style="font-size:18px">
           <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>
           {{ post.lastmod | date:'%Y-%m-%d %R &nbsp;&nbsp;'}}
-        <a href="{{ post.url }}">{{ post.title }}</a> 
+        <!-- <a href="{{ post.url }}">{{ post.title }}</a>  -->
+        <a href="{{ site.url }}">{{ post.title }}</a> 
 
         </div>
         <!-- <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>  -->
