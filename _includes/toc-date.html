@@ -43,7 +43,7 @@
                 {% capture category_name %}{{ category | first }}{% endcapture %}
                 <!-- <li><a href="{{ site.url }}/categories/#{{ category_name | slugize }}">{{ category_name | slugsize }}</a></li> -->
                 <!-- <li><a href="{{ site.url }}/categories/{{category_name}}">{{ category_name | slugsize }} ({{site.categories[category_name].size}})</a></li> -->
-                <li><a href="{{ site.baseurl }}/categories/{{category_name}}">{{ category_name | slugsize }} ({{site.categories[category_name].size}})</a></li>
+                <li><a href="{{ site.baseurl }}/_site/categories/{{category_name}}">{{ category_name | slugsize }} ({{site.categories[category_name].size}})</a></li>
             {% endfor %}
 
 
