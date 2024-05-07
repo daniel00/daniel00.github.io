@@ -1,5 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-07T23:14:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>HE Tao</name></author><entry><title type="html">jekyll category 링크 자동생성 하는 방법</title><link href="http://localhost:4000/all/jekyll/2024-05-06-jekyll-categories.html" rel="alternate" type="text/html" title="jekyll category 링크 자동생성 하는 방법" /><published>2024-05-06T09:48:49+09:00</published><updated>2024-05-06T09:48:49+09:00</updated><id>http://localhost:4000/all/jekyll/jekyll-categories</id><content type="html" xml:base="http://localhost:4000/all/jekyll/2024-05-06-jekyll-categories.html"><![CDATA[<p>created : 2024-05-06 09:48<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-07T23:31:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>HE Tao</name></author><entry><title type="html">jekyll-로컬에서만보일때</title><link href="http://localhost:4000/all/jekyll/2024-05-08-jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C.html" rel="alternate" type="text/html" title="jekyll-로컬에서만보일때" /><published>2024-05-08T08:19:10+09:00</published><updated>2024-05-08T08:19:10+09:00</updated><id>http://localhost:4000/all/jekyll/jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C</id><content type="html" xml:base="http://localhost:4000/all/jekyll/2024-05-08-jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C.html"><![CDATA[<p>created : 2024-05-08 08:19<br />
+updated : 2024-05-07 23:25</p>
+
+<h3 id="포스트가-로컬에서만-보여지고-github서버에서는-보이지-않을때">포스트가 로컬에서만 보여지고 github서버에서는 보이지 않을때</h3>
+<p>gitignore에 등록되어 있던 _site를 지워주면 된다.</p>
+
+<p>카테고리를 만들면 _site/categories/카테고리이름/index.html 이 생성된다.
+이 index.html에 해당 카테고리에 해당하는 모든 문서가 링크되어 있다.</p>
+
+<p>근데, gitignore에 _site가 등록되어 있었기에 git push origin master 할 때 누락되어서 
+github 서버에서는 해당 카테고리 페이지가 없다고 404에러를 발생하였던 것이다.</p>
+
+<p>_site를 gitignore에서 제외 시킨 후 정상동작함을 확인 하였다.</p>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="jekyll" /><summary type="html"><![CDATA[created : 2024-05-08 08:19 updated : 2024-05-07 23:25]]></summary></entry><entry><title type="html">jekyll category 링크 자동생성 하는 방법</title><link href="http://localhost:4000/all/jekyll/2024-05-06-jekyll-categories.html" rel="alternate" type="text/html" title="jekyll category 링크 자동생성 하는 방법" /><published>2024-05-06T09:48:49+09:00</published><updated>2024-05-06T09:48:49+09:00</updated><id>http://localhost:4000/all/jekyll/jekyll-categories</id><content type="html" xml:base="http://localhost:4000/all/jekyll/2024-05-06-jekyll-categories.html"><![CDATA[<p>created : 2024-05-06 09:48<br />
 updated : 2024-05-07 22:57</p>
 
 <h3 id="jekyll-blog에-카테고리를-생성을-자동화-하는-방법을-정리한다">jekyll blog에 카테고리를 생성을 자동화 하는 방법을 정리한다.</h3>
@@ -178,123 +190,18 @@ updated : 2024-05-05 22:44</p>
 <p>캡쳐가 완료되면 편집창이 뜬다. (미니창을 디폴트로 지정할 수 도 있다)
 편집창에서 가볍게 편집하고, esc 또는 cmd + c를 누르면 클립보드로 복사된다.</p>
 
-<p><img src="/assets/2024-05-05-22-44-03.png" alt="" /></p>]]></content><author><name>HE Tao</name></author><category term="all" /><summary type="html"><![CDATA[created : 2024-05-06 07:39 updated : 2024-05-05 22:44]]></summary></entry><entry><title type="html">다형성. Polymorphism</title><link href="http://localhost:4000/all/algorithm/cpp/2024-05-02-polymorphism.html" rel="alternate" type="text/html" title="다형성. Polymorphism" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/cpp/polymorphism</id><content type="html" xml:base="http://localhost:4000/all/algorithm/cpp/2024-05-02-polymorphism.html"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#다형성polymorphism" id="markdown-toc-다형성polymorphism">다형성(Polymorphism)</a></li>
-  <li><a href="#다형성에-대한-상세한-설명" id="markdown-toc-다형성에-대한-상세한-설명">다형성에 대한 상세한 설명</a></li>
+<p><img src="/assets/2024-05-05-22-44-03.png" alt="" /></p>]]></content><author><name>HE Tao</name></author><category term="all" /><summary type="html"><![CDATA[created : 2024-05-06 07:39 updated : 2024-05-05 22:44]]></summary></entry><entry><title type="html">CPP Study 모아두는 파일</title><link href="http://localhost:4000/all/algorithm/2024-05-02-cpp.html" rel="alternate" type="text/html" title="CPP Study 모아두는 파일" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/cpp</id><content type="html" xml:base="http://localhost:4000/all/algorithm/2024-05-02-cpp.html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#카테고리-만들면-이-파일은-필요-없을-듯-하다-정리되면-지우자" id="markdown-toc-카테고리-만들면-이-파일은-필요-없을-듯-하다-정리되면-지우자">카테고리 만들면 이 파일은 필요 없을 듯 하다. 정리되면 지우자</a></li>
+  <li><a href="#이론" id="markdown-toc-이론">이론</a></li>
 </ul>
 
-<h2 id="다형성polymorphism">다형성(Polymorphism)</h2>
-<p>부모 클래스 타입의 포인터가, 여러 형태의(다형) 자식 클래스를 가리킬 수 있음을 의미한다.
-이렇게 부모 클래스가 자식 클래스를 가리킬 수 있으면 여러가지면에서 유리하다.</p>
+<h3 id="카테고리-만들면-이-파일은-필요-없을-듯-하다-정리되면-지우자">카테고리 만들면 이 파일은 필요 없을 듯 하다. 정리되면 지우자</h3>
+
+<h2 id="이론">이론</h2>
 <ul>
-  <li>aaaa</li>
-  <li>bbb</li>
-  <li>ccc</li>
-</ul>
-
-<h2 id="다형성에-대한-상세한-설명">다형성에 대한 상세한 설명</h2>
-
-<ul>
-  <li>정적결합<br />
-  다음의 코드를 살펴보자.</li>
-</ul>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
-</span>  <span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
-</span>
-  <span class="k">class</span> <span class="nc">Base</span>
-  <span class="p">{</span>
-    <span class="nl">public:</span>
-      <span class="kt">void</span> <span class="n">hello</span><span class="p">(){</span><span class="n">printf</span><span class="p">(</span><span class="s">"I am Base</span><span class="se">\n</span><span class="s">"</span><span class="p">);}</span>
-  <span class="p">};</span>
-
-  <span class="k">class</span> <span class="nc">Derived</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Base</span>
-  <span class="p">{</span>
-    <span class="nl">public:</span>
-      <span class="kt">void</span> <span class="n">hello</span><span class="p">(){</span><span class="n">printf</span><span class="p">(</span><span class="s">"I am Derived</span><span class="se">\n</span><span class="s">"</span><span class="p">);};</span>
-  <span class="p">};</span>
-
-  <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-  <span class="p">{</span>
-    <span class="n">Base</span> <span class="n">B</span><span class="p">,</span> <span class="o">*</span><span class="n">pB</span><span class="p">;</span>
-    <span class="n">Derived</span> <span class="n">D</span><span class="p">;;</span>
-
-    <span class="n">pB</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">B</span><span class="p">;</span>
-    <span class="n">pB</span><span class="o">-&gt;</span><span class="n">hello</span><span class="p">();</span>
-
-    <span class="n">pB</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">D</span><span class="p">;</span>
-    <span class="n">pB</span><span class="o">-&gt;</span><span class="n">hello</span><span class="p">();</span>
-
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></div></div>
-
-<p><code class="language-plaintext highlighter-rouge">pB = &amp;B</code> 는 당연히 가능한 표현이고, <br />
-  <code class="language-plaintext highlighter-rouge">pB = &amp;D</code> 도 부모는 자식을 가리킬 수 있으므로 문제가 되지 않는다.</p>
-
-<p>근데 우리가 원했던 출력 결과와는 달리, 두개의 <code class="language-plaintext highlighter-rouge">pB-&gt;hello()</code> 결과가 모두 <code class="language-plaintext highlighter-rouge">I am Base</code> 로 출력된다.</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">pB</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">Base</span><span class="p">;</span>  
-  <span class="n">pB</span><span class="o">-&gt;</span><span class="n">hello</span><span class="p">();</span>      <span class="c1">//결과 : I am Base</span>
-  
-  <span class="n">pB</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">Derived</span><span class="p">;</span>
-  <span class="n">pB</span><span class="o">-&gt;</span><span class="n">hello</span><span class="p">();</span>      <span class="c1">//결과 : I am Base</span>
-</code></pre></div></div>
-
-<p>출력 결과</p>
-<pre><code class="language-txt">  I am Base
-  I am Base
-</code></pre>
-
-<p>이런 결과가 나오는 이유는, 컴파일러는 포인터가 선언될 당시의 타입을 보고 이 타입에 맞는 멤버 함수를 호출하기 때문이다.<br />
-  즉, <code class="language-plaintext highlighter-rouge">pB = &amp;D;</code> 로 pB가 D를 가리키도록 하였을지라도, 선언될 당시 <code class="language-plaintext highlighter-rouge">Base * pB</code> 로 선언되어 있으므로 <code class="language-plaintext highlighter-rouge">Base</code>의 <code class="language-plaintext highlighter-rouge">hello()</code>를 호출하는 것이다.
-  이를 정적 결합(Static Binding) 이라고 한다.</p>
-
-<p>이와 달리, 클래스 포인터에 실제로 할당 된 객체의 멤버함수를 호출하는 방식을 동적 결합(Dynamic Binding)이라고 한다.
-  동적 결합을 위해서는 멤버함수에 <code class="language-plaintext highlighter-rouge">virtual</code> 예약어를 붙어주면 된다.
-  위 코드를 다음과 같이 수정하면 원하는 결과를 얻게 된다.</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
-</span>  <span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
-</span>
-  <span class="k">class</span> <span class="nc">Base</span>
-  <span class="p">{</span>
-    <span class="nl">public:</span>
-      <span class="k">virtual</span> <span class="kt">void</span> <span class="n">hello</span><span class="p">(){</span><span class="n">printf</span><span class="p">(</span><span class="s">"I am Base</span><span class="se">\n</span><span class="s">"</span><span class="p">);}</span>
-  <span class="p">};</span>
-
-  <span class="k">class</span> <span class="nc">Derived</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Base</span>
-  <span class="p">{</span>
-    <span class="nl">public:</span>
-      <span class="k">virtual</span> <span class="kt">void</span> <span class="n">hello</span><span class="p">(){</span><span class="n">printf</span><span class="p">(</span><span class="s">"I am Derived</span><span class="se">\n</span><span class="s">"</span><span class="p">);};</span>
-  <span class="p">};</span>
-
-  <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-  <span class="p">{</span>
-    <span class="n">Base</span> <span class="n">B</span><span class="p">,</span> <span class="o">*</span><span class="n">pB</span><span class="p">;</span>
-    <span class="n">Derived</span> <span class="n">D</span><span class="p">;;</span>
-
-    <span class="n">pB</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">B</span><span class="p">;</span>
-    <span class="n">pB</span><span class="o">-&gt;</span><span class="n">hello</span><span class="p">();</span>
-
-    <span class="n">pB</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">D</span><span class="p">;</span>
-    <span class="n">pB</span><span class="o">-&gt;</span><span class="n">hello</span><span class="p">();</span>
-
-
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></div></div>
-
-<p>출력 결과</p>
-<pre><code class="language-txt">  I am Base
-  I am Derived
-</code></pre>
-
-<ul>
-  <li>함수포인터</li>
-  <li>부모는 자식을 가리킬 수 있다</li>
-  <li>가상함수</li>
-</ul>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="algorithm" /><category term="cpp" /></entry><entry><title type="html">Prefab이란</title><link href="http://localhost:4000/all/algorithm/2024-05-02-Prefab.html" rel="alternate" type="text/html" title="Prefab이란" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/Prefab</id><content type="html" xml:base="http://localhost:4000/all/algorithm/2024-05-02-Prefab.html"><![CDATA[<p>#</p>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="algorithm" /></entry><entry><title type="html">Qt 빠르게 설치 하는 법</title><link href="http://localhost:4000/all/algorithm/2024-05-02-Qt.html" rel="alternate" type="text/html" title="Qt 빠르게 설치 하는 법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/Qt</id><content type="html" xml:base="http://localhost:4000/all/algorithm/2024-05-02-Qt.html"><![CDATA[<ul id="markdown-toc">
+  <li>[[/Languages/cpp/class]]</li>
+  <li>[[/Languages/cpp/polymorphism]]</li>
+</ul>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="algorithm" /></entry><entry><title type="html">Qt 빠르게 설치 하는 법</title><link href="http://localhost:4000/all/algorithm/2024-05-02-Qt.html" rel="alternate" type="text/html" title="Qt 빠르게 설치 하는 법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/Qt</id><content type="html" xml:base="http://localhost:4000/all/algorithm/2024-05-02-Qt.html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#qt-빠르게-설치하는-방법" id="markdown-toc-qt-빠르게-설치하는-방법">Qt 빠르게 설치하는 방법</a></li>
 </ul>
 
