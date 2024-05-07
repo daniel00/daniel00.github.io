@@ -7,7 +7,7 @@ categories:
   - all
   - jekyll
 date: 2024-05-06 00:48:49
-lastmod: 2024-05-07 00:23:16
+lastmod: 2024-05-07 22:57:59
 layout: post
 ---
 
@@ -86,53 +86,56 @@ updated : {{page.lastmod | date:'%Y-%m-%d %R'}}
 ![](/assets/2024-05-06-16-20-14.png)
 
 
-```ruby
----
-layout: post
----
 
-<!-- <section class="small-intro"> -->
-  <!-- <div class="container"> -->
-    <!-- <h2>
-      {{page.category | capitalize}}
-    </h2> -->
-  <!-- </div> -->
-<!-- </section> -->
+    ```html  
+    ---
+    layout: post
+    ---
 
-<section class="blog">
-  <div class="container">
-    {% for post in site.posts %} {% if post.categories contains page.category %}
+    <!-- <section class="small-intro"> -->
+      <!-- <div class="container"> -->
+        <!-- <h2>
+          {{page.category | capitalize}}
+        </h2> -->
+      <!-- </div> -->
+    <!-- </section> -->
 
-    <!-- {% assign posts = site.categories.jekyll | sort: 'title' %} -->
-    <div class="blog-container">
-      <div class="title-excerpt">
-        <!-- yoo -->
-        <div style="font-size:18px">
-          <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>
-          {{ post.lastmod | date:'%Y-%m-%d %R &nbsp;&nbsp;'}}
-        <a href="{{ post.url }}">{{ post.title }}</a> 
-        </div>
-        <!-- <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>  -->
-      </div>
+    <section class="blog">
+      <div class="container">
+        {% raw %}
+        {% for post in site.posts %} {% if post.categories contains page.category %}
+        <!-- {% assign posts = site.categories.jekyll | sort: 'title' %} -->
 
-      <div class="date-categories">
-        <!-- 카테고리 표시 -->
-        <!-- <div class="categories">
-          {% for category in post.categories%}
-          <div class="category">
-            <a href="/categories/{{category}}">{{ category }}</a>
+        <div class="blog-container">
+          <div class="title-excerpt">
+            <!-- yoo -->
+            <div style="font-size:18px">
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>
+              {{ post.lastmod | date:'%Y-%m-%d %R &nbsp;&nbsp;'}}
+            <a href="{{ post.url }}">{{ post.title }}</a> 
+            </div>
+            <!-- <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>  -->
           </div>
-          {% endfor %}
-        </div> -->
 
-        <!-- 날짜 표시 -->
-        <!-- <div class="date">
-          <p>{{ post.date | date_to_string }}</p>
-        </div> -->
+          <div class="date-categories">
+            <!-- 카테고리 표시 -->
+            <!-- <div class="categories">
+              {% for category in post.categories%}
+              <div class="category">
+                <a href="/categories/{{category}}">{{ category }}</a>
+              </div>
+              {% endfor %}
+            </div> -->
 
+            <!-- 날짜 표시 -->
+            <!-- <div class="date">
+              <p>{{ post.date | date_to_string }}</p>
+            </div> -->
+
+          </div>
+        </div> 
+        {% endif %} {% endfor %}
       </div>
-    </div> 
-    {% endif %} {% endfor %}
-  </div>
-</section>
-```
+    </section>
+        {% endraw %}
+    ```
