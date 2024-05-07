@@ -45,8 +45,8 @@ syntax_highlighter_style: github
 markdown_ext:             markdown,mkdown,mkdn,mkd,md
 
 # Permalinks
-# permalink:                /:categories/:year-:month-:day-:title:output_ext
-permalink:                /:categories/:title
+permalink:                /:categories/:year-:month-:day-:title:output_ext
+# permalink:                /:categories/:title
 
 # Disqus comments
 # disqushandler:            sighingnow
