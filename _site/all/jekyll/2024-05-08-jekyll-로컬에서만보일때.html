@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>How to Get Started · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>jekyll-로컬에서만보일때 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="HE Tao"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,9 @@
 
 
 
-            <link rel="prev" href="/jekyll/2019-04-27-why.html" />
+            <link rel="prev" href="/all/jekyll/2024-05-06-jekyll-categories.html" />
         
 
-        
-            <link rel="next" href="/jekyll/2019-04-29-license.html" />
         
     </head>
     <body>
@@ -172,7 +170,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >How to Get Started</a>
+                            <a href="." >jekyll-로컬에서만보일때</a>
                         
                     </h1>
                 </div>
@@ -185,37 +183,22 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/jekyll/howto">How to Get Started</h1>
+                        <h1 id="/all/jekyll/jekyll-로컬에서만보일때">jekyll-로컬에서만보일때</h1>
                     
 
-                    <p>저는 다니엘222 입니다.</p>
+                    <p>created : 2024-05-08 08:19<br />
+updated : 2024-05-07 23:25</p>
 
-<p>The jekyll-gitbook theme can be used just as other <a href="https://pages.github.com/themes">Jekyll themes</a> and
-support <a href="https://github.com/sighingnow/jekyll-gitbook/fork">remote theme</a> on <a href="https://pages.github.com">Github Pages</a>, see <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll">the official guide</a>
-as well.</p>
+<h3 id="포스트가-로컬에서만-보여지고-github서버에서는-보이지-않을때">포스트가 로컬에서만 보여지고 github서버에서는 보이지 않을때</h3>
+<p>gitignore에 등록되어 있던 _site를 지워주면 된다.</p>
 
-<p>You can introduce this jekyll theme into your own site by either</p>
+<p>카테고리를 만들면 _site/categories/카테고리이름/index.html 이 생성된다.
+이 index.html에 해당 카테고리에 해당하는 모든 문서가 링크되어 있다.</p>
 
-<ul>
-  <li><a href="https://github.com/sighingnow/jekyll-gitbook/fork">Fork</a> this repository and add your markdown posts to the <code class="language-plaintext highlighter-rouge">_posts</code> folder, then
-push to your own Github repository.</li>
-  <li>Use as a remote theme in your <a href="https://github.com/sighingnow/jekyll-gitbook/blob/master/_config.yml"><code class="language-plaintext highlighter-rouge">_config.yml</code></a>(just like what we do for this
-site itself),</li>
-</ul>
+<p>근데, gitignore에 _site가 등록되어 있었기에 git push origin master 할 때 누락되어서 
+github 서버에서는 해당 카테고리 페이지가 없다고 404에러를 발생하였던 것이다.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Configurations</span>
-<span class="na">title</span><span class="pi">:</span>            <span class="s">Jekyll Gitbook</span>
-<span class="na">longtitle</span><span class="pi">:</span>        <span class="s">Jekyll Gitbook</span>
-
-<span class="na">remote_theme</span><span class="pi">:</span>     <span class="s">sighingnow/jekyll-gitbook</span>
-</code></pre></div></div>
-
-<blockquote class="block-tip">
-  <h5 id="tip">TIP</h5>
-
-  <p>No need to push generated HTML bundle.</p>
-</blockquote>
-
+<p>_site를 gitignore에서 제외 시킨 후 정상동작함을 확인 하였다.</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -273,15 +256,11 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/jekyll/2019-04-27-why.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Why Jekyll with GitBook">
+                        <a href="/all/jekyll/2024-05-06-jekyll-categories.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: jekyll category 링크 자동생성 하는 방법">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
-                    
-                        <a href="/jekyll/2019-04-29-license.html" class="navigation navigation-next navigation-unique" aria-label="Next page: License">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
                     
                 </div>
             </div>
@@ -294,15 +273,6 @@ window.MathJax = {
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-        "next": {
-            "title": "License",
-            "level": "1.2",
-            "depth": 1,
-            "path": "_posts/2019-04-29-license.md",
-            "ref": "_posts/2019-04-29-license.md",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -392,8 +362,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2019-04-28-howto.md",
-        "mtime": "2019-04-28 00:00:00 +0900",
+        "path": "_posts/2024-05-07-jekyll-로컬에서만보일때.md",
+        "mtime": "2024-05-08 08:19:10 +0900",
         "type": "markdown"
     },
     "gitbook": {
