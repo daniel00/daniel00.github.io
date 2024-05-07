@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-07T22:18:36+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-07T22:57:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
 </subtitle><author><name>HE Tao</name></author><entry><title type="html">jekyll category 링크 자동생성 하는 방법</title><link href="http://localhost:4000/all/jekyll/2024-05-06-jekyll-categories.html" rel="alternate" type="text/html" title="jekyll category 링크 자동생성 하는 방법" /><published>2024-05-06T09:48:49+09:00</published><updated>2024-05-06T09:48:49+09:00</updated><id>http://localhost:4000/all/jekyll/jekyll-categories</id><content type="html" xml:base="http://localhost:4000/all/jekyll/2024-05-06-jekyll-categories.html"><![CDATA[<p>created : 2024-05-06 09:48<br />
-updated : 2024-05-07 00:23</p>
+updated : 2024-05-07 22:57</p>
 
 <h3 id="jekyll-blog에-카테고리를-생성을-자동화-하는-방법을-정리한다">jekyll blog에 카테고리를 생성을 자동화 하는 방법을 정리한다.</h3>
 <p>이전에 설명한 글에서는 (링크) 카테고리 페이지를 추가하기 위해서는 매우 번거로운 작업들을 수동으로 수행했어야 했다.</p>
@@ -78,24 +78,59 @@ updated : 2024-05-07 00:23</p>
 <p>*마크다운 코드블럭에 리퀴드(liquid) 문법 표시가 제대로 안되어서 이미지로 표시하였다.
 <img src="/assets/2024-05-06-16-20-14.png" alt="" /></p>
 
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">---</span>
-<span class="ss">layout: </span><span class="n">post</span>
-<span class="o">---</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```html  
+---
+layout: post
+---
 
-<span class="o">&lt;!--</span> <span class="o">&lt;</span><span class="n">section</span> <span class="k">class</span><span class="o">=</span><span class="s2">"small-intro"</span><span class="o">&gt;</span> <span class="o">--&gt;</span>
-  <span class="o">&lt;!--</span> <span class="o">&lt;</span><span class="n">div</span> <span class="k">class</span><span class="o">=</span><span class="s2">"container"</span><span class="o">&gt;</span> <span class="o">--&gt;</span>
-    <span class="o">&lt;!--</span> <span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span>
+&lt;!-- &lt;section class="small-intro"&gt; --&gt;
+  &lt;!-- &lt;div class="container"&gt; --&gt;
+    &lt;!-- &lt;h2&gt;
       
-    <span class="o">&lt;</span><span class="sr">/h2&gt; --&gt;
-  &lt;!-- &lt;/</span><span class="n">div</span><span class="o">&gt;</span> <span class="o">--&gt;</span>
-<span class="o">&lt;!--</span> <span class="o">&lt;</span><span class="sr">/section&gt; --&gt;
+    &lt;/h2&gt; --&gt;
+  &lt;!-- &lt;/div&gt; --&gt;
+&lt;!-- &lt;/section&gt; --&gt;
 
 &lt;section class="blog"&gt;
   &lt;div class="container"&gt;
-                                                                                                                                                                                
-  &lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="sr">/section&gt;
-</span></code></pre></div></div>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="jekyll" /><summary type="html"><![CDATA[created : 2024-05-06 09:48 updated : 2024-05-07 00:23]]></summary></entry><entry><title type="html">yadm</title><link href="http://localhost:4000/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html" rel="alternate" type="text/html" title="yadm" /><published>2024-05-06T08:42:20+09:00</published><updated>2024-05-06T08:42:20+09:00</updated><id>http://localhost:4000/all/linux/unix/mac/vim/testcat/yadm</id><content type="html" xml:base="http://localhost:4000/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html"><![CDATA[<p>created : 2024-05-06 08:42<br />
+    
+    {% for post in site.posts %} {% if post.categories contains page.category %}
+    &lt;!-- {% assign posts = site.categories.jekyll | sort: 'title' %} --&gt;
+
+    &lt;div class="blog-container"&gt;
+      &lt;div class="title-excerpt"&gt;
+        &lt;!-- yoo --&gt;
+        &lt;div style="font-size:18px"&gt;
+          &lt;i class="fas fa-fw fa-calendar-alt" aria-hidden="true"&gt; &lt;/i&gt;
+          {{ post.lastmod | date:'%Y-%m-%d %R &amp;nbsp;&amp;nbsp;'}}
+        &lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt; 
+        &lt;/div&gt;
+        &lt;!-- &lt;h2&gt;&lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;  --&gt;
+      &lt;/div&gt;
+
+      &lt;div class="date-categories"&gt;
+        &lt;!-- 카테고리 표시 --&gt;
+        &lt;!-- &lt;div class="categories"&gt;
+          {% for category in post.categories%}
+          &lt;div class="category"&gt;
+            &lt;a href="/categories/{{category}}"&gt;{{ category }}&lt;/a&gt;
+          &lt;/div&gt;
+          {% endfor %}
+        &lt;/div&gt; --&gt;
+
+        &lt;!-- 날짜 표시 --&gt;
+        &lt;!-- &lt;div class="date"&gt;
+          &lt;p&gt;{{ post.date | date_to_string }}&lt;/p&gt;
+        &lt;/div&gt; --&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt; 
+    {% endif %} {% endfor %}
+  &lt;/div&gt;
+&lt;/section&gt;
+    
+```
+</code></pre></div></div>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="jekyll" /><summary type="html"><![CDATA[created : 2024-05-06 09:48 updated : 2024-05-07 22:57]]></summary></entry><entry><title type="html">yadm</title><link href="http://localhost:4000/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html" rel="alternate" type="text/html" title="yadm" /><published>2024-05-06T08:42:20+09:00</published><updated>2024-05-06T08:42:20+09:00</updated><id>http://localhost:4000/all/linux/unix/mac/vim/testcat/yadm</id><content type="html" xml:base="http://localhost:4000/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html"><![CDATA[<p>created : 2024-05-06 08:42<br />
 updated : 2024-05-06 22:43</p>
 
 <h3 id="yadm은-여러-config-파일을-관리하는-툴이다">yadm은 여러 config 파일을 관리하는 툴이다.</h3>
