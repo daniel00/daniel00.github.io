@@ -34,16 +34,15 @@ layout: post
                     {% endfor %} -->
 
 
-        <!-- <a href="{{ post.url }}">{{ post.title }}</a>  -->
-        <a href="{{ post.baseurl }}">{{ post.title }}</a> 
+        <a href="{{ post.url }}">{{ post.title }}</a> 
 
         </div>
         <!-- <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>  -->
       </div>
 
-      <!-- <div class="date-categories"> -->
-        <!-- 카테고리 표시 -->
-        <!-- <div class="categories">
+      <!-- <div class="date-categories">
+        카테고리 표시
+        <div class="categories">
           {% for category in post.categories%}
           <div class="category">
             <a href="/categories/{{category}}">{{ category }}</a>
