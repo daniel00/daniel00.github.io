@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-09T01:03:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>HE Tao</name></author><entry><title type="html">jekyll-로컬에서만보일때</title><link href="http://localhost:4000/all/jekyll/jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C" rel="alternate" type="text/html" title="jekyll-로컬에서만보일때" /><published>2024-05-08T08:19:10+09:00</published><updated>2024-05-08T08:19:10+09:00</updated><id>http://localhost:4000/all/jekyll/jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C</id><content type="html" xml:base="http://localhost:4000/all/jekyll/jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C"><![CDATA[<p>created : 2024-05-08 08:19<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-09T01:11:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>HE Tao</name></author><entry><title type="html">jekyll-로컬에서만보일때</title><link href="http://localhost:4000/all/jekyll/2024-05-08-jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C.html" rel="alternate" type="text/html" title="jekyll-로컬에서만보일때" /><published>2024-05-08T08:19:10+09:00</published><updated>2024-05-08T08:19:10+09:00</updated><id>http://localhost:4000/all/jekyll/jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C</id><content type="html" xml:base="http://localhost:4000/all/jekyll/2024-05-08-jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C.html"><![CDATA[<p>created : 2024-05-08 08:19<br />
 updated : 2024-05-08 23:33</p>
 
 <h3 id="포스트가-로컬에서만-보여지고-github서버에서는-보이지-않을때">포스트가 로컬에서만 보여지고 github서버에서는 보이지 않을때</h3>
@@ -14,7 +14,7 @@ updated : 2024-05-08 23:33</p>
 근데, gitignore에 _site가 등록되어 있었기에 git push origin master 할 때 누락되어서 
 github 서버에서는 해당 카테고리 페이지가 없다고 404에러를 발생하였던 것이다.
 
-_site를 gitignore에서 제외 시킨 후 정상동작함을 확인 하였다. -->]]></content><author><name>HE Tao</name></author><category term="all" /><category term="jekyll" /><summary type="html"><![CDATA[created : 2024-05-08 08:19 updated : 2024-05-08 23:33]]></summary></entry><entry><title type="html">jekyll category 링크 자동생성 하는 방법</title><link href="http://localhost:4000/all/jekyll/jekyll-categories" rel="alternate" type="text/html" title="jekyll category 링크 자동생성 하는 방법" /><published>2024-05-06T09:48:49+09:00</published><updated>2024-05-06T09:48:49+09:00</updated><id>http://localhost:4000/all/jekyll/jekyll-categories</id><content type="html" xml:base="http://localhost:4000/all/jekyll/jekyll-categories"><![CDATA[<p>created : 2024-05-06 09:48<br />
+_site를 gitignore에서 제외 시킨 후 정상동작함을 확인 하였다. -->]]></content><author><name>HE Tao</name></author><category term="all" /><category term="jekyll" /><summary type="html"><![CDATA[created : 2024-05-08 08:19 updated : 2024-05-08 23:33]]></summary></entry><entry><title type="html">jekyll category 링크 자동생성 하는 방법</title><link href="http://localhost:4000/all/jekyll/2024-05-06-jekyll-categories.html" rel="alternate" type="text/html" title="jekyll category 링크 자동생성 하는 방법" /><published>2024-05-06T09:48:49+09:00</published><updated>2024-05-06T09:48:49+09:00</updated><id>http://localhost:4000/all/jekyll/jekyll-categories</id><content type="html" xml:base="http://localhost:4000/all/jekyll/2024-05-06-jekyll-categories.html"><![CDATA[<p>created : 2024-05-06 09:48<br />
 updated : 2024-05-07 22:57</p>
 
 <h3 id="jekyll-blog에-카테고리를-생성을-자동화-하는-방법을-정리한다">jekyll blog에 카테고리를 생성을 자동화 하는 방법을 정리한다.</h3>
@@ -145,7 +145,7 @@ layout: post
 &lt;/section&gt;
     
 ```
-</code></pre></div></div>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="jekyll" /><summary type="html"><![CDATA[created : 2024-05-06 09:48 updated : 2024-05-07 22:57]]></summary></entry><entry><title type="html">yadm</title><link href="http://localhost:4000/all/linux/unix/mac/vim/testcat/yadm" rel="alternate" type="text/html" title="yadm" /><published>2024-05-06T08:42:20+09:00</published><updated>2024-05-06T08:42:20+09:00</updated><id>http://localhost:4000/all/linux/unix/mac/vim/testcat/yadm</id><content type="html" xml:base="http://localhost:4000/all/linux/unix/mac/vim/testcat/yadm"><![CDATA[<p>created : 2024-05-06 08:42<br />
+</code></pre></div></div>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="jekyll" /><summary type="html"><![CDATA[created : 2024-05-06 09:48 updated : 2024-05-07 22:57]]></summary></entry><entry><title type="html">yadm</title><link href="http://localhost:4000/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html" rel="alternate" type="text/html" title="yadm" /><published>2024-05-06T08:42:20+09:00</published><updated>2024-05-06T08:42:20+09:00</updated><id>http://localhost:4000/all/linux/unix/mac/vim/testcat/yadm</id><content type="html" xml:base="http://localhost:4000/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html"><![CDATA[<p>created : 2024-05-06 08:42<br />
 updated : 2024-05-06 22:43</p>
 
 <h3 id="yadm은-여러-config-파일을-관리하는-툴이다">yadm은 여러 config 파일을 관리하는 툴이다.</h3>
@@ -170,7 +170,7 @@ yadm status</url></p>
 
 <p><a href="https://yadm.io/docs/getting_started#">yadm official</a></p>
 
-<p>this is test</p>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="linux" /><category term="unix" /><category term="mac" /><category term="vim" /><category term="testcat" /><summary type="html"><![CDATA[created : 2024-05-06 08:42 updated : 2024-05-06 22:43]]></summary></entry><entry><title type="html">linux-i3-wm</title><link href="http://localhost:4000/all/linux/linux-i3-wm" rel="alternate" type="text/html" title="linux-i3-wm" /><published>2024-05-06T07:57:47+09:00</published><updated>2024-05-06T07:57:47+09:00</updated><id>http://localhost:4000/all/linux/linux-i3-wm</id><content type="html" xml:base="http://localhost:4000/all/linux/linux-i3-wm"><![CDATA[<p>created : 2024-05-06 07:57<br />
+<p>this is test</p>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="linux" /><category term="unix" /><category term="mac" /><category term="vim" /><category term="testcat" /><summary type="html"><![CDATA[created : 2024-05-06 08:42 updated : 2024-05-06 22:43]]></summary></entry><entry><title type="html">linux-i3-wm</title><link href="http://localhost:4000/all/linux/2024-05-06-linux-i3-wm.html" rel="alternate" type="text/html" title="linux-i3-wm" /><published>2024-05-06T07:57:47+09:00</published><updated>2024-05-06T07:57:47+09:00</updated><id>http://localhost:4000/all/linux/linux-i3-wm</id><content type="html" xml:base="http://localhost:4000/all/linux/2024-05-06-linux-i3-wm.html"><![CDATA[<p>created : 2024-05-06 07:57<br />
 updated : 2024-05-05 23:06</p>
 
 <h3 id="i3-wm은-리눅스용-윈도우-메니저이다">i3 wm은 리눅스용 윈도우 메니저이다.</h3>
@@ -181,7 +181,7 @@ updated : 2024-05-05 23:06</p>
 윈도우 포커스 이동 mod + arrow key
 윈도우 닫기 mod + shift + q</p>
 
-<p>config파일은 따로 정리해야겠다.</p>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="linux" /><summary type="html"><![CDATA[created : 2024-05-06 07:57 updated : 2024-05-05 23:06]]></summary></entry><entry><title type="html">mac-capture-image</title><link href="http://localhost:4000/all/mac-capture-image" rel="alternate" type="text/html" title="mac-capture-image" /><published>2024-05-06T07:39:00+09:00</published><updated>2024-05-06T07:39:00+09:00</updated><id>http://localhost:4000/all/mac-capture-image</id><content type="html" xml:base="http://localhost:4000/all/mac-capture-image"><![CDATA[<p>created : 2024-05-06 07:39<br />
+<p>config파일은 따로 정리해야겠다.</p>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="linux" /><summary type="html"><![CDATA[created : 2024-05-06 07:57 updated : 2024-05-05 23:06]]></summary></entry><entry><title type="html">mac-capture-image</title><link href="http://localhost:4000/all/2024-05-06-mac-capture-image.html" rel="alternate" type="text/html" title="mac-capture-image" /><published>2024-05-06T07:39:00+09:00</published><updated>2024-05-06T07:39:00+09:00</updated><id>http://localhost:4000/all/mac-capture-image</id><content type="html" xml:base="http://localhost:4000/all/2024-05-06-mac-capture-image.html"><![CDATA[<p>created : 2024-05-06 07:39<br />
 updated : 2024-05-05 22:44</p>
 
 <h3 id="맥북에서-이미지-캡처하고-편집-하는-방법">맥북에서 이미지 캡처하고 편집 하는 방법</h3>
@@ -193,7 +193,7 @@ updated : 2024-05-05 22:44</p>
 <p>캡쳐가 완료되면 편집창이 뜬다. (미니창을 디폴트로 지정할 수 도 있다)
 편집창에서 가볍게 편집하고, esc 또는 cmd + c를 누르면 클립보드로 복사된다.</p>
 
-<p><img src="/assets/2024-05-05-22-44-03.png" alt="" /></p>]]></content><author><name>HE Tao</name></author><category term="all" /><summary type="html"><![CDATA[created : 2024-05-06 07:39 updated : 2024-05-05 22:44]]></summary></entry><entry><title type="html">CPP Study 모아두는 파일</title><link href="http://localhost:4000/all/algorithm/cpp" rel="alternate" type="text/html" title="CPP Study 모아두는 파일" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/cpp</id><content type="html" xml:base="http://localhost:4000/all/algorithm/cpp"><![CDATA[<ul id="markdown-toc">
+<p><img src="/assets/2024-05-05-22-44-03.png" alt="" /></p>]]></content><author><name>HE Tao</name></author><category term="all" /><summary type="html"><![CDATA[created : 2024-05-06 07:39 updated : 2024-05-05 22:44]]></summary></entry><entry><title type="html">CPP Study 모아두는 파일</title><link href="http://localhost:4000/all/algorithm/2024-05-02-cpp.html" rel="alternate" type="text/html" title="CPP Study 모아두는 파일" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/cpp</id><content type="html" xml:base="http://localhost:4000/all/algorithm/2024-05-02-cpp.html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#카테고리-만들면-이-파일은-필요-없을-듯-하다-정리되면-지우자" id="markdown-toc-카테고리-만들면-이-파일은-필요-없을-듯-하다-정리되면-지우자">카테고리 만들면 이 파일은 필요 없을 듯 하다. 정리되면 지우자</a></li>
   <li><a href="#이론" id="markdown-toc-이론">이론</a></li>
 </ul>
@@ -204,7 +204,7 @@ updated : 2024-05-05 22:44</p>
 <ul>
   <li>[[/Languages/cpp/class]]</li>
   <li>[[/Languages/cpp/polymorphism]]</li>
-</ul>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="algorithm" /></entry><entry><title type="html">Qt 빠르게 설치 하는 법</title><link href="http://localhost:4000/all/algorithm/Qt" rel="alternate" type="text/html" title="Qt 빠르게 설치 하는 법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/Qt</id><content type="html" xml:base="http://localhost:4000/all/algorithm/Qt"><![CDATA[<ul id="markdown-toc">
+</ul>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="algorithm" /></entry><entry><title type="html">Qt 빠르게 설치 하는 법</title><link href="http://localhost:4000/all/algorithm/2024-05-02-Qt.html" rel="alternate" type="text/html" title="Qt 빠르게 설치 하는 법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/Qt</id><content type="html" xml:base="http://localhost:4000/all/algorithm/2024-05-02-Qt.html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#qt-빠르게-설치하는-방법" id="markdown-toc-qt-빠르게-설치하는-방법">Qt 빠르게 설치하는 방법</a></li>
 </ul>
 
@@ -212,7 +212,7 @@ updated : 2024-05-05 22:44</p>
 <p>아래처럼 dmg파일 실행시 mirror 경로를 함께 명시하여 실행한다.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qt-unified-macOS-x64-4.6.0-online.dmg <span class="nt">--mirror</span> https://mirrors.ocf.berkeley.edu/qt/
-</code></pre></div></div>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="algorithm" /></entry><entry><title type="html">Markdown 문법</title><link href="http://localhost:4000/all/algorithm/markdown/Markdown" rel="alternate" type="text/html" title="Markdown 문법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/markdown/Markdown</id><content type="html" xml:base="http://localhost:4000/all/algorithm/markdown/Markdown"><![CDATA[<ul id="markdown-toc">
+</code></pre></div></div>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="algorithm" /></entry><entry><title type="html">Markdown 문법</title><link href="http://localhost:4000/all/algorithm/markdown/2024-05-02-Markdown.html" rel="alternate" type="text/html" title="Markdown 문법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/markdown/Markdown</id><content type="html" xml:base="http://localhost:4000/all/algorithm/markdown/2024-05-02-Markdown.html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#markdown-문법을-연습해-봅니다" id="markdown-toc-markdown-문법을-연습해-봅니다">Markdown 문법을 연습해 봅니다.</a></li>
 </ul>
 
@@ -222,7 +222,7 @@ updated : 2024-05-05 22:44</p>
   <li>주석으로 이동합니다. [^comment1]</li>
 </ul>
 
-<p>[^comment1] : 주석1에 대한 설명입니다.</p>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="algorithm" /><category term="markdown" /></entry><entry><title type="html">로지텍 마우스 끊김 해결 방법</title><link href="http://localhost:4000/all/algorithm/hardware/computer/LogitechMouse" rel="alternate" type="text/html" title="로지텍 마우스 끊김 해결 방법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/hardware/computer/LogitechMouse</id><content type="html" xml:base="http://localhost:4000/all/algorithm/hardware/computer/LogitechMouse"><![CDATA[<ul id="markdown-toc">
+<p>[^comment1] : 주석1에 대한 설명입니다.</p>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="algorithm" /><category term="markdown" /></entry><entry><title type="html">로지텍 마우스 끊김 해결 방법</title><link href="http://localhost:4000/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html" rel="alternate" type="text/html" title="로지텍 마우스 끊김 해결 방법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/hardware/computer/LogitechMouse</id><content type="html" xml:base="http://localhost:4000/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#m590-24g-로-연결-하는법" id="markdown-toc-m590-24g-로-연결-하는법">M590 2.4G 로 연결 하는법</a></li>
 </ul>
 
@@ -246,7 +246,7 @@ AA배터리 한개로 약2년간 사용 할 수 있다고 해서 구매했다.
 <p>블루투스 연결을 해제해야 2.4G를 사용 할 수 있다.
 <img src="/assets/disconMouse.png" alt="disconMouse" /></p>
 
-<p>사용해본 결과 확실히 2.4G 마우스는 끊김이 없다.</p>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="algorithm" /><category term="hardware" /><category term="computer" /></entry><entry><title type="html">메뉴바 변경 방법</title><link href="http://localhost:4000/all/algorithm/wiki/MenubarChange" rel="alternate" type="text/html" title="메뉴바 변경 방법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/wiki/MenubarChange</id><content type="html" xml:base="http://localhost:4000/all/algorithm/wiki/MenubarChange"><![CDATA[<ul id="markdown-toc">
+<p>사용해본 결과 확실히 2.4G 마우스는 끊김이 없다.</p>]]></content><author><name>HE Tao</name></author><category term="all" /><category term="algorithm" /><category term="hardware" /><category term="computer" /></entry><entry><title type="html">메뉴바 변경 방법</title><link href="http://localhost:4000/all/algorithm/wiki/2024-05-02-MenubarChange.html" rel="alternate" type="text/html" title="메뉴바 변경 방법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/wiki/MenubarChange</id><content type="html" xml:base="http://localhost:4000/all/algorithm/wiki/2024-05-02-MenubarChange.html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#배경-색상-변경" id="markdown-toc-배경-색상-변경">배경 색상 변경</a></li>
   <li><a href="#글자-색상스타일-변경" id="markdown-toc-글자-색상스타일-변경">글자 색상/스타일 변경</a></li>
   <li><a href="#제목줄-내용-변경" id="markdown-toc-제목줄-내용-변경">제목줄 내용 변경</a></li>
