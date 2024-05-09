@@ -11,7 +11,7 @@ gitbook_version:  3.2.3
 
 url:              'https://daniel00.github.io'
 # baseurl:          ''
-baseurl:          '/jekyll-gitbook'
+# baseurl:          '/jekyll-gitbook'
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
