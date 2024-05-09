@@ -1,0 +1,62 @@
+---
+layout: post
+---
+
+<section class="small-intro">
+  <div class="container">
+    <h2>
+      {{page.category | capitalize}}
+    </h2>
+  </div>
+</section>
+
+
+<section class="blog">
+  <div class="container">
+    <!-- {% assign sorted_posts = site.posts | sort: 'lastmod' | reverse%} -->
+    {% assign sorted_posts = site.posts | sort: 'lastmod' | reverse%}
+    {% for post in sorted_posts %} {% if post.categories contains page.category %}
+
+    <!-- {% assign posts = site.categories.jekyll | sort: 'title' %} -->
+    <div class="blog-container">
+
+      <div class="title-excerpt">
+        <!-- yoo -->
+        <div style="font-size:18px">
+          <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>
+          {{ post.lastmod | date:'%Y-%m-%d %R &nbsp;&nbsp;'}}
+
+
+                    <!-- {% for post in site.categories[category_name] %}
+                    <article class="archive-item">
+                    <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+                    </article>
+                    {% endfor %} -->
+
+
+        <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> 
+
+        </div>
+        <!-- <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>  -->
+      </div>
+
+      <!-- <div class="date-categories">
+        카테고리 표시
+        <div class="categories">
+          {% for category in post.categories%}
+          <div class="category">
+            <a href="/categories/{{category}}">{{ category }}</a>
+          </div>
+          {% endfor %}
+        </div> -->
+
+        <!-- 날짜 표시 -->
+        <!-- <div class="date">
+          <p>{{ post.date | date_to_string }}</p>
+        </div> -->
+      <!-- </div> -->
+
+    </div> 
+    {% endif %} {% endfor %}
+  </div>
+</section>

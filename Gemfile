@@ -9,5 +9,6 @@ gem 'jekyll-readme-index'
 gem 'jemoji'
 gem 'webrick'
 gem "jekyll-last-modified-at"
+gem "jekyll-categories"
 
 # gem "rails"

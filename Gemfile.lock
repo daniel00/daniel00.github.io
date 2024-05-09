@@ -50,6 +50,8 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-categories (0.0.2)
+      jekyll (>= 0.10.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-last-modified-at (1.3.0)
@@ -104,6 +106,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-categories
   jekyll-feed
   jekyll-last-modified-at
   jekyll-readme-index
