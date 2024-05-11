@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Category: history · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>category 만드는 법 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -193,7 +193,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >Category: history</a>
+                            <a href="." >category 만드는 법</a>
                         
                     </h1>
                 </div>
@@ -206,71 +206,43 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="">Category: history</h1>
+                        <h1 id="">category 만드는 법</h1>
                     
 
-                    <!-- 각 카테고리에 속해있는 포스트들의 제목을 보여준다. -->
+                    <h1 id="jekyll-에서-카테고리를-모아서-표시하는-방법에-대해-설명-합니다">jekyll 에서 카테고리를 모아서 표시하는 방법에 대해 설명 합니다.</h1>
+<p>아래와 같이 카테고리가 메뉴가 추가되고 포스트 개수를 표시하게 된다.</p>
+<blockquote>
+  <p><img src="../assets/2024-02-25-00-34-17.png" alt="" /></p>
+</blockquote>
 
-<section class="small-intro">
-  <div class="container">
-    <h2>
-      History
-    </h2>
-  </div>
+<p>여기서는 ‘cpp’ 카테고리를 만드는 예로 설명한다.</p>
+
+<ol>
+  <li>category-cpp.md 를 만든다.</li>
+  <li>category-cpp.md 에 다음의 front matter를 작성한다.</li>
+</ol>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">C++</span><span class="nv"> </span><span class="s">프로그래밍"</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">categories/cpp</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<ol>
+  <li>아래의 내용을 작성한다. (코드블럭으로 넣으면 링크된 파일이 표시되어서 부득이 그림으로 넣었다. 나중에 수정예정)</li>
+</ol>
+
+<p><img src="../assets/2024-02-25-00-04-37.png" alt="testimage" /></p>
+
+<ol>
+  <li>toc-date.html에 다음과 같이 카테고리를 만들고, 카테고리에 속한 포스트들을 읽어 오도록 작성한다.</li>
+</ol>
+
+<blockquote>
+  <p><img src="../assets/2024-04-08-14-29-41.png" alt="" /></p>
+</blockquote>
 </section>
-
-
-<section class="blog">
-  <div class="container">
-    <!--  -->
-    
-                                                                                               
-
-    <!--  -->
-    <div class="blog-container">
-
-      <div class="title-excerpt">
-        <!-- yoo -->
-        <div style="font-size:18px">
-          <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>
-          2024-04-08 22:57 &nbsp;&nbsp;
-
-
-                    <!--  -->
-
-
-        <!-- 각 카테고리에 속해있는 포스트들의 제목을 보여준다. -->
-        <a href="/all/history/2024-02-26-1%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84.html">1차 세계대전</a> 
-        <!-- <a href="/all/history/2024-02-26-1%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84.html">1차 세계대전</a>  -->
-
-        </div>
-        <!-- <h2><a href="/all/history/2024-02-26-1%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84.html">1차 세계대전</a></h2>  -->
-      </div>
-
-      <!-- <div class="date-categories">
-        카테고리 표시
-        <div class="categories">
-          
-          <div class="category">
-            <a href="/categories/all">all</a>
-          </div>
-          
-          <div class="category">
-            <a href="/categories/history">history</a>
-          </div>
-          
-        </div> -->
-
-        <!-- 날짜 표시 -->
-        <!-- <div class="date">
-          <p>26 Feb 2024</p>
-        </div> -->
-      <!-- </div> -->
-
-    </div> 
-                                                                                     
-  </div>
-</section></section>
             </div><div class="search-results">
     <div class="has-results">
         <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
@@ -433,8 +405,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "categories/history/index.html",
-        "mtime": "",
+        "path": "testyoo/2024-02-24-jekyll-category.md",
+        "mtime": "2024-02-24 23:39:49 +0000",
         "type": "markdown"
     },
     "gitbook": {
