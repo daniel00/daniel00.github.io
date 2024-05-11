@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>정치 경제 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>jekyll category 링크 자동생성 하는 방법 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,11 @@
 
 
 
-            <link rel="prev" href="/2024-04-08-cpp-index.html" />
+            <link rel="prev" href="/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html" />
         
 
         
-            <link rel="next" href="/2024-04-08-unity.html" />
+            <link rel="next" href="/all/jekyll/2024-05-08-jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C.html" />
         
     </head>
     <body>
@@ -195,7 +195,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >정치 경제</a>
+                            <a href="." >jekyll category 링크 자동생성 하는 방법</a>
                         
                     </h1>
                 </div>
@@ -208,40 +208,141 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/categories/politics-category">정치 경제</h1>
+                        <h1 id="/all/jekyll/jekyll-categories">jekyll category 링크 자동생성 하는 방법</h1>
                     
 
-                    
-<div class="list__item">
-    <article class="archive-item">
-        <div style="font-size:18px">
+                    <p>created : 2024-05-06 09:48<br />
+updated : 2024-05-07 22:57</p>
 
+<h3 id="jekyll-blog에-카테고리를-생성을-자동화-하는-방법을-정리한다">jekyll blog에 카테고리를 생성을 자동화 하는 방법을 정리한다.</h3>
+<p>이전에 설명한 글에서는 (링크) 카테고리 페이지를 추가하기 위해서는 매우 번거로운 작업들을 수동으로 수행했어야 했다.</p>
+<ul>
+  <li>카테고리만 모아두는 파일인 my-category.md 파일을 카테고리 별로 만들어 주어야하고</li>
+  <li>이 파일의 내용도 category에 맞게 수정해 주어야 했다.</li>
+  <li>또한 ,  왼쪽 메뉴바에 카테고리별 링크를 추가하려면 toc-date.html파일 내용을 일일이 추가해 주어야 했다.</li>
+</ul>
 
-            <!-- <small>  -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2024.02.15 &nbsp;&nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/15 22:59 &nbsp;&nbsp;&nbsp;&nbsp; -->
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02 &nbsp;&nbsp;
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 &nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/06 00:00 &nbsp;&nbsp;&nbsp;&nbsp; -->
+<p>이 처럼 포스트들을 카테고리별로 관리 하려면 너무 번거롭다보니, 그냥 카테고리를 all 로 지정하여 모두 한페이지에 표시되도록 단순 무식하게 사용하게 되었다.
+하지만 조금씩 글이 많아지고 포스트를 정리할 필요성이 느껴져 카테고리 관리를 자동화 할 수 있는 방법을 찾아 보았다.</p>
 
-<!--  -->
-<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-04-08T00:00:00+09:00">April 08, 2024</time></p> -->
-<!--  -->
+<p>다음의 링크를 참조하였다.</p>
 
-              
-            <!-- </small> -->
+<p><a href="https://uhded.com/automatic-jekyll-categories-page">카테고리 자동관리</a></p>
 
-            <span>
-              <a href="/politics/political/2024-02-15-election.html" style="font-size:20px">병립형-연동형</a>
-              <!-- <a href="/politics/political/2024-02-15-election.html">병립형-연동형</a> -->
-            </span>
-        </div>
-      </article>
-</div>
+<h3 id="summary">Summary</h3>
+<ol>
+  <li>_plugins 디렉토리에 categories.rb 파일을 만든다.</li>
+  <li>categories.rb를 다음처럼 작성한다.</li>
+  <li>_layouts 디렉토리에 category_index.html 파일을 만든다. (이 파일은 각 카테고리 페이지의 모양을 결정한다)</li>
+</ol>
 
+<!-- 넘버를 리셋하기 위해 주석을 넣었다  -->
+<h3 id="상세설명">상세설명</h3>
+<ol>
+  <li>_plugins 디렉토리에 categories.rb 파일을 만든다.</li>
+  <li>
+    <p>categories.rb를 다음처럼 작성한다.</p>
+
+    <div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">module</span> <span class="nn">Jekyll</span>
+     <span class="k">class</span> <span class="nc">CategoryPageGenerator</span> <span class="o">&lt;</span> <span class="no">Generator</span>
+       <span class="n">safe</span> <span class="kp">true</span>
+
+       <span class="k">def</span> <span class="nf">generate</span><span class="p">(</span><span class="n">site</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">site</span><span class="p">.</span><span class="nf">layouts</span><span class="p">.</span><span class="nf">key?</span> <span class="s1">'category_index'</span>
+           <span class="n">dir</span> <span class="o">=</span> <span class="n">site</span><span class="p">.</span><span class="nf">config</span><span class="p">[</span><span class="s1">'category_dir'</span><span class="p">]</span> <span class="o">||</span> <span class="s1">'categories'</span>
+           <span class="n">site</span><span class="p">.</span><span class="nf">categories</span><span class="p">.</span><span class="nf">each_key</span> <span class="k">do</span> <span class="o">|</span><span class="n">category</span><span class="o">|</span>
+             <span class="n">site</span><span class="p">.</span><span class="nf">pages</span> <span class="o">&lt;&lt;</span> <span class="no">CategoryPage</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">site</span><span class="p">.</span><span class="nf">source</span><span class="p">,</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">dir</span><span class="p">,</span> <span class="n">category</span><span class="p">),</span> <span class="n">category</span><span class="p">)</span>
+           <span class="k">end</span>
+         <span class="k">end</span>
+       <span class="k">end</span>
+     <span class="k">end</span>
+
+     <span class="c1"># A Page subclass used in the `CategoryPageGenerator`</span>
+     <span class="k">class</span> <span class="nc">CategoryPage</span> <span class="o">&lt;</span> <span class="no">Page</span>
+       <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">base</span><span class="p">,</span> <span class="n">dir</span><span class="p">,</span> <span class="n">category</span><span class="p">)</span>
+         <span class="vi">@site</span> <span class="o">=</span> <span class="n">site</span>
+         <span class="vi">@base</span> <span class="o">=</span> <span class="n">base</span>
+         <span class="vi">@dir</span>  <span class="o">=</span> <span class="n">dir</span>
+         <span class="vi">@name</span> <span class="o">=</span> <span class="s1">'index.html'</span>
+
+         <span class="nb">self</span><span class="p">.</span><span class="nf">process</span><span class="p">(</span><span class="vi">@name</span><span class="p">)</span>
+         <span class="nb">self</span><span class="p">.</span><span class="nf">read_yaml</span><span class="p">(</span><span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="s1">'_layouts'</span><span class="p">),</span> <span class="s1">'category_index.html'</span><span class="p">)</span>
+         <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'category'</span><span class="p">]</span> <span class="o">=</span> <span class="n">category</span>
+
+         <span class="n">category_title_prefix</span> <span class="o">=</span> <span class="n">site</span><span class="p">.</span><span class="nf">config</span><span class="p">[</span><span class="s1">'category_title_prefix'</span><span class="p">]</span> <span class="o">||</span> <span class="s1">'Category: '</span>
+         <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"</span><span class="si">#{</span><span class="n">category_title_prefix</span><span class="si">}#{</span><span class="n">category</span><span class="si">}</span><span class="s2">"</span>
+       <span class="k">end</span>
+     <span class="k">end</span>
+   <span class="k">end</span>
+</code></pre></div>    </div>
+  </li>
+  <li>_layouts 디렉토리에 category_index.html 파일을 만든다. 
+(이 파일은 각 카테고리 페이지의 모양을 결정한다. 기존 my-category.md 파일의 용도와 유사하다.)
+    <ul>
+      <li>_layout 폴더에 category_index.html 파일을 만들고 다음처럼 작성한다.</li>
+      <li>layout을 default가 아닌 post로 변경하여야 한다.</li>
+      <li>수정날짜 포스트이름 형식으로 표시하도록 수정하였다.</li>
+      <li>카테고리를 태그처럼 나열하는게 복잡해 보여서 주석처리 하였다.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>*마크다운 코드블럭에 리퀴드(liquid) 문법 표시가 제대로 안되어서 이미지로 표시하였다.
+<img src="/assets/2024-05-06-16-20-14.png" alt="" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```html  
+---
+layout: post
+---
+
+&lt;!-- &lt;section class="small-intro"&gt; --&gt;
+  &lt;!-- &lt;div class="container"&gt; --&gt;
+    &lt;!-- &lt;h2&gt;
+      
+    &lt;/h2&gt; --&gt;
+  &lt;!-- &lt;/div&gt; --&gt;
+&lt;!-- &lt;/section&gt; --&gt;
+
+&lt;section class="blog"&gt;
+  &lt;div class="container"&gt;
+    
+    {% for post in site.posts %} {% if post.categories contains page.category %}
+    &lt;!-- {% assign posts = site.categories.jekyll | sort: 'title' %} --&gt;
+
+    &lt;div class="blog-container"&gt;
+      &lt;div class="title-excerpt"&gt;
+        &lt;!-- yoo --&gt;
+        &lt;div style="font-size:18px"&gt;
+          &lt;i class="fas fa-fw fa-calendar-alt" aria-hidden="true"&gt; &lt;/i&gt;
+          {{ post.lastmod | date:'%Y-%m-%d %R &amp;nbsp;&amp;nbsp;'}}
+        &lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt; 
+        &lt;/div&gt;
+        &lt;!-- &lt;h2&gt;&lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;  --&gt;
+      &lt;/div&gt;
+
+      &lt;div class="date-categories"&gt;
+        &lt;!-- 카테고리 표시 --&gt;
+        &lt;!-- &lt;div class="categories"&gt;
+          {% for category in post.categories%}
+          &lt;div class="category"&gt;
+            &lt;a href="/categories/{{category}}"&gt;{{ category }}&lt;/a&gt;
+          &lt;/div&gt;
+          {% endfor %}
+        &lt;/div&gt; --&gt;
+
+        &lt;!-- 날짜 표시 --&gt;
+        &lt;!-- &lt;div class="date"&gt;
+          &lt;p&gt;{{ post.date | date_to_string }}&lt;/p&gt;
+        &lt;/div&gt; --&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt; 
+    {% endif %} {% endfor %}
+  &lt;/div&gt;
+&lt;/section&gt;
+    
+```
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -299,13 +400,13 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/2024-04-08-cpp-index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cpp Index">
+                        <a href="/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: yadm">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
-                        <a href="/2024-04-08-unity.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unity">
+                        <a href="/all/jekyll/2024-05-08-jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C.html" class="navigation navigation-next navigation-unique" aria-label="Next page: jekyll-로컬에서만보일때">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -322,11 +423,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Unity",
+            "title": "jekyll-로컬에서만보일때",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2024-04-08-unity.md",
-            "ref": "_posts/2024-04-08-unity.md",
+            "path": "_posts/2024-05-07-jekyll-로컬에서만보일때.md",
+            "ref": "_posts/2024-05-07-jekyll-로컬에서만보일때.md",
             "articles": []
         },
         
@@ -418,8 +519,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2024-04-08-politics-category.md",
-        "mtime": "2024-04-08 00:00:00 +0900",
+        "path": "_posts/2024-05-06-jekyll-categories.md",
+        "mtime": "2024-05-06 09:48:49 +0900",
         "type": "markdown"
     },
     "gitbook": {

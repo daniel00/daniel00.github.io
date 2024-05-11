@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>정치 경제 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>유니티 UI 화면 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,11 @@
 
 
 
-            <link rel="prev" href="/2024-04-08-cpp-index.html" />
+            <link rel="prev" href="/all/2024-02-26-Prefab.html" />
         
 
         
-            <link rel="next" href="/2024-04-08-unity.html" />
+            <link rel="next" href="/jekyll/2024-02-26-jekyll.html" />
         
     </head>
     <body>
@@ -195,7 +195,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >정치 경제</a>
+                            <a href="." >유니티 UI 화면</a>
                         
                     </h1>
                 </div>
@@ -208,40 +208,106 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/categories/politics-category">정치 경제</h1>
+                        <h1 id="/all/StudyUi">유니티 UI 화면</h1>
                     
 
-                    
-<div class="list__item">
-    <article class="archive-item">
-        <div style="font-size:18px">
+                    <h2 id="연습을-통해-유니티-화면에-익숙해져-봅니다">연습을 통해 유니티 화면에 익숙해져 봅니다.</h2>
 
+<h2 id="secne-view-씬뷰">Secne View. 씬뷰</h2>
+<p>게임을 구성하는 메인화면. 리소스를 배치해 화면을 구성한다.</p>
 
-            <!-- <small>  -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2024.02.15 &nbsp;&nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/15 22:59 &nbsp;&nbsp;&nbsp;&nbsp; -->
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02 &nbsp;&nbsp;
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 &nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/06 00:00 &nbsp;&nbsp;&nbsp;&nbsp; -->
+<p><img src="/assets/main.png" alt="main" /></p>
 
-<!--  -->
-<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-04-08T00:00:00+09:00">April 08, 2024</time></p> -->
-<!--  -->
+<h2 id="game-view--게임뷰">Game View.  게임뷰</h2>
+<p>게임을 실행했을때 보이는 화면.<br />
+내가 테스트 할 때는 Game View가 검정화면 으로만 보였다. 
+해결방법은 Scene - 우클릭 - Add Tab - Game을 하면 보였다.
+이래도 해결이 안된다면, 카메라, 조명 등이 오브젝트를 잘 비추고 있는지 확인해 보시길.</p>
 
-              
-            <!-- </small> -->
+<p><img src="/assets/gameView.png" alt="gameView" /></p>
 
-            <span>
-              <a href="/politics/political/2024-02-15-election.html" style="font-size:20px">병립형-연동형</a>
-              <!-- <a href="/politics/political/2024-02-15-election.html">병립형-연동형</a> -->
-            </span>
-        </div>
-      </article>
-</div>
+<h2 id="hierarchy-view-하이어라키-뷰-계층-뷰">Hierarchy View. 하이어라키 뷰. 계층 뷰</h2>
+<p>씬에서 사용되는 오브젝트 이름을 목록으로 표시한다.<br />
+프로젝트를 만들면 기본적으로 Main Camera와 Directional Light 오브젝트가 추가된다.</p>
 
+<p><img src="/assets/hierarchy.png" alt="hierarchy" /></p>
+
+<h2 id="오브젝트-추가하기">오브젝트 추가하기</h2>
+<p>Hierarchy View에서 추가한다.<br />
+여기서는 3D 오브젝트중 Cube(정육면체)를 추가해 보겠다.</p>
+
+<p><img src="/assets/addobj.png" alt="addobj" /></p>
+
+<p>Hierarchy, Scene View 에 Cube가 추가되었다.
+<img src="/assets/addedobj.png" alt="addedobj" /></p>
+
+<h2 id="오브젝트-선택">오브젝트 선택</h2>
+<ul>
+  <li>Secne View의 아이콘모음에서 “Move Tool”을 선택 한 후 오브젝트를 클릭하면 오브젝트가 선택된다.</li>
+  <li>또는 Hierarchy View에서 선택해도 된다.
+<img src="/assets/selobj2.png" alt="selobj2" /></li>
+</ul>
+
+<h2 id="inspector-view-인스펙터-뷰">Inspector View 인스펙터 뷰</h2>
+<p>오브젝트가 선택되면 인스펙터 뷰에 오브젝트의 정보가 나타나고 수정 할 수 있다.
+<img src="/assets/inspector.png" alt="inspector" /></p>
+
+<h2 id="오브젝트를-뷰의-정가운데로-이동하기">오브젝트를 뷰의 정가운데로 이동하기</h2>
+<ul>
+  <li>Hierarchy View에서 오브젝트 선택 후 더블클릭</li>
+  <li>오브젝트를 선택 한 후 Shift + f 를 누른다(대문자 F)</li>
+</ul>
+
+<p>메인카메라를 선택 후 shift f 를 눌러서 씬뷰의 정 가운데로 이동시켰다.
+<img src="/assets/centerobj.png" alt="centerobj" /></p>
+
+<p>shift f를 한번더 누르면 줌이 된다.
+<img src="/assets/zoomobj.png" alt="zoomobj" /></p>
+
+<h2 id="scene-view에서-관찰자-시점-변경하는-방법">Scene View에서 관찰자 시점 변경하는 방법</h2>
+<p>Scene 시점을 변경하면, 개발자가 보는 화면만 변경되는 것 뿐이지 실제 게임 화면이 변하는건 아니다.</p>
+
+<ul>
+  <li>
+    <p>줌 - 마우스 휠<br />
+<img src="/assets/zoom.gif" alt="zoom" /></p>
+  </li>
+  <li>
+    <p>시점 이동 - 손모양 아이콘 선택 후 드래그<br />
+<img src="/assets/move.gif" alt="move" /></p>
+  </li>
+  <li>
+    <p>시점 회전 - Alt + 드래그 (커서가 눈동자 모양으로 바뀐다)<br />
+<img src="/assets/rotate.gif" alt="rotate" /></p>
+  </li>
+</ul>
+
+<h2 id="오브젝트-변경하기크기-위치-회전">오브젝트 변경하기(크기, 위치, 회전)</h2>
+<p>오브젝트를 변경하면 실제 게임시 보여지는 화면이 변경된다.</p>
+
+<ul>
+  <li>오브젝트 이동
+    <ul>
+      <li>십자가 화살표 아이콘 선택 후 오브젝트 선택한 후 드래그하면 오브젝트가 이동된다.</li>
+      <li>3축 화살표를 누르고 이동하면 X,Y,Z 각 축으로만 이동된다.<br />
+<img src="/assets/move_obj.gif" alt="move object" /></li>
+    </ul>
+  </li>
+  <li>오브젝트 회전
+    <ul>
+      <li>로테이션 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 회전이 수행된다.<br />
+<img src="/assets/rotate_obj.gif" alt="rotate object" /></li>
+    </ul>
+  </li>
+  <li>오브젝트 크기변경
+    <ul>
+      <li>Scale 아이콘 선택 후 각축 가이드 라인을 선택한 후 드래그 하면 오브젝트의 크기가 변경된다.<br />
+<img src="/assets/scale_obj.gif" alt="scale object" /></li>
+    </ul>
+  </li>
+</ul>
+
+<p>test</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -299,13 +365,13 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/2024-04-08-cpp-index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cpp Index">
+                        <a href="/all/2024-02-26-Prefab.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Prefab">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
-                        <a href="/2024-04-08-unity.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unity">
+                        <a href="/jekyll/2024-02-26-jekyll.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Jekyll 사용법">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -322,11 +388,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Unity",
+            "title": "Jekyll 사용법",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2024-04-08-unity.md",
-            "ref": "_posts/2024-04-08-unity.md",
+            "path": "_posts/2024-04-08-jekyll.md",
+            "ref": "_posts/2024-04-08-jekyll.md",
             "articles": []
         },
         
@@ -418,8 +484,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2024-04-08-politics-category.md",
-        "mtime": "2024-04-08 00:00:00 +0900",
+        "path": "_posts/2024-04-08-StudyUi.md",
+        "mtime": "2024-02-26 00:35:58 +0900",
         "type": "markdown"
     },
     "gitbook": {

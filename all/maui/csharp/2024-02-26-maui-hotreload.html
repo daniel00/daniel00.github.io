@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>정치 경제 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>MAUI에서 Hot Reload적용 하는 방법 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,11 @@
 
 
 
-            <link rel="prev" href="/2024-04-08-cpp-index.html" />
+            <link rel="prev" href="/all/cpp/2024-02-26-polymorphism.html" />
         
 
         
-            <link rel="next" href="/2024-04-08-unity.html" />
+            <link rel="next" href="/all/maui/csharp/2024-02-26-maui-add-new-file.html" />
         
     </head>
     <body>
@@ -195,7 +195,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >정치 경제</a>
+                            <a href="." >MAUI에서 Hot Reload적용 하는 방법</a>
                         
                     </h1>
                 </div>
@@ -208,40 +208,83 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/categories/politics-category">정치 경제</h1>
+                        <h1 id="/all/maui/csharp/maui-hotreload">MAUI에서 Hot Reload적용 하는 방법</h1>
                     
 
-                    
-<div class="list__item">
-    <article class="archive-item">
-        <div style="font-size:18px">
+                    <p>created : 2024-02-26 00:35<br />
+updated : 2024-04-12 00:29</p>
 
+<h2 id="maui에서-hot-reload-기능을-활성화-하는-방법에-대해-설명합니다">MAUI에서 Hot Reload 기능을 활성화 하는 방법에 대해 설명합니다.</h2>
 
-            <!-- <small>  -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2024.02.15 &nbsp;&nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/15 22:59 &nbsp;&nbsp;&nbsp;&nbsp; -->
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02 &nbsp;&nbsp;
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 &nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/06 00:00 &nbsp;&nbsp;&nbsp;&nbsp; -->
+<p>Microsoft 공식 문서에서는 Hot Reload가 동작한다고 설명하고 있으나 내 맥북에서는 제대로 동작하지 않았다. 
+<a href="https://dotnet.microsoft.com/en-us/learn/maui/first-app-tutorial/modify"> https://dotnet.microsoft.com/en-us/learn/maui/first-app-tutorial/modify  </a><br />
+결국 <a href="https://github.com/janeysprings/dotnet.meteor"> DotNet.Meter </a> 라는 vscode extension을 설치하여 Hot Reload기능을 사용 할 수 있었다.</p>
 
-<!--  -->
-<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-04-08T00:00:00+09:00">April 08, 2024</time></p> -->
-<!--  -->
+<p>DotNet.Meter설치 후 다음의 순서대로 설정해주어야 한다.</p>
 
-              
-            <!-- </small> -->
+<ol>
+  <li>
+    <p>Run And Debug - Add Configuration - .Net Meter Debugger 선택
+<img src="/assets/2024-04-12-00-09-45.png" alt="" /></p>
+  </li>
+  <li>
+    <p>launch.json 파일 생성되면, 다음처럼 입력</p>
+  </li>
+</ol>
 
-            <span>
-              <a href="/politics/political/2024-02-15-election.html" style="font-size:20px">병립형-연동형</a>
-              <!-- <a href="/politics/political/2024-02-15-election.html">병립형-연동형</a> -->
-            </span>
-        </div>
-      </article>
-</div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.2.0"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"configurations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">".NET Meteor Debugger"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dotnet-meteor.debugger"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="s2">"launch"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"preLaunchTask"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dotnet-meteor: Build"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
+<ol>
+  <li>*.csproj 파일에 아래처럼 패키지 추가
+    <pre><code class="language-csproj"> &lt;ItemGroup&gt;
+     &lt;PackageReference Include="DotNetMeteor.HotReload.Plugin" Version="3.*"/&gt;
+ &lt;/ItemGroup&gt;
+</code></pre>
+  </li>
+  <li>MauiProgram.cs 에 Hot Reload Plugin을 Enable 시켜준다.</li>
+</ol>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">Microsoft.Extensions.Logging</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">DotNet.Meteor.HotReload.Plugin</span><span class="p">;</span> <span class="c1">//&lt;------- 여기</span>
+
+<span class="k">namespace</span> <span class="nn">MauiApp1</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">static</span> <span class="k">class</span> <span class="nc">MauiProgram</span>
+<span class="p">{</span>
+	<span class="k">public</span> <span class="k">static</span> <span class="n">MauiApp</span> <span class="nf">CreateMauiApp</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="kt">var</span> <span class="n">builder</span> <span class="p">=</span> <span class="n">MauiApp</span><span class="p">.</span><span class="nf">CreateBuilder</span><span class="p">();</span>
+		<span class="n">builder</span>
+			<span class="p">.</span><span class="n">UseMauiApp</span><span class="p">&lt;</span><span class="n">App</span><span class="p">&gt;()</span>
+			<span class="p">.</span><span class="nf">ConfigureFonts</span><span class="p">(</span><span class="n">fonts</span> <span class="p">=&gt;</span>
+			<span class="p">{</span>
+				<span class="n">fonts</span><span class="p">.</span><span class="nf">AddFont</span><span class="p">(</span><span class="s">"OpenSans-Regular.ttf"</span><span class="p">,</span> <span class="s">"OpenSansRegular"</span><span class="p">);</span>
+				<span class="n">fonts</span><span class="p">.</span><span class="nf">AddFont</span><span class="p">(</span><span class="s">"OpenSans-Semibold.ttf"</span><span class="p">,</span> <span class="s">"OpenSansSemibold"</span><span class="p">);</span>
+			<span class="p">});</span>
+
+<span class="cp">#if DEBUG
+</span>		<span class="n">builder</span><span class="p">.</span><span class="n">Logging</span><span class="p">.</span><span class="nf">AddDebug</span><span class="p">();</span>
+		<span class="n">builder</span><span class="p">.</span><span class="nf">EnableHotReload</span><span class="p">();</span> <span class="c1">//&lt;------- 여기</span>
+<span class="cp">#endif
+</span>
+		<span class="k">return</span> <span class="n">builder</span><span class="p">.</span><span class="nf">Build</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>이제 xaml 파일이 수정되면 에뮬레이터에 바로 적용된다. 다시 빌드할 필요가 없다.</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -299,13 +342,13 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/2024-04-08-cpp-index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cpp Index">
+                        <a href="/all/cpp/2024-02-26-polymorphism.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 다형성">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
-                        <a href="/2024-04-08-unity.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unity">
+                        <a href="/all/maui/csharp/2024-02-26-maui-add-new-file.html" class="navigation navigation-next navigation-unique" aria-label="Next page: vscode에서 maui 프로젝트 활용">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -322,11 +365,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Unity",
+            "title": "vscode에서 maui 프로젝트 활용",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2024-04-08-unity.md",
-            "ref": "_posts/2024-04-08-unity.md",
+            "path": "_posts/2024-04-13-maui-add-new-file.md",
+            "ref": "_posts/2024-04-13-maui-add-new-file.md",
             "articles": []
         },
         
@@ -418,8 +461,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2024-04-08-politics-category.md",
-        "mtime": "2024-04-08 00:00:00 +0900",
+        "path": "_posts/2024-04-11-maui-hotreload.md",
+        "mtime": "2024-02-26 00:35:58 +0900",
         "type": "markdown"
     },
     "gitbook": {

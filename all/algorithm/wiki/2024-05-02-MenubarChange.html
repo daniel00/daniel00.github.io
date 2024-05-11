@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>정치 경제 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>메뉴바 변경 방법 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,11 @@
 
 
 
-            <link rel="prev" href="/2024-04-08-cpp-index.html" />
+            <link rel="prev" href="/all/algorithm/wiki/2024-05-02-GoogleSearch.html" />
         
 
         
-            <link rel="next" href="/2024-04-08-unity.html" />
+            <link rel="next" href="/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html" />
         
     </head>
     <body>
@@ -195,7 +195,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >정치 경제</a>
+                            <a href="." >메뉴바 변경 방법</a>
                         
                     </h1>
                 </div>
@@ -208,40 +208,101 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/categories/politics-category">정치 경제</h1>
+                        <h1 id="/all/algorithm/wiki/MenubarChange">메뉴바 변경 방법</h1>
                     
 
-                    
-<div class="list__item">
-    <article class="archive-item">
-        <div style="font-size:18px">
+                    <ul id="markdown-toc">
+  <li><a href="#배경-색상-변경" id="markdown-toc-배경-색상-변경">배경 색상 변경</a></li>
+  <li><a href="#글자-색상스타일-변경" id="markdown-toc-글자-색상스타일-변경">글자 색상/스타일 변경</a></li>
+  <li><a href="#제목줄-내용-변경" id="markdown-toc-제목줄-내용-변경">제목줄 내용 변경</a></li>
+  <li><a href="#favicon-변경" id="markdown-toc-favicon-변경">Favicon 변경</a></li>
+</ul>
 
+<p><a href="http://johngrib.github.io">johngrib</a> 님의 wiki를 folk하여 나만의 위키를 구현중이다.<br />
+원래 페이지 그대로도 너무 멋지지만 조금씩 내가 좋아하는 스타일로 바꿔보고 있다.<br />
+html, css등을 잘 몰라서 이것저것 건드려보며 바꾸어 가는 중이다.
+같은 고민을 하시는 분들을 위해, 또 나의 기억력을 못 믿기에 기록으로 남긴다.</p>
 
-            <!-- <small>  -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2024.02.15 &nbsp;&nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/15 22:59 &nbsp;&nbsp;&nbsp;&nbsp; -->
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02 &nbsp;&nbsp;
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 &nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/06 00:00 &nbsp;&nbsp;&nbsp;&nbsp; -->
+<h2 id="배경-색상-변경">배경 색상 변경</h2>
+<p>menubar 배경색을 변경하려면 css/main.scss 의 theme-color의 값을 변경해 주면 된다.</p>
 
-<!--  -->
-<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-04-08T00:00:00+09:00">April 08, 2024</time></p> -->
-<!--  -->
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$theme-color: #00ffff;
+</code></pre></div></div>
+<p>로컬호스트에서 확인하면 바로 반영되지만, 온라인상의 github page에는 약5~10분뒤에 반영 되는듯 하다.</p>
 
-              
-            <!-- </small> -->
+<h2 id="글자-색상스타일-변경">글자 색상/스타일 변경</h2>
+<p>_sass/_site-menu-bar.scss 의 color/font-style 값을 변경해 주면 된다.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.site-title</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#ffffff</span><span class="p">;</span>
+        <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
 
-            <span>
-              <a href="/politics/political/2024-02-15-election.html" style="font-size:20px">병립형-연동형</a>
-              <!-- <a href="/politics/political/2024-02-15-election.html">병립형-연동형</a> -->
-            </span>
-        </div>
-      </article>
-</div>
+<p>다른 속성들도 참고하시길 바란다.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="o">//</span> <span class="nt">사이트</span> <span class="nt">이름</span> <span class="o">(</span><span class="nt">왼쪽</span><span class="o">)</span>
+    <span class="nc">.site-title</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+        <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#ffffff</span><span class="p">;</span>
+        <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.3</span><span class="p">;</span>
+        <span class="nl">padding-left</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+        <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="o">//</span> <span class="nt">사이트</span> <span class="nt">이름</span> <span class="o">(</span><span class="nt">오른쪽</span><span class="o">:</span> <span class="nt">index</span><span class="o">,</span> <span class="nt">random</span><span class="o">,</span> <span class="nt">me</span><span class="o">)</span>
+    <span class="nc">.site-title-right</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+        <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#FFFFFF</span><span class="p">;</span>
+        <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.3</span><span class="p">;</span>
+        <span class="nl">padding-right</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+        <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
 
+<h2 id="제목줄-내용-변경">제목줄 내용 변경</h2>
+<p>_config.yml 파일의 title 항목을 원하는 내용으로 변경하면 된다.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Site settings</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Daniel Wiki 다니엘의 위키</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://daniel00.github.io"</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
+<span class="na">description</span><span class="pi">:</span> <span class="pi">&gt;</span>
+  <span class="s">다니엘의 블로그 입니다</span>
+</code></pre></div></div>
+
+<h2 id="favicon-변경">Favicon 변경</h2>
+<p>브라우저 탭 왼쪽에 표시되는 아이콘을 변경하는 방법을 설명한다.</p>
+
+<ul>
+  <li>
+    <p>먼저 다음의 사이트에서 Favicon을 만들어서 png, icon 파일을 준비한다.<br />
+<a href="https://www.favicon-generator.org/">https://www.favicon-generator.org/</a>
+사이트에서 제공하는 링크 코드도 복사해 놓는다.</p>
+  </li>
+  <li>
+    <p>파일을 아래의 경로에 복사한 후 header.html 에 아래처럼 링크 코드를 붙여넣는다.<br />
+본인의 파일 경로에 맞게 설정하여야 합니다.</p>
+  </li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"57x57"</span>        <span class="na">href=</span><span class="s">"/resource/icon/apple-icon-57x57.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"60x60"</span>        <span class="na">href=</span><span class="s">"/resource/icon/apple-icon-60x60.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"72x72"</span>        <span class="na">href=</span><span class="s">"/resource/icon/apple-icon-72x72.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"76x76"</span>        <span class="na">href=</span><span class="s">"/resource/icon/apple-icon-76x76.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"114x114"</span>      <span class="na">href=</span><span class="s">"/resource/icon/apple-icon-114x114.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"120x120"</span>      <span class="na">href=</span><span class="s">"/resource/icon/apple-icon-120x120.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"144x144"</span>      <span class="na">href=</span><span class="s">"/resource/icon/apple-icon-144x144.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"152x152"</span>      <span class="na">href=</span><span class="s">"/resource/icon/apple-icon-152x152.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"180x180"</span>      <span class="na">href=</span><span class="s">"/resource/icon/apple-icon-180x180.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">sizes=</span><span class="s">"192x192"</span> <span class="na">href=</span><span class="s">"/resource/icon/android-icon-192x192.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">sizes=</span><span class="s">"32x32"</span>   <span class="na">href=</span><span class="s">"/resource/icon/favicon-32x32.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">sizes=</span><span class="s">"96x96"</span>   <span class="na">href=</span><span class="s">"/resource/icon/favicon-96x96.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">sizes=</span><span class="s">"16x16"</span>   <span class="na">href=</span><span class="s">"/resource/icon/favicon-16x16.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"manifest"</span> <span class="na">href=</span><span class="s">"/resource/icon/manifest.json"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"msapplication-TileColor"</span> <span class="na">content=</span><span class="s">"#ffffff"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"msapplication-TileImage"</span> <span class="na">content=</span><span class="s">"/resource/icon/ms-icon-144x144.png"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"theme-color"</span> <span class="na">content=</span><span class="s">"#ffffff"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -299,13 +360,13 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/2024-04-08-cpp-index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cpp Index">
+                        <a href="/all/algorithm/wiki/2024-05-02-GoogleSearch.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 구글 맟춤 검색 사용방법(Wiki블로그에서...)">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
-                        <a href="/2024-04-08-unity.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unity">
+                        <a href="/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 로지텍 마우스 끊김 해결 방법">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -322,11 +383,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Unity",
+            "title": "로지텍 마우스 끊김 해결 방법",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2024-04-08-unity.md",
-            "ref": "_posts/2024-04-08-unity.md",
+            "path": "_posts/Hardware/2024-05-02-LogitechMouse.md",
+            "ref": "_posts/Hardware/2024-05-02-LogitechMouse.md",
             "articles": []
         },
         
@@ -418,8 +479,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2024-04-08-politics-category.md",
-        "mtime": "2024-04-08 00:00:00 +0900",
+        "path": "_posts/GitBlog/2024-05-02-MenubarChange.md",
+        "mtime": "2024-05-02 10:39:25 +0900",
         "type": "markdown"
     },
     "gitbook": {

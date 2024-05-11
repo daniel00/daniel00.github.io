@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>정치 경제 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>jekyll post 에 이미지 넣는 방법 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,11 @@
 
 
 
-            <link rel="prev" href="/2024-04-08-cpp-index.html" />
+            <link rel="prev" href="/all/csharp/maui/2024-02-26-maui-xaml-cs-%EA%B5%AC%EC%A1%B0.html" />
         
 
         
-            <link rel="next" href="/2024-04-08-unity.html" />
+            <link rel="next" href="/all/python/mac/2024-02-26-pip_install_error.html" />
         
     </head>
     <body>
@@ -195,7 +195,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >정치 경제</a>
+                            <a href="." >jekyll post 에 이미지 넣는 방법</a>
                         
                     </h1>
                 </div>
@@ -208,40 +208,52 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/categories/politics-category">정치 경제</h1>
+                        <h1 id="/all/jekyll/paste-image">jekyll post 에 이미지 넣는 방법</h1>
                     
 
-                    
-<div class="list__item">
-    <article class="archive-item">
-        <div style="font-size:18px">
+                    <p>created : 2024-02-26 00:35<br />
+updated : 2024-04-14 23:58</p>
 
+<h3 id="jekyll-post에-이미지-넣는-방법에-대해-설명합니다">jekyll post에 이미지 넣는 방법에 대해 설명합니다.</h3>
 
-            <!-- <small>  -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2024.02.15 &nbsp;&nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/15 22:59 &nbsp;&nbsp;&nbsp;&nbsp; -->
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02 &nbsp;&nbsp;
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 &nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/06 00:00 &nbsp;&nbsp;&nbsp;&nbsp; -->
+<ul>
+  <li>이미지가 저장되는 경로는 , 현재 프로젝트 디렉토리의 assets 디렉토리에 넣으면 됩니다.
+jekyll은 이 경로의 이미지가 있는지 확인해서 포스트에 표시해 줍니다.</li>
+  <li>vscode extention중 paste-image 를 이용하여 이미지를 붙여 넣습니다.</li>
+</ul>
 
-<!--  -->
-<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-04-08T00:00:00+09:00">April 08, 2024</time></p> -->
-<!--  -->
+<h3 id="paste-image-설정중-다음의-두가지를-설정해-주어야-합니다">paste-image 설정중 다음의 두가지를 설정해 주어야 합니다.</h3>
 
-              
-            <!-- </small> -->
+<ol>
+  <li>이미지가 저장되는 경로
+    <pre><code class="language-txt">${projectRoot}/assets
+</code></pre>
+    <p><img src="/assets/2024-04-14-16-34-59.png" alt="" /></p>
+  </li>
+  <li>저장된 이미지를 마크다운에 링크하는 Insert Pattern
+    <pre><code class="language-txt">${imageSyntaxPrefix}/assets/${imageFileName}${imageSyntaxSuffix}
+</code></pre>
+    <p><img src="/assets/2024-04-14-16-35-53.png" alt="" /></p>
+  </li>
+</ol>
 
-            <span>
-              <a href="/politics/political/2024-02-15-election.html" style="font-size:20px">병립형-연동형</a>
-              <!-- <a href="/politics/political/2024-02-15-election.html">병립형-연동형</a> -->
-            </span>
-        </div>
-      </article>
-</div>
-
+<h3 id="이제-다음의-순서로-마크다운-문서에-이미지를-넣으면-됩니다">이제 다음의 순서로 마크다운 문서에 이미지를 넣으면 됩니다.</h3>
+<ul>
+  <li>
+    <p>이미지를 캡처합니다.<br />
+ 맥북 : 저는 cmd shift s 를 단축키로 지정하여 놓았습니다.
+ 윈도우 : win shift s</p>
+  </li>
+  <li>
+    <p>image-paste 단축키를 눌러 이미지를 붙여 넣습니다.<br />
+맥북: option cmd v   <br />
+윈도우 : alt ctrl v</p>
+  </li>
+  <li>
+    <p>그러면 이미지가 저장되고, 저장된 경로를 링크하는 신텍스를 자동으로 넣어줍니다.
+<img src="/assets/2024-04-14-16-43-24.png" alt="" /></p>
+  </li>
+</ul>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -299,13 +311,13 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/2024-04-08-cpp-index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cpp Index">
+                        <a href="/all/csharp/maui/2024-02-26-maui-xaml-cs-%EA%B5%AC%EC%A1%B0.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: MAUI의 XAML과 CS 파일 구조">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
-                        <a href="/2024-04-08-unity.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unity">
+                        <a href="/all/python/mac/2024-02-26-pip_install_error.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 파이썬 PIP install 오류 발생시 해결방법">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -322,11 +334,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Unity",
+            "title": "파이썬 PIP install 오류 발생시 해결방법",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2024-04-08-unity.md",
-            "ref": "_posts/2024-04-08-unity.md",
+            "path": "_posts/2024-04-27-pip_install_error.md",
+            "ref": "_posts/2024-04-27-pip_install_error.md",
             "articles": []
         },
         
@@ -418,8 +430,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2024-04-08-politics-category.md",
-        "mtime": "2024-04-08 00:00:00 +0900",
+        "path": "_posts/2024-04-14-paste-image.md",
+        "mtime": "2024-02-26 00:35:58 +0900",
         "type": "markdown"
     },
     "gitbook": {

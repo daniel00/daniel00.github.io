@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>정치 경제 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>구글 맟춤 검색 사용방법(Wiki블로그에서...) · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,11 @@
 
 
 
-            <link rel="prev" href="/2024-04-08-cpp-index.html" />
+            <link rel="prev" href="/all/algorithm/wiki/2024-05-02-FontChange.html" />
         
 
         
-            <link rel="next" href="/2024-04-08-unity.html" />
+            <link rel="next" href="/all/algorithm/wiki/2024-05-02-MenubarChange.html" />
         
     </head>
     <body>
@@ -195,7 +195,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >정치 경제</a>
+                            <a href="." >구글 맟춤 검색 사용방법(Wiki블로그에서...)</a>
                         
                     </h1>
                 </div>
@@ -208,40 +208,62 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/categories/politics-category">정치 경제</h1>
+                        <h1 id="/all/algorithm/wiki/GoogleSearch">구글 맟춤 검색 사용방법(Wiki블로그에서...)</h1>
                     
 
-                    
-<div class="list__item">
-    <article class="archive-item">
-        <div style="font-size:18px">
+                    <ul id="markdown-toc">
+  <li><a href="#구글-맞춤-검색-엔진을-내-블로그에-적용하는-방법을-설명합니다" id="markdown-toc-구글-맞춤-검색-엔진을-내-블로그에-적용하는-방법을-설명합니다">구글 맞춤 검색 엔진을 내 블로그에 적용하는 방법을 설명합니다.</a></li>
+</ul>
 
+<h2 id="구글-맞춤-검색-엔진을-내-블로그에-적용하는-방법을-설명합니다">구글 맞춤 검색 엔진을 내 블로그에 적용하는 방법을 설명합니다.</h2>
+<p>글을 몇 개 올린 후 검색을 하니, 종립님의 블로그 내용이 검색되는 문제가 있었다.<br />
+구글 맞춤 검색 엔진이 검색하는 사이트를 내 블로그로 변경해 주어야 한다.</p>
 
-            <!-- <small>  -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2024.02.15 &nbsp;&nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/15 22:59 &nbsp;&nbsp;&nbsp;&nbsp; -->
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02 &nbsp;&nbsp;
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 &nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/06 00:00 &nbsp;&nbsp;&nbsp;&nbsp; -->
+<ul>
+  <li>
+    <p>아래 링크에서 구글 맞춤 검색 아이디를 생성한다.<br />
+<a href="https://programmablesearchengine.google.com">구글 맞춤 검색</a></p>
+  </li>
+  <li>
+    <p>_site/search/index.html 에 다음의 코드를 넣는다.<br />
+var cx =  <code class="language-plaintext highlighter-rouge">본인의 구글 맞춤 검색 아이디</code></p>
+  </li>
+</ul>
 
-<!--  -->
-<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-04-08T00:00:00+09:00">April 08, 2024</time></p> -->
-<!--  -->
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"home-search"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;script&gt;</span>
+        <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+          <span class="kd">var</span> <span class="nx">cx</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">25808cdc84d0e4dbe</span><span class="dl">'</span><span class="p">;</span>
+          <span class="kd">var</span> <span class="nx">gcse</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">script</span><span class="dl">'</span><span class="p">);</span>
+          <span class="nx">gcse</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">text/javascript</span><span class="dl">'</span><span class="p">;</span>
+          <span class="nx">gcse</span><span class="p">.</span><span class="k">async</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+          <span class="nx">gcse</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">https://cse.google.com/cse.js?cx=</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">cx</span><span class="p">;</span>
+          <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementsByTagName</span><span class="p">(</span><span class="dl">'</span><span class="s1">script</span><span class="dl">'</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+          <span class="nx">s</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nf">insertBefore</span><span class="p">(</span><span class="nx">gcse</span><span class="p">,</span> <span class="nx">s</span><span class="p">);</span>
+        <span class="p">})();</span>
+      <span class="nt">&lt;/script&gt;</span>
+      <span class="nt">&lt;gcse:search</span> <span class="na">linkTarget=</span><span class="s">"_parent"</span> <span class="na">queryParameterName=</span><span class="s">"searchString"</span><span class="nt">&gt;&lt;/gcse:search&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<p>다음의 사이트가 가장 정리가 잘 돼있다. 감사의 말씀을 드린다. <br />
+https://junia3.github.io/blog/search</p>
 
-              
-            <!-- </small> -->
+<p><img src="/assets/checkhtml.png" alt="checkhtml" /></p>
 
-            <span>
-              <a href="/politics/political/2024-02-15-election.html" style="font-size:20px">병립형-연동형</a>
-              <!-- <a href="/politics/political/2024-02-15-election.html">병립형-연동형</a> -->
-            </span>
-        </div>
-      </article>
-</div>
+<p><img src="/assets/sitemap.xml.png" alt="sitemap.xml" /></p>
 
+<p><img src="/assets/sitemap_success.png" alt="sitemap_success" /></p>
+
+<p>구글 검색에 등록은 된 거 같은데, 전체 사이트 검색이 되지않고 첫 페이지인 index.md만 검색이 된다.
+어느 사이트에서 sitemap.xml의 위치를 지정해서 크롤링을 요청하는 방법이 있다고 해서 그렇게 진행해보았다.
+아직 결과는 모른다. 며칠 뒤 다시 확인해 보아야겠다.</p>
+
+<p>아래의 링크를 브라우저 주소창에 입력하고 엔터를 치면 [[크롤링]] 요청이 완료된다.</p>
+
+<p><a href="https://www.google.com/ping?sitemap=https://daniel00.github.io/sitemap.xml">https://www.google.com/ping?sitemap=https://daniel00.github.io/sitemap.xml</a></p>
+
+<p><img src="/assets/result_of_request.png" alt="result_of_request" /></p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -299,13 +321,13 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/2024-04-08-cpp-index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cpp Index">
+                        <a href="/all/algorithm/wiki/2024-05-02-FontChange.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Wiki 폰트 변경하는 방법">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
-                        <a href="/2024-04-08-unity.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unity">
+                        <a href="/all/algorithm/wiki/2024-05-02-MenubarChange.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 메뉴바 변경 방법">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -322,11 +344,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Unity",
+            "title": "메뉴바 변경 방법",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2024-04-08-unity.md",
-            "ref": "_posts/2024-04-08-unity.md",
+            "path": "_posts/GitBlog/2024-05-02-MenubarChange.md",
+            "ref": "_posts/GitBlog/2024-05-02-MenubarChange.md",
             "articles": []
         },
         
@@ -418,8 +440,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2024-04-08-politics-category.md",
-        "mtime": "2024-04-08 00:00:00 +0900",
+        "path": "_posts/GitBlog/2024-05-02-GoogleSearch.md",
+        "mtime": "2024-05-02 10:39:25 +0900",
         "type": "markdown"
     },
     "gitbook": {

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>정치 경제 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>MAUI의 XAML과 CS 파일 구조 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,11 @@
 
 
 
-            <link rel="prev" href="/2024-04-08-cpp-index.html" />
+            <link rel="prev" href="/all/maui/csharp/2024-02-26-maui-build-error.html" />
         
 
         
-            <link rel="next" href="/2024-04-08-unity.html" />
+            <link rel="next" href="/all/jekyll/2024-02-26-paste-image.html" />
         
     </head>
     <body>
@@ -195,7 +195,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >정치 경제</a>
+                            <a href="." >MAUI의 XAML과 CS 파일 구조</a>
                         
                     </h1>
                 </div>
@@ -208,39 +208,26 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/categories/politics-category">정치 경제</h1>
+                        <h1 id="/all/csharp/maui/maui-xaml-cs-구조">MAUI의 XAML과 CS 파일 구조</h1>
                     
 
-                    
-<div class="list__item">
-    <article class="archive-item">
-        <div style="font-size:18px">
+                    <p>created : 2024-02-26 00:35<br />
+updated : 2024-04-13 20:39</p>
 
+<h2 id="xaml과-cs는-한쌍으로-동작한다">XAML과 CS는 한쌍으로 동작한다</h2>
+<ul>
+  <li>xaml 파일은 페이지의 모양을 그리고,</li>
+  <li>cs 파일은 페이지의 동작을 구현한다</li>
+</ul>
 
-            <!-- <small>  -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2024.02.15 &nbsp;&nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/15 22:59 &nbsp;&nbsp;&nbsp;&nbsp; -->
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02 &nbsp;&nbsp;
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 &nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/06 00:00 &nbsp;&nbsp;&nbsp;&nbsp; -->
+<h2 id="xaml의-xname-속성으로-cs에서-xaml상의-ui요소에-접근-할-수-있다">XAML의 x:Name 속성으로 cs에서 xaml상의 UI요소에 접근 할 수 있다.</h2>
 
-<!--  -->
-<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-04-08T00:00:00+09:00">April 08, 2024</time></p> -->
-<!--  -->
-
-              
-            <!-- </small> -->
-
-            <span>
-              <a href="/politics/political/2024-02-15-election.html" style="font-size:20px">병립형-연동형</a>
-              <!-- <a href="/politics/political/2024-02-15-election.html">병립형-연동형</a> -->
-            </span>
-        </div>
-      </article>
-</div>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;Button</span>
+                <span class="na">x:Name=</span><span class="s">"CounterBtn"</span>
+                <span class="na">Text=</span><span class="s">"로그인"</span>
+                <span class="na">SemanticProperties.Hint=</span><span class="s">"Counts the number of times you click"</span>
+                <span class="na">Clicked=</span><span class="s">"OnCounterClicked"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
 
 </section>
             </div><div class="search-results">
@@ -299,13 +286,13 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/2024-04-08-cpp-index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cpp Index">
+                        <a href="/all/maui/csharp/2024-02-26-maui-build-error.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: MAUI build error 해결방법">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
-                        <a href="/2024-04-08-unity.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unity">
+                        <a href="/all/jekyll/2024-02-26-paste-image.html" class="navigation navigation-next navigation-unique" aria-label="Next page: jekyll post 에 이미지 넣는 방법">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -322,11 +309,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Unity",
+            "title": "jekyll post 에 이미지 넣는 방법",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2024-04-08-unity.md",
-            "ref": "_posts/2024-04-08-unity.md",
+            "path": "_posts/2024-04-14-paste-image.md",
+            "ref": "_posts/2024-04-14-paste-image.md",
             "articles": []
         },
         
@@ -418,8 +405,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2024-04-08-politics-category.md",
-        "mtime": "2024-04-08 00:00:00 +0900",
+        "path": "_posts/2024-04-13-maui-xaml-cs-구조.md",
+        "mtime": "2024-02-26 00:35:58 +0900",
         "type": "markdown"
     },
     "gitbook": {

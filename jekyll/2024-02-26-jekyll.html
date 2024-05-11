@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>정치 경제 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Jekyll 사용법 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,11 @@
 
 
 
-            <link rel="prev" href="/2024-04-08-cpp-index.html" />
+            <link rel="prev" href="/all/2024-02-26-StudyUi.html" />
         
 
         
-            <link rel="next" href="/2024-04-08-unity.html" />
+            <link rel="next" href="/all/cpp/2024-02-26-polymorphism.html" />
         
     </head>
     <body>
@@ -195,7 +195,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >정치 경제</a>
+                            <a href="." >Jekyll 사용법</a>
                         
                     </h1>
                 </div>
@@ -208,39 +208,68 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/categories/politics-category">정치 경제</h1>
+                        <h1 id="/jekyll/jekyll">Jekyll 사용법</h1>
                     
 
-                    
-<div class="list__item">
-    <article class="archive-item">
-        <div style="font-size:18px">
+                    <p>created : 2024-02-26 00:35<br />
+updated : 2024-04-14 18:50</p>
 
+<h2 id="jekyll-사용법에-대해-설명합니다">Jekyll 사용법에 대해 설명합니다.</h2>
 
-            <!-- <small>  -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2024.02.15 &nbsp;&nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/15 22:59 &nbsp;&nbsp;&nbsp;&nbsp; -->
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02 &nbsp;&nbsp;
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 &nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/06 00:00 &nbsp;&nbsp;&nbsp;&nbsp; -->
+<h2 id="jekyll-설치-방법">Jekyll 설치 방법</h2>
 
-<!--  -->
-<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-04-08T00:00:00+09:00">April 08, 2024</time></p> -->
-<!--  -->
+<h2 id="jekyll-실행-방법">Jekyll 실행 방법</h2>
+<p>blog의 <code class="language-plaintext highlighter-rouge">루트</code> 디렉토리에서 다음의 명령을 실행하면,  소스코드가 바뀔때 마다 브라우저에 자동 업데이트 된다.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>bundle <span class="nb">exec </span>jekyll serve <span class="nt">--livereload</span>  
+</code></pre></div></div>
 
-              
-            <!-- </small> -->
+<p>full path</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yoo@MacForYoo git/daniel00.github.io <span class="o">(</span>master<span class="o">)</span> » bundle <span class="nb">exec </span>jekyll serve <span class="nt">--livereload</span>  
+</code></pre></div></div>
 
-            <span>
-              <a href="/politics/political/2024-02-15-election.html" style="font-size:20px">병립형-연동형</a>
-              <!-- <a href="/politics/political/2024-02-15-election.html">병립형-연동형</a> -->
-            </span>
-        </div>
-      </article>
-</div>
+<h2 id="로컬에서-확인하는-방법">로컬에서 확인하는 방법</h2>
+<p>브라우저에서 http://localhost:4000 주소를 연다.</p>
+
+<p><img src="/assets/localhost.png" alt="localhost" /></p>
+
+<!-- *** -->
+<!-- 중요! 내용이 추가되면 반드시 "개행"을 시켜야 로컬호스트 뷰에 반영이 된다!!!!!! -->
+<!-- *** -->
+
+<!-- 아래처럼 리스트에 Prefab링크를 추가하였으나 로컬뷰에는 업데이트가 되지 않는다. -->
+
+<!-- 코드에 리스트를 추가 하였다. -->
+<!-- ![addorg](../assets/img/addorg.png) -->
+
+<!-- 그런데 로컬뷰에는 반영되지 않는다. -->
+<!-- ![errorupdate](../assets/img/errorupdate.png) -->
+
+<h2 id="파일-또는-이미지가-추가되면-반드시-개행-git-add-git-commit를-해주어야-한다">파일 또는 이미지가 추가되면 반드시 개행! git add, git commit를 해주어야 한다.</h2>
+<p>링크가 추가되면 반드시 개행해야 업데이트가 된다.(줄끝에 “&lt;br&gt;” 또는 스페이스 두개)</p>
+
+<p>파일이 추가되었으나 commit 되지 않아서 404 Not Found라는 문구가 표시된다.</p>
+
+<p><img src="/assets/404notfound.png" alt="404notfound" /></p>
+
+<p>git add, git commit 후에 정상적으로 표시된다.
+<img src="/assets/addok.png" alt="addok" /></p>
+
+<h2 id="no-accepter-에러-발생시-해결방법">no accepter 에러 발생시 해결방법</h2>
+<p>jekyll을 kill 한 후 재시작 한다.
+ps 로 프로세스 아이디를 찾아서 kill 한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ps -aux | grep jekyll
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill -9 프로세스ID
+</code></pre></div></div>
+
+<p>그리고 jekyll을 재시작 한다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve --livereload  
+</code></pre></div></div>
+<p>커맨드를 실행하는 경로에 유의해야 한다.
+github.io루트 디렉토리에서 실행해야 한다!!!
+<img src="../assets/img/bundle.png" alt="bundle" /></p>
 
 </section>
             </div><div class="search-results">
@@ -299,13 +328,13 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/2024-04-08-cpp-index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cpp Index">
+                        <a href="/all/2024-02-26-StudyUi.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 유니티 UI 화면">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
-                        <a href="/2024-04-08-unity.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unity">
+                        <a href="/all/cpp/2024-02-26-polymorphism.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 다형성">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -322,11 +351,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Unity",
+            "title": "다형성",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2024-04-08-unity.md",
-            "ref": "_posts/2024-04-08-unity.md",
+            "path": "_posts/2024-04-08-polymorphism.md",
+            "ref": "_posts/2024-04-08-polymorphism.md",
             "articles": []
         },
         
@@ -418,8 +447,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2024-04-08-politics-category.md",
-        "mtime": "2024-04-08 00:00:00 +0900",
+        "path": "_posts/2024-04-08-jekyll.md",
+        "mtime": "2024-02-26 00:35:58 +0900",
         "type": "markdown"
     },
     "gitbook": {

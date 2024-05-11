@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>정치 경제 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>SRT 예약 어플 만들기 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,11 @@
 
 
 
-            <link rel="prev" href="/2024-04-08-cpp-index.html" />
+            <link rel="prev" href="/csharp/2024-04-07-csharp_on_mac.html" />
         
 
         
-            <link rel="next" href="/2024-04-08-unity.html" />
+            <link rel="next" href="/2024-04-08-Animation.html" />
         
     </head>
     <body>
@@ -195,7 +195,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >정치 경제</a>
+                            <a href="." >SRT 예약 어플 만들기</a>
                         
                     </h1>
                 </div>
@@ -208,40 +208,33 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/categories/politics-category">정치 경제</h1>
+                        <h1 id="/csharp/srt_reserve_app">SRT 예약 어플 만들기</h1>
                     
 
-                    
-<div class="list__item">
-    <article class="archive-item">
-        <div style="font-size:18px">
+                    <p>created : 2024-04-07 10:12<br />
+updated : 2024-04-15 00:10</p>
 
+<h1 id="srt-예약-앱을-만드는-과정에-대해서-정리합니다">SRT 예약 앱을 만드는 과정에 대해서 정리합니다.</h1>
+<ul>
+  <li>크로스플랫폼 제작이 쉽도록 자마린으로 제작예정</li>
+  <li>C#으로 문법등을 테스트해 보자</li>
+  <li>로그인은 HttpClient 클래스를 이용한다</li>
+  <li>파이썬으로 작성된 코드를 참조한다.</li>
+</ul>
 
-            <!-- <small>  -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2024.02.15 &nbsp;&nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/15 22:59 &nbsp;&nbsp;&nbsp;&nbsp; -->
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02 &nbsp;&nbsp;
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 &nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/06 00:00 &nbsp;&nbsp;&nbsp;&nbsp; -->
+<p>동작을 요약하면,
+HttpClient를 사용해서 srt페이지에 로그인하는데, 이때 
+client.post(로그인아이디, 비밀번호) 의 형태로 메시지를 송신하면 되는것 같다.
+메시지 형식은 JSON형식인 듯 하므로, 
+Dictionary dict = “메시지아이디”:값
+위 같은 딕셔너리 형태로 만들어서 client.post(dict) 하면 될 것 같다.</p>
 
-<!--  -->
-<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-04-08T00:00:00+09:00">April 08, 2024</time></p> -->
-<!--  -->
+<p>로그인만 되면, 필요한 내용으로 쿼리 내용을 post하면 되는 구조이므로
+천천히 개발해 보자.</p>
 
-              
-            <!-- </small> -->
+<p>지금까지 고려중인 앱 모양</p>
 
-            <span>
-              <a href="/politics/political/2024-02-15-election.html" style="font-size:20px">병립형-연동형</a>
-              <!-- <a href="/politics/political/2024-02-15-election.html">병립형-연동형</a> -->
-            </span>
-        </div>
-      </article>
-</div>
-
+<center><img src="/assets/2024-04-15-00-00-40.png" width="400" height="800" /></center>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -299,13 +292,13 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/2024-04-08-cpp-index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cpp Index">
+                        <a href="/csharp/2024-04-07-csharp_on_mac.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 맥에서 c# 컴파일 하는 방법">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
-                        <a href="/2024-04-08-unity.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unity">
+                        <a href="/2024-04-08-Animation.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Animation">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -322,11 +315,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Unity",
+            "title": "Animation",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2024-04-08-unity.md",
-            "ref": "_posts/2024-04-08-unity.md",
+            "path": "_posts/2024-04-08-Animation.md",
+            "ref": "_posts/2024-04-08-Animation.md",
             "articles": []
         },
         
@@ -418,8 +411,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2024-04-08-politics-category.md",
-        "mtime": "2024-04-08 00:00:00 +0900",
+        "path": "_posts/2024-04-07-srt_reserve_app.md",
+        "mtime": "2024-04-07 10:12:20 +0900",
         "type": "markdown"
     },
     "gitbook": {

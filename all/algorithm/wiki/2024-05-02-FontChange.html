@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>정치 경제 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Wiki 폰트 변경하는 방법 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,11 +25,11 @@
 
 
 
-            <link rel="prev" href="/2024-04-08-cpp-index.html" />
+            <link rel="prev" href="/all/algorithm/2024-05-02-largest-rectangle-in-histogram.html" />
         
 
         
-            <link rel="next" href="/2024-04-08-unity.html" />
+            <link rel="next" href="/all/algorithm/wiki/2024-05-02-GoogleSearch.html" />
         
     </head>
     <body>
@@ -195,7 +195,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >정치 경제</a>
+                            <a href="." >Wiki 폰트 변경하는 방법</a>
                         
                     </h1>
                 </div>
@@ -208,39 +208,111 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/categories/politics-category">정치 경제</h1>
+                        <h1 id="/all/algorithm/wiki/FontChange">Wiki 폰트 변경하는 방법</h1>
                     
 
-                    
-<div class="list__item">
-    <article class="archive-item">
-        <div style="font-size:18px">
+                    <ul id="markdown-toc">
+  <li><a href="#페이지-폰트를-변경하는-방법에-대해서-정리합니다" id="markdown-toc-페이지-폰트를-변경하는-방법에-대해서-정리합니다">페이지 폰트를 변경하는 방법에 대해서 정리합니다.</a>    <ul>
+      <li><a href="#폰트-등록-코드-복사" id="markdown-toc-폰트-등록-코드-복사">폰트 등록 코드 복사</a></li>
+      <li><a href="#font-face-등록" id="markdown-toc-font-face-등록">font-face 등록</a></li>
+      <li><a href="#사용-할-폰트-명시-사용-할-폰트만-주석해제" id="markdown-toc-사용-할-폰트-명시-사용-할-폰트만-주석해제">사용 할 폰트 명시. 사용 할 폰트만 주석해제</a></li>
+      <li><a href="#폰트-크기-변경" id="markdown-toc-폰트-크기-변경">폰트 크기 변경</a></li>
+      <li><a href="#폰트-밑줄-간격-조절" id="markdown-toc-폰트-밑줄-간격-조절">폰트 밑줄 간격 조절</a></li>
+      <li><a href="#한영-폰트-비교" id="markdown-toc-한영-폰트-비교">한영 폰트 비교</a></li>
+    </ul>
+  </li>
+</ul>
 
+<h2 id="페이지-폰트를-변경하는-방법에-대해서-정리합니다">페이지 폰트를 변경하는 방법에 대해서 정리합니다.</h2>
+<p>아래와 같이 진행하면 된다.</p>
+<ul>
+  <li>폰트사이트에서 등록 코드를 복사</li>
+  <li>css/main.scss 에 font-face를 등록</li>
+  <li>_sass/_base.css 에 사용하고자 하는 폰트를 명시</li>
+</ul>
 
-            <!-- <small>  -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2024.02.15 &nbsp;&nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/15 22:59 &nbsp;&nbsp;&nbsp;&nbsp; -->
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02 &nbsp;&nbsp;
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 &nbsp;&nbsp; -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024-04-08 12:02:22 +0000 -->
-              <!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>2024/02/06 00:00 &nbsp;&nbsp;&nbsp;&nbsp; -->
+<h3 id="폰트-등록-코드-복사">폰트 등록 코드 복사</h3>
+<p><a href="https://noonnu.cc/">눈누</a></p>
 
-<!--  -->
-<!--   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-04-08T00:00:00+09:00">April 08, 2024</time></p> -->
-<!--  -->
+<p><img src="/assets/font_code.png" alt="font_code" /></p>
 
-              
-            <!-- </small> -->
+<h3 id="font-face-등록">font-face 등록</h3>
+<p>css/main.scss</p>
 
-            <span>
-              <a href="/politics/political/2024-02-15-election.html" style="font-size:20px">병립형-연동형</a>
-              <!-- <a href="/politics/political/2024-02-15-election.html">병립형-연동형</a> -->
-            </span>
-        </div>
-      </article>
-</div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@font-face</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Chosunilbo_myungjo'</span><span class="p">;</span>
+    <span class="nl">src</span><span class="p">:</span> <span class="sx">url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff'</span><span class="p">);</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+    <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@font-face</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'iceJaram-Rg'</span><span class="p">;</span>
+    <span class="nl">src</span><span class="p">:</span> <span class="sx">url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">);</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+    <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@font-face</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'SeoulHangangM'</span><span class="p">;</span>
+    <span class="nl">src</span><span class="p">:</span> <span class="sx">url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff'</span><span class="p">);</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+    <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="사용-할-폰트-명시-사용-할-폰트만-주석해제">사용 할 폰트 명시. 사용 할 폰트만 주석해제</h3>
+<p>_sass/_base.css</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="err">//</span> <span class="nl">font</span><span class="p">:</span> <span class="m">400</span> <span class="m">16px</span> <span class="s2">'Roboto Slab'</span><span class="p">,</span><span class="n">AppleSDGothicNeo</span><span class="p">,</span><span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="err">//</span> <span class="nl">font</span><span class="p">:</span> <span class="m">400</span> <span class="m">16px</span> <span class="s2">'Chosunilbo_myungjo'</span><span class="p">,</span><span class="n">AppleSDGothicNeo</span><span class="p">,</span><span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">400</span> <span class="m">16px</span> <span class="s2">'RIDIBatang'</span><span class="p">,</span><span class="n">AppleSDGothicNeo</span><span class="p">,</span><span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="err">//</span> <span class="nl">font</span><span class="p">:</span> <span class="m">400</span> <span class="m">16px</span> <span class="s2">'iceJaram-Rg'</span><span class="p">,</span><span class="n">AppleSDGothicNeo</span><span class="p">,</span><span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="err">//</span> <span class="nl">font</span><span class="p">:</span> <span class="m">400</span> <span class="m">16px</span> <span class="s2">'SeoulHangangM'</span><span class="p">,</span><span class="n">AppleSDGothicNeo</span><span class="p">,</span><span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="err">//</span> <span class="nl">font</span><span class="p">:</span> <span class="m">400</span> <span class="m">16px</span> <span class="s2">'font-iropke-batang'</span><span class="p">,</span><span class="n">AppleSDGothicNeo</span><span class="p">,</span><span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.84</span><span class="p">);</span>
+  <span class="nl">-webkit-text-size-adjust</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">-webkit-font-feature-settings</span><span class="p">:</span> <span class="s1">"kern"</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">-moz-font-feature-settings</span><span class="p">:</span> <span class="s1">"kern"</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">-o-font-feature-settings</span><span class="p">:</span> <span class="s1">"kern"</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">font-feature-settings</span><span class="p">:</span> <span class="s1">"kern"</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">font-kerning</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">100vh</span><span class="p">;</span>
+  <span class="nl">flex-direction</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="폰트-크기-변경">폰트 크기 변경</h3>
+<p>아래 픽셀(px) 값을 변경해주면 된다.<br />
+_sass/_base.css</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">font</span><span class="o">:</span> <span class="err">400</span> <span class="err">20</span><span class="nt">px</span> <span class="s2">'RIDIBatang'</span><span class="o">,</span><span class="nt">AppleSDGothicNeo</span><span class="o">,</span><span class="nt">sans-serif</span><span class="o">;</span>
+</code></pre></div></div>
+
+<h3 id="폰트-밑줄-간격-조절">폰트 밑줄 간격 조절</h3>
+<p>링크표시 밑줄이 글자와 겹쳐서 가독성이 떨어지는 것 같았다.<br />
+_base.scss 파일의 body 영역에 <code class="language-plaintext highlighter-rouge">text-underline-offset</code> 값을 조절하여 해결하였다.</p>
+
+<p>_base.scss</p>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="err">...
+  </span><span class="nl">flex-direction</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+  <span class="err">...
+
+  </span><span class="na">text-underline-offset</span> <span class="p">:</span> <span class="m">5px</span><span class="p">;</span>  <span class="c1">//yoo.  한글도, 영문도 밑줄이 겹치지 않고 가장 보기 좋다</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>before<br />
+<img src="/assets/before_underline.png" alt="before_underline" /></p>
+
+<p>after<br />
+<img src="/assets/after1_underline.png" alt="after1_underline" /></p>
+
+<h3 id="한영-폰트-비교">한영 폰트 비교</h3>
+<p>나는 소년이다.<br />
+I am a boy</p>
 
 </section>
             </div><div class="search-results">
@@ -299,13 +371,13 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/2024-04-08-cpp-index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Cpp Index">
+                        <a href="/all/algorithm/2024-05-02-largest-rectangle-in-histogram.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 히스토그램에서 가장 큰 직사각형의 넓이">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
 
                     
-                        <a href="/2024-04-08-unity.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unity">
+                        <a href="/all/algorithm/wiki/2024-05-02-GoogleSearch.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 구글 맟춤 검색 사용방법(Wiki블로그에서...)">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -322,11 +394,11 @@ window.MathJax = {
         "depth": 1,
         
         "next": {
-            "title": "Unity",
+            "title": "구글 맟춤 검색 사용방법(Wiki블로그에서...)",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2024-04-08-unity.md",
-            "ref": "_posts/2024-04-08-unity.md",
+            "path": "_posts/GitBlog/2024-05-02-GoogleSearch.md",
+            "ref": "_posts/GitBlog/2024-05-02-GoogleSearch.md",
             "articles": []
         },
         
@@ -418,8 +490,8 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2024-04-08-politics-category.md",
-        "mtime": "2024-04-08 00:00:00 +0900",
+        "path": "_posts/GitBlog/2024-05-02-FontChange.md",
+        "mtime": "2024-05-02 10:39:25 +0900",
         "type": "markdown"
     },
     "gitbook": {
