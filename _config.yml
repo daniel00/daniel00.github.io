@@ -81,6 +81,7 @@ plugins:
 future: true
 timezone: Asia/Seoul
 
-category_dir: categories
+category_dir: mycategories
+# category_dir: /
 
 
