@@ -13,11 +13,6 @@
     "keywords": "all jekyll",
     "url": "/all/jekyll/2024-05-08-jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C.html",
     "body": "created : 2024-05-08 08:19 updated : 2024-05-09 01:31 포스트가 로컬에서만 보여지고 github서버에서는 보이지 않을때"
-  },"/all/jekyll/2024-05-06-jekyll-categories.html": {
-    "title": "jekyll category 링크 자동생성 하는 방법",
-    "keywords": "all jekyll",
-    "url": "/all/jekyll/2024-05-06-jekyll-categories.html",
-    "body": "created : 2024-05-06 09:48 updated : 2024-05-07 22:57 jekyll blog에 카테고리를 생성을 자동화 하는 방법을 정리한다. 이전에 설명한 글에서는 (링크) 카테고리 페이지를 추가하기 위해서는 매우 번거로운 작업들을 수동으로 수행했어야 했다. 카테고리만 모아두는 파일인 my-category.md 파일을 카테고리 별로 만들어 주어야하고 이 파일의 내용도 category에 맞게 수정해 주어야 했다. 또한 , 왼쪽 메뉴바에 카테고리별 링크를 추가하려면 toc-date.html파일 내용을 일일이 추가해 주어야 했다. 이 처럼 포스트들을 카테고리별로 관리 하려면 너무 번거롭다보니, 그냥 카테고리를 all 로 지정하여 모두 한페이지에 표시되도록 단순 무식하게 사용하게 되었다. 하지만 조금씩 글이 많아지고 포스트를 정리할 필요성이 느껴져 카테고리 관리를 자동화 할 수 있는 방법을 찾아 보았다. 다음의 링크를 참조하였다. 카테고리 자동관리 Summary _plugins 디렉토리에 categories.rb 파일을 만든다. categories.rb를 다음처럼 작성한다. _layouts 디렉토리에 category_index.html 파일을 만든다. (이 파일은 각 카테고리 페이지의 모양을 결정한다) 상세설명 _plugins 디렉토리에 categories.rb 파일을 만든다. categories.rb를 다음처럼 작성한다. module Jekyll class CategoryPageGenerator &lt; Generator safe true def generate(site) if site.layouts.key? 'category_index' dir = site.config['category_dir'] || 'categories' site.categories.each_key do |category| site.pages &lt;&lt; CategoryPage.new(site, site.source, File.join(dir, category), category) end end end end # A Page subclass used in the `CategoryPageGenerator` class CategoryPage &lt; Page def initialize(site, base, dir, category) @site = site @base = base @dir = dir @name = 'index.html' self.process(@name) self.read_yaml(File.join(base, '_layouts'), 'category_index.html') self.data['category'] = category category_title_prefix = site.config['category_title_prefix'] || 'Category: ' self.data['title'] = \"#{category_title_prefix}#{category}\" end end end _layouts 디렉토리에 category_index.html 파일을 만든다. (이 파일은 각 카테고리 페이지의 모양을 결정한다. 기존 my-category.md 파일의 용도와 유사하다.) _layout 폴더에 category_index.html 파일을 만들고 다음처럼 작성한다. layout을 default가 아닌 post로 변경하여야 한다. 수정날짜 포스트이름 형식으로 표시하도록 수정하였다. 카테고리를 태그처럼 나열하는게 복잡해 보여서 주석처리 하였다. *마크다운 코드블럭에 리퀴드(liquid) 문법 표시가 제대로 안되어서 이미지로 표시하였다. ```html --- layout: post --- &lt;!-- &lt;section class=\"small-intro\"&gt; --&gt; &lt;!-- &lt;div class=\"container\"&gt; --&gt; &lt;!-- &lt;h2&gt; &lt;/h2&gt; --&gt; &lt;!-- &lt;/div&gt; --&gt; &lt;!-- &lt;/section&gt; --&gt; &lt;section class=\"blog\"&gt; &lt;div class=\"container\"&gt; {% for post in site.posts %} {% if post.categories contains page.category %} &lt;!-- {% assign posts = site.categories.jekyll | sort: 'title' %} --&gt; &lt;div class=\"blog-container\"&gt; &lt;div class=\"title-excerpt\"&gt; &lt;!-- yoo --&gt; &lt;div style=\"font-size:18px\"&gt; &lt;i class=\"fas fa-fw fa-calendar-alt\" aria-hidden=\"true\"&gt; &lt;/i&gt; {{ post.lastmod | date:'%Y-%m-%d %R &amp;nbsp;&amp;nbsp;'}} &lt;a href=\"{{ post.url }}\"&gt;{{ post.title }}&lt;/a&gt; &lt;/div&gt; &lt;!-- &lt;h2&gt;&lt;a href=\"{{ post.url }}\"&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt; --&gt; &lt;/div&gt; &lt;div class=\"date-categories\"&gt; &lt;!-- 카테고리 표시 --&gt; &lt;!-- &lt;div class=\"categories\"&gt; {% for category in post.categories%} &lt;div class=\"category\"&gt; &lt;a href=\"/categories/{{category}}\"&gt;{{ category }}&lt;/a&gt; &lt;/div&gt; {% endfor %} &lt;/div&gt; --&gt; &lt;!-- 날짜 표시 --&gt; &lt;!-- &lt;div class=\"date\"&gt; &lt;p&gt;{{ post.date | date_to_string }}&lt;/p&gt; &lt;/div&gt; --&gt; &lt;/div&gt; &lt;/div&gt; {% endif %} {% endfor %} &lt;/div&gt; &lt;/section&gt; ```"
   },"/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html": {
     "title": "yadm",
     "keywords": "all linux unix mac vim testcat",
@@ -138,11 +133,6 @@
     "keywords": "",
     "url": "/2024-04-08-unity.html",
     "body": ""
-  },"/categories/politics": {
-    "title": "정치 경제",
-    "keywords": "",
-    "url": "/categories/politics",
-    "body": "2024-04-08 12:02 &nbsp;&nbsp; 병립형-연동형"
   },"/2024-04-08-cpp-index.html": {
     "title": "Cpp Index",
     "keywords": "",
@@ -273,11 +263,6 @@
     "keywords": "cpp",
     "url": "/cpp/2024-02-26-cattest.html",
     "body": "created : 2024-02-26 00:00 updated : 2024-02-26 00:33 여기서 부터 글을 작성하세요"
-  },"/jekyll/2024-02-25-jekyll-category.html": {
-    "title": "category 만드는 법",
-    "keywords": "jekyll",
-    "url": "/jekyll/2024-02-25-jekyll-category.html",
-    "body": "jekyll 에서 카테고리를 모아서 표시하는 방법에 대해 설명 합니다. 아래와 같이 카테고리가 메뉴가 추가되고 포스트 개수를 표시하게 된다. 여기서는 ‘cpp’ 카테고리를 만드는 예로 설명한다. category-cpp.md 를 만든다. category-cpp.md 에 다음의 front matter를 작성한다. --- title: \"C++ 프로그래밍\" layout: post permalink: categories/cpp --- 아래의 내용을 작성한다. (코드블럭으로 넣으면 링크된 파일이 표시되어서 부득이 그림으로 넣었다. 나중에 수정예정) toc-date.html에 다음과 같이 카테고리를 만들고, 카테고리에 속한 포스트들을 읽어 오도록 작성한다."
   },"/cpp/2024-02-25-333.html": {
     "title": "test cpp cpp cpp",
     "keywords": "cpp",

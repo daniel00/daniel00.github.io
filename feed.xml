@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-12T02:34:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-12T02:36:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
 </subtitle><author><name>Yoo</name></author><entry><title type="html">jekyll에서 custom plugin을 사용하는 방법</title><link href="http://localhost:4000/all/2024-05-12-jekyll-custom-plugin.html" rel="alternate" type="text/html" title="jekyll에서 custom plugin을 사용하는 방법" /><published>2024-05-12T10:54:39+09:00</published><updated>2024-05-12T10:54:39+09:00</updated><id>http://localhost:4000/all/jekyll-custom-plugin</id><content type="html" xml:base="http://localhost:4000/all/2024-05-12-jekyll-custom-plugin.html"><![CDATA[<p>created : 2024-05-12 10:54<br />
 updated : 2024-05-12 01:56</p>
 
@@ -19,138 +19,7 @@ updated : 2024-05-09 01:31</p>
 근데, gitignore에 _site가 등록되어 있었기에 git push origin master 할 때 누락되어서 
 github 서버에서는 해당 카테고리 페이지가 없다고 404에러를 발생하였던 것이다.
 
-_site를 gitignore에서 제외 시킨 후 정상동작함을 확인 하였다. -->]]></content><author><name>Yoo</name></author><category term="all" /><category term="jekyll" /><summary type="html"><![CDATA[created : 2024-05-08 08:19 updated : 2024-05-09 01:31]]></summary></entry><entry><title type="html">jekyll category 링크 자동생성 하는 방법</title><link href="http://localhost:4000/all/jekyll/2024-05-06-jekyll-categories.html" rel="alternate" type="text/html" title="jekyll category 링크 자동생성 하는 방법" /><published>2024-05-06T09:48:49+09:00</published><updated>2024-05-06T09:48:49+09:00</updated><id>http://localhost:4000/all/jekyll/jekyll-categories</id><content type="html" xml:base="http://localhost:4000/all/jekyll/2024-05-06-jekyll-categories.html"><![CDATA[<p>created : 2024-05-06 09:48<br />
-updated : 2024-05-07 22:57</p>
-
-<h3 id="jekyll-blog에-카테고리를-생성을-자동화-하는-방법을-정리한다">jekyll blog에 카테고리를 생성을 자동화 하는 방법을 정리한다.</h3>
-<p>이전에 설명한 글에서는 (링크) 카테고리 페이지를 추가하기 위해서는 매우 번거로운 작업들을 수동으로 수행했어야 했다.</p>
-<ul>
-  <li>카테고리만 모아두는 파일인 my-category.md 파일을 카테고리 별로 만들어 주어야하고</li>
-  <li>이 파일의 내용도 category에 맞게 수정해 주어야 했다.</li>
-  <li>또한 ,  왼쪽 메뉴바에 카테고리별 링크를 추가하려면 toc-date.html파일 내용을 일일이 추가해 주어야 했다.</li>
-</ul>
-
-<p>이 처럼 포스트들을 카테고리별로 관리 하려면 너무 번거롭다보니, 그냥 카테고리를 all 로 지정하여 모두 한페이지에 표시되도록 단순 무식하게 사용하게 되었다.
-하지만 조금씩 글이 많아지고 포스트를 정리할 필요성이 느껴져 카테고리 관리를 자동화 할 수 있는 방법을 찾아 보았다.</p>
-
-<p>다음의 링크를 참조하였다.</p>
-
-<p><a href="https://uhded.com/automatic-jekyll-categories-page">카테고리 자동관리</a></p>
-
-<h3 id="summary">Summary</h3>
-<ol>
-  <li>_plugins 디렉토리에 categories.rb 파일을 만든다.</li>
-  <li>categories.rb를 다음처럼 작성한다.</li>
-  <li>_layouts 디렉토리에 category_index.html 파일을 만든다. (이 파일은 각 카테고리 페이지의 모양을 결정한다)</li>
-</ol>
-
-<!-- 넘버를 리셋하기 위해 주석을 넣었다  -->
-<h3 id="상세설명">상세설명</h3>
-<ol>
-  <li>_plugins 디렉토리에 categories.rb 파일을 만든다.</li>
-  <li>
-    <p>categories.rb를 다음처럼 작성한다.</p>
-
-    <div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">module</span> <span class="nn">Jekyll</span>
-     <span class="k">class</span> <span class="nc">CategoryPageGenerator</span> <span class="o">&lt;</span> <span class="no">Generator</span>
-       <span class="n">safe</span> <span class="kp">true</span>
-
-       <span class="k">def</span> <span class="nf">generate</span><span class="p">(</span><span class="n">site</span><span class="p">)</span>
-         <span class="k">if</span> <span class="n">site</span><span class="p">.</span><span class="nf">layouts</span><span class="p">.</span><span class="nf">key?</span> <span class="s1">'category_index'</span>
-           <span class="n">dir</span> <span class="o">=</span> <span class="n">site</span><span class="p">.</span><span class="nf">config</span><span class="p">[</span><span class="s1">'category_dir'</span><span class="p">]</span> <span class="o">||</span> <span class="s1">'categories'</span>
-           <span class="n">site</span><span class="p">.</span><span class="nf">categories</span><span class="p">.</span><span class="nf">each_key</span> <span class="k">do</span> <span class="o">|</span><span class="n">category</span><span class="o">|</span>
-             <span class="n">site</span><span class="p">.</span><span class="nf">pages</span> <span class="o">&lt;&lt;</span> <span class="no">CategoryPage</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">site</span><span class="p">.</span><span class="nf">source</span><span class="p">,</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">dir</span><span class="p">,</span> <span class="n">category</span><span class="p">),</span> <span class="n">category</span><span class="p">)</span>
-           <span class="k">end</span>
-         <span class="k">end</span>
-       <span class="k">end</span>
-     <span class="k">end</span>
-
-     <span class="c1"># A Page subclass used in the `CategoryPageGenerator`</span>
-     <span class="k">class</span> <span class="nc">CategoryPage</span> <span class="o">&lt;</span> <span class="no">Page</span>
-       <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">base</span><span class="p">,</span> <span class="n">dir</span><span class="p">,</span> <span class="n">category</span><span class="p">)</span>
-         <span class="vi">@site</span> <span class="o">=</span> <span class="n">site</span>
-         <span class="vi">@base</span> <span class="o">=</span> <span class="n">base</span>
-         <span class="vi">@dir</span>  <span class="o">=</span> <span class="n">dir</span>
-         <span class="vi">@name</span> <span class="o">=</span> <span class="s1">'index.html'</span>
-
-         <span class="nb">self</span><span class="p">.</span><span class="nf">process</span><span class="p">(</span><span class="vi">@name</span><span class="p">)</span>
-         <span class="nb">self</span><span class="p">.</span><span class="nf">read_yaml</span><span class="p">(</span><span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="s1">'_layouts'</span><span class="p">),</span> <span class="s1">'category_index.html'</span><span class="p">)</span>
-         <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'category'</span><span class="p">]</span> <span class="o">=</span> <span class="n">category</span>
-
-         <span class="n">category_title_prefix</span> <span class="o">=</span> <span class="n">site</span><span class="p">.</span><span class="nf">config</span><span class="p">[</span><span class="s1">'category_title_prefix'</span><span class="p">]</span> <span class="o">||</span> <span class="s1">'Category: '</span>
-         <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"</span><span class="si">#{</span><span class="n">category_title_prefix</span><span class="si">}#{</span><span class="n">category</span><span class="si">}</span><span class="s2">"</span>
-       <span class="k">end</span>
-     <span class="k">end</span>
-   <span class="k">end</span>
-</code></pre></div>    </div>
-  </li>
-  <li>_layouts 디렉토리에 category_index.html 파일을 만든다. 
-(이 파일은 각 카테고리 페이지의 모양을 결정한다. 기존 my-category.md 파일의 용도와 유사하다.)
-    <ul>
-      <li>_layout 폴더에 category_index.html 파일을 만들고 다음처럼 작성한다.</li>
-      <li>layout을 default가 아닌 post로 변경하여야 한다.</li>
-      <li>수정날짜 포스트이름 형식으로 표시하도록 수정하였다.</li>
-      <li>카테고리를 태그처럼 나열하는게 복잡해 보여서 주석처리 하였다.</li>
-    </ul>
-  </li>
-</ol>
-
-<p>*마크다운 코드블럭에 리퀴드(liquid) 문법 표시가 제대로 안되어서 이미지로 표시하였다.
-<img src="/assets/2024-05-06-16-20-14.png" alt="" /></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```html  
----
-layout: post
----
-
-&lt;!-- &lt;section class="small-intro"&gt; --&gt;
-  &lt;!-- &lt;div class="container"&gt; --&gt;
-    &lt;!-- &lt;h2&gt;
-      
-    &lt;/h2&gt; --&gt;
-  &lt;!-- &lt;/div&gt; --&gt;
-&lt;!-- &lt;/section&gt; --&gt;
-
-&lt;section class="blog"&gt;
-  &lt;div class="container"&gt;
-    
-    {% for post in site.posts %} {% if post.categories contains page.category %}
-    &lt;!-- {% assign posts = site.categories.jekyll | sort: 'title' %} --&gt;
-
-    &lt;div class="blog-container"&gt;
-      &lt;div class="title-excerpt"&gt;
-        &lt;!-- yoo --&gt;
-        &lt;div style="font-size:18px"&gt;
-          &lt;i class="fas fa-fw fa-calendar-alt" aria-hidden="true"&gt; &lt;/i&gt;
-          {{ post.lastmod | date:'%Y-%m-%d %R &amp;nbsp;&amp;nbsp;'}}
-        &lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt; 
-        &lt;/div&gt;
-        &lt;!-- &lt;h2&gt;&lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;  --&gt;
-      &lt;/div&gt;
-
-      &lt;div class="date-categories"&gt;
-        &lt;!-- 카테고리 표시 --&gt;
-        &lt;!-- &lt;div class="categories"&gt;
-          {% for category in post.categories%}
-          &lt;div class="category"&gt;
-            &lt;a href="/categories/{{category}}"&gt;{{ category }}&lt;/a&gt;
-          &lt;/div&gt;
-          {% endfor %}
-        &lt;/div&gt; --&gt;
-
-        &lt;!-- 날짜 표시 --&gt;
-        &lt;!-- &lt;div class="date"&gt;
-          &lt;p&gt;{{ post.date | date_to_string }}&lt;/p&gt;
-        &lt;/div&gt; --&gt;
-
-      &lt;/div&gt;
-    &lt;/div&gt; 
-    {% endif %} {% endfor %}
-  &lt;/div&gt;
-&lt;/section&gt;
-    
-```
-</code></pre></div></div>]]></content><author><name>Yoo</name></author><category term="all" /><category term="jekyll" /><summary type="html"><![CDATA[created : 2024-05-06 09:48 updated : 2024-05-07 22:57]]></summary></entry><entry><title type="html">yadm</title><link href="http://localhost:4000/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html" rel="alternate" type="text/html" title="yadm" /><published>2024-05-06T08:42:20+09:00</published><updated>2024-05-06T08:42:20+09:00</updated><id>http://localhost:4000/all/linux/unix/mac/vim/testcat/yadm</id><content type="html" xml:base="http://localhost:4000/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html"><![CDATA[<p>created : 2024-05-06 08:42<br />
+_site를 gitignore에서 제외 시킨 후 정상동작함을 확인 하였다. -->]]></content><author><name>Yoo</name></author><category term="all" /><category term="jekyll" /><summary type="html"><![CDATA[created : 2024-05-08 08:19 updated : 2024-05-09 01:31]]></summary></entry><entry><title type="html">yadm</title><link href="http://localhost:4000/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html" rel="alternate" type="text/html" title="yadm" /><published>2024-05-06T08:42:20+09:00</published><updated>2024-05-06T08:42:20+09:00</updated><id>http://localhost:4000/all/linux/unix/mac/vim/testcat/yadm</id><content type="html" xml:base="http://localhost:4000/all/linux/unix/mac/vim/testcat/2024-05-06-yadm.html"><![CDATA[<p>created : 2024-05-06 08:42<br />
 updated : 2024-05-06 22:43</p>
 
 <h3 id="yadm은-여러-config-파일을-관리하는-툴이다">yadm은 여러 config 파일을 관리하는 툴이다.</h3>
@@ -198,15 +67,28 @@ updated : 2024-05-05 22:44</p>
 <p>캡쳐가 완료되면 편집창이 뜬다. (미니창을 디폴트로 지정할 수 도 있다)
 편집창에서 가볍게 편집하고, esc 또는 cmd + c를 누르면 클립보드로 복사된다.</p>
 
-<p><img src="/assets/2024-05-05-22-44-03.png" alt="" /></p>]]></content><author><name>Yoo</name></author><category term="all" /><summary type="html"><![CDATA[created : 2024-05-06 07:39 updated : 2024-05-05 22:44]]></summary></entry><entry><title type="html">Qt 빠르게 설치 하는 법</title><link href="http://localhost:4000/all/algorithm/2024-05-02-Qt.html" rel="alternate" type="text/html" title="Qt 빠르게 설치 하는 법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/Qt</id><content type="html" xml:base="http://localhost:4000/all/algorithm/2024-05-02-Qt.html"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#qt-빠르게-설치하는-방법" id="markdown-toc-qt-빠르게-설치하는-방법">Qt 빠르게 설치하는 방법</a></li>
+<p><img src="/assets/2024-05-05-22-44-03.png" alt="" /></p>]]></content><author><name>Yoo</name></author><category term="all" /><summary type="html"><![CDATA[created : 2024-05-06 07:39 updated : 2024-05-05 22:44]]></summary></entry><entry><title type="html">CPP Study 모아두는 파일</title><link href="http://localhost:4000/all/algorithm/2024-05-02-cpp.html" rel="alternate" type="text/html" title="CPP Study 모아두는 파일" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/cpp</id><content type="html" xml:base="http://localhost:4000/all/algorithm/2024-05-02-cpp.html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#카테고리-만들면-이-파일은-필요-없을-듯-하다-정리되면-지우자" id="markdown-toc-카테고리-만들면-이-파일은-필요-없을-듯-하다-정리되면-지우자">카테고리 만들면 이 파일은 필요 없을 듯 하다. 정리되면 지우자</a></li>
+  <li><a href="#이론" id="markdown-toc-이론">이론</a></li>
 </ul>
 
-<h3 id="qt-빠르게-설치하는-방법">Qt 빠르게 설치하는 방법</h3>
-<p>아래처럼 dmg파일 실행시 mirror 경로를 함께 명시하여 실행한다.</p>
+<h3 id="카테고리-만들면-이-파일은-필요-없을-듯-하다-정리되면-지우자">카테고리 만들면 이 파일은 필요 없을 듯 하다. 정리되면 지우자</h3>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qt-unified-macOS-x64-4.6.0-online.dmg <span class="nt">--mirror</span> https://mirrors.ocf.berkeley.edu/qt/
-</code></pre></div></div>]]></content><author><name>Yoo</name></author><category term="all" /><category term="algorithm" /></entry><entry><title type="html">로지텍 마우스 끊김 해결 방법</title><link href="http://localhost:4000/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html" rel="alternate" type="text/html" title="로지텍 마우스 끊김 해결 방법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/hardware/computer/LogitechMouse</id><content type="html" xml:base="http://localhost:4000/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html"><![CDATA[<ul id="markdown-toc">
+<h2 id="이론">이론</h2>
+<ul>
+  <li>[[/Languages/cpp/class]]</li>
+  <li>[[/Languages/cpp/polymorphism]]</li>
+</ul>]]></content><author><name>Yoo</name></author><category term="all" /><category term="algorithm" /></entry><entry><title type="html">Markdown 문법</title><link href="http://localhost:4000/all/algorithm/markdown/2024-05-02-Markdown.html" rel="alternate" type="text/html" title="Markdown 문법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/markdown/Markdown</id><content type="html" xml:base="http://localhost:4000/all/algorithm/markdown/2024-05-02-Markdown.html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#markdown-문법을-연습해-봅니다" id="markdown-toc-markdown-문법을-연습해-봅니다">Markdown 문법을 연습해 봅니다.</a></li>
+</ul>
+
+<h2 id="markdown-문법을-연습해-봅니다">Markdown 문법을 연습해 봅니다.</h2>
+
+<ul>
+  <li>주석으로 이동합니다. [^comment1]</li>
+</ul>
+
+<p>[^comment1] : 주석1에 대한 설명입니다.</p>]]></content><author><name>Yoo</name></author><category term="all" /><category term="algorithm" /><category term="markdown" /></entry><entry><title type="html">로지텍 마우스 끊김 해결 방법</title><link href="http://localhost:4000/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html" rel="alternate" type="text/html" title="로지텍 마우스 끊김 해결 방법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/hardware/computer/LogitechMouse</id><content type="html" xml:base="http://localhost:4000/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#m590-24g-로-연결-하는법" id="markdown-toc-m590-24g-로-연결-하는법">M590 2.4G 로 연결 하는법</a></li>
 </ul>
 
