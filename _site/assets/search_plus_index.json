@@ -1,4 +1,9 @@
-{"/2024-05-11-plugin-test.md.html": {
+{"/all/2024-05-12-jekyll-custom-plugin.html": {
+    "title": "jekyll에서 custom plugin을 사용하는 방법",
+    "keywords": "all",
+    "url": "/all/2024-05-12-jekyll-custom-plugin.html",
+    "body": "created : 2024-05-12 10:54 updated : 2024-05-12 01:56 jekyll에서 custom plugin을 사용하는 방법에 대해 정리합니다. workflow를 변경해서 해결하라는데…."
+  },"/2024-05-11-plugin-test.md.html": {
     "title": "Plugin Test",
     "keywords": "",
     "url": "/2024-05-11-plugin-test.md.html",

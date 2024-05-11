@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-11T23:47:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>Yoo</name></author><entry><title type="html">Plugin Test</title><link href="http://localhost:4000/2024-05-11-plugin-test.md.html" rel="alternate" type="text/html" title="Plugin Test" /><published>2024-05-11T00:00:00+09:00</published><updated>2024-05-11T00:00:00+09:00</updated><id>http://localhost:4000/plugin-test.md</id><content type="html" xml:base="http://localhost:4000/2024-05-11-plugin-test.md.html"><![CDATA[]]></content><author><name>Yoo</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">jekyll-로컬에서만보일때</title><link href="http://localhost:4000/all/jekyll/2024-05-08-jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C.html" rel="alternate" type="text/html" title="jekyll-로컬에서만보일때" /><published>2024-05-08T08:19:10+09:00</published><updated>2024-05-08T08:19:10+09:00</updated><id>http://localhost:4000/all/jekyll/jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C</id><content type="html" xml:base="http://localhost:4000/all/jekyll/2024-05-08-jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C.html"><![CDATA[<p>created : 2024-05-08 08:19<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-12T01:56:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>Yoo</name></author><entry><title type="html">jekyll에서 custom plugin을 사용하는 방법</title><link href="http://localhost:4000/all/2024-05-12-jekyll-custom-plugin.html" rel="alternate" type="text/html" title="jekyll에서 custom plugin을 사용하는 방법" /><published>2024-05-12T10:54:39+09:00</published><updated>2024-05-12T10:54:39+09:00</updated><id>http://localhost:4000/all/jekyll-custom-plugin</id><content type="html" xml:base="http://localhost:4000/all/2024-05-12-jekyll-custom-plugin.html"><![CDATA[<p>created : 2024-05-12 10:54<br />
+updated : 2024-05-12 01:56</p>
+
+<h4 id="jekyll에서-custom-plugin을-사용하는-방법에-대해-정리합니다">jekyll에서 custom plugin을 사용하는 방법에 대해 정리합니다.</h4>
+
+<p>workflow를 변경해서 해결하라는데….</p>]]></content><author><name>Yoo</name></author><category term="all" /><summary type="html"><![CDATA[created : 2024-05-12 10:54 updated : 2024-05-12 01:56]]></summary></entry><entry><title type="html">Plugin Test</title><link href="http://localhost:4000/2024-05-11-plugin-test.md.html" rel="alternate" type="text/html" title="Plugin Test" /><published>2024-05-11T00:00:00+09:00</published><updated>2024-05-11T00:00:00+09:00</updated><id>http://localhost:4000/plugin-test.md</id><content type="html" xml:base="http://localhost:4000/2024-05-11-plugin-test.md.html"><![CDATA[]]></content><author><name>Yoo</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">jekyll-로컬에서만보일때</title><link href="http://localhost:4000/all/jekyll/2024-05-08-jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C.html" rel="alternate" type="text/html" title="jekyll-로컬에서만보일때" /><published>2024-05-08T08:19:10+09:00</published><updated>2024-05-08T08:19:10+09:00</updated><id>http://localhost:4000/all/jekyll/jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C</id><content type="html" xml:base="http://localhost:4000/all/jekyll/2024-05-08-jekyll-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C%EB%A7%8C%EB%B3%B4%EC%9D%BC%EB%95%8C.html"><![CDATA[<p>created : 2024-05-08 08:19<br />
 updated : 2024-05-09 01:31</p>
 
 <h3 id="포스트가-로컬에서만-보여지고-github서버에서는-보이지-않을때">포스트가 로컬에서만 보여지고 github서버에서는 보이지 않을때</h3>
@@ -193,28 +198,15 @@ updated : 2024-05-05 22:44</p>
 <p>캡쳐가 완료되면 편집창이 뜬다. (미니창을 디폴트로 지정할 수 도 있다)
 편집창에서 가볍게 편집하고, esc 또는 cmd + c를 누르면 클립보드로 복사된다.</p>
 
-<p><img src="/assets/2024-05-05-22-44-03.png" alt="" /></p>]]></content><author><name>Yoo</name></author><category term="all" /><summary type="html"><![CDATA[created : 2024-05-06 07:39 updated : 2024-05-05 22:44]]></summary></entry><entry><title type="html">CPP Study 모아두는 파일</title><link href="http://localhost:4000/all/algorithm/2024-05-02-cpp.html" rel="alternate" type="text/html" title="CPP Study 모아두는 파일" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/cpp</id><content type="html" xml:base="http://localhost:4000/all/algorithm/2024-05-02-cpp.html"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#카테고리-만들면-이-파일은-필요-없을-듯-하다-정리되면-지우자" id="markdown-toc-카테고리-만들면-이-파일은-필요-없을-듯-하다-정리되면-지우자">카테고리 만들면 이 파일은 필요 없을 듯 하다. 정리되면 지우자</a></li>
-  <li><a href="#이론" id="markdown-toc-이론">이론</a></li>
+<p><img src="/assets/2024-05-05-22-44-03.png" alt="" /></p>]]></content><author><name>Yoo</name></author><category term="all" /><summary type="html"><![CDATA[created : 2024-05-06 07:39 updated : 2024-05-05 22:44]]></summary></entry><entry><title type="html">Qt 빠르게 설치 하는 법</title><link href="http://localhost:4000/all/algorithm/2024-05-02-Qt.html" rel="alternate" type="text/html" title="Qt 빠르게 설치 하는 법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/Qt</id><content type="html" xml:base="http://localhost:4000/all/algorithm/2024-05-02-Qt.html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#qt-빠르게-설치하는-방법" id="markdown-toc-qt-빠르게-설치하는-방법">Qt 빠르게 설치하는 방법</a></li>
 </ul>
 
-<h3 id="카테고리-만들면-이-파일은-필요-없을-듯-하다-정리되면-지우자">카테고리 만들면 이 파일은 필요 없을 듯 하다. 정리되면 지우자</h3>
+<h3 id="qt-빠르게-설치하는-방법">Qt 빠르게 설치하는 방법</h3>
+<p>아래처럼 dmg파일 실행시 mirror 경로를 함께 명시하여 실행한다.</p>
 
-<h2 id="이론">이론</h2>
-<ul>
-  <li>[[/Languages/cpp/class]]</li>
-  <li>[[/Languages/cpp/polymorphism]]</li>
-</ul>]]></content><author><name>Yoo</name></author><category term="all" /><category term="algorithm" /></entry><entry><title type="html">Markdown 문법</title><link href="http://localhost:4000/all/algorithm/markdown/2024-05-02-Markdown.html" rel="alternate" type="text/html" title="Markdown 문법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/markdown/Markdown</id><content type="html" xml:base="http://localhost:4000/all/algorithm/markdown/2024-05-02-Markdown.html"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#markdown-문법을-연습해-봅니다" id="markdown-toc-markdown-문법을-연습해-봅니다">Markdown 문법을 연습해 봅니다.</a></li>
-</ul>
-
-<h2 id="markdown-문법을-연습해-봅니다">Markdown 문법을 연습해 봅니다.</h2>
-
-<ul>
-  <li>주석으로 이동합니다. [^comment1]</li>
-</ul>
-
-<p>[^comment1] : 주석1에 대한 설명입니다.</p>]]></content><author><name>Yoo</name></author><category term="all" /><category term="algorithm" /><category term="markdown" /></entry><entry><title type="html">로지텍 마우스 끊김 해결 방법</title><link href="http://localhost:4000/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html" rel="alternate" type="text/html" title="로지텍 마우스 끊김 해결 방법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/hardware/computer/LogitechMouse</id><content type="html" xml:base="http://localhost:4000/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html"><![CDATA[<ul id="markdown-toc">
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qt-unified-macOS-x64-4.6.0-online.dmg <span class="nt">--mirror</span> https://mirrors.ocf.berkeley.edu/qt/
+</code></pre></div></div>]]></content><author><name>Yoo</name></author><category term="all" /><category term="algorithm" /></entry><entry><title type="html">로지텍 마우스 끊김 해결 방법</title><link href="http://localhost:4000/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html" rel="alternate" type="text/html" title="로지텍 마우스 끊김 해결 방법" /><published>2024-05-02T10:39:25+09:00</published><updated>2024-05-02T10:39:25+09:00</updated><id>http://localhost:4000/all/algorithm/hardware/computer/LogitechMouse</id><content type="html" xml:base="http://localhost:4000/all/algorithm/hardware/computer/2024-05-02-LogitechMouse.html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#m590-24g-로-연결-하는법" id="markdown-toc-m590-24g-로-연결-하는법">M590 2.4G 로 연결 하는법</a></li>
 </ul>
 
