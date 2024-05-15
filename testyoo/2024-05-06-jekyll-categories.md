@@ -138,4 +138,3 @@ updated : {{page.lastmod | date:'%Y-%m-%d %R'}}
       </div>
     </section>
         {% endraw %}
-    ```
