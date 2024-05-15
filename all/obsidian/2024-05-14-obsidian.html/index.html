@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>jekyll에서 custom plugin을 사용하는 방법 · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>obsidian · Title in config.yml</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Yoo"><link rel="stylesheet" href="/assets/gitbook/style.css">
 <link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -25,7 +25,7 @@
 
 
 
-            <link rel="prev" href="/2024-05-11-plugin-test.md.html/" />
+            <link rel="prev" href="/all/note%20taking/2024-05-12-jekyll-custom-plugin.html/" />
         
 
         
@@ -104,8 +104,8 @@
             
                 
                 <!-- <li><a href="http://localhost:4000/categories/#all">all</a></li> -->
-                <!-- <li><a href="http://localhost:4000/categories/all">all (36)</a></li> -->
-                <li><a href="/categories/all">all (36)</a></li>
+                <!-- <li><a href="http://localhost:4000/categories/all">all (37)</a></li> -->
+                <li><a href="/categories/all">all (37)</a></li>
             
                 
                 <!-- <li><a href="http://localhost:4000/categories/#history">history</a></li> -->
@@ -182,6 +182,16 @@
                 <!-- <li><a href="http://localhost:4000/categories/vim">vim (1)</a></li> -->
                 <li><a href="/categories/vim">vim (1)</a></li>
             
+                
+                <!-- <li><a href="http://localhost:4000/categories/#note taking">note taking</a></li> -->
+                <!-- <li><a href="http://localhost:4000/categories/note taking">note taking (1)</a></li> -->
+                <li><a href="/categories/note taking">note taking (1)</a></li>
+            
+                
+                <!-- <li><a href="http://localhost:4000/categories/#obsidian">obsidian</a></li> -->
+                <!-- <li><a href="http://localhost:4000/categories/obsidian">obsidian (1)</a></li> -->
+                <li><a href="/categories/obsidian">obsidian (1)</a></li>
+            
 
 
         </ul>
@@ -193,7 +203,7 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >jekyll에서 custom plugin을 사용하는 방법</a>
+                            <a href="." >obsidian</a>
                         
                     </h1>
                 </div>
@@ -206,15 +216,41 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     
-                        <h1 id="/all/jekyll-custom-plugin">jekyll에서 custom plugin을 사용하는 방법</h1>
+                        <h1 id="/all/obsidian/obsidian">obsidian</h1>
                     
 
-                    <p>created : 2024-05-12 10:54<br />
-updated : 2024-05-12 01:56</p>
+                    <p>created : 2024-05-14 08:10<br />
+updated : 2024-05-14 01:42</p>
 
-<h4 id="jekyll에서-custom-plugin을-사용하는-방법에-대해-정리합니다">jekyll에서 custom plugin을 사용하는 방법에 대해 정리합니다.</h4>
+<h1 id="obsidian-옵시디언에-대해-설명합니다">obsidian 옵시디언에 대해 설명합니다.</h1>
 
-<p>workflow를 변경해서 해결하라는데….</p>
+<h4 id="뭐하는-앱">뭐하는 앱?</h4>
+<p>노트 앱이다. 생각을 정리하고 다양한 기록을 위해 사용하면 좋다.</p>
+
+<h4 id="장점은">장점은?</h4>
+<h5 id="vim-모드를-사용-할-수-있다">vim 모드를 사용 할 수 있다.</h5>
+<p>이게 가장 큰 장점이다. vim 키맵으로 쾌적하게 편집할 수 있다.</p>
+
+<h5 id="여러기기-동기화-가능-특히-모바일">여러기기 동기화 가능. 특히 모바일</h5>
+<p>온라인 서버에 노트를 저장 할 수 있으므로 여러기기에서 노트를 동기화 할 수 있다. <br />
+vscode로 노트를 정리하면(jekyll등을 이용) pc에서만 동기화가 가능 할 것이다.</p>
+
+<h5 id="플러그인을-사용-할-수-있다">플러그인을 사용 할 수 있다.</h5>
+<p>사용자 플러그인을 활용해 여러 기능을 확장해서 사용할 수 있다. 마치 vscode의 확장 플러그인을 사용하는것과 유사하다.
+플러그인 중에는 Excalidraw 라는 드로잉 툴이 유명한 것 같다.</p>
+
+<h5 id="마크다운을-좀더-편하게-쓸-수-있는것-같다">마크다운을 좀더 편하게 쓸 수 있는것 같다.</h5>
+<p>예를들어, 개행을 위해 줄끝에 스페이스 두개를 넣을 필요가 없다.</p>
+
+<h5 id="한글-지원이-좋다">한글 지원이 좋다.</h5>
+<p>자모분리 문제가 없고, 백스페이스로 지울때 자모단위로 지워진다.
+vscode에서는 글자 단위로 지워져서 불편하다.</p>
+
+<h4 id="단점은">단점은?</h4>
+<p>카테고리 기능이 맘에 안든다. 내가 원하는 카테고리는 jekyll에서 프론트매터에 카테고리를 넣으면 사이드바에 자동으로 카테고리가 등록되고 링크가 생성되는 그런 걸 원하는데 그렇지 않다. 일일이 카테고리 폴더를 만들어 줘야 한다.</p>
+
+<p>아직 오랜시간 사용해보지 않아서 장단점을 명확히 파악하지는 못했다.
+다만, vim 모드를 사용할 수 있다는 장점이 다른 단점들을 상쇄할 것이라는건 분명하다.</p>
 </section>
             </div><div class="search-results">
     <div class="has-results">
@@ -272,7 +308,7 @@ window.MathJax = {
 </script>
 
 
-                        <a href="/2024-05-11-plugin-test.md.html/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Plugin Test">
+                        <a href="/all/note%20taking/2024-05-12-jekyll-custom-plugin.html/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: jekyll에서 custom plugin을 사용하는 방법">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     
@@ -378,13 +414,13 @@ window.MathJax = {
         "gitbook": "*"
     },
     "file": {
-        "path": "_posts/2024-05-12-jekyll-custom-plugin.md",
-        "mtime": "2024-05-12 10:54:39 +0900",
+        "path": "_posts/2024-05-13-obsidian.md",
+        "mtime": "2024-05-14 08:10:11 +0900",
         "type": "markdown"
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2024-05-12 13:51:22 +0900"
+        "time": "2024-05-15 14:53:14 +0900"
     },
     "basePath": "",
     "book": {
