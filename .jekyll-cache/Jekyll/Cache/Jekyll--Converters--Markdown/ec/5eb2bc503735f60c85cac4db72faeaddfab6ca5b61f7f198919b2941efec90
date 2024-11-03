@@ -1,0 +1,38 @@
+I"<p>This jekyll-theme supports <a href="https://www.mathjax.org/">MathJax</a> to render $\LaTeX$
+and mathematics expressions.</p>
+
+<blockquote class="block-tip">
+  <h5 id="tip">TIP</h5>
+
+  <p>Currently, Kramdown uses double dollar sign delimiters for inline and display math:
+<a href="https://kramdown.gettalong.org/syntax.html#math-blocks">https://kramdown.gettalong.org/syntax.html#math-blocks</a>.</p>
+</blockquote>
+
+<p>e.g.,</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The well known Pythagorean theorem $x^2 + y^2 = z^2$ was
+proved to be invalid for other exponents.
+Meaning the next equation has no integer solutions:
+
+$$ x^n + y^n = z^n $$
+</code></pre></div></div>
+
+<p>The well known Pythagorean theorem $x^2 + y^2 = z^2$ was
+proved to be invalid for other exponents.
+Meaning the next equation has no integer solutions:</p>
+
+\[x^n + y^n = z^n\]
+
+<p>Another example with more complex markups:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>When $a <span class="se">\n</span>e 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
+
+$$x = {-b <span class="se">\p</span>m <span class="se">\s</span>qrt{b^2-4ac} <span class="se">\o</span>ver 2a}.$$
+</code></pre></div></div>
+
+<p>When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are</p>
+
+\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+
+<p>Refer to the <a href="https://docs.mathjax.org/en/latest/index.html">MathJax website</a> for more examples.</p>
+:ET
