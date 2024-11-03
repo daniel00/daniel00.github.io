@@ -27,7 +27,7 @@
     "title": "linux-i3-wm",
     "keywords": "all linux",
     "url": "/all/linux/2024-05-06-linux-i3-wm.html/",
-    "body": "created : 2024-05-06 07:57 updated : 2024-05-05 23:06 i3 wm은 리눅스용 윈도우 메니저이다. config 파일은 ~/.config/i3/config 파일이고, 나는 mod 키로 window key를 지정하였으며, 앱 실행은, mod + d를 사용해서 런처가 뜨면 타이핑해서 원하는 앱을 열면 된다. 터미널 열기 mod + enter 윈도우 포커스 이동 mod + arrow key 윈도우 닫기 mod + shift + q config파일은 따로 정리해야겠다. hello 2024 1103"
+    "body": "created : 2024-05-06 07:57 updated : 2024-05-05 23:06 i3 wm은 리눅스용 윈도우 메니저이다. config 파일은 ~/.config/i3/config 파일이고, 나는 mod 키로 window key를 지정하였으며, 앱 실행은, mod + d를 사용해서 런처가 뜨면 타이핑해서 원하는 앱을 열면 된다. 터미널 열기 mod + enter 윈도우 포커스 이동 mod + arrow key 윈도우 닫기 mod + shift + q config파일은 따로 정리해야겠다. hello 2024 1103 hello now now"
   },"/all/2024-05-06-mac-capture-image.html/": {
     "title": "mac-capture-image",
     "keywords": "all",
