@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-11-03T15:05:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-11-03T15:37:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Title in config.yml</title><subtitle>Build Jekyll site with the GitBook style.
 </subtitle><author><name>Yoo</name></author><entry><title type="html">obsidian</title><link href="http://localhost:4000/all/obsidian/2024-05-14-obsidian.html/" rel="alternate" type="text/html" title="obsidian" /><published>2024-05-14T08:10:11+09:00</published><updated>2024-05-14T08:10:11+09:00</updated><id>http://localhost:4000/all/obsidian/obsidian</id><content type="html" xml:base="http://localhost:4000/all/obsidian/2024-05-14-obsidian.html/"><![CDATA[<p>created : 2024-05-14 08:10<br />
 updated : 2024-05-14 01:42</p>
 
@@ -87,7 +87,9 @@ updated : 2024-05-05 23:06</p>
 윈도우 포커스 이동 mod + arrow key
 윈도우 닫기 mod + shift + q</p>
 
-<p>config파일은 따로 정리해야겠다.</p>]]></content><author><name>Yoo</name></author><category term="all" /><category term="linux" /><summary type="html"><![CDATA[created : 2024-05-06 07:57 updated : 2024-05-05 23:06]]></summary></entry><entry><title type="html">mac-capture-image</title><link href="http://localhost:4000/all/2024-05-06-mac-capture-image.html/" rel="alternate" type="text/html" title="mac-capture-image" /><published>2024-05-06T07:39:00+09:00</published><updated>2024-05-06T07:39:00+09:00</updated><id>http://localhost:4000/all/mac-capture-image</id><content type="html" xml:base="http://localhost:4000/all/2024-05-06-mac-capture-image.html/"><![CDATA[<p>created : 2024-05-06 07:39<br />
+<p>config파일은 따로 정리해야겠다.</p>
+
+<p>hello 2024 1103</p>]]></content><author><name>Yoo</name></author><category term="all" /><category term="linux" /><summary type="html"><![CDATA[created : 2024-05-06 07:57 updated : 2024-05-05 23:06]]></summary></entry><entry><title type="html">mac-capture-image</title><link href="http://localhost:4000/all/2024-05-06-mac-capture-image.html/" rel="alternate" type="text/html" title="mac-capture-image" /><published>2024-05-06T07:39:00+09:00</published><updated>2024-05-06T07:39:00+09:00</updated><id>http://localhost:4000/all/mac-capture-image</id><content type="html" xml:base="http://localhost:4000/all/2024-05-06-mac-capture-image.html/"><![CDATA[<p>created : 2024-05-06 07:39<br />
 updated : 2024-05-05 22:44</p>
 
 <h3 id="맥북에서-이미지-캡처하고-편집-하는-방법">맥북에서 이미지 캡처하고 편집 하는 방법</h3>
